@@ -1,0 +1,108 @@
+{
+  "type": "object",
+  "properties": {
+    "company_name": {
+      "type": "string",
+      "description": "Firma ad\u0131"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Telefon numaras\u0131"
+    },
+    "address": {
+      "type": "string",
+      "description": "Tam adres"
+    },
+    "city": {
+      "type": "string",
+      "description": "\u0130l"
+    },
+    "district": {
+      "type": "string",
+      "description": "\u0130l\u00e7e"
+    },
+    "osb_name": {
+      "type": "string",
+      "description": "Ba\u011fl\u0131 oldu\u011fu OSB ad\u0131 (varsa)"
+    },
+    "website": {
+      "type": "string",
+      "description": "Web sitesi URL"
+    },
+    "email": {
+      "type": "string",
+      "description": "E-posta"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Direct Metal Laser Sintering",
+          "Stereolithography",
+          "Polyjet",
+          "Selective Laser Sintering",
+          "Fused Deposition Modeling",
+          "HP Multi Jet Fusion",
+          "CNC Turning",
+          "CNC Milling",
+          "EDM Services",
+          "Laser Cutting",
+          "Bending"
+        ]
+      },
+      "description": "\u00dcretim yetenekleri"
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "OSB",
+        "Google Maps",
+        "Web Sitesi",
+        "Meslek Odas\u0131",
+        "Manuel"
+      ],
+      "description": "Veri kayna\u011f\u0131"
+    },
+    "source_url": {
+      "type": "string",
+      "description": "Kayna\u011f\u0131n URL'si"
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "Taslak",
+        "Do\u011fruland\u0131",
+        "Reddedildi",
+        "Davet G\u00f6nderildi"
+      ],
+      "default": "Taslak",
+      "description": "Do\u011frulama durumu"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Notlar"
+    },
+    "google_maps_url": {
+      "type": "string",
+      "description": "Google Maps linki"
+    },
+    "google_rating": {
+      "type": "number",
+      "description": "Google puan\u0131"
+    },
+    "invited_to_partner": {
+      "type": "boolean",
+      "description": "Partner portala davet edildi mi"
+    },
+    "invited_at": {
+      "type": "string",
+      "description": "Davet tarihi"
+    }
+  },
+  "required": [
+    "company_name",
+    "city"
+  ],
+  "name": "ManufacturerLead"
+}
