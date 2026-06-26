@@ -8,3 +8,9 @@
 [ 2/30] Ankara          + 228 yeni | TOPLAM:    527 | API:    622
 [ 3/30] Bursa           + 257 yeni | TOPLAM:    784 | API:    920
 [ 3/30] Bursa           + 257 yeni | TOPLAM:    784 | API:    920
+[ 4/30] İzmir           + 225 yeni | TOPLAM:   1009 | API:   1193
+[ 4/30] İzmir           + 225 yeni | TOPLAM:   1009 | API:   1193
+[ 5/30] Kocaeli         + 130 yeni | TOPLAM:   1139 | API:   1365
+[ 5/30] Kocaeli         + 130 yeni | TOPLAM:   1139 | API:   1365
+[ 6/30] Sakarya         + 136 yeni | TOPLAM:   1275 | API:   1548
+[ 6/30] Sakarya         + 136 yeni | TOPLAM:   1275 | API:   1548
