@@ -50,3 +50,19 @@
 [23/30] Aydın           +  81 yeni | TOPLAM:   3464 | API:   4475
 [24/30] Trabzon         +  88 yeni | TOPLAM:   3552 | API:   4609
 [24/30] Trabzon         +  88 yeni | TOPLAM:   3552 | API:   4609
+[25/30] Malatya         + 101 yeni | TOPLAM:   3653 | API:   4759
+[25/30] Malatya         + 101 yeni | TOPLAM:   3653 | API:   4759
+[26/30] Elazığ          +  81 yeni | TOPLAM:   3734 | API:   4881
+[26/30] Elazığ          +  81 yeni | TOPLAM:   3734 | API:   4881
+[27/30] Düzce           +  75 yeni | TOPLAM:   3809 | API:   4991
+[27/30] Düzce           +  75 yeni | TOPLAM:   3809 | API:   4991
+[28/30] Yalova          +  61 yeni | TOPLAM:   3870 | API:   5090
+[28/30] Yalova          +  61 yeni | TOPLAM:   3870 | API:   5090
+[29/30] Gebze           + 117 yeni | TOPLAM:   3987 | API:   5244
+[29/30] Gebze           + 117 yeni | TOPLAM:   3987 | API:   5244
+[30/30] Çorlu           +  78 yeni | TOPLAM:   4065 | API:   5359
+[30/30] Çorlu           +  78 yeni | TOPLAM:   4065 | API:   5359
+
+✅ TAMAMLANDI: 4065 benzersiz kayıt, 5359 API çağrısı
+
+✅ TAMAMLANDI: 4065 benzersiz kayıt, 5359 API çağrısı
