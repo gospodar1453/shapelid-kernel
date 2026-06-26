@@ -1,0 +1,263 @@
+🚀 Google Maps API Scraper başladı
+   Şehir: 10 | Sorgu: 10 | Max/sorgu: 40
+   Toplam kombinasyon: 100
+
+  🔍 CNC torna fason imalat — İstanbul
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 20 kayıt | Toplam: 20 | API calls: 22
+  🔍 CNC freze talaşlı imalat — İstanbul
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 5 kayıt | Toplam: 25 | API calls: 29
+  🔍 fiber lazer kesim sac — İstanbul
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 20 kayıt | Toplam: 45 | API calls: 51
+  🔍 lazer kesim büküm abkant — İstanbul
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 15 kayıt | Toplam: 60 | API calls: 68
+  🔍 tel erozyon EDM fason — İstanbul
+    ✅ 4 kayıt | Toplam: 64 | API calls: 73
+  🔍 3D baskı FDM hizmet — İstanbul
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 19 kayıt | Toplam: 83 | API calls: 95
+  🔍 metal lazer kesim OSB — İstanbul
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 9 kayıt | Toplam: 92 | API calls: 106
+  🔍 CNC işleme merkezi fason — İstanbul
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 9 kayıt | Toplam: 101 | API calls: 118
+  🔍 sac büküm pres metal — İstanbul
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 15 kayıt | Toplam: 116 | API calls: 135
+  🔍 dalma erozyon EDM — İstanbul
+    ✅ 9 kayıt | Toplam: 125 | API calls: 146
+
+💾 Kaydedildi: 125 kayıt (gmaps_api_results.json)
+
+  🔍 CNC torna fason imalat — Ankara
+    ✅ 7 kayıt | Toplam: 132 | API calls: 154
+  🔍 CNC freze talaşlı imalat — Ankara
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 13 kayıt | Toplam: 145 | API calls: 171
+  🔍 fiber lazer kesim sac — Ankara
+    ✅ 16 kayıt | Toplam: 161 | API calls: 188
+  🔍 lazer kesim büküm abkant — Ankara
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 14 kayıt | Toplam: 175 | API calls: 205
+  🔍 tel erozyon EDM fason — Ankara
+    ✅ 6 kayıt | Toplam: 181 | API calls: 212
+  🔍 3D baskı FDM hizmet — Ankara
+    ✅ 18 kayıt | Toplam: 199 | API calls: 231
+  🔍 metal lazer kesim OSB — Ankara
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 6 kayıt | Toplam: 205 | API calls: 241
+  🔍 CNC işleme merkezi fason — Ankara
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 13 kayıt | Toplam: 218 | API calls: 256
+  🔍 sac büküm pres metal — Ankara
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 13 kayıt | Toplam: 231 | API calls: 271
+  🔍 dalma erozyon EDM — Ankara
+    ✅ 0 kayıt | Toplam: 231 | API calls: 272
+
+💾 Kaydedildi: 231 kayıt (gmaps_api_results.json)
+
+  🔍 CNC torna fason imalat — Bursa
+    ✅ 12 kayıt | Toplam: 243 | API calls: 285
+  🔍 CNC freze talaşlı imalat — Bursa
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 14 kayıt | Toplam: 257 | API calls: 301
+  🔍 fiber lazer kesim sac — Bursa
+    ✅ 2 kayıt | Toplam: 259 | API calls: 305
+  🔍 lazer kesim büküm abkant — Bursa
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 17 kayıt | Toplam: 276 | API calls: 326
+  🔍 tel erozyon EDM fason — Bursa
+    ✅ 1 kayıt | Toplam: 277 | API calls: 328
+  🔍 3D baskı FDM hizmet — Bursa
+    ✅ 11 kayıt | Toplam: 288 | API calls: 341
+  🔍 metal lazer kesim OSB — Bursa
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 12 kayıt | Toplam: 300 | API calls: 355
+  🔍 CNC işleme merkezi fason — Bursa
+    ✅ 4 kayıt | Toplam: 304 | API calls: 360
+  🔍 sac büküm pres metal — Bursa
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 14 kayıt | Toplam: 318 | API calls: 376
+  🔍 dalma erozyon EDM — Bursa
+    ✅ 0 kayıt | Toplam: 318 | API calls: 377
+
+💾 Kaydedildi: 318 kayıt (gmaps_api_results.json)
+
+  🔍 CNC torna fason imalat — İzmir
+    ✅ 14 kayıt | Toplam: 332 | API calls: 393
+  🔍 CNC freze talaşlı imalat — İzmir
+    ✅ 10 kayıt | Toplam: 342 | API calls: 404
+  🔍 fiber lazer kesim sac — İzmir
+    ✅ 8 kayıt | Toplam: 350 | API calls: 413
+  🔍 lazer kesim büküm abkant — İzmir
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 16 kayıt | Toplam: 366 | API calls: 431
+  🔍 tel erozyon EDM fason — İzmir
+    ✅ 5 kayıt | Toplam: 371 | API calls: 438
+  🔍 3D baskı FDM hizmet — İzmir
+    ✅ 10 kayıt | Toplam: 381 | API calls: 450
+  🔍 metal lazer kesim OSB — İzmir
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 13 kayıt | Toplam: 394 | API calls: 465
+  🔍 CNC işleme merkezi fason — İzmir
+    ✅ 2 kayıt | Toplam: 396 | API calls: 468
+  🔍 sac büküm pres metal — İzmir
+    ✅ 1 kayıt | Toplam: 397 | API calls: 470
+  🔍 dalma erozyon EDM — İzmir
+    ✅ 0 kayıt | Toplam: 397 | API calls: 471
+
+💾 Kaydedildi: 397 kayıt (gmaps_api_results.json)
+
+  🔍 CNC torna fason imalat — Kocaeli
+    ✅ 8 kayıt | Toplam: 405 | API calls: 480
+  🔍 CNC freze talaşlı imalat — Kocaeli
+    ✅ 5 kayıt | Toplam: 410 | API calls: 487
+  🔍 fiber lazer kesim sac — Kocaeli
+    ✅ 3 kayıt | Toplam: 413 | API calls: 492
+  🔍 lazer kesim büküm abkant — Kocaeli
+    ✅ 9 kayıt | Toplam: 422 | API calls: 502
+  🔍 tel erozyon EDM fason — Kocaeli
+    ✅ 0 kayıt | Toplam: 422 | API calls: 503
+  🔍 3D baskı FDM hizmet — Kocaeli
+    ✅ 14 kayıt | Toplam: 436 | API calls: 518
+  🔍 metal lazer kesim OSB — Kocaeli
+    ✅ 1 kayıt | Toplam: 437 | API calls: 521
+  🔍 CNC işleme merkezi fason — Kocaeli
+    ✅ 0 kayıt | Toplam: 437 | API calls: 522
+  🔍 sac büküm pres metal — Kocaeli
+    ✅ 7 kayıt | Toplam: 444 | API calls: 533
+  🔍 dalma erozyon EDM — Kocaeli
+    ✅ 0 kayıt | Toplam: 444 | API calls: 534
+
+💾 Kaydedildi: 444 kayıt (gmaps_api_results.json)
+
+  🔍 CNC torna fason imalat — Sakarya
+    ✅ 13 kayıt | Toplam: 457 | API calls: 550
+  🔍 CNC freze talaşlı imalat — Sakarya
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 11 kayıt | Toplam: 468 | API calls: 564
+  🔍 fiber lazer kesim sac — Sakarya
+    ✅ 4 kayıt | Toplam: 472 | API calls: 570
+  🔍 lazer kesim büküm abkant — Sakarya
+    ✅ 2 kayıt | Toplam: 474 | API calls: 576
+  🔍 tel erozyon EDM fason — Sakarya
+    ✅ 0 kayıt | Toplam: 474 | API calls: 577
+  🔍 3D baskı FDM hizmet — Sakarya
+    ✅ 7 kayıt | Toplam: 481 | API calls: 585
+  🔍 metal lazer kesim OSB — Sakarya
+    ✅ 8 kayıt | Toplam: 489 | API calls: 595
+  🔍 CNC işleme merkezi fason — Sakarya
+    ✅ 0 kayıt | Toplam: 489 | API calls: 596
+  🔍 sac büküm pres metal — Sakarya
+    ✅ 9 kayıt | Toplam: 498 | API calls: 610
+  🔍 dalma erozyon EDM — Sakarya
+    ✅ 1 kayıt | Toplam: 499 | API calls: 612
+
+💾 Kaydedildi: 499 kayıt (gmaps_api_results.json)
+
+  🔍 CNC torna fason imalat — Konya
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 16 kayıt | Toplam: 515 | API calls: 634
+  🔍 CNC freze talaşlı imalat — Konya
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 13 kayıt | Toplam: 528 | API calls: 649
+  🔍 fiber lazer kesim sac — Konya
+    ✅ 11 kayıt | Toplam: 539 | API calls: 662
+  🔍 lazer kesim büküm abkant — Konya
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 12 kayıt | Toplam: 551 | API calls: 676
+  🔍 tel erozyon EDM fason — Konya
+    ✅ 1 kayıt | Toplam: 552 | API calls: 678
+  🔍 3D baskı FDM hizmet — Konya
+    ✅ 9 kayıt | Toplam: 561 | API calls: 689
+  🔍 metal lazer kesim OSB — Konya
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 11 kayıt | Toplam: 572 | API calls: 702
+  🔍 CNC işleme merkezi fason — Konya
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 6 kayıt | Toplam: 578 | API calls: 710
+  🔍 sac büküm pres metal — Konya
+    ✅ 5 kayıt | Toplam: 583 | API calls: 717
+  🔍 dalma erozyon EDM — Konya
+    ✅ 0 kayıt | Toplam: 583 | API calls: 718
+
+💾 Kaydedildi: 583 kayıt (gmaps_api_results.json)
+
+  🔍 CNC torna fason imalat — Kayseri
+    ✅ 6 kayıt | Toplam: 589 | API calls: 727
+  🔍 CNC freze talaşlı imalat — Kayseri
+    ✅ 11 kayıt | Toplam: 600 | API calls: 741
+  🔍 fiber lazer kesim sac — Kayseri
+    ✅ 1 kayıt | Toplam: 601 | API calls: 743
+  🔍 lazer kesim büküm abkant — Kayseri
+    ✅ 1 kayıt | Toplam: 602 | API calls: 745
+  🔍 tel erozyon EDM fason — Kayseri
+    ✅ 0 kayıt | Toplam: 602 | API calls: 746
+  🔍 3D baskı FDM hizmet — Kayseri
+    ✅ 6 kayıt | Toplam: 608 | API calls: 754
+  🔍 metal lazer kesim OSB — Kayseri
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 16 kayıt | Toplam: 624 | API calls: 772
+  🔍 CNC işleme merkezi fason — Kayseri
+    ✅ 4 kayıt | Toplam: 628 | API calls: 778
+  🔍 sac büküm pres metal — Kayseri
+    ⚠️  API status: INVALID_REQUEST
+    ✅ 11 kayıt | Toplam: 639 | API calls: 796
+  🔍 dalma erozyon EDM — Kayseri
+    ✅ 0 kayıt | Toplam: 639 | API calls: 797
+
+💾 Kaydedildi: 639 kayıt (gmaps_api_results.json)
+
+  🔍 CNC torna fason imalat — Gaziantep
+    ✅ 7 kayıt | Toplam: 646 | API calls: 806
+  🔍 CNC freze talaşlı imalat — Gaziantep
+    ✅ 2 kayıt | Toplam: 648 | API calls: 809
+  🔍 fiber lazer kesim sac — Gaziantep
+    ✅ 4 kayıt | Toplam: 652 | API calls: 814
+  🔍 lazer kesim büküm abkant — Gaziantep
+    ✅ 8 kayıt | Toplam: 660 | API calls: 824
+  🔍 tel erozyon EDM fason — Gaziantep
+    ✅ 0 kayıt | Toplam: 660 | API calls: 825
+  🔍 3D baskı FDM hizmet — Gaziantep
+    ✅ 8 kayıt | Toplam: 668 | API calls: 834
+  🔍 metal lazer kesim OSB — Gaziantep
+    ✅ 5 kayıt | Toplam: 673 | API calls: 840
+  🔍 CNC işleme merkezi fason — Gaziantep
+    ✅ 0 kayıt | Toplam: 673 | API calls: 842
+  🔍 sac büküm pres metal — Gaziantep
+    ✅ 3 kayıt | Toplam: 676 | API calls: 847
+  🔍 dalma erozyon EDM — Gaziantep
+    ✅ 0 kayıt | Toplam: 676 | API calls: 848
+
+💾 Kaydedildi: 676 kayıt (gmaps_api_results.json)
+
+  🔍 CNC torna fason imalat — Eskişehir
+    ✅ 10 kayıt | Toplam: 686 | API calls: 861
+  🔍 CNC freze talaşlı imalat — Eskişehir
+    ✅ 3 kayıt | Toplam: 689 | API calls: 865
+  🔍 fiber lazer kesim sac — Eskişehir
+    ✅ 2 kayıt | Toplam: 691 | API calls: 868
+  🔍 lazer kesim büküm abkant — Eskişehir
+    ✅ 7 kayıt | Toplam: 698 | API calls: 877
+  🔍 tel erozyon EDM fason — Eskişehir
+    ✅ 1 kayıt | Toplam: 699 | API calls: 879
+  🔍 3D baskı FDM hizmet — Eskişehir
+    ✅ 8 kayıt | Toplam: 707 | API calls: 888
+  🔍 metal lazer kesim OSB — Eskişehir
+    ✅ 5 kayıt | Toplam: 712 | API calls: 894
+  🔍 CNC işleme merkezi fason — Eskişehir
+    ✅ 6 kayıt | Toplam: 718 | API calls: 901
+  🔍 sac büküm pres metal — Eskişehir
+    ✅ 7 kayıt | Toplam: 725 | API calls: 909
+  🔍 dalma erozyon EDM — Eskişehir
+    ✅ 0 kayıt | Toplam: 725 | API calls: 910
+
+💾 Kaydedildi: 725 kayıt (gmaps_api_results.json)
+
+
+✅ TAMAMLANDI: 725 toplam kayıt, 910 API çağrısı
