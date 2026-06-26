@@ -1,0 +1,10 @@
+🚀 Mega Scraper başladı: 32 sorgu x 30 şehir
+🚀 Mega Scraper başladı: 32 sorgu x 30 şehir
+======================================================================
+======================================================================
+[ 1/30] İstanbul        + 299 yeni | TOPLAM:    299 | API:    345
+[ 1/30] İstanbul        + 299 yeni | TOPLAM:    299 | API:    345
+[ 2/30] Ankara          + 228 yeni | TOPLAM:    527 | API:    622
+[ 2/30] Ankara          + 228 yeni | TOPLAM:    527 | API:    622
+[ 3/30] Bursa           + 257 yeni | TOPLAM:    784 | API:    920
+[ 3/30] Bursa           + 257 yeni | TOPLAM:    784 | API:    920
