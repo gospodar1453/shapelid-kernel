@@ -1,0 +1,388 @@
+[
+  {
+    "company_name": "Arslan Lazer",
+    "phone": "+90 312 385 63 33",
+    "address": "Ostim OSB, 1200. Sk. No:141, 06374 Yenimahalle/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "http://www.arslanlazer.com/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Arslan%20Lazer&query_place_id=ChIJsRx5IsZJ0xQRRXxMQBh5xWw",
+    "google_rating": 4.7,
+    "capabilities": [
+      "Stereolithography",
+      "Laser Cutting"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/lazer%20kesim%20b%C3%BCk%C3%BCm%20Ankara%20OST%C4%B0M/@39.86498295487846,26.14865045913991,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Metal Atölyesi | 10 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG9d0gW2RnwTsdWMjEUrHtfecKLH_z3b7xjAMJHnQ0-O0foT0rYBWuqbOQTsTzCjnG-kd0AO_V1aIxVs1CACiwCSh2KRP0MGsSlGqhCpFiHtpYeB4cgswlWm73pvZZ2svZ5VvQ=w408-h400-k-no"
+    ]
+  },
+  {
+    "company_name": "Bozkurt Asansör İmalat ve Lazer Kesim Büküm",
+    "phone": "+90 312 511 99 53",
+    "address": "Ostim OSB, 1200. Sk. No:16, 06374 Yenimahalle/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "http://www.bozkurtlazer.com/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bozkurt%20Asans%C3%B6r%20%C4%B0malat%20ve%20Lazer%20Kesim%20B%C3%BCk%C3%BCm&query_place_id=ChIJ002s1-FJ0xQRkaQS6xZaS8s",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting",
+      "Bending"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/lazer%20kesim%20b%C3%BCk%C3%BCm%20Ankara%20OST%C4%B0M/@39.86498295487846,26.14865045913991,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Asansör Servisi | 1 yorum",
+    "media_urls": [
+      "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=GWJs8f8dUHfExMJ2yHcLuA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=27.42014&pitch=0&thumbfov=100"
+    ]
+  },
+  {
+    "company_name": "Armalüks Lazer Kesim",
+    "phone": "+90 533 442 22 15",
+    "address": "Saray, 134. Cadde No:3/E D:F, 06980 Kahramankazan/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "https://armaluks.com/armaluks",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Armal%C3%BCks%20Lazer%20Kesim&query_place_id=ChIJpXMwLpVJ0xQR_pzqL66Ypgk",
+    "google_rating": 4.8,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/lazer%20kesim%20b%C3%BCk%C3%BCm%20Ankara%20OST%C4%B0M/@39.86498295487846,26.14865045913991,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Metal İşleme Firması | 16 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFetaVaLh5ztKHehU9Lsoili26qfXTIMVQ1Dm8rLCz3e_q_8WjrPCh5FUG2XiatgSi_p6ebUhAwZUFjcgK7MIKsgnHfcILge8G3mUHhvNd20JtVM20G-UCK7wVGK5MYiHIG8_nCeg=w408-h291-k-no"
+    ]
+  },
+  {
+    "company_name": "KDÇ KUTLU LAZER KESİM BÜKÜM",
+    "phone": "+90 535 816 97 86",
+    "address": "Dağyaka, 2030.Cadde No: 17, 06980 Kahramankazan/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "https://www.kutlulazerkesim.com.tr/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=KD%C3%87%20KUTLU%20LAZER%20KES%C4%B0M%20B%C3%9CK%C3%9CM&query_place_id=ChIJoSMPEAA10xQR2ilLM646fWI",
+    "google_rating": 5,
+    "capabilities": [
+      "Bending"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/lazer%20kesim%20b%C3%BCk%C3%BCm%20Ankara%20OST%C4%B0M/@39.86498295487846,26.14865045913991,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Üretici | 15 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHCxQt_TxpxM_PNvS3pu7p7GVTVMeswNFzcGqzXT7nFJVMCgiscy0r69j_W78KRNhcEkPBEJb1400YhoDu0tXNBy3Cl6odHw4S6UlT3fyae6UItatidEoJeFx0-pYEC4MtBaOiWM9in8ZNV=w408-h306-k-no"
+    ]
+  },
+  {
+    "company_name": "Bilge Lazer Kesim ve CNC Büküm",
+    "phone": "+90 533 342 16 80",
+    "address": "İvedik OSB, 1474. Sk. No:87, 06378 Yenimahalle/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "http://teknikcozummetal.com.tr/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bilge%20Lazer%20Kesim%20ve%20CNC%20B%C3%BCk%C3%BCm&query_place_id=ChIJ6-9reIpJ0xQRdqwt51plEQo",
+    "google_rating": 4.8,
+    "capabilities": [
+      "Laser Cutting",
+      "Bending"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/lazer%20kesim%20b%C3%BCk%C3%BCm%20Ankara%20OST%C4%B0M/@39.86498295487846,26.14865045913991,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Lazer Kesim Hizmeti | 5 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEMolxnoD9cr1QnlHU_kS8mXACzXHvfrtE4JrUwjnvUgqTktw5DOYgpFX05v6SntN-SGJdWxemfFU4cTRzH7wtb9CRSq7uq1cytejGxgN1vEm-80ExZsj3Vl4-NdfDpKPAcK6I=w426-h240-k-no"
+    ]
+  },
+  {
+    "company_name": "ATLAS LAZER KESİM",
+    "phone": "+90 312 385 30 50",
+    "address": "Ostim OSB, 1175. Sk. No:11, 06374 Yenimahalle/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "http://www.atlaslazer.com/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ATLAS%20LAZER%20KES%C4%B0M&query_place_id=ChIJlby6qKNJ0xQR0zyeha3ayzw",
+    "google_rating": 4.3,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/lazer%20kesim%20b%C3%BCk%C3%BCm%20Ankara%20OST%C4%B0M/@39.86498295487846,26.14865045913991,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Metal Atölyesi | 26 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGdwbdjzhlKppxxaCVO5o23j3jv37jkXApbSef3my9c6TKgfjfzdCbnZJOE8HTgfmCz0gi0r6l7HqktqIrrQoqak-Jt2oPYUnPvvrGwsiW_vjdhTqzYrbs5BeY83mKAPCA5nLKuNA=w408-h306-k-no"
+    ]
+  },
+  {
+    "company_name": "Köksal Lazer",
+    "phone": "+90 312 385 91 95",
+    "address": "Ostim, 1234. Sk. No:62-64, 06374 Yenimahalle/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "https://www.koksallazer.com/tr",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=K%C3%B6ksal%20Lazer&query_place_id=ChIJne6BN-9J0xQRP-yMQCJaY4I",
+    "google_rating": 4.9,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/lazer%20kesim%20b%C3%BCk%C3%BCm%20Ankara%20OST%C4%B0M/@39.86498295487846,26.14865045913991,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Lazer Kesim Hizmeti | 13 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHHXeBLAnYa6MOA9iZV1aBQSNVbHa6td1KrkNKMha7zgUSvtTAQ-BlsW30wQa0f0xOE7IQgwCLQeXwiU1ElzknchK2-kSaLTKuxOWyJ7GBMZBlSgg7PrZH0_3cVujZ9zdYNYI6K=w408-h306-k-no"
+    ]
+  },
+  {
+    "company_name": "ubeysan mühendislik lazer kesim büküm",
+    "phone": "+90 553 848 77 19",
+    "address": "Saray, 91. Sokak Saraykent Sanayi Sitesi no:2, 06980 Kahramankazan/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "https://www.ubeysan.com/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ubeysan%20m%C3%BChendislik%20lazer%20kesim%20b%C3%BCk%C3%BCm&query_place_id=ChIJNe6y8lNxgkARyq0AO1oV7uY",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting",
+      "Bending"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/lazer%20kesim%20b%C3%BCk%C3%BCm%20Ankara%20OST%C4%B0M/@39.86498295487846,26.14865045913991,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Lazer Kesim Hizmeti | 9 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGjdRW3rGz3A_SZM9BGwldUV9gubtcV1egqtylHY1_prCWuXMtQ-AxeAkBuV_sAo3d2gfUnWncEz-2Kqh1E_a67xSZjBk4bodL2HtO2GXb85Vx-FXNktEb6aB6ViK01NJHHsJVI2LHHLzOl=w408-h544-k-no"
+    ]
+  },
+  {
+    "company_name": "US metal lazer kesim sac büküm kaynaklı imalat",
+    "phone": "+90 532 797 85 95",
+    "address": "E detay 1 sanayi sitesi, Pelitli, Pelitli Yolu b blok no 14, 41400 Gebze/Kocaeli, Türkiye",
+    "city": "Kocaeli",
+    "website": "http://www.usmetal.com.tr/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=US%20metal%20lazer%20kesim%20sac%20b%C3%BCk%C3%BCm%20kaynakl%C4%B1%20imalat&query_place_id=ChIJlUbCYQjPyhQR5zgMmgTbeRQ",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting",
+      "Bending"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/sac%20lazer%20kesim%20b%C3%BCk%C3%BCm%20%C4%B0stanbul%20sanayi/@38.23792114512154,42.224575954002276,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Metal İmalatçısı | 2 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGNdJMn6vzre45KrwXmS75QONJmzulRTIMbBl2LndopDy_iJh7rlsWucXB6ArB9cbQEZhAUDau0O4ztH4W-05Ts5CU4bTNf5QDzWy8l-3_9_esGhI1cjtvvz9z1qU_N4DS0vcBb=w408-h408-k-no"
+    ]
+  },
+  {
+    "company_name": "Lazer Kesim Makinesi - Fiber Lazer Markalama - Teknik Servis | Ankara Yerli Uretim Lazer Kesim Makinesi | CML Makine Lazer",
+    "phone": "+90 507 632 40 15",
+    "address": "CML MAKINE LAZER, Zubeyde Hanim Mahallesi Sebze Bahceleri Caddesi, Arpacioglu 2 ishani No:95/50, 06700 Altındağ/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "https://cmllazer.com/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Lazer%20Kesim%20Makinesi%20-%20Fiber%20Lazer%20Markalama%20-%20Teknik%20Servis%20%7C%20Ankara%20Yerli%20Uretim%20Lazer%20Kesim%20Makinesi%20%7C%20CML%20Makine%20Lazer&query_place_id=ChIJVbNLkhpP0xQRSwZ1nn2AdDE",
+    "google_rating": 4.3,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/fiber%20lazer%20sac%20i%C5%9Fleme%20Ankara/@38.23792114512154,42.224575954002276,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Makine İmalatı | 12 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF4LozaA63VZV_diUY2TfvMq7SNgokDSzT1Fcx_MRhiHsXJCoJOZ0Ne-lYMI58V9cNRtRIUFWvN2RiF7PmkBoDQLivB1bZ7oJs70tCUY-vWMujaxWuhPIBpgGVfEoPlznHDqpNdneJTPNEs=w418-h240-k-no"
+    ]
+  },
+  {
+    "company_name": "SİNERJİ Lazer Kesim",
+    "phone": "+90 506 573 00 08",
+    "address": "Siteler, Akçakale-2 Sk. 72/b, 06165 Altındağ/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=S%C4%B0NERJ%C4%B0%20Lazer%20Kesim&query_place_id=ChIJg7U3ootT0xQRPzO8vU6b1cQ",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/fiber%20lazer%20sac%20i%C5%9Fleme%20Ankara/@38.23792114512154,42.224575954002276,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Lazer Kesim Hizmeti | 20 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHHh5prgSiWqEp_XWl9kn7dCc4R5NbRaQSaBh6vShzQpdkO6otYlnxlpOnxNPyazdIw-cey_Fqjq3oBOyu9Bcj2sJGFxB7Mm3YBWXANo6i-hb9yT6J2_EE0l1QmtLRr_lq4jJLgZQ=w408-h412-k-no"
+    ]
+  },
+  {
+    "company_name": "FiberLAST Fiber Lazer Sistemleri ve Teknolojileri Anonim Şirketi",
+    "phone": "+90 312 205 59 29",
+    "address": "Üniversiteler, İhsan Doğramacı Bulvarı ODTÜ Teknokent Galyum Blok Z-4, 06800 Çankaya/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "http://www.fiberlast.com.tr/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=FiberLAST%20Fiber%20Lazer%20Sistemleri%20ve%20Teknolojileri%20Anonim%20%C5%9Eirketi&query_place_id=ChIJ48PpYDpG0xQRKey06CIYDmM",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/fiber%20lazer%20sac%20i%C5%9Fleme%20Ankara/@38.23792114512154,42.224575954002276,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Lazer Ekipmanı Tedarikçisi | 1 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFR_KMQv-OOf1iTU5AkwkvYjl6DKUDzurqOlvj9Sr2vR3cCZ34tjEMrgNfM0Qilx2tgAVJcXpWdirwYcEtjr06k9rkGCm-l8Ah9-Ms05Ekyq6_819mUMIl42-NZXBv5jhIxQPg=w408-h306-k-no"
+    ]
+  },
+  {
+    "company_name": "GKE LAZER TASARIM",
+    "phone": "+90 541 414 56 68",
+    "address": "İvedik OSB, 1465. Sk. no:8, 06378 Yenimahalle/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "http://www.gkelazerkesim.com.tr/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GKE%20LAZER%20TASARIM&query_place_id=ChIJ3zMlc8xJ0xQRDIAsjw2nmH0",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/fiber%20lazer%20sac%20i%C5%9Fleme%20Ankara/@38.23792114512154,42.224575954002276,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Lazer Kesim Hizmeti | 7 yorum",
+    "media_urls": [
+      "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ERK_CchoTRytU6G25HbuIA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=355.38116&pitch=0&thumbfov=100"
+    ]
+  },
+  {
+    "company_name": "RZN Grup Metal",
+    "phone": "+90 555 555 55 55",
+    "address": "Ostim Mah, 1232. Sk. No:98, 06374 Yenimahalle/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=RZN%20Grup%20Metal&query_place_id=ChIJRSr3j09J0xQRG3XIQVKx3I8",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/fiber%20lazer%20sac%20i%C5%9Fleme%20Ankara/@38.23792114512154,42.224575954002276,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Lazer Kesim Hizmeti | 16 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHEsIKwsQjgkEZ_eT005c5zmmnZGnAow3dW3ZbzI6D1-cXtGFNsN9r4KzNntSe93fBGEhmDv2XGmXdUBrhvin2w2hAhHkYo-Q1uWE-ZQPpJMDRkfq7KsZBTIWBd8Wy6mA6OoZjoMw=w408-h294-k-no"
+    ]
+  },
+  {
+    "company_name": "Erol Metal A.Ş.",
+    "phone": "+90 312 354 14 15",
+    "address": "Malıköy Anadolu OSB, 12. Cadde No:14, 06909 Sincan/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "http://www.erolmetal.com.tr/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Erol%20Metal%20A.%C5%9E.&query_place_id=ChIJ848lTO5F0xQR1-ZN7aFfTdY",
+    "google_rating": 4.6,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/fiber%20lazer%20sac%20i%C5%9Fleme%20Ankara/@38.23792114512154,42.224575954002276,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Metal İşleme Dükkanı | 17 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHVvwwqYWRbYDRQE8pJA3dpT_ScruQwLfO-3QqhWr3SbYjrhSUeEvUVX8KH1sBeaPeWS3eR1FO_HXaMm7bOjp5XGtkBoaUYnKVMwUzNc0Slkn_rmxZ3NeclKbOItr5KmjMYDUQ=w408-h272-k-no"
+    ]
+  },
+  {
+    "company_name": "BİLGİN LAZER",
+    "phone": "+90 312 341 00 40",
+    "address": "Uzayçağı Caddesi Uzayçağı İş Merkezi No:29/19 Ostim OSB/, Yenimahalle/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "http://www.bilginlazerostim.com/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=B%C4%B0LG%C4%B0N%20LAZER&query_place_id=ChIJY0gO1VFP0xQRhNOSdOiWF3w",
+    "google_rating": 4.5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/fiber%20lazer%20sac%20i%C5%9Fleme%20Ankara/@38.23792114512154,42.224575954002276,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Metal Son İşlemcisi | 4 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHvoKNO9X1Ua4v3yKhmVNfTf8lLPFIs-nX3bImeoBgdFP2-KOx339fQW4Hr-tH7qQ4ji9m2_uGBns-kM6pSoN0J1Olzsh1bn-W0bBmHzhm5Qf2ydRBoLNeb6b3i2tzPdl5Wl9kU=w408-h544-k-no"
+    ]
+  },
+  {
+    "company_name": "LAZER EQUIPMENT",
+    "phone": "+90 551 274 75 56",
+    "address": "İvedik OSB, 1548. Sk. NO: 8, 06378 Yenimahalle/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "http://www.lensvadisi.com/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=LAZER%20EQUIPMENT&query_place_id=ChIJ-51-dLVL0xQR_JWP7KjlJ98",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/fiber%20lazer%20sac%20i%C5%9Fleme%20Ankara/@38.23792114512154,38.205594580286686,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Lazer Kesim Hizmeti | 4 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFfzERqBp4Bvgjx3ANsk2Gd8A_qV3PmU2fEmCSEQNenilr8XihYr9oZWpSlEHK-mBtR8BUh-GxuVBqyGqqLkbgRg9ghFN0LMJe-vpXmzOchHBvTCoW_Dy5SpOotTZkgq5yYoDOsxLUvyjW7=w408-h269-k-no"
+    ]
+  },
+  {
+    "company_name": "FORAMAK BORU LAZER KESİM & LAZER KAYNAK",
+    "phone": "+90 549 780 42 20",
+    "address": "İvedik OSB, 1401. Sk. 43/A, 06170 Yenimahalle/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "https://foramaklazer.com/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=FORAMAK%20BORU%20LAZER%20KES%C4%B0M%20%26%20LAZER%20KAYNAK&query_place_id=ChIJry_ROPdJ0xQR1uMi_d3gjEw",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/lazer%20kesim%20b%C3%BCk%C3%BCm%20Ankara%20OST%C4%B0M/@41.492044764635374,32.1771225197133,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Lazer Kesim Hizmeti | 6 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEmiORhfmBNLocjOLHEPPUm7egZvG35ctuKnl9E7LbqFsNFn_uvViFNOdTD7rLq6MQEs_akiS3LGyJAGQc7J3bF8Gf-zB16-TGHSYqlwNTshX0i723LKDpOxyeK3KG0j_qq9hNXkgV7MjpJ=w408-h612-k-no"
+    ]
+  },
+  {
+    "company_name": "Ostim Lazer Pantoğraf",
+    "phone": "+90 312 354 14 93",
+    "address": "Ostim, 1199. Sk. No:36, 06374 Yenimahalle/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "http://www.ostimlazer.com/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ostim%20Lazer%20Panto%C4%9Fraf&query_place_id=ChIJ9QQZdl5J0xQRAw9Yw7uJF8o",
+    "google_rating": 4.9,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/fiber%20lazer%20sac%20i%C5%9Fleme%20Ankara/@41.492044764635374,36.19610389342889,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Lazer Etiket Merkezi | 27 yorum",
+    "media_urls": [
+      "https://lh6.googleusercontent.com/UZxsJw_F0a9Pg5S6wora6KToV9pht2YLcLzXzcHTlyb2wdQcHE3QyoOBSQjWjWM=w426-h240-k-no"
+    ]
+  },
+  {
+    "company_name": "Om Lazer Makine Ankara | Lazer Kesim Makineleri | Lazer Markalama | CNC Router | Pleksi Büküm | Servis | Yedek Parça",
+    "phone": "+90 541 359 59 57",
+    "address": "İvedik OSB, 2284. Sk. No:66, 06374 Yenimahalle/Ankara, Türkiye",
+    "city": "Ankara",
+    "website": "https://www.ommakine.com/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Om%20Lazer%20Makine%20Ankara%20%7C%20Lazer%20Kesim%20Makineleri%20%7C%20Lazer%20Markalama%20%7C%20CNC%20Router%20%7C%20Pleksi%20B%C3%BCk%C3%BCm%20%7C%20Servis%20%7C%20Yedek%20Par%C3%A7a&query_place_id=ChIJYQDbDHtJ0xQR5nyGnGQzieU",
+    "google_rating": 4.9,
+    "capabilities": [
+      "Laser Cutting",
+      "Bending"
+    ],
+    "source": "Apify Google Maps",
+    "source_url": "https://www.google.com/maps/search/lazer%20kesim%20b%C3%BCk%C3%BCm%20Ankara%20OST%C4%B0M/@36.61085933536462,38.205594580286686,9z?hl=tr",
+    "verification_status": "Taslak",
+    "notes": "Kategori: Makine İmalatı | 87 yorum",
+    "media_urls": [
+      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHLL6HkKD7T7UWpE1XHo6byrX26zSF4uY5JlHMkEkXEKhNY7YKUxsCt5jA1p7yslhmRLVxoLPbCx5bqSG-ZsD-L_e2FsGScKQXOyNf6BFaISfrEvfydZGeP46G5pRjsBueirBjbEDhxW54g=w426-h240-k-no"
+    ]
+  }
+]
