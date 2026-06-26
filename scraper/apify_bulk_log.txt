@@ -1,0 +1,28 @@
+
+🔄 Apify Batch: Batch-1 İstanbul+Ankara Lazer (5 sorgu)
+  Run ID: a6WDXlnmU2h62cFDO
+    [1] RUNNING | 39 items | $0.080
+    [2] RUNNING | 74 items | $0.296
+    [3] RUNNING | 93 items | $0.348
+    [4] RUNNING | 108 items | $0.432
+    [5] RUNNING | 109 items | $0.436
+    [6] RUNNING | 109 items | $0.436
+    [7] RUNNING | 109 items | $0.436
+    [8] RUNNING | 111 items | $0.444
+    [9] RUNNING | 111 items | $0.444
+    [10] RUNNING | 111 items | $0.444
+    [11] RUNNING | 114 items | $0.456
+    [12] RUNNING | 114 items | $0.456
+    [13] RUNNING | 114 items | $0.456
+    [14] RUNNING | 114 items | $0.456
+    [15] RUNNING | 115 items | $0.460
+    [16] RUNNING | 116 items | $0.464
+    [17] RUNNING | 117 items | $0.464
+    [18] RUNNING | 117 items | $0.468
+    [19] RUNNING | 117 items | $0.468
+    [20] RUNNING | 117 items | $0.468
+    [21] RUNNING | 118 items | $0.468
+    [22] RUNNING | 122 items | $0.488
+    [23] SUCCEEDED | 125 items | $0.500
+  Ham: 125 | Temiz: 119
+Kaydedildi: 119 kayıt

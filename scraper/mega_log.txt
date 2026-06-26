@@ -14,3 +14,39 @@
 [ 5/30] Kocaeli         + 130 yeni | TOPLAM:   1139 | API:   1365
 [ 6/30] Sakarya         + 136 yeni | TOPLAM:   1275 | API:   1548
 [ 6/30] Sakarya         + 136 yeni | TOPLAM:   1275 | API:   1548
+[ 7/30] Konya           + 235 yeni | TOPLAM:   1510 | API:   1832
+[ 7/30] Konya           + 235 yeni | TOPLAM:   1510 | API:   1832
+[ 8/30] Kayseri         + 161 yeni | TOPLAM:   1671 | API:   2043
+[ 8/30] Kayseri         + 161 yeni | TOPLAM:   1671 | API:   2043
+[ 9/30] Gaziantep       + 154 yeni | TOPLAM:   1825 | API:   2245
+[ 9/30] Gaziantep       + 154 yeni | TOPLAM:   1825 | API:   2245
+[10/30] Eskişehir       + 153 yeni | TOPLAM:   1978 | API:   2442
+[10/30] Eskişehir       + 153 yeni | TOPLAM:   1978 | API:   2442
+[11/30] Denizli         + 148 yeni | TOPLAM:   2126 | API:   2631
+[11/30] Denizli         + 148 yeni | TOPLAM:   2126 | API:   2631
+[12/30] Manisa          + 146 yeni | TOPLAM:   2272 | API:   2818
+[12/30] Manisa          + 146 yeni | TOPLAM:   2272 | API:   2818
+[13/30] Tekirdağ        +  84 yeni | TOPLAM:   2356 | API:   2936
+[13/30] Tekirdağ        +  84 yeni | TOPLAM:   2356 | API:   2936
+[14/30] Samsun          + 114 yeni | TOPLAM:   2470 | API:   3093
+[14/30] Samsun          + 114 yeni | TOPLAM:   2470 | API:   3093
+[15/30] Antalya         + 172 yeni | TOPLAM:   2642 | API:   3311
+[15/30] Antalya         + 172 yeni | TOPLAM:   2642 | API:   3311
+[16/30] Adana           + 163 yeni | TOPLAM:   2805 | API:   3516
+[16/30] Adana           + 163 yeni | TOPLAM:   2805 | API:   3516
+[17/30] Mersin          + 119 yeni | TOPLAM:   2924 | API:   3680
+[17/30] Mersin          + 119 yeni | TOPLAM:   2924 | API:   3680
+[18/30] Hatay           + 124 yeni | TOPLAM:   3048 | API:   3851
+[18/30] Hatay           + 124 yeni | TOPLAM:   3048 | API:   3851
+[19/30] Kahramanmaraş   + 106 yeni | TOPLAM:   3154 | API:   3999
+[19/30] Kahramanmaraş   + 106 yeni | TOPLAM:   3154 | API:   3999
+[20/30] Şanlıurfa       +  56 yeni | TOPLAM:   3210 | API:   4098
+[20/30] Şanlıurfa       +  56 yeni | TOPLAM:   3210 | API:   4098
+[21/30] Balıkesir       +  88 yeni | TOPLAM:   3298 | API:   4224
+[21/30] Balıkesir       +  88 yeni | TOPLAM:   3298 | API:   4224
+[22/30] Çorum           +  85 yeni | TOPLAM:   3383 | API:   4357
+[22/30] Çorum           +  85 yeni | TOPLAM:   3383 | API:   4357
+[23/30] Aydın           +  81 yeni | TOPLAM:   3464 | API:   4475
+[23/30] Aydın           +  81 yeni | TOPLAM:   3464 | API:   4475
+[24/30] Trabzon         +  88 yeni | TOPLAM:   3552 | API:   4609
+[24/30] Trabzon         +  88 yeni | TOPLAM:   3552 | API:   4609
