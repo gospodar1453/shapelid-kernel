@@ -1,0 +1,29 @@
+
+=== MEGA2 TARAMA BAŞLADI ===
+Yeni il: 49, Ek şehir: 22, Anahtar kelime: 33
+Toplam sorgu: ~2343
+✅ Adıyaman: 65 yeni kayıt (toplam: 65)
+
+=== MEGA2 TARAMA BAŞLADI ===
+Yeni il: 49, Ek şehir: 22, Anahtar kelime: 33
+Toplam sorgu: ~2343
+✅ Adıyaman: 11 yeni kayıt (toplam: 76)
+✅ Afyonkarahisar: 108 yeni kayıt (toplam: 173)
+✅ Afyonkarahisar: 103 yeni kayıt (toplam: 179)
+✅ Ağrı: 26 yeni kayıt (toplam: 199)
+✅ Aksaray: 96 yeni kayıt (toplam: 295)
+[1/80] Adıyaman: +45 | Toplam: 340
+[2/80] Afyonkarahisar: +64 | Toplam: 404
+[3/80] Ağrı: +50 | Toplam: 454
+[4/80] Aksaray: +84 | Toplam: 538
+[5/80] Amasya: +76 | Toplam: 614
+[6/80] Ardahan: +19 | Toplam: 633
+[7/80] Artvin: +27 | Toplam: 660
+[8/80] Bartın: +84 | Toplam: 744
+[9/80] Batman: +112 | Toplam: 856
+[10/80] Bayburt: +47 | Toplam: 903
+[11/80] Bilecik: +88 | Toplam: 991
+[12/80] Bingöl: +42 | Toplam: 1033
+[13/80] Bitlis: +41 | Toplam: 1074
+[14/80] Bolu: +101 | Toplam: 1175
+[15/80] Burdur: +72 | Toplam: 1247
