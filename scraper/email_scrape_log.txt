@@ -1,1 +1,6 @@
 Scrape edilecek: 28417 firma
+[500/28417] Batch tamamlandi: +320 (toplam: 320)
+[1000/28417] Batch tamamlandi: +348 (toplam: 668)
+[1500/28417] Batch tamamlandi: +322 (toplam: 990)
+[2000/28417] Batch tamamlandi: +290 (toplam: 1280)
+[2500/28417] Batch tamamlandi: +300 (toplam: 1580)
