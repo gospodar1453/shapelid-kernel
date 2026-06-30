@@ -1,0 +1,1005 @@
+[
+  {
+    "company_name": "Yıldız Demir Çelik",
+    "phone": "02622807500",
+    "address": "Alikahya OSB, 2. Cd No: 2/1, 41310 İzmit/Kocaeli, Türkiye",
+    "city": "Kocaeli",
+    "district": "",
+    "website": "https://www.yildizdemircelik.com.tr/",
+    "email": "info@yildizdemircelik.com.tr",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=4457177677165220164",
+    "google_rating": 3.7,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Tem Metal",
+    "phone": "02627248430",
+    "address": "Dilovası Osb 2. Kısım D 2011 Sok. D:4, Dilovası, Kocaeli (İzmit), 28 Haziran, 41060 İzmit/Kocaeli, Türkiye",
+    "city": "Kocaeli",
+    "district": "",
+    "website": "http://www.temmetal.com.tr/",
+    "email": "info@temmetal.com.tr",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=10060477694176218126",
+    "google_rating": null,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "CMS CNC MAKİNE",
+    "phone": "03323451999",
+    "address": "Fevziçakmak, Demir Cd. Büsan Sanayi Sitesi NO:15/B, 42210 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://www.cmsteknik.com/",
+    "email": "cms@cmsteknik.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=6347680502307213935",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Trova Makine Cnc Teknolojileri",
+    "phone": "05359239542",
+    "address": "Fevziçakmak, 10749. Sk. No:12/A, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://trova.com.tr/",
+    "email": "info@trova.com.tr",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=3902405652957498011",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "CNC Hospital -En İyilerin Tercihi-",
+    "phone": "03325027353",
+    "address": "Fevziçakmak, Ayyıldız Cd. No: 30, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.cnchospital.com.tr/",
+    "email": "adresiniz@domain.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=11174005413356568961",
+    "google_rating": 4.6,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "GÖN METAL",
+    "phone": "03323450508",
+    "address": "Fevzi Çakmak Mah, NO 40 / I, Fevziçakmak, 10664. Sk., 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.gonmetal.com.tr/",
+    "email": "bilgi@gonmetal.com.tr",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=175006421145909519",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "TOSLAK MAKİNE",
+    "phone": "05052219446",
+    "address": "Fevziçakmak, 10561. Sk. no:47, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://www.toslakmakine.com/",
+    "email": "info@toslakmakine.com",
+    "capabilities": [
+      "Stereolithography"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=12504741498056187335",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Maen Makine CNC takım tezgahları",
+    "phone": "05372733655",
+    "address": "Fevziçakmak, Ahmet Petekçi Cd No:11 D:J, 42060 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://maen.com.tr/",
+    "email": "info@maen.com.tr",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=6490717070974938459",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "PEKTAŞ OTOMAT CNC TORNA FASON İMALAT",
+    "phone": "05324096141",
+    "address": "Horozluhan, Güvenilir Sk. No:13, 42100 Selçuklu/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://www.pektasotomat.com.tr/",
+    "email": "bilgi@pektasotomat.com.tr",
+    "capabilities": [
+      "CNC Turning"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=17585161565387824161",
+    "google_rating": 4.9,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "TURCONT MUHENDISLIK IMALAT SAN VE TIC LTD STI",
+    "phone": "03323427136",
+    "address": "Fevziçakmak, 10757 Sokak No:6A, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.turcont.com/",
+    "email": "sales@turcont.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=11947445109953495278",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "YAMAN OTOMAT CNC TORNA",
+    "phone": "05058416716",
+    "address": "Horozluhan, Cevherli Sk. NO:23, 42110 Selçuklu/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.firmasec.com/firma/zdmrmm-yaman-otomat/",
+    "email": "yaman_42_otomat@ttmail.com",
+    "capabilities": [
+      "CNC Turning"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=18070039285133790982",
+    "google_rating": 4.2,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Zafer Otomat konya kayar otomat kayar otomat cnc Kayar Otomat cnc otomat Kayar Otomat",
+    "phone": "05336124216",
+    "address": "Tatlıcak, Kekçınar Sk. No: 41, 42200 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.zaferotomat.com/",
+    "email": "bilgi@zaferotomat.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=1432763567877745037",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Fera Metal Sac İşleme Merkezi",
+    "phone": "05404624242",
+    "address": "Fevziçakmak, 10768 Sk. No:3-B, 42030 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://www.ferametal.com.tr/",
+    "email": "info@ferametal.com.tr",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=8236256276459525473",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Mikon Mika & Ahşap İşleme Merkezi",
+    "phone": "03323420609",
+    "address": "Fevziçakmak, 10572. Sk. No:26, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.mikalazerkesim.com/",
+    "email": "9a65e97ebe8141fca0c4fd686f70996b@sentry.wixpress.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=3321223261623582550",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "NEVA GRUP MOBİLYA AHŞAP KAPI - KAPAK İŞLEME MERKEZİ",
+    "phone": "05359283403",
+    "address": "Fevziçakmak, Ragıp Sk. NO: 11A, 42030 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://nevakapak.com/",
+    "email": "iletisim@nevakapak.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=17120694015686131666",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Ahmet Nemutlu Metal Sac İşleme Merkezi",
+    "phone": "03323454474",
+    "address": "Fevziçakmak, Aslım Cd. No:13, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.ahmetnemutlumetal.com/",
+    "email": "info@ahmetnemutlumetal.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=12444677758367639114",
+    "google_rating": 4.3,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Danışman Metal - Sac İşleme Merkezi",
+    "phone": "05319977207",
+    "address": "Fevziçakmak, Sıla Cd. 40/A, 42100 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://www.danismanmetal.com/",
+    "email": "contact@mysite.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=3380581040470922214",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Ustam Doğrama, Mobilya ve CNC işleme Merkezi",
+    "phone": "05534326055",
+    "address": "Fevziçakmak, Gürhanlar Sk. 1 K, 42030 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://ustamcnc.com/",
+    "email": "bilgi@ustamcnc.com",
+    "capabilities": [
+      "CNC Milling"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=14345174749580669278",
+    "google_rating": null,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Konya Kurban | Kurbanlık Satış Ve İşleme Merkezi",
+    "phone": "03323412342",
+    "address": "Sakyatan, D330 No:162 D:C, 42030 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://www.konyakurban.com/",
+    "email": "bilgi@salihogullari.net",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=3308898445795496701",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Makina Üreticileri, Tedarikçileri Sıfır ve İkinci El Makina Portalı",
+    "phone": "+90 4449140",
+    "address": "Nüve İş Merkezi B Blok No : 706 Selçuklu/Konya, Nişantaş, 42060 Selçuklu/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://makinecim.com/",
+    "email": "info@makinecim.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=7115628740562131467",
+    "google_rating": 4.4,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "FBG MAKİNA TAKIM TEZGAHLARI SIFIR VE İKİNCİ EL MAKİNE ALIM SATIM SAN TİC LTD ŞTİ",
+    "phone": "03322334249",
+    "address": "Fevziçakmak, Aslım Cd. Trend Sanayi Sitesi D:90-E, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://www.fbgmakina.com/",
+    "email": "info@fbgmakina.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=7045167975501584823",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Konya Makina Metal İşleme ve İmalat",
+    "phone": "03323451116",
+    "address": "Büsan Özel Org. San. Sit, Fevziçakmak, 10643. Sk No:7/1, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.konyamakina.com/",
+    "email": "info@konyamakina.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=619288261548270463",
+    "google_rating": null,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "KONCNC - CNC Yedek Parçaları",
+    "phone": "03325021119",
+    "address": "No:25AB, Fevziçakmak, Gülistan Cd., 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.koncnc.com/",
+    "email": "info@koncnc.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=11902181022944451198",
+    "google_rating": 4.9,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Konya Kaplamacılar Sanayi Sitesi",
+    "phone": "03322334499",
+    "address": "Fevziçakmak, 10768 Sk. No:18, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.konyakaplamacilar.com/",
+    "email": "muhasebe@konyakaplamacilar.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=14417844667574249493",
+    "google_rating": 4.6,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Kandemir Paslanmaz",
+    "phone": "05414712859",
+    "address": "Fevziçakmak, 10777. Sk 1/AA, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://kandemirpaslanmaz.com/",
+    "email": "bilgi@kandemirpaslanmaz.com",
+    "capabilities": [
+      "Stereolithography"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=2742838232501963020",
+    "google_rating": 4.9,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "VATAN SANAYİ SİTESİ",
+    "phone": "05451512863",
+    "address": "Tatlıcak, Hasduran Sk. No:35, 42030 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://yb-makinavatan.com/",
+    "email": "info@yb-makinavatan.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=4936722387132958291",
+    "google_rating": 4,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Poltime Platform Lift",
+    "phone": "03323460902",
+    "address": "No:, Fevziçakmak, 10726. Sk. No:29, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.poltime.com.tr/",
+    "email": "info@poltime.com.tr",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=4818742021577998657",
+    "google_rating": 4.8,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "İLKMAKSAN MAKİNA SANAYİİ - CNC FASON İŞLEME",
+    "phone": "05352853033",
+    "address": "Fevziçakmak, 10758. Sk. TEKSAN SANAYİ SİTESİ 29/G, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://www.ilkmaksan.com.tr/",
+    "email": "info@ilkmaksan.com.tr",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=11234937662788398820",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Konya Fason Lazer Kesim & Lazer Kaynak",
+    "phone": "05300270883",
+    "address": "Fevziçakmak, 10758. Sk. TEKSAN SANAYİ SİTESİ No:19/K, 42210 Selçuklu/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://konyafasonlazer.com/",
+    "email": "lazer@ducema.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=15297075559191335195",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Megakon Metal, Megakon Metal Lazer Kesim,Fason Lazer Kesim Konya",
+    "phone": "05323733303",
+    "address": "Fevziçakmak, Esenler Cd. No:34, 42050 Büsan Osb/Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://www.megakonmetal.com.tr/",
+    "email": "bilgi@megakonmetal.com.tr",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=7670772338323076689",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "EA GLOBAL LAZER TEKNOLOJİ FİBER LAZER FİBER KAYNAK LAZER SERVİS YEDEK PARÇA",
+    "phone": "05443214836",
+    "address": "Fevziçakmak, 2 AYYILDIZ CAD Kobisan 2 Sanayi Sitesi NO 50, 42345 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://www.eagloballazer.com/,https://www.lazermarketim.com/",
+    "email": "webmaster@eagloballazer.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=777885856900062548",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "LazerFix Laser Technology",
+    "phone": "05326225556",
+    "address": "Konsan Sanayi Sitesi, Fevziçakmak, 10728. Sk. No:35, 42050, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.lazerfix.com/",
+    "email": "info@lazerfix.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=8709581844310414244",
+    "google_rating": 4.5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "LAZERMARKET Lazer Markalama - Lazer Kaynak Konya",
+    "phone": "05387763617",
+    "address": "Fevzi Çakmak Mahallesi 10761 Sokak No:2AB Karatay/KONYA, Fevziçakmak, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.lazermarket.com/",
+    "email": "info@lazermarket.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=1596646798100215306",
+    "google_rating": 4.5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "YILDIRIM LAZER",
+    "phone": "03323452863",
+    "address": "BÜSAN San, Fevziçakmak, 10648. Sk. No:15, 42100 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.yildirimlazer.com/",
+    "email": "info@yildirimlazer.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=2532786255520689175",
+    "google_rating": 4.1,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "SAMITA LAZER KULSAN MAKINA",
+    "phone": "05325000095",
+    "address": "Ateşbazı veli mahallesi, Kaynaş Sk. no 38, 42090 Meram/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.samitamakina.com/",
+    "email": "iletisim@samitamakina.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=13425573846415410886",
+    "google_rating": 4.9,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "FORM LAZER SAC KESİM BÜKÜM",
+    "phone": "05324086640",
+    "address": "Fevziçakmak, ŞEHİT HAMDİ KARAGÖZ CAD NO:4 AC, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.form-lazer.com/",
+    "email": "ressam@form-lazer.com",
+    "capabilities": [
+      "Laser Cutting",
+      "Bending"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=1383655688087563056",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "MİRAC LAZER",
+    "phone": "05439761795",
+    "address": "fevziçakmak mahallesi kenitra caddesi no:26AD, Fevziçakmak, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.konyalazerkesim.gen.tr/index.htm",
+    "email": "bilgi@konyalazerkesim.gen.tr",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=804707924029991569",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Ducema Makine Mühendislik ve Danışmanlık",
+    "phone": "05511233084",
+    "address": "Fevziçakmak, 10758. Sk. TEKSAN SANAYİ SİTESİ No:19/K, 42110 Selçuklu/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.ducema.com/",
+    "email": "info@ducema.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=10282406658282804376",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Pakdem Metal - Lazer Sac Kesim Büküm",
+    "phone": "05323218082",
+    "address": "Fevziçakmak, 10758. Sk. NO:16 D:M, 42210 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.pakdem.com/",
+    "email": "info@pakdem.com",
+    "capabilities": [
+      "Laser Cutting",
+      "Bending"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=15409802881844288182",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Güvenal Metal Ltd. Şti. Lazer kesim, Sac kesim, büküm, Plazma kesim",
+    "phone": "05456161612",
+    "address": "Fevziçakmak, Ankara Cd. 274/B, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://guvenalprofil.com/",
+    "email": "info@guvenalprofil.com",
+    "capabilities": [
+      "Laser Cutting",
+      "Bending"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=7789606503072186725",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Medet Koçak Metal Lazer",
+    "phone": "05383332112",
+    "address": "Fevziçakmak, Şht. İbrahim Betin Cd No:3 D:R, 42000 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://www.medetkocak.com/",
+    "email": "bilgi@medetkocak.com.tr",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=2037552476705783939",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "ASRIN Saç Metal İşleme",
+    "phone": "05078807662",
+    "address": "Zafer Sanayisi, Horozluhan, Hırka Sk. No:14, 42120 Selçuklu/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://konyaturbo.com.tr/",
+    "email": "bilgi@konyaturbo.com.tr",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=7255997232936353868",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Kozak Sac Metal Ltd Şti",
+    "phone": "05549162503",
+    "address": "Horozluhan, Özge Sk. No:27, 42110 Selçuklu/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.kozakmetal.com.tr/",
+    "email": "info@kozakmetal.com.tr",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=12429174902240449536",
+    "google_rating": 4.5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "EMİN SAC METAL",
+    "phone": "03322515252",
+    "address": "Fevzi Çakmak Mah. Büsan Sanayi 10653 Sk. No:16, Fevziçakmak, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.eminsac.com/",
+    "email": "eminsac@eminsac.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=17177880167866489168",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "ESER SAC METAL SAN. TİC. LTD. ŞTİ.",
+    "phone": "05549385156",
+    "address": "Fevziçakmak, 10783. CAD E BLOK NO: 19H, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://esersacmetal.com/",
+    "email": "info@esersacmetal.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=5490493603213886487",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Ziya Zeki Ünaldı Metal Lazer Kesim Plazma Kesim",
+    "phone": "03323455103",
+    "address": "Büsan Özel Org. San. Fevzi Çakmak Mahallesi 10665 Sok. No: 1, Fevziçakmak, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.ziyazekiunaldi.com/",
+    "email": "info@ziyazekiunaldi.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=18080276381552103989",
+    "google_rating": 4.6,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Arel dekor lazer kesim CNC router ahşap işleme",
+    "phone": "05347881014",
+    "address": "Fevziçakmak, 10559. Sk. No:32, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://www.areldekor.com/",
+    "email": "info@areldekor.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=1619610893892005349",
+    "google_rating": 4.6,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "MUHARREM AYDIN LAZER METAL LTD. ŞTİ.",
+    "phone": "05379385996",
+    "address": "Fevziçakmak, AYYILDIZ CAD KOBİSAN 2 SANAYİ SİTESİ NO:48/F, 42080 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://www.muharremaydinlazer.com/",
+    "email": "bilgi@muharremaydinlazer.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=8184505205338208955",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Gaztek Makina - Cnc Plazma & Lazer Kesim Makinaları",
+    "phone": "03323452677",
+    "address": "Fevziçakmak, 10783. cad No. 13/K, 42050 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "https://www.gaztekmakina.com/",
+    "email": "info@gaztekmakina.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=11673663997428720901",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Sofuoğlu Metal İşleme",
+    "phone": "05417967020",
+    "address": "Fevziçakmak, 5. Sk. no:21, 42060 Karatay/Konya, Türkiye",
+    "city": "Konya",
+    "district": "",
+    "website": "http://sofuoglumetalisleme.com/",
+    "email": "bilgi@sofuoglumetalisleme.com",
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Web Scrape + Google Maps",
+    "source_url": "",
+    "verification_status": "auto-verified",
+    "notes": "Otomatik tarama tamamlandı: 2026-06-30 06:02",
+    "google_maps_url": "https://maps.google.com/?cid=2297791653700276316",
+    "google_rating": 5,
+    "media_urls": [],
+    "media_description": ""
+  }
+]
