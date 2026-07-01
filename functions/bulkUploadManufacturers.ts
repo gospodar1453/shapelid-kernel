@@ -1,66 +1,61 @@
-import { createClientFromRequest } from 'npm:@base44/sdk@0.8.31';
-
-interface ManufacturerRecord {
-  company_name: string;
-  city: string;
-  email?: string;
-  phone?: string;
-  address?: string;
-  capabilities?: string[];
-  website?: string;
-  source?: string;
-  verification_status?: string;
-  notes?: string;
-  google_maps_url?: string;
-  google_rating?: string;
-  media_urls?: string[];
-  media_description?: string;
-  district?: string;
-  osb_name?: string;
-  invited_to_partner?: boolean;
-}
+import { createClientFromRequest } from "npm:@base44/sdk@0.8.31";
 
 Deno.serve(async (req) => {
+  if (req.method !== "POST") {
+    return new Response(JSON.stringify({ error: "POST required" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
+  const body = await req.json();
+  const { records } = body;
+
+  if (!Array.isArray(records) || records.length === 0) {
+    return new Response(JSON.stringify({ error: "records array required" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
+  const base44 = createClientFromRequest(req);
+
   try {
-    const base44 = createClientFromRequest(req);
-    const payload = await req.json() as { records: ManufacturerRecord[] };
-    const { records } = payload;
-    const errors: string[] = [];
-    let successCount = 0;
+    // Bulk insert — 100'lü chunks'ta yükle
+    const chunkSize = 100;
+    let totalUploaded = 0;
 
-    if (!records || !Array.isArray(records)) {
-      return new Response(
-        JSON.stringify({
-          success: 0,
-          failed: 0,
-          errors: ['Invalid payload: records must be an array'],
-        }),
-        { status: 400, headers: { 'Content-Type': 'application/json' } }
-      );
-    }
+    for (let i = 0; i < records.length; i += chunkSize) {
+      const chunk = records.slice(i, i + chunkSize);
 
-    // Batch insert
-    for (const record of records) {
-      try {
-        await base44.entities.ManufacturerLead.create(record);
-        successCount++;
-      } catch (err: any) {
-        errors.push(`${record.company_name}: ${err.message}`);
-      }
+      const result = await base44.asServiceRole.entities.ManufacturerLead.bulkCreate({
+        records: chunk,
+      });
+
+      totalUploaded += result.count || chunk.length;
     }
 
     return new Response(
       JSON.stringify({
-        success: successCount,
-        failed: records.length - successCount,
-        errors: errors.slice(0, 10),
+        success: true,
+        uploaded: totalUploaded,
+        total: records.length,
       }),
-      { status: 200, headers: { 'Content-Type': 'application/json' } }
+      {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+      }
     );
-  } catch (err: any) {
+  } catch (error) {
     return new Response(
-      JSON.stringify({ error: err.message }),
-      { status: 500, headers: { 'Content-Type': 'application/json' } }
+      JSON.stringify({
+        error: error.message || "Upload failed",
+        details: error,
+      }),
+      {
+        status: 500,
+        headers: { "Content-Type": "application/json" },
+      }
     );
   }
 });
