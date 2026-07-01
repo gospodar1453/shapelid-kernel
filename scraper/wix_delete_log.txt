@@ -1,0 +1,18 @@
+Silinecek: 216 firma
+[20/216] Silinen: 0 | Bulunamayan: 20
+[40/216] Silinen: 0 | Bulunamayan: 40
+[60/216] Silinen: 0 | Bulunamayan: 60
+[80/216] Silinen: 0 | Bulunamayan: 80
+[100/216] Silinen: 0 | Bulunamayan: 100
+[120/216] Silinen: 0 | Bulunamayan: 120
+[140/216] Silinen: 0 | Bulunamayan: 140
+[160/216] Silinen: 9 | Bulunamayan: 151
+[180/216] Silinen: 19 | Bulunamayan: 161
+[200/216] Silinen: 19 | Bulunamayan: 181
+[216/216] Silinen: 24 | Bulunamayan: 192
+
+=== TAMAMLANDI ===
+Wix'ten silinen: 24
+Wix'te bulunamayan: 192
+Hata: 0
+
