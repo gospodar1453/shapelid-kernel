@@ -1,0 +1,25 @@
+Toplam kayıt: 46933
+Batch sayısı: 470 (batch başına 100)
+[25/470] Yüklenen: 2500 | Hata: 0 | Hız: 1129/sn
+[50/470] Yüklenen: 5000 | Hata: 0 | Hız: 1206/sn
+[75/470] Yüklenen: 7500 | Hata: 0 | Hız: 1251/sn
+[100/470] Yüklenen: 10000 | Hata: 0 | Hız: 1236/sn
+[125/470] Yüklenen: 12500 | Hata: 0 | Hız: 1233/sn
+[150/470] Yüklenen: 15000 | Hata: 0 | Hız: 1197/sn
+[175/470] Yüklenen: 17500 | Hata: 0 | Hız: 1209/sn
+[200/470] Yüklenen: 20000 | Hata: 0 | Hız: 1213/sn
+[225/470] Yüklenen: 22500 | Hata: 0 | Hız: 1229/sn
+[250/470] Yüklenen: 25000 | Hata: 0 | Hız: 1240/sn
+[275/470] Yüklenen: 27500 | Hata: 0 | Hız: 1242/sn
+[300/470] Yüklenen: 30000 | Hata: 0 | Hız: 1245/sn
+[325/470] Yüklenen: 32500 | Hata: 0 | Hız: 1248/sn
+[350/470] Yüklenen: 35000 | Hata: 0 | Hız: 1247/sn
+[375/470] Yüklenen: 37500 | Hata: 0 | Hız: 1244/sn
+[400/470] Yüklenen: 40000 | Hata: 0 | Hız: 1242/sn
+[425/470] Yüklenen: 42500 | Hata: 0 | Hız: 1244/sn
+[450/470] Yüklenen: 45000 | Hata: 0 | Hız: 1240/sn
+[470/470] Yüklenen: 46933 | Hata: 0 | Hız: 1244/sn
+
+=== TAMAMLANDI ===
+Toplam yüklenen: 46933
+Toplam hata: 0
