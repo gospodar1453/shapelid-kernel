@@ -1,0 +1,9 @@
+{
+  "batch_file": "/app/mega_batch_upload_863_1163.json",
+  "batch_start_index": 863,
+  "batch_end_index": 1163,
+  "batch_size": 300,
+  "valid_records": 300,
+  "invalid_records": 0,
+  "ready_to_upload": true
+}
