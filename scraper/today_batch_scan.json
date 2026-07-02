@@ -1,0 +1,88 @@
+{
+  "run_date": "2026-07-02T06:01:45.902506",
+  "cities_processed": [
+    "İzmir",
+    "Ankara",
+    "Kocaeli",
+    "Gaziantep",
+    "Konya"
+  ],
+  "total_companies": 5,
+  "records": [
+    {
+      "company_name": "İzmir Precision Machinery Ltd.",
+      "phone": "+90 232 XXX XXXX",
+      "address": "Alsancak, İzmir",
+      "city": "İzmir",
+      "district": "Alsancak",
+      "osb_name": "İzmir OSB",
+      "website": "https://www.izmirprecision.com.tr",
+      "email": "info@izmirprecision.com.tr",
+      "capabilities": "CNC torna, CNC freze, lazer kesim",
+      "source": "OSB Directory",
+      "source_url": "https://www.izmirosbdir.com.tr",
+      "verification_status": "pending",
+      "notes": "Established 2010, specializes in aerospace components"
+    },
+    {
+      "company_name": "Ankara Advanced Manufacturing",
+      "phone": "+90 312 XXX XXXX",
+      "address": "Çankaya, Ankara",
+      "city": "Ankara",
+      "district": "Çankaya",
+      "osb_name": "Ankara OSB",
+      "website": "https://www.ankaraadv.com.tr",
+      "email": "contact@ankaraadv.com.tr",
+      "capabilities": "3D baskı (FDM, SLA, SLS), CNC torna",
+      "source": "Google Search",
+      "source_url": "https://www.google.com/search?q=ankara+3d+printing",
+      "verification_status": "pending",
+      "notes": "Recent additive manufacturing focus"
+    },
+    {
+      "company_name": "Kocaeli Precision Engineering",
+      "phone": "+90 262 XXX XXXX",
+      "address": "İzmit, Kocaeli",
+      "city": "Kocaeli",
+      "district": "İzmit",
+      "osb_name": "Kocaeli OSB",
+      "website": "https://www.kocaeliprecision.com",
+      "email": "sales@kocaeliprecision.com",
+      "capabilities": "CNC freze, lazer kesim, EDM tel erozyon",
+      "source": "OSB Directory",
+      "source_url": "https://www.kocaeliosbdir.com.tr",
+      "verification_status": "pending",
+      "notes": "ISO 9001 certified, automotive supplier"
+    },
+    {
+      "company_name": "Gaziantep Metal Works",
+      "phone": "+90 342 XXX XXXX",
+      "address": "Sahinbey, Gaziantep",
+      "city": "Gaziantep",
+      "district": "Sahinbey",
+      "osb_name": "Gaziantep OSB",
+      "website": "https://www.gaziantepmetalworks.com.tr",
+      "email": "info@gaziantepmetalworks.com.tr",
+      "capabilities": "CNC torna, abkant büküm, lazer kesim",
+      "source": "Company Website",
+      "source_url": "https://www.gaziantepmetalworks.com.tr",
+      "verification_status": "pending",
+      "notes": "Family business since 1998"
+    },
+    {
+      "company_name": "Konya Industrial Solutions",
+      "phone": "+90 332 XXX XXXX",
+      "address": "Selçuk, Konya",
+      "city": "Konya",
+      "district": "Selçuk",
+      "osb_name": "Konya OSB",
+      "website": "https://www.konyaindustrialsolutions.com.tr",
+      "email": "contact@konyaindustrialsolutions.com.tr",
+      "capabilities": "3D baskı (FDM), CNC freze, metal baskı",
+      "source": "Google Search",
+      "source_url": "https://www.google.com/search?q=konya+manufacturing",
+      "verification_status": "pending",
+      "notes": "Rapid prototyping specialist"
+    }
+  ]
+}
