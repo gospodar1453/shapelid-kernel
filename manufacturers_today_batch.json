@@ -1,0 +1,82 @@
+{
+  "batch_date": "2026-07-03T06:04:16.368251",
+  "cities_searched": [
+    "Manisa",
+    "Denizli",
+    "Tekirdağ",
+    "Kayseri",
+    "Mersin"
+  ],
+  "total_records": 5,
+  "manufacturers": [
+    {
+      "company_name": "TANITEK",
+      "phone": "+90 (553) 640 56 98",
+      "address": "Manisa Organize Sanayi Bölgesi",
+      "city": "Manisa",
+      "district": "Yunusemre",
+      "website": "https://tanitek.com.tr",
+      "email": "info@tanitek.com",
+      "capabilities": [
+        "CNC torna",
+        "CNC freze",
+        "lazer kesim"
+      ],
+      "source": "Google Search",
+      "verification_status": "verified"
+    },
+    {
+      "company_name": "Tor Industry",
+      "phone": "+90 236",
+      "address": "Manisa OSB 4.Kısım Keçiliköy OSB, İsmail Sarıgözoğlu Cd. No:15",
+      "city": "Manisa",
+      "district": "Keçiliköy",
+      "osb_name": "Keçiliköy OSB",
+      "website": "https://torindustry.com",
+      "capabilities": [
+        "lazer kesim",
+        "CNC freze"
+      ],
+      "source": "Google Search",
+      "verification_status": "verified"
+    },
+    {
+      "company_name": "VARTAL TORNA",
+      "phone": "+90 236",
+      "address": "Yunusemre",
+      "city": "Manisa",
+      "district": "Yunusemre",
+      "website": "https://www.vartaltorna.com",
+      "capabilities": [
+        "CNC torna",
+        "CNC freze",
+        "kayar otomat"
+      ],
+      "source": "Google Search",
+      "verification_status": "verified"
+    },
+    {
+      "company_name": "Mikron Makine",
+      "address": "Manisa / İzmir",
+      "city": "Manisa",
+      "capabilities": [
+        "CNC torna",
+        "CNC freze",
+        "makine yedek parçası"
+      ],
+      "source": "Google Search",
+      "verification_status": "unverified"
+    },
+    {
+      "company_name": "SNSE Makine",
+      "city": "Manisa",
+      "district": "Turgutlu",
+      "capabilities": [
+        "lazer kesim",
+        "abkant büküm"
+      ],
+      "source": "Google Search",
+      "verification_status": "unverified"
+    }
+  ]
+}
