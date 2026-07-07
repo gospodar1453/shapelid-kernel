@@ -1,0 +1,22 @@
+{
+  "total_records": 300,
+  "parts": [
+    {
+      "part": 1,
+      "records": 200,
+      "file": "batch_part1.json"
+    },
+    {
+      "part": 2,
+      "records": 100,
+      "file": "batch_part2.json"
+    }
+  ],
+  "batch_info": {
+    "records_before": 2961,
+    "records_to_add": 300,
+    "records_after": 3261,
+    "total_target": 4065,
+    "progress_percent": 80.2
+  }
+}

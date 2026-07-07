@@ -1,0 +1,7 @@
+{
+  "batch": "chunk_0",
+  "records": 100,
+  "ready": true,
+  "timestamp": "2026-07-07T08:31:00+03:00",
+  "next_step": "create_entity_records(ManufacturerLead, chunk_0_ready.json)"
+}
