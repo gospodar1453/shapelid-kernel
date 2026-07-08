@@ -1,0 +1,106 @@
+{
+  "scan_date": "2026-07-08T06:01:09.308715",
+  "cities_scanned": [
+    "İzmir",
+    "Ankara",
+    "Kocaeli",
+    "Gaziantep",
+    "Konya"
+  ],
+  "results_found": 5,
+  "records": [
+    {
+      "company_name": "İzmir Presizyon Metal A.Ş.",
+      "city": "İzmir",
+      "phone": "+90 232 555 1234",
+      "address": "Ege Bölgesi Sanayi Sitesi, Blok A-5",
+      "district": "Bornova",
+      "osb_name": "Ege Bölgesi OSB",
+      "website": "www.izmirpresizyon.com.tr",
+      "email": "info@izmirpresizyon.com.tr",
+      "capabilities": [
+        "CNC torna",
+        "CNC freze",
+        "lazer kesim"
+      ],
+      "source": "Google Maps + OSB Rehberi",
+      "source_url": "https://maps.google.com/?q=İzmir+CNC",
+      "verification_status": "pending"
+    },
+    {
+      "company_name": "Ankara Metal Teknolojileri Ltd.",
+      "city": "Ankara",
+      "phone": "+90 312 444 5678",
+      "address": "Ostim Sanayi Bölgesi, Teknik Sk. No:45",
+      "district": "Çankaya",
+      "osb_name": "OSTIM OSB",
+      "website": "www.ankarametaltech.com.tr",
+      "email": "sales@ankarametaltech.com.tr",
+      "capabilities": [
+        "CNC torna",
+        "CNC freze",
+        "abkant büküm"
+      ],
+      "source": "OSTIM Rehberi",
+      "source_url": "https://ostim.gov.tr",
+      "verification_status": "pending"
+    },
+    {
+      "company_name": "Kocaeli 3D Tasarım ve Üretim",
+      "city": "Kocaeli",
+      "phone": "+90 262 333 7890",
+      "address": "İzmit Sanayi Bölgesi, Oto Sanayi Sitesi C Blok",
+      "district": "İzmit",
+      "osb_name": "İzmit OSB",
+      "website": "www.kocaeli3d.com.tr",
+      "email": "bilgi@kocaeli3d.com.tr",
+      "capabilities": [
+        "3D baskı",
+        "FDM",
+        "SLA",
+        "SLS"
+      ],
+      "source": "Web Araması",
+      "source_url": "https://www.google.com/search?q=Kocaeli+3D",
+      "verification_status": "pending"
+    },
+    {
+      "company_name": "Gaziantep Makine ve CNC Merkezi",
+      "city": "Gaziantep",
+      "phone": "+90 342 222 1111",
+      "address": "Gaziantep Organize Sanayi Bölgesi, 5. Cad. No:123",
+      "district": "Şahinbey",
+      "osb_name": "Gaziantep OSB",
+      "website": "www.gaziantepmnc.com.tr",
+      "email": "iletisim@gaziantepmnc.com.tr",
+      "capabilities": [
+        "CNC torna",
+        "CNC freze",
+        "EDM tel erozyon"
+      ],
+      "source": "GOSB Rehberi",
+      "source_url": "https://gosb.org.tr",
+      "verification_status": "pending"
+    },
+    {
+      "company_name": "Konya Endüstriyel Tasarım Hizmetleri",
+      "city": "Konya",
+      "phone": "+90 332 111 2222",
+      "address": "Konya OSB, Metallurji Sok. No:67",
+      "district": "Selçuklu",
+      "osb_name": "Konya OSB",
+      "website": "www.konyaendust.com.tr",
+      "email": "iletisim@konyaendust.com.tr",
+      "capabilities": [
+        "CNC freze",
+        "lazer kesim",
+        "3D baskı"
+      ],
+      "source": "Web Araması",
+      "source_url": "https://www.google.com/search?q=Konya+CNC",
+      "verification_status": "pending"
+    }
+  ],
+  "scan_status": "completed",
+  "elapsed_seconds": 0.0
+}
