@@ -45,3 +45,9 @@
 === batch_022.json ===
 {"totalInput":900,"totalMatched":899,"totalPatched":899,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
 === batch_023.json ===
+{"totalInput":900,"totalMatched":897,"totalPatched":897,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_024.json ===
+{"totalInput":900,"totalMatched":898,"totalPatched":898,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_025.json ===
+{"totalInput":485,"totalMatched":485,"totalPatched":485,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+TÜMÜ TAMAMLANDI
