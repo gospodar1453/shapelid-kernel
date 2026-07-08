@@ -138,3 +138,6 @@ Taranacak site sayısı: 27984
 İlerleme: 27400/27984
 İlerleme: 27600/27984
 İlerleme: 27800/27984
+
+Tamamlandı. Logo bulunan: 17649, Cover bulunan: 22369, Toplam: 27984
+Kaydedildi: /app/image_scrape/results_full.json
