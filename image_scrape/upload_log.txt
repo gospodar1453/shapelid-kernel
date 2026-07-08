@@ -1,0 +1,47 @@
+=== batch_000.json ===
+{"totalInput":900,"totalMatched":900,"totalPatched":900,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_001.json ===
+{"totalInput":900,"totalMatched":900,"totalPatched":900,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_002.json ===
+{"totalInput":900,"totalMatched":899,"totalPatched":899,"totalFailed":0,"notFoundCount":1,"notFoundSample":["dogansahin-tarim-makinalari"],"errorsSample":[]}
+=== batch_003.json ===
+{"totalInput":900,"totalMatched":898,"totalPatched":820,"totalFailed":80,"notFoundCount":0,"notFoundSample":[],"errorsSample":[{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are eed143b4-bb72-403b-a342-fba1dc72cc48"}]}}}},{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are 824abc46-cf52-4057-bccf-3323be3361f5"}]}}}}]}
+=== batch_004.json ===
+{"totalInput":900,"totalMatched":899,"totalPatched":860,"totalFailed":40,"notFoundCount":0,"notFoundSample":[],"errorsSample":[{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are 9dcaeb67-ef67-4ae9-911f-f1984d27fdf1"}]}}}}]}
+=== batch_005.json ===
+{"totalInput":900,"totalMatched":896,"totalPatched":780,"totalFailed":120,"notFoundCount":0,"notFoundSample":[],"errorsSample":[{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are 2de3bd27-6c90-4a91-9803-3c2f5673f19c"}]}}}},{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are df4e2840-6122-4262-93be-61b5a0792d5d, 2ea059ad-c6ed-4d6f-aa2e-2bed2543a378"}]}}}},{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are 3f702c8e-edd1-4230-a2ee-c323fe665ad8"}]}}}}]}
+=== batch_006.json ===
+{"totalInput":900,"totalMatched":898,"totalPatched":859,"totalFailed":40,"notFoundCount":1,"notFoundSample":["dogansahin-tarim-makinalari"],"errorsSample":[{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are daecfdf2-e518-4c56-a3c4-f0300041de17"}]}}}}]}
+=== batch_007.json ===
+{"totalInput":900,"totalMatched":899,"totalPatched":860,"totalFailed":40,"notFoundCount":0,"notFoundSample":[],"errorsSample":[{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are 8d6ce4cb-010b-4b12-ab3e-a33ce833900f"}]}}}}]}
+=== batch_008.json ===
+{"totalInput":900,"totalMatched":898,"totalPatched":820,"totalFailed":80,"notFoundCount":0,"notFoundSample":[],"errorsSample":[{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are fe4ead08-cd12-4b85-ab3e-6645670ff94c"}]}}}},{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are f3187e23-aa93-44ca-b2a6-06ff4ab61fb3"}]}}}}]}
+=== batch_009.json ===
+{"totalInput":900,"totalMatched":896,"totalPatched":740,"totalFailed":160,"notFoundCount":0,"notFoundSample":[],"errorsSample":[{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are d27d36ea-df92-4344-9bf6-afd5d25c0e31"}]}}}},{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are 66dadea0-47c2-4eb2-b3c2-08f8d2db8e0f"}]}}}},{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are cbabbd10-989b-4a2b-b729-556ce897180d"}]}}}},{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are 5cf37629-2ae1-48ad-b2f4-f38d950226bb"}]}}}}]}
+=== batch_010.json ===
+{"totalInput":900,"totalMatched":897,"totalPatched":780,"totalFailed":120,"notFoundCount":0,"notFoundSample":[],"errorsSample":[{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are f96c9d10-bed3-4d8e-ba84-9e9e2fde9b1c"}]}}}},{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are cd6fc81a-c1a5-46df-ad3d-6fd925072fdb"}]}}}},{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are ca5d53ac-50e4-4239-9b2f-58fa46b94096"}]}}}}]}
+=== batch_011.json ===
+{"totalInput":900,"totalMatched":896,"totalPatched":780,"totalFailed":120,"notFoundCount":0,"notFoundSample":[],"errorsSample":[{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are 1c695895-6d93-4a66-830a-719dcd2c37c0"}]}}}},{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are e9d6be63-7496-415d-93cb-a0049b2fe2bf"}]}}}},{"step":"patch","error":{"message":"WDE0080: Validation failed","details":{"validationError":{"fieldViolations":[{"field":"value","description":"value Cannot apply two patches for same itemId, duplicates are 57e5909a-8335-4547-a2ee-00ec9b9fe63d, e71210f0-3f2b-4cd7-b62b-7dd060f81e1f"}]}}}}]}
+=== batch_012.json ===
+{"totalInput":900,"totalMatched":900,"totalPatched":900,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_013.json ===
+{"totalInput":900,"totalMatched":898,"totalPatched":898,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_014.json ===
+{"totalInput":900,"totalMatched":894,"totalPatched":894,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_015.json ===
+{"totalInput":900,"totalMatched":896,"totalPatched":896,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_016.json ===
+{"totalInput":900,"totalMatched":898,"totalPatched":898,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_017.json ===
+{"totalInput":900,"totalMatched":896,"totalPatched":896,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_018.json ===
+{"totalInput":900,"totalMatched":897,"totalPatched":897,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_019.json ===
+{"totalInput":900,"totalMatched":896,"totalPatched":896,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_020.json ===
+{"totalInput":900,"totalMatched":896,"totalPatched":896,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_021.json ===
+{"totalInput":900,"totalMatched":898,"totalPatched":898,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_022.json ===
+{"totalInput":900,"totalMatched":899,"totalPatched":899,"totalFailed":0,"notFoundCount":0,"notFoundSample":[],"errorsSample":[]}
+=== batch_023.json ===

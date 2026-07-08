@@ -12,19 +12,8 @@ Deno.serve(async (req) => {
 
     const { accessToken } = await base44.asServiceRole.connectors.getConnection("wix");
 
-    const CHUNK = 90;
-    let totalMatched = 0;
-    let totalPatched = 0;
-    let totalFailed = 0;
-    const notFoundSlugs: string[] = [];
-    const errors: any[] = [];
-
-    for (let i = 0; i < items.length; i += CHUNK) {
-      const chunk = items.slice(i, i + CHUNK);
-      const slugs = chunk.map((c: any) => c.slug);
-
-      // 1) Query items by slug
-      const queryResp = await fetch("https://www.wixapis.com/wix-data/v2/items/query", {
+    async function queryBySlugs(slugs: string[]) {
+      const resp = await fetch("https://www.wixapis.com/wix-data/v2/items/query", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${accessToken}`,
@@ -38,76 +27,82 @@ Deno.serve(async (req) => {
           },
         }),
       });
-
-      const queryData = await queryResp.json();
-      if (!queryResp.ok) {
-        errors.push({ step: "query", error: queryData });
-        continue;
-      }
-
-      const dataItems = queryData.dataItems || [];
-      const slugToId: Record<string, string> = {};
-      for (const di of dataItems) {
+      const data = await resp.json();
+      if (!resp.ok) return { ok: false, error: data, map: {} as Record<string, string> };
+      const map: Record<string, string> = {};
+      for (const di of data.dataItems || []) {
         const s = di.data?.slug;
-        if (s) slugToId[s] = di.id;
+        if (s) map[s] = di.id;
       }
+      return { ok: true, map };
+    }
 
-      totalMatched += Object.keys(slugToId).length;
-      for (const s of slugs) {
-        if (!slugToId[s]) notFoundSlugs.push(s);
+    async function patchBatch(chunk: any[], slugToId: Record<string, string>) {
+      // Build patches, deduplicated by dataItemId (Wix rejects duplicate item ids in one bulk call)
+      const byItemId = new Map<string, any>();
+      for (const c of chunk) {
+        const id = slugToId[c.slug];
+        if (!id) continue;
+        const fieldModifications: any[] = [];
+        if (c.img) fieldModifications.push({ fieldPath: "img", action: "SET_FIELD", setFieldOptions: { value: c.img } });
+        if (c.cover) fieldModifications.push({ fieldPath: "cover", action: "SET_FIELD", setFieldOptions: { value: c.cover } });
+        if (fieldModifications.length > 0) {
+          byItemId.set(id, { dataItemId: id, fieldModifications });
+        }
       }
+      const patches = Array.from(byItemId.values());
 
-      // 2) Build patch payload (correct format: patches[] with fieldModifications)
-      const patches = chunk
-        .filter((c: any) => slugToId[c.slug])
-        .map((c: any) => {
-          const fieldModifications: any[] = [];
-          if (c.img) {
-            fieldModifications.push({
-              fieldPath: "img",
-              action: "SET_FIELD",
-              setFieldOptions: { value: c.img },
-            });
-          }
-          if (c.cover) {
-            fieldModifications.push({
-              fieldPath: "cover",
-              action: "SET_FIELD",
-              setFieldOptions: { value: c.cover },
-            });
-          }
-          return { dataItemId: slugToId[c.slug], fieldModifications };
-        })
-        .filter((p: any) => p.fieldModifications.length > 0);
+      if (patches.length === 0) return { patched: 0, failed: 0, errors: [] as any[] };
 
-      if (patches.length === 0) continue;
-
-      const patchResp = await fetch("https://www.wixapis.com/wix-data/v2/bulk/items/patch", {
+      const resp = await fetch("https://www.wixapis.com/wix-data/v2/bulk/items/patch", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${accessToken}`,
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          dataCollectionId: "manufacturers",
-          patches: patches,
-        }),
+        body: JSON.stringify({ dataCollectionId: "manufacturers", patches }),
       });
+      const data = await resp.json();
+      if (!resp.ok) return { patched: 0, failed: patches.length, errors: [{ step: "patch", error: data }] };
+      const results = data.results || [];
+      const failures = results.filter((r: any) => r.itemMetadata?.error);
+      return { patched: results.length - failures.length, failed: failures.length, errors: failures.length ? [{ step: "patch_item_errors", sample: failures.slice(0, 3) }] : [] };
+    }
 
-      const patchData = await patchResp.json();
-      if (!patchResp.ok) {
-        errors.push({ step: "patch", error: patchData });
-        totalFailed += patches.length;
+    const CHUNK = 40;
+    let totalMatched = 0;
+    let totalPatched = 0;
+    let totalFailed = 0;
+    let stillNotFound: string[] = [];
+    const errors: any[] = [];
+
+    for (let i = 0; i < items.length; i += CHUNK) {
+      const chunk = items.slice(i, i + CHUNK);
+      const slugs = chunk.map((c: any) => c.slug);
+
+      const q = await queryBySlugs(slugs);
+      if (!q.ok) {
+        errors.push({ step: "query", error: q.error });
         continue;
       }
 
-      const results = patchData.results || [];
-      const failures = results.filter((r: any) => r.itemMetadata?.error);
-      totalFailed += failures.length;
-      totalPatched += results.length - failures.length;
-      if (failures.length > 0) {
-        errors.push({ step: "patch_item_errors", sample: failures.slice(0, 3) });
+      const notFoundHere = slugs.filter((s) => !q.map[s]);
+
+      // Retry not-found slugs individually (handles $in-size quirks)
+      const retryMap: Record<string, string> = {};
+      for (const s of notFoundHere) {
+        const rq = await queryBySlugs([s]);
+        if (rq.ok && rq.map[s]) retryMap[s] = rq.map[s];
       }
+
+      const combinedMap = { ...q.map, ...retryMap };
+      totalMatched += Object.keys(combinedMap).length;
+      stillNotFound = stillNotFound.concat(slugs.filter((s) => !combinedMap[s]));
+
+      const r = await patchBatch(chunk, combinedMap);
+      totalPatched += r.patched;
+      totalFailed += r.failed;
+      if (r.errors.length) errors.push(...r.errors);
     }
 
     return new Response(
@@ -116,16 +111,13 @@ Deno.serve(async (req) => {
         totalMatched,
         totalPatched,
         totalFailed,
-        notFoundCount: notFoundSlugs.length,
-        notFoundSample: notFoundSlugs.slice(0, 10),
+        notFoundCount: stillNotFound.length,
+        notFoundSample: stillNotFound.slice(0, 10),
         errorsSample: errors.slice(0, 5),
       }),
       { status: 200, headers: { "Content-Type": "application/json" } }
     );
   } catch (error: any) {
-    return new Response(
-      JSON.stringify({ error: error.message || "unknown error" }),
-      { status: 500, headers: { "Content-Type": "application/json" } }
-    );
+    return new Response(JSON.stringify({ error: error.message || "unknown error" }), { status: 500, headers: { "Content-Type": "application/json" } });
   }
 });
