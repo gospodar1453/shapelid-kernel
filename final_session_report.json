@@ -1,0 +1,27 @@
+{
+  "automation_run": {
+    "timestamp": "2026-07-08 05:34:25",
+    "task": "Mega Results DB Yükleme - Otomatik Devam"
+  },
+  "database_status": {
+    "previous_count": 2971,
+    "uploaded_this_session": 500,
+    "new_total": 3471,
+    "target": 4065,
+    "remaining": 594,
+    "progress_percent": 85.4
+  },
+  "batch_details": {
+    "batch_1_initial": 10,
+    "batch_1_remaining": 140,
+    "batch_2": 150,
+    "batch_3": 150,
+    "batch_4": 50,
+    "total": 500
+  },
+  "next_steps": {
+    "remaining_records": 594,
+    "approx_batches_left": 2,
+    "estimated_completion_date": "2026-07-10"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "start_time": 1783488844.0666704,
+  "batches": [
+    "batch_1_part_1",
+    "batch_1_part_2",
+    "batch_1_part_3",
+    "batch_1_part_4",
+    "batch_1_part_5",
+    "batch_2_part_1",
+    "batch_2_part_2",
+    "batch_2_part_3",
+    "batch_2_part_4",
+    "batch_2_part_5"
+  ],
+  "total_records": 490,
+  "records_per_batch": {
+    "batch_1_part_1": 50,
+    "batch_1_part_2": 50,
+    "batch_1_part_3": 50,
+    "batch_1_part_4": 50,
+    "batch_1_part_5": 50,
+    "batch_2_part_1": 50,
+    "batch_2_part_2": 50,
+    "batch_2_part_3": 50,
+    "batch_2_part_4": 50,
+    "batch_2_part_5": 40
+  }
+}
