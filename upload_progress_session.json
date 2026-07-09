@@ -1,0 +1,21 @@
+{
+  "session_timestamp": "2026-07-09T08:31:00Z",
+  "task_name": "mega_results_upload",
+  "db_record_count_start": 1,
+  "mega_results_total": 4065,
+  "current_batch_ready": 8,
+  "batch_size": 50,
+  "records_prepared": 400,
+  "prepared_batch_files": [
+    "batch_upload_01.json",
+    "batch_upload_02.json",
+    "batch_upload_03.json",
+    "batch_upload_04.json",
+    "batch_upload_05.json",
+    "batch_upload_06.json",
+    "batch_upload_07.json",
+    "batch_upload_08.json"
+  ],
+  "next_action": "upload_batches_1_through_8_via_create_entity_records",
+  "status": "batches_prepared_awaiting_upload"
+}
