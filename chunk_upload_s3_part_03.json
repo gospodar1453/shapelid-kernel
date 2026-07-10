@@ -1,5 +1,245 @@
 [
   {
+    "company_name": "BİZİM MAKİNA İNŞ. SAN. VE TİC. LTD. ŞTİ.",
+    "phone": "+90 544 338 48 84",
+    "address": "Koçören OSB Mah. 219 Cad. No:6, Koçören, D:1, 63200 Eyyübiye/Şanlıurfa, Türkiye",
+    "city": "Şanlıurfa",
+    "website": "",
+    "google_maps_url": "https://maps.google.com/?cid=16238212084085278515",
+    "google_rating": null,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "0 yorum | makina imalat sanayi",
+    "media_urls": []
+  },
+  {
+    "company_name": "Badıllı Makine ve Tarım Sanayi A.Ş.",
+    "phone": "+90 414 503 44 44",
+    "address": "OSB Mah, Koçören, 201. Cd No:22/1, 63000 Eyyübiye/Şanlıurfa, Türkiye",
+    "city": "Şanlıurfa",
+    "website": "http://www.badilli.com.tr/",
+    "google_maps_url": "https://maps.google.com/?cid=12739953689362673729",
+    "google_rating": 4.6,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "38 yorum | makina imalat sanayi",
+    "media_urls": []
+  },
+  {
+    "company_name": "Marvosan Makina Sanayi",
+    "phone": "+90 541 766 55 28",
+    "address": "Koçören OSB Mahallesi 222 Cad. No:16 İç Kapı No:4, Koçören, 63200 Eyyübiye/Şanlıurfa, Türkiye",
+    "city": "Şanlıurfa",
+    "website": "http://marvosancompany.com/",
+    "google_maps_url": "https://maps.google.com/?cid=2586276132965558815",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "4 yorum | makina imalat sanayi",
+    "media_urls": []
+  },
+  {
+    "company_name": "Şelli Makina",
+    "phone": "+90 542 690 69 75",
+    "address": "Bamyasuyu Mah. Büyüksehir Is Merkezi Sk. A Blok No: 1 / 11 Haliliye / S.URFA Bamyasuyu Büyüksehir Is Merkezi Sk, Bamyasuyu, 63040 Şanlıurfa Merkez/Şanlıurfa, Türkiye",
+    "city": "Şanlıurfa",
+    "website": "https://www.trendyol.com/magaza/selli-makina-m-419390?channelId=1&sst=0",
+    "google_maps_url": "https://maps.google.com/?cid=4724506232176071379",
+    "google_rating": 1,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "4 yorum | makina imalat sanayi",
+    "media_urls": []
+  },
+  {
+    "company_name": "ŞANLI DEMİR İŞ TARIM ALETLERİ SAN VE TİC LTD ŞTİ",
+    "phone": "+90 544 965 60 63",
+    "address": "Ulubağ, Recep Tayyip Erdoğan bulvarı no 511, 63200 Haliliye/Şanlıurfa, Türkiye",
+    "city": "Şanlıurfa",
+    "website": "http://www.sanlidemir.com.tr/",
+    "google_maps_url": "https://maps.google.com/?cid=15897958868550524879",
+    "google_rating": 3.8,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "16 yorum | makina imalat sanayi",
+    "media_urls": []
+  },
+  {
+    "company_name": "Liva Metal",
+    "phone": "+90 544 469 91 72",
+    "address": "Küçükalanlı, şanlıurfa osb 118/10, 63200 Karaköprü/Şanlıurfa, Türkiye",
+    "city": "Şanlıurfa",
+    "website": "https://www.livametal.com.tr/",
+    "google_maps_url": "https://maps.google.com/?cid=7403921919060866435",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "1 yorum | metal imalat OSB",
+    "media_urls": []
+  },
+  {
+    "company_name": "ŞANPOL FİBER METAL TEKNOLOJİLERİ",
+    "phone": "+90 553 515 63 63",
+    "address": "Koçören, 219.Cd No:1, 63200 2.OSB/Eyyübiye/Şanlıurfa, Türkiye",
+    "city": "Şanlıurfa",
+    "website": "https://www.sanpol.com.tr/",
+    "google_maps_url": "https://maps.google.com/?cid=9626970841315909329",
+    "google_rating": 4.3,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "3 yorum | metal imalat OSB",
+    "media_urls": []
+  },
+  {
+    "company_name": "Şanlıurfa Tarıma Dayalı İhtisas Organize Sanayi Bölgesi",
+    "phone": "+90 534 031 67 18",
+    "address": "Kamberiye, Harran Ünv. Cd. No:56, 63040 Şanlıurfa Merkez/Şanlıurfa, Türkiye",
+    "city": "Şanlıurfa",
+    "website": "http://www.urfatdiosb.org/",
+    "google_maps_url": "https://maps.google.com/?cid=5647725615100695425",
+    "google_rating": 4.1,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "17 yorum | metal imalat OSB",
+    "media_urls": []
+  },
+  {
+    "company_name": "Kılıçlar Döküm & Makina",
+    "phone": "+90 533 494 84 63",
+    "address": "1. OSB, 142. Cadde No:10, 63320 Karaköprü/Şanlıurfa, Türkiye",
+    "city": "Şanlıurfa",
+    "website": "http://kiliclardokum.com.tr/",
+    "google_maps_url": "https://maps.google.com/?cid=5551431441167723890",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "2 yorum | metal imalat OSB",
+    "media_urls": []
+  },
+  {
+    "company_name": "delfin metal",
+    "phone": "+90 414 369 18 69",
+    "address": "Gözeller, 3. Caddesi No:11, 63000 1. Organize Sanayi Bölgesi/Eyyübiye/Şanlıurfa, Türkiye",
+    "city": "Şanlıurfa",
+    "website": "http://delfinmetal.com/",
+    "google_maps_url": "https://maps.google.com/?cid=10227612845453309656",
+    "google_rating": null,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "0 yorum | metal imalat OSB",
+    "media_urls": []
+  },
+  {
+    "company_name": "Özen torna talaşlı imalat",
+    "phone": "+90 545 724 51 79",
+    "address": "Balıkesir Sanayi sitesi, Gümüsçesme, cumhuriyet caddesi no 6, 10100 Karesi/Balıkesir, Türkiye",
+    "city": "Balıkesir",
+    "website": "",
+    "google_maps_url": "https://maps.google.com/?cid=10053737702928196748",
+    "google_rating": 5,
+    "capabilities": [
+      "CNC Turning"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "1 yorum | CNC torna atölyesi",
+    "media_urls": []
+  },
+  {
+    "company_name": "Zatech Mühendislik",
+    "phone": "+90 266 246 21 63",
+    "address": "Yeni Sanayi Sitesi, 39. Sk. No:5, 10020 Karesi/Balıkesir, Türkiye",
+    "city": "Balıkesir",
+    "website": "http://www.zatech.com.tr/",
+    "google_maps_url": "https://maps.google.com/?cid=18345979385737694222",
+    "google_rating": 3.4,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "5 yorum | CNC torna atölyesi",
+    "media_urls": []
+  },
+  {
+    "company_name": "Balıkesir CNC Makine ve Dış Tic.Ltd.Şti.",
+    "phone": "+90 535 977 44 55",
+    "address": "Bahçelievler, Coşan Sk. No:24/2, 10050 Altıeylül/Balıkesir, Türkiye",
+    "city": "Balıkesir",
+    "website": "http://cncreal.com/",
+    "google_maps_url": "https://maps.google.com/?cid=13313763643932709939",
+    "google_rating": null,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "0 yorum | CNC torna atölyesi",
+    "media_urls": []
+  },
+  {
+    "company_name": "Balyalılar Torna San. Tic. Ltd. Şti.",
+    "phone": "+90 543 248 68 11",
+    "address": "Zeytinli Mahallesi 611-2 Sokak Üçüncüler Sanayi Sitesi B Blok No:40, Zeytinli, 10300 Edremit/Balıkesir, Türkiye",
+    "city": "Balıkesir",
+    "website": "http://www.balyalilartorna.com/",
+    "google_maps_url": "https://maps.google.com/?cid=5323202617415952687",
+    "google_rating": 5,
+    "capabilities": [
+      "CNC Turning"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "2 yorum | CNC torna atölyesi",
+    "media_urls": []
+  },
+  {
+    "company_name": "Volkan Metal",
+    "phone": "+90 266 246 43 60",
+    "address": "Paşa Alanı Mh Cumhuriyet Caddesi, Paşa Alanı, 46. Sk. N:7, 10100 Karesi/Balıkesir, Türkiye",
+    "city": "Balıkesir",
+    "website": "http://www.volkanmetal.com.tr/",
+    "google_maps_url": "https://maps.google.com/?cid=15967367904406481819",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "1 yorum | CNC torna atölyesi",
+    "media_urls": []
+  },
+  {
     "company_name": "Teknik Freze",
     "phone": "+90 266 246 39 40",
     "address": "Paşa Alanı, Cumhuriyet Cd., 10020 Balıkesir Merkez/Balıkesir, Türkiye",
@@ -958,326 +1198,6 @@
     "source": "Google Maps API",
     "verification_status": "Taslak",
     "notes": "13 yorum | 3D baskı hizmet",
-    "media_urls": []
-  },
-  {
-    "company_name": "KOVALAK 3D",
-    "phone": "+90 533 451 69 42",
-    "address": "1.Oruçgazi mahallesi Birgi Sk. 69 C KOVALAK 3d, 1. Oruçgazi, 10010 Karesi/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "https://www.instagram.com/kovalak3d",
-    "google_maps_url": "https://maps.google.com/?cid=1745685241766720564",
-    "google_rating": 4.4,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "33 yorum | 3D baskı hizmet",
-    "media_urls": []
-  },
-  {
-    "company_name": "tufa 3d",
-    "phone": "+90 534 979 74 10",
-    "address": "1. Oruçgazi, Ören Sk. no:19, 10020 Karesi/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "",
-    "google_maps_url": "https://maps.google.com/?cid=14099536177523509391",
-    "google_rating": null,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "0 yorum | 3D baskı hizmet",
-    "media_urls": []
-  },
-  {
-    "company_name": "Sancak Craft Design 3D baskı hizmetleri Bandırma",
-    "phone": "+90 553 626 05 63",
-    "address": "Paşabayır, 8 Sk No:67/a, 10200 Bandırma/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "",
-    "google_maps_url": "https://maps.google.com/?cid=14048212019767556043",
-    "google_rating": 5,
-    "capabilities": [
-      "Fused Deposition Modeling"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "2 yorum | 3D baskı hizmet",
-    "media_urls": []
-  },
-  {
-    "company_name": "3DYAP 3 Boyutlu Tasarım ve Baskı Hizmetleri",
-    "phone": "+90 537 264 62 92",
-    "address": "Yıldırım, Topak Sk., 10010 Karesi/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "",
-    "google_maps_url": "https://maps.google.com/?cid=4632929677937937486",
-    "google_rating": 1,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "1 yorum | 3D baskı hizmet",
-    "media_urls": []
-  },
-  {
-    "company_name": "Mete3DStudio",
-    "phone": "+90 530 038 72 23",
-    "address": "Bahçelievler, 10100 Altıeylül/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "",
-    "google_maps_url": "https://maps.google.com/?cid=5148355028393641524",
-    "google_rating": null,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "0 yorum | 3D baskı hizmet",
-    "media_urls": []
-  },
-  {
-    "company_name": "YUMİ Elektrik-3D Hizmeti",
-    "phone": "+90 501 304 55 49",
-    "address": "Yıldız, 14078 sokak bina no 3, 10010 Altıeylül/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "",
-    "google_maps_url": "https://maps.google.com/?cid=5750116579023760021",
-    "google_rating": 5,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "1 yorum | 3D baskı hizmet",
-    "media_urls": []
-  },
-  {
-    "company_name": "Centaur Interactive",
-    "phone": "+90 266 221 58 44",
-    "address": "Centaur Interactive, Sütlüce, Çekiç Sk. No: 11/A, 10100 Altıeylül/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "https://centaurinteractive.net/",
-    "google_maps_url": "https://maps.google.com/?cid=11753720464619696594",
-    "google_rating": 5,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "3 yorum | 3D baskı hizmet",
-    "media_urls": []
-  },
-  {
-    "company_name": "Rigid3d",
-    "phone": "+90 232 462 80 94",
-    "address": "Kasaplar, Vasıf Çınar Cd. No:3/A, 10100 Altıeylül/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "http://rigid3d.com/",
-    "google_maps_url": "https://maps.google.com/?cid=2216474987131106645",
-    "google_rating": null,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "0 yorum | 3D baskı hizmet",
-    "media_urls": []
-  },
-  {
-    "company_name": "PRINTINGTOYS 3D YAZICI PROTOTİP TASARIM EĞİTİM VE MODELLEME MERKEZİ",
-    "phone": "+90 506 644 85 84",
-    "address": "Akçay, 10300 Edremit/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "http://www.printingtoys.com.tr/",
-    "google_maps_url": "https://maps.google.com/?cid=17126574370237676210",
-    "google_rating": 3,
-    "capabilities": [
-      "Fused Deposition Modeling"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "2 yorum | 3D yazıcı imalat",
-    "media_urls": []
-  },
-  {
-    "company_name": "AFACAN MAKINE METAL SAN. TIC. LTD. STI.",
-    "phone": "+90 266 281 11 30",
-    "address": "Organize Sanayi Bölgesi 10. Cad. No.5, Gaziosmanpaşa OSB - Kuzey, 10100 Altıeylül/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "https://www.afacan.com.tr/",
-    "google_maps_url": "https://maps.google.com/?cid=12856515592441122344",
-    "google_rating": 4.2,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "101 yorum | metal fason imalat",
-    "media_urls": []
-  },
-  {
-    "company_name": "WİNSA Modern Metal Balıkesir Üretici Bayii (PVC, Panjur, Cam Balkon)",
-    "phone": "+90 266 246 39 94",
-    "address": "Paşa Alanı, 47. Sk., 10020 Balıkesir Merkez/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "http://www.modernmetal.com.tr/",
-    "google_maps_url": "https://maps.google.com/?cid=14666214118548935997",
-    "google_rating": 4.8,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "53 yorum | metal fason imalat",
-    "media_urls": []
-  },
-  {
-    "company_name": "MAKZAYN Makina Dizayn",
-    "phone": "+90 266 606 06 36",
-    "address": "Paşaalanı Mh. Cumhuriyet Cd 183 Küçüksan, Paşa Alanı, Sanayi Sitesi, 10020 Karesi/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "http://makzayn.com/",
-    "google_maps_url": "https://maps.google.com/?cid=8041540745311830682",
-    "google_rating": 5,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "2 yorum | makina imalat sanayi",
-    "media_urls": []
-  },
-  {
-    "company_name": "Özel Makina",
-    "phone": "+90 536 419 20 58",
-    "address": "Paşalanı Mah. Cumhuriyet Cad, Paşa Alanı, 41. Sk. No:20, 10100 Karesi/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "http://www.ozelmak.com/",
-    "google_maps_url": "https://maps.google.com/?cid=5107231624629332858",
-    "google_rating": null,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "0 yorum | makina imalat sanayi",
-    "media_urls": []
-  },
-  {
-    "company_name": "ERGEN TARIM MAKİNA",
-    "phone": "+90 266 246 32 63",
-    "address": "Paşa Alanı, Sanayi Sitesi İç Yolu, 10020 Balıkesir Merkez/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "http://www.ergenziraimakine.com/",
-    "google_maps_url": "https://maps.google.com/?cid=9499837007098840676",
-    "google_rating": 4.7,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "3 yorum | makina imalat sanayi",
-    "media_urls": []
-  },
-  {
-    "company_name": "Balkın Makina",
-    "phone": "+90 541 243 49 31",
-    "address": "Merkez Balıkesir TR, Dumlupınar, Ketenavdan Sk. No:23B, 10100 Karesi/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "http://www.balkinmakina.com/",
-    "google_maps_url": "https://maps.google.com/?cid=9993648078111140789",
-    "google_rating": 4.5,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "20 yorum | makina imalat sanayi",
-    "media_urls": []
-  },
-  {
-    "company_name": "Balıkesir teknik makina madencilik",
-    "phone": "+90 532 403 54 33",
-    "address": "Yeni sanayi sitesi 4 .kapı, Paşa Alanı, 10020 Karesi/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "http://www.teknikmadencilik.com/",
-    "google_maps_url": "https://maps.google.com/?cid=10640624505712416597",
-    "google_rating": null,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "0 yorum | makina imalat sanayi",
-    "media_urls": []
-  },
-  {
-    "company_name": "Azimli Tarım Makineleri İNŞ. SAN. TİC. LTD. ŞTİ",
-    "phone": "+90 266 241 21 88",
-    "address": "Mahallesi, Paşa Alanı, 47. Sk. No:4/A, 10020 Karesi/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "http://azimlitarim.com/",
-    "google_maps_url": "https://maps.google.com/?cid=17372689102794065689",
-    "google_rating": 5,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "2 yorum | makina imalat sanayi",
-    "media_urls": []
-  },
-  {
-    "company_name": "Demasan Endüstriyel Mutfak",
-    "phone": "+90 507 535 40 28",
-    "address": "Paşa Alanı, 46. Sk. Yeni Sanayi Sitesi 9/A, 10100 Karesi/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "http://www.demasan.com/",
-    "google_maps_url": "https://maps.google.com/?cid=13163530029926116981",
-    "google_rating": 4,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "141 yorum | makina imalat sanayi",
-    "media_urls": []
-  },
-  {
-    "company_name": "Tınaz Tarım ve Sanayi Makinaları Tic. ve San. A.Ş.",
-    "phone": "+90 266 241 35 95",
-    "address": "Gaziosmanpaşa Mah. OSB Bölgesi 17.Cad No:1, Gaziosmanpaşa OSB - Kuzey, 10100 Altıeylül/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "http://www.tinaztarim.com/",
-    "google_maps_url": "https://maps.google.com/?cid=16218186017059397957",
-    "google_rating": 4.2,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "131 yorum | makina imalat sanayi",
-    "media_urls": []
-  },
-  {
-    "company_name": "CALIŞKAN MAKİNA",
-    "phone": "+90 266 246 49 39",
-    "address": "Sanayi Sitesi 1 Nolu Giriş Kapısı, Paşa Alanı 10020 Balıkesir+Merkez, Paşa Alanı, 10100 KARESİ/PAŞAALANI/Karesi/Balıkesir, Türkiye",
-    "city": "Balıkesir",
-    "website": "http://www.caliskanmak.com.tr/",
-    "google_maps_url": "https://maps.google.com/?cid=8179439150872582613",
-    "google_rating": null,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "0 yorum | makina imalat sanayi",
     "media_urls": []
   }
 ]

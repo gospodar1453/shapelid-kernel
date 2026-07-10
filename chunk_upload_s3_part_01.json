@@ -1,5 +1,85 @@
 [
   {
+    "company_name": "Mert-San Torna",
+    "phone": "+90 546 617 15 33",
+    "address": "Kanuni, Göllülü Yusuf Çavuş Cd. No.150, 46080 Kahramanmaraş Merkez/Kahramanmaraş, Türkiye",
+    "city": "Kahramanmaraş",
+    "website": "http://www.mertsantorna.com/",
+    "google_maps_url": "https://maps.google.com/?cid=15759308792263181418",
+    "google_rating": 4.7,
+    "capabilities": [
+      "CNC Turning"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "13 yorum | CNC torna atölyesi",
+    "media_urls": []
+  },
+  {
+    "company_name": "ÖZAKAN MAKİNA",
+    "phone": "+90 538 448 23 36",
+    "address": "Yavuz Selim, 7. Cadde Yeni Sanayi Sitesi No:32, 46080 Dulkadiroğlu/Kahramanmaraş, Türkiye",
+    "city": "Kahramanmaraş",
+    "website": "",
+    "google_maps_url": "https://maps.google.com/?cid=4154341720297147844",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "2 yorum | CNC torna atölyesi",
+    "media_urls": []
+  },
+  {
+    "company_name": "Mesut Torna",
+    "phone": "+90 532 653 41 16",
+    "address": "Yavuz Selim, 73078 Caddesi, 46100 Dulkadiroğlu/Kahramanmaraş, Türkiye",
+    "city": "Kahramanmaraş",
+    "website": "http://www.mesuttorna.com/",
+    "google_maps_url": "https://maps.google.com/?cid=17821630610852929487",
+    "google_rating": 4.6,
+    "capabilities": [
+      "CNC Turning"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "47 yorum | CNC torna atölyesi",
+    "media_urls": []
+  },
+  {
+    "company_name": "Akdemsan CNC Torna Atölyesi",
+    "phone": "+90 530 690 10 13",
+    "address": "kadıkendi Mah. Evren Sanayi Sitesi 1. Cadde 9. Sokak No: 54 Şanlıurfa, Batıkent, 63000 Eyyübiye/Şanlıurfa, Türkiye",
+    "city": "Şanlıurfa",
+    "website": "",
+    "google_maps_url": "https://maps.google.com/?cid=9505101435335496009",
+    "google_rating": 4.7,
+    "capabilities": [
+      "CNC Turning"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "6 yorum | CNC torna atölyesi",
+    "media_urls": []
+  },
+  {
+    "company_name": "Nevzat Torna",
+    "phone": "+90 542 616 04 93",
+    "address": "Yavuz Selim, 73004. Cd. No:12, 46080 Dulkadiroğlu/Kahramanmaraş, Türkiye",
+    "city": "Kahramanmaraş",
+    "website": "http://www.facebook.com/nevzattorna",
+    "google_maps_url": "https://maps.google.com/?cid=13546753903516394239",
+    "google_rating": 4,
+    "capabilities": [
+      "CNC Turning"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "6 yorum | CNC torna atölyesi",
+    "media_urls": []
+  },
+  {
     "company_name": "Selaldı Ağaç Torna",
     "phone": "+90 536 937 75 06",
     "address": "Kuruluş, Demirci Çarşısı No:10, 46100 Kahramanmaraş Merkez/Kahramanmaraş, Türkiye",
@@ -1117,166 +1197,6 @@
     "source": "Google Maps API",
     "verification_status": "Taslak",
     "notes": "0 yorum | 3D baskı hizmet",
-    "media_urls": []
-  },
-  {
-    "company_name": "Anka Robotik Teknolojileri",
-    "phone": "+90 539 211 46 08",
-    "address": "Cemilbey Plaza, İsmet Paşa, 36009. Sk. Kat:3 No:13, 46100 Dulkadiroğlu/Kahramanmaraş, Türkiye",
-    "city": "Kahramanmaraş",
-    "website": "https://ankarobot.com/",
-    "google_maps_url": "https://maps.google.com/?cid=4701014586707913219",
-    "google_rating": 4.5,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "16 yorum | 3D baskı hizmet",
-    "media_urls": []
-  },
-  {
-    "company_name": "ZORUSSAN",
-    "phone": "+90 541 449 48 76",
-    "address": "Yavuz Selim, Profil Doğramacılar Cd. KÜÇÜK SANAYİ SİTESİ No:45, 46050 Dulkadiroğlu/Kahramanmaraş, Türkiye",
-    "city": "Kahramanmaraş",
-    "website": "",
-    "google_maps_url": "https://maps.google.com/?cid=4485491592266509400",
-    "google_rating": 4.5,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "2 yorum | 3D baskı hizmet",
-    "media_urls": []
-  },
-  {
-    "company_name": "KAHRAMANMARAŞ REKLAMCI - Anka Reklam Center",
-    "phone": "+90 542 408 71 41",
-    "address": "Menderes, 46044. Sk. No:4/A, 46000 Dulkadiroğlu/Kahramanmaraş, Türkiye",
-    "city": "Kahramanmaraş",
-    "website": "",
-    "google_maps_url": "https://maps.google.com/?cid=4683280560541886135",
-    "google_rating": 4.3,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "23 yorum | 3D yazıcı imalat",
-    "media_urls": []
-  },
-  {
-    "company_name": "Maraş Metal San. ve Tic. Ltd.Şti",
-    "phone": "+90 344 257 93 55",
-    "address": "Organize Sanayi Bölgesi, 4. CADDE NO:3, 46091 Onikişubat/Kahramanmaraş, Türkiye",
-    "city": "Kahramanmaraş",
-    "website": "http://www.marasmetal.com.tr/",
-    "google_maps_url": "https://maps.google.com/?cid=748391438002381175",
-    "google_rating": 4.8,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "4 yorum | metal fason imalat",
-    "media_urls": []
-  },
-  {
-    "company_name": "GÜMÜŞ METAL",
-    "phone": "+90 534 919 97 26",
-    "address": "Malik Ejder, Batı Çevre Yolu NO: 93/B, 46040 Onikişubat/Kahramanmaraş, Türkiye",
-    "city": "Kahramanmaraş",
-    "website": "",
-    "google_maps_url": "https://maps.google.com/?cid=1296977023326994813",
-    "google_rating": 4.5,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "10 yorum | metal fason imalat",
-    "media_urls": []
-  },
-  {
-    "company_name": "Danıştı Metal",
-    "phone": "+90 543 364 87 42",
-    "address": "Genç Osman, 30002. Sk. No: 48/A, 46000 Dulkadiroğlu/Kahramanmaraş, Türkiye",
-    "city": "Kahramanmaraş",
-    "website": "",
-    "google_maps_url": "https://maps.google.com/?cid=11443668775680592656",
-    "google_rating": 3,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "2 yorum | metal fason imalat",
-    "media_urls": []
-  },
-  {
-    "company_name": "Güçsan Çelik Metal",
-    "phone": "+90 344 235 10 47",
-    "address": "Akif İnan, Recep Tayyip Erdoğan Blv. No:116 D:1A, 46050 Dulkadiroğlu/Kahramanmaraş, Türkiye",
-    "city": "Kahramanmaraş",
-    "website": "https://www.gucsanmetal.com/",
-    "google_maps_url": "https://maps.google.com/?cid=4563425797025467247",
-    "google_rating": null,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "0 yorum | metal fason imalat",
-    "media_urls": []
-  },
-  {
-    "company_name": "Bodursan Makina | İş Makineleri Ataçman ve Kova İmalatı",
-    "phone": "+90 344 606 01 30",
-    "address": "Yavuz Selim, 73074. Sk. No:22/A, 46110 Dulkadiroğlu/Kahramanmaraş, Türkiye",
-    "city": "Kahramanmaraş",
-    "website": "",
-    "google_maps_url": "https://maps.google.com/?cid=5990323408798819602",
-    "google_rating": 4.3,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "10 yorum | makina imalat sanayi",
-    "media_urls": []
-  },
-  {
-    "company_name": "ŞEKERMAKSAN MAKİNA TARIM SAN. TİC. LTD. ŞTİ.",
-    "phone": "+90 344 236 44 33",
-    "address": "Yavuz Selim, 54. Cad Küçük sanayi sitesi No:25/A, 46080 Dulkadiroğlu/Kahramanmaraş, Türkiye",
-    "city": "Kahramanmaraş",
-    "website": "http://www.sekermaksan.com.tr/",
-    "google_maps_url": "https://maps.google.com/?cid=8105699611041172374",
-    "google_rating": 4,
-    "capabilities": [
-      "Laser Cutting"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "4 yorum | makina imalat sanayi",
-    "media_urls": []
-  },
-  {
-    "company_name": "YAPAR PASLANMAZ MAKİNE A.Ş.",
-    "phone": "+90 344 236 08 79",
-    "address": "İstasyon, Stadyum Bulvarı No:35/A, 46100 Dulkadiroğlu/Kahramanmaraş, Türkiye",
-    "city": "Kahramanmaraş",
-    "website": "https://www.yaparpaslanmaz.com.tr/",
-    "google_maps_url": "https://maps.google.com/?cid=6961639522384570241",
-    "google_rating": 4.5,
-    "capabilities": [
-      "Stereolithography"
-    ],
-    "source": "Google Maps API",
-    "verification_status": "Taslak",
-    "notes": "22 yorum | makina imalat sanayi",
     "media_urls": []
   }
 ]

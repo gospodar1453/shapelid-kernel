@@ -1,0 +1,402 @@
+[
+  {
+    "company_name": "çorum a metal inşaat sanayi ve ticaret a.ş.",
+    "phone": "+90 364 234 56 56",
+    "address": "küçük sanayi sitesi 45. sokak. numara:3 ÇORUM merkez, Mimar Sinan, 19100 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://www.corumametal.com/",
+    "google_maps_url": "https://maps.google.com/?cid=5683337592990669268",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "8 yorum | metal lazer kesim",
+    "media_urls": []
+  },
+  {
+    "company_name": "Galerywood",
+    "phone": "+90 541 734 10 22",
+    "address": "Aras Kargo Hitit Şubesi yanı, Mimar Sinan, Küçük Sanayi Cd. No:46/1, 19030 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "https://galerywood.com/",
+    "google_maps_url": "https://maps.google.com/?cid=1866600382730683608",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "9 yorum | CNC lazer kesim",
+    "media_urls": []
+  },
+  {
+    "company_name": "KENTMETAL ENDÜSTRİ SAN. TİC. LTD. ŞTİ.",
+    "phone": "+90 364 212 86 94",
+    "address": "Küçük Sanayi Sitesi 21. Cadde No:16, Mimar Sinan, 19100 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://www.kentmetalendustri.com.tr/",
+    "google_maps_url": "https://maps.google.com/?cid=3715775032906089575",
+    "google_rating": 2.7,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "3 yorum | sac büküm imalat",
+    "media_urls": []
+  },
+  {
+    "company_name": "Ser Döküm Makina San. ve Tic. A.Ş.",
+    "phone": "+90 364 254 97 93",
+    "address": "Organize San. Böl 8. Caddesi No:5, Pınarçay OSB, 19030 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://www.niks.com/",
+    "google_maps_url": "https://maps.google.com/?cid=4959750487327878387",
+    "google_rating": 4.3,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "6 yorum | pres büküm",
+    "media_urls": []
+  },
+  {
+    "company_name": "Arsan Döküm",
+    "phone": "+90 364 235 00 90",
+    "address": "Pınarçay OSB, Çorum Organize Sanayi 16. Cd. No:14 19040, 19040 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://www.arsandokum.com.tr/",
+    "google_maps_url": "https://maps.google.com/?cid=2427743748833388214",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "20 yorum | pres büküm",
+    "media_urls": []
+  },
+  {
+    "company_name": "Karabekir Döküm",
+    "phone": "+90 364 235 04 61",
+    "address": "Mimar Sinan, 19000 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://www.karabekirdokum.com/",
+    "google_maps_url": "https://maps.google.com/?cid=3713026608838565850",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "1 yorum | pres büküm",
+    "media_urls": []
+  },
+  {
+    "company_name": "Metalsan Demir çelik",
+    "phone": "+90 532 562 90 19",
+    "address": "Mimar Sinan, 58.sokak Çorum sanayi sitesi no 5, 19100 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://www.metalsandemircelik.com/",
+    "google_maps_url": "https://maps.google.com/?cid=8887067050397161394",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "8 yorum | sac metal fason",
+    "media_urls": []
+  },
+  {
+    "company_name": "EROĞLU KROM PASLANMAZ",
+    "phone": "+90 532 577 88 37",
+    "address": "Mimar Sinan, ÇORUM SANAYİ SİTESİ 15. CADDE NO: 86/1, 19100 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://www.eroglukrom.com/",
+    "google_maps_url": "https://maps.google.com/?cid=18018804968587043415",
+    "google_rating": 5,
+    "capabilities": [
+      "Stereolithography"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "44 yorum | tel erozyon fason",
+    "media_urls": []
+  },
+  {
+    "company_name": "Ar Otomasyon & Ar Industries",
+    "phone": "+90 530 380 67 01",
+    "address": "Pınarçay OSB, OSB, 19100 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "https://ar.industries/",
+    "google_maps_url": "https://maps.google.com/?cid=12065766169141667185",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "11 yorum | dalma erozyon",
+    "media_urls": []
+  },
+  {
+    "company_name": "Dalyan Makina",
+    "phone": "+90 364 234 89 21",
+    "address": "Mimar Sinan, Küçük Sanayi 15. Cd. No:8, 19100 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://www.dalyanmakina.com.tr/",
+    "google_maps_url": "https://maps.google.com/?cid=14937010611070244539",
+    "google_rating": 4.3,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "164 yorum | dalma erozyon",
+    "media_urls": []
+  },
+  {
+    "company_name": "EFEM ELEKTRONİK",
+    "phone": "+90 536 269 83 64",
+    "address": "Bahçelievler, Şenyurt Cd. 19/b, 19200 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "",
+    "google_maps_url": "https://maps.google.com/?cid=9921463542967620648",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "65 yorum | EDM fason",
+    "media_urls": []
+  },
+  {
+    "company_name": "3D Baskı Atölyesi & Bilişim Hizmetleri Çorum | Tactyla",
+    "phone": "+90 539 345 05 12",
+    "address": "Ulukavak, Akpınar Cd. No:6/A, 19000 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://tactyla.com/",
+    "google_maps_url": "https://maps.google.com/?cid=6722161362383807201",
+    "google_rating": 5,
+    "capabilities": [
+      "Fused Deposition Modeling"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "14 yorum | 3D baskı hizmet",
+    "media_urls": []
+  },
+  {
+    "company_name": "Asil 3D Baskı Atölyesi - Çorum 3D Yazıcı & Mühendislik Çözümleri",
+    "phone": "+90 533 627 46 43",
+    "address": "Yavruturna, Atayurt 3. Sk., 19000 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "https://www.instagram.com/asil3dbaski",
+    "google_maps_url": "https://maps.google.com/?cid=4087978933120714670",
+    "google_rating": 5,
+    "capabilities": [
+      "Fused Deposition Modeling"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "34 yorum | 3D baskı hizmet",
+    "media_urls": []
+  },
+  {
+    "company_name": "Pars 3D",
+    "phone": "+90 543 958 28 38",
+    "address": "Çepni, Haritacı Osman Bey Sk. Balaban İş Merkezi Kat:3 No 252, 19040 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "https://www.instagram.com/pars3dlab?igsh=MTRjNTJzN3huOGt2dA%3D%3D&utm_source=qr",
+    "google_maps_url": "https://maps.google.com/?cid=12863690298277251716",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "14 yorum | 3D baskı hizmet",
+    "media_urls": []
+  },
+  {
+    "company_name": "Mavral Bilişim | Çorum - 3D Tasarım Atölyesi",
+    "phone": "+90 544 459 06 69",
+    "address": "Ulukavak, Çatal Havuz 2. Sk. No:27/B, 19040 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "",
+    "google_maps_url": "https://maps.google.com/?cid=1943603451481487793",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "12 yorum | 3D baskı hizmet",
+    "media_urls": []
+  },
+  {
+    "company_name": "3d printlab",
+    "phone": "+90 501 363 01 35",
+    "address": "Yeniyol, Kulaksız 1. Sk. alper cürün iş merkezi D:20/7, 19100 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "",
+    "google_maps_url": "https://maps.google.com/?cid=2294502136223491598",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "3 yorum | 3D baskı hizmet",
+    "media_urls": []
+  },
+  {
+    "company_name": "AB SEBAT PASLANMAZ",
+    "phone": "+90 505 504 49 63",
+    "address": "Mimar Sinan, Küçük Sanayi 5. Cd. NO: 2, 19100 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://www.sebatpaslanmaz.com/",
+    "google_maps_url": "https://maps.google.com/?cid=4536519137982431745",
+    "google_rating": 4.6,
+    "capabilities": [
+      "Stereolithography"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "12 yorum | metal fason imalat",
+    "media_urls": []
+  },
+  {
+    "company_name": "ÇORUM CELAL DEMİR DOĞRAMA ÇELİK ÇATI",
+    "phone": "+90 544 575 06 10",
+    "address": "ÇORUM SANAYİ SİTESİ 14. CADDE NO 81/A, Mimar Sinan, 19100 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://www.sanayilerimiz.com/corum-celal-demir-dograma-paslanmaz-celik-cati-0544-575-06-10",
+    "google_maps_url": "https://maps.google.com/?cid=16788331154698263137",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "4 yorum | metal fason imalat",
+    "media_urls": []
+  },
+  {
+    "company_name": "ÇORUM MİLLİNG MAKİNA İMALATI SAN. VE TİC. LTD. ŞTİ.",
+    "phone": "+90 506 582 31 96",
+    "address": "Pınarçay OSB, Organize 20. Cadde No: 1, 19100 Çorum Organize Sanayi Bölgesi/Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://www.corummilling.com/",
+    "google_maps_url": "https://maps.google.com/?cid=15921013481203272725",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "1 yorum | makina imalat sanayi",
+    "media_urls": []
+  },
+  {
+    "company_name": "ÖZ MAKİNA CNC KALIP İMALAT",
+    "phone": "+90 364 234 02 03",
+    "address": "Mimar Sinan, Küçük Sanayi 23. Cd. No:61, 19100 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://www.ozmakine.com/",
+    "google_maps_url": "https://maps.google.com/?cid=11354885112554948885",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "1 yorum | makina imalat sanayi",
+    "media_urls": []
+  },
+  {
+    "company_name": "ALTAN MAKİNA DÖKÜM San. Tic. A.Ş.",
+    "phone": "+90 364 254 93 93",
+    "address": "Çorum Organize Sanayi 8. Cadde No:24, Pınarçay OSB, 19030 Pınarçay OSB/Çorum Merkez/Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "https://www.altandokum.com/",
+    "google_maps_url": "https://maps.google.com/?cid=6226415582652345533",
+    "google_rating": 4.9,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "27 yorum | makina imalat sanayi",
+    "media_urls": []
+  },
+  {
+    "company_name": "SEVMAKSAN Un ve Yem Makine İmalat Montaj",
+    "phone": "+90 537 870 34 15",
+    "address": "Mimar Sinan, Küçük Sanayi 13. Sk. 1 A, 19100 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "",
+    "google_maps_url": "https://maps.google.com/?cid=359315488085323915",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "2 yorum | makina imalat sanayi",
+    "media_urls": []
+  },
+  {
+    "company_name": "Yavuz Makina",
+    "phone": "+90 364 502 33 19",
+    "address": "Pınarçay Organize Sanayi Bölgesi 1. Sokak No:8 Çorum Merkez, Pınarçay OSB, 19100 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://www.ymcup.com.tr/",
+    "google_maps_url": "https://maps.google.com/?cid=15283783853285333383",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "2 yorum | makina imalat sanayi",
+    "media_urls": []
+  },
+  {
+    "company_name": "HIDIR MAKİNA SANAYİ & İMALAT",
+    "phone": "+90 544 612 81 04",
+    "address": "Mimar Sinan, Küçük Sanayi 23. Cd. No:23, 19100 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "",
+    "google_maps_url": "https://maps.google.com/?cid=2408604938523768492",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "1 yorum | makina imalat sanayi",
+    "media_urls": []
+  },
+  {
+    "company_name": "Eker Makina",
+    "phone": "+90 364 234 94 03",
+    "address": "Organize Sanayi Bölgesi 14. Cad. No :5, Pınarçay OSB, 19100 Çorum Merkez/Çorum, Türkiye",
+    "city": "Çorum",
+    "website": "http://www.ekermakina.com.tr/",
+    "google_maps_url": "https://maps.google.com/?cid=3519210666679279489",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "3 yorum | makina imalat sanayi",
+    "media_urls": []
+  }
+]
