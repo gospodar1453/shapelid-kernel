@@ -1,9 +1,14 @@
-FROM public.ecr.aws/lambda/python:3.11
+FROM python:3.11-slim
 
 # Sistem bağımlılıkları
-RUN dnf install -y mesa-libGL glib2 && dnf clean all
+RUN apt-get update && apt-get install -y \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
 
-# Bağımlılıkları kopyala ve yükle
+WORKDIR /app
+
+# Bağımlılıkları yükle
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
@@ -12,7 +17,6 @@ COPY main.py .
 COPY analyzers/ analyzers/
 COPY pricing/ pricing/
 
-# Lambda handler wrapper
-COPY lambda_handler.py .
+EXPOSE 8000
 
-CMD ["lambda_handler.handler"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
