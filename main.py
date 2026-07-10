@@ -11,11 +11,12 @@ import os
 from analyzers.stl_analyzer import analyze_stl
 from analyzers.dxf_analyzer import analyze_dxf
 from pricing.engine import calculate_price
+from pricing.exchange_rate import get_rate_info, usd_to_try, get_usd_try
 
 app = FastAPI(
     title="Shapelid Geometry Kernel",
-    version="1.0.0",
-    description="Faz-1: STL ve DXF bazlı otomatik fiyatlandırma motoru"
+    version="1.1.0",
+    description="Faz-1: STL ve DXF bazlı otomatik fiyatlandırma motoru — Türkiye piyasası kalibrasyonu"
 )
 
 app.add_middleware(
@@ -28,18 +29,35 @@ app.add_middleware(
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "version": "1.0.0", "phase": "faz-1"}
+    rate = get_rate_info()
+    return {
+        "status": "ok",
+        "version": "1.1.0",
+        "phase": "faz-1",
+        "exchange_rate": rate,
+    }
+
+
+@app.get("/exchange-rate")
+def exchange_rate(force_refresh: bool = False):
+    """
+    TCMB'den güncel USD/TRY ve EUR/TRY kurlarını döndür.
+    force_refresh=true ile cache bypass edilebilir.
+    """
+    if force_refresh:
+        get_usd_try(force_refresh=True)
+    return get_rate_info()
 
 
 @app.post("/analyze")
 async def analyze(
     file: UploadFile = File(...),
-    technology: str = "fdm",         # fdm | sla | sls | mjf | laser | bending
-    material: str = "pla",           # pla | abs | petg | resin | pa12 | stainless_steel | mild_steel | aluminum
+    technology: str = "fdm",          # fdm | sla | sls | mjf | laser | bending
+    material: str = "pla",            # pla | abs | petg | resin | pa12 | stainless_steel | mild_steel | aluminum
     quantity: int = 1,
-    layer_height: float = 0.2,       # mm — sadece 3D baskı için
-    infill: float = 0.2,             # 0.0-1.0 — sadece FDM için
-    material_thickness: float = 2.0, # mm — sadece laser/bending için
+    layer_height: float = 0.2,        # mm — sadece 3D baskı için
+    infill: float = 0.2,              # 0.0-1.0 — sadece FDM için
+    material_thickness: float = 2.0,  # mm — sadece laser/bending için
 ):
     ext = os.path.splitext(file.filename)[1].lower()
 
@@ -49,7 +67,6 @@ async def analyze(
             detail=f"Desteklenmeyen format: {ext}. Faz-1 yalnızca STL ve DXF kabul eder."
         )
 
-    # Dosyayı geçici olarak kaydet
     with tempfile.NamedTemporaryFile(suffix=ext, delete=False) as tmp:
         content = await file.read()
         tmp.write(content)
@@ -62,7 +79,7 @@ async def analyze(
         elif ext == ".dxf":
             geometry = analyze_dxf(tmp_path)
 
-        # Fiyat hesaplama
+        # Fiyat hesaplama (USD)
         params = {
             "technology": technology,
             "material": material,
@@ -73,6 +90,20 @@ async def analyze(
         }
         pricing = calculate_price(geometry, params)
 
+        # TRY dönüşümü — TCMB kuru ile
+        rate_info = get_rate_info()
+        usd_try = rate_info["usd_try"]
+
+        pricing_try = {
+            "unit_price_try": round(pricing["unit_price"] * usd_try, 2),
+            "total_price_try": round(pricing["total_price"] * usd_try, 2),
+            "exchange_rate": {
+                "usd_try": usd_try,
+                "source": rate_info["source"],
+                "fetched_at": rate_info["fetched_at"],
+            }
+        }
+
         return {
             "file": file.filename,
             "format": ext,
@@ -80,6 +111,7 @@ async def analyze(
             "material": material,
             "geometry": geometry,
             "pricing": pricing,
+            "pricing_try": pricing_try,
             "quantity": quantity,
         }
 
@@ -116,7 +148,7 @@ def list_technologies():
         "sheet_metal": {
             "laser": {
                 "description": "Laser Cutting",
-                "materials": ["mild_steel", "stainless_steel", "aluminum", "copper", "brass"],
+                "materials": ["mild_steel", "stainless_steel", "aluminum", "copper", "brass", "galvanized_steel"],
                 "input_formats": ["dxf"]
             },
             "bending": {
