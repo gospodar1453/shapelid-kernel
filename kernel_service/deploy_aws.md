@@ -1,92 +1,168 @@
-# AWS App Runner — Deploy Kılavuzu
+# AWS Lambda Container Image — Deploy Kılavuzu
 
-## Ön Gereksinimler
-- AWS hesabı (aws.amazon.com)
-- GitHub hesabı
-- AWS CLI (opsiyonel, konsol üzerinden de yapılabilir)
+## Genel Akış
+kernel_service/ → Docker image → ECR (AWS container registry) → Lambda function → Function URL (HTTPS endpoint)
 
 ---
 
-## Adım 1: GitHub Repo Oluştur
+## Adım 1: AWS CloudShell'i Aç
 
-1. github.com → "New repository"
-2. İsim: `shapelid-kernel`
-3. Private seç
-4. `kernel_service/` klasörünün içeriğini bu repoya yükle:
-   - `main.py`
-   - `analyzers/` (klasör)
-   - `pricing/` (klasör)
-   - `requirements.txt`
-   - `Dockerfile`
-   - `apprunner.yaml`
+AWS konsolunda sağ üst köşede **CloudShell** ikonuna tıklayın (>_ şeklinde).
+Açılan terminalde tüm komutları çalıştıracağız — hiçbir şey indirmeniz gerekmiyor.
+
+---
+
+## Adım 2: ECR Reposu Oluştur
 
 ```bash
-git init
-git add .
-git commit -m "Kernel Faz-1 başlangıç"
-git remote add origin https://github.com/SENIN_KULLANICI_ADIN/shapelid-kernel.git
-git push -u origin main
+aws ecr create-repository \
+  --repository-name shapelid-kernel \
+  --region eu-central-1
+```
+
+Çıktıda `repositoryUri` göreceksiniz:
+```
+123456789.dkr.ecr.eu-central-1.amazonaws.com/shapelid-kernel
+```
+Bu URI'yi kopyalayın — sonraki adımlarda kullanacaksınız.
+
+---
+
+## Adım 3: Kodu CloudShell'e Yükle
+
+CloudShell'de **Actions → Upload file** ile şu dosyaları tek tek yükleyin:
+- `main.py`
+- `lambda_handler.py`
+- `requirements.txt`
+- `Dockerfile`
+- `analyzers/` klasörü (önce zip'leyip yükleyin)
+- `pricing/` klasörü (önce zip'leyip yükleyin)
+
+Zip'leri açın:
+```bash
+unzip analyzers.zip -d analyzers/
+unzip pricing.zip -d pricing/
 ```
 
 ---
 
-## Adım 2: AWS App Runner Servisi Oluştur
+## Adım 4: Docker Image Build Et ve ECR'a Push Et
 
-1. AWS Konsolu → App Runner → "Create service"
-2. **Source:** GitHub repository
-3. **Connect to GitHub:** hesabını bağla, `shapelid-kernel` reposunu seç
-4. **Branch:** main
-5. **Deployment trigger:** Automatic (her push'ta otomatik deploy)
+```bash
+# Değişkeni ayarla (kendi URI'nizi yazın)
+REPO_URI="123456789.dkr.ecr.eu-central-1.amazonaws.com/shapelid-kernel"
 
-### Konfigürasyon
-| Alan | Değer |
+# ECR'a login
+aws ecr get-login-password --region eu-central-1 | \
+  docker login --username AWS --password-stdin $REPO_URI
+
+# Image build (ilk seferinde ~5-10 dk sürer)
+docker build -t shapelid-kernel .
+
+# Tag ve push
+docker tag shapelid-kernel:latest $REPO_URI:latest
+docker push $REPO_URI:latest
+```
+
+---
+
+## Adım 5: Lambda Function Oluştur
+
+### 5a — IAM Role (bir kez yapılır)
+```bash
+# Lambda execution role oluştur
+aws iam create-role \
+  --role-name shapelid-kernel-role \
+  --assume-role-policy-document '{
+    "Version":"2012-10-17",
+    "Statement":[{
+      "Effect":"Allow",
+      "Principal":{"Service":"lambda.amazonaws.com"},
+      "Action":"sts:AssumeRole"
+    }]
+  }'
+
+# Temel log yetkisi ekle
+aws iam attach-role-policy \
+  --role-name shapelid-kernel-role \
+  --policy-arn arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+```
+
+Role ARN'ı not edin: `arn:aws:iam::123456789:role/shapelid-kernel-role`
+
+### 5b — Lambda Function Oluştur
+```bash
+ROLE_ARN="arn:aws:iam::HESAP_ID:role/shapelid-kernel-role"
+REPO_URI="123456789.dkr.ecr.eu-central-1.amazonaws.com/shapelid-kernel:latest"
+
+aws lambda create-function \
+  --function-name shapelid-kernel \
+  --package-type Image \
+  --code ImageUri=$REPO_URI \
+  --role $ROLE_ARN \
+  --region eu-central-1 \
+  --memory-size 2048 \
+  --timeout 60 \
+  --architectures x86_64
+```
+
+---
+
+## Adım 6: Function URL Ekle (HTTPS endpoint)
+
+```bash
+aws lambda add-permission \
+  --function-name shapelid-kernel \
+  --statement-id FunctionURLAllowPublic \
+  --action lambda:InvokeFunctionUrl \
+  --principal "*" \
+  --function-url-auth-type NONE \
+  --region eu-central-1
+
+aws lambda create-function-url-config \
+  --function-name shapelid-kernel \
+  --auth-type NONE \
+  --region eu-central-1
+```
+
+Çıktıda `FunctionUrl` göreceksiniz:
+```
+https://XXXXXXXX.lambda-url.eu-central-1.on.aws/
+```
+
+**Bu URL'i kopyalayın — Base44'e eklenecek `KERNEL_SERVICE_URL` budur.**
+
+---
+
+## Adım 7: Test Et
+
+```bash
+curl https://XXXXXXXX.lambda-url.eu-central-1.on.aws/health
+# {"status":"ok","version":"1.0.0","phase":"faz-1"}
+```
+
+---
+
+## Tahmini Maliyet
+
+| Kullanım | Maliyet |
 |---|---|
-| Configuration file | Use configuration file (`apprunner.yaml`) |
-| Instance size | 1 vCPU / 2 GB RAM |
-| Auto scaling | Min 1, Max 5 instance |
-| Health check path | `/health` |
-| Region | eu-central-1 (Frankfurt) |
-
-6. **Create & deploy** — ilk deploy ~5 dakika sürer
+| İlk 1M istek/ay | **Ücretsiz** (kalıcı free tier) |
+| İlk 400.000 GB-saniye/ay | **Ücretsiz** |
+| 2GB RAM × 30sn × 10K istek | ~$0.10 |
+| **Tipik MVP maliyeti** | **$0 - $2/ay** |
 
 ---
 
-## Adım 3: Servis URL'ini Al
+## Güncelleme (yeni kod deploy)
 
-Deploy tamamlanınca App Runner sana şu formatta bir URL verir:
+```bash
+docker build -t shapelid-kernel .
+docker tag shapelid-kernel:latest $REPO_URI:latest
+docker push $REPO_URI:latest
+
+aws lambda update-function-code \
+  --function-name shapelid-kernel \
+  --image-uri $REPO_URI:latest \
+  --region eu-central-1
 ```
-https://XXXXX.eu-central-1.awsapprunner.com
-```
-
-Bu URL'i kopyala — Base44 backend function'a ekleyeceğiz.
-
----
-
-## Adım 4: Ortam Değişkenleri (Opsiyonel Güvenlik)
-
-App Runner → Configuration → Environment variables:
-```
-API_KEY = shapelid_kernel_xxxx  # istersen basit API key auth ekle
-```
-
----
-
-## Tahmini Maliyet (eu-central-1, 2026 fiyatları)
-
-| Kullanım | Maliyet/ay |
-|---|---|
-| 0-1M istek (ilk yıl free tier) | ~$0 |
-| 1 vCPU aktif süre (720 saat) | ~$30 |
-| Bekleme süresi (paused) | ~$5 |
-| **Tipik MVP maliyeti** | **~$10-35/ay** |
-
-Trafik artınca auto-scaling devreye girer, instance başına aynı maliyet.
-
----
-
-## Güvenlik Notu
-
-App Runner URL'i herkese açık. Base44 backend function'ı bu servisi çağırırken:
-1. Basit API key header ekle: `X-Kernel-Key: shapelid_kernel_xxx`
-2. App Runner'da bu key'i environment variable olarak tut
-3. `main.py`'ye middleware ekleriz (istersen)
