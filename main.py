@@ -6,11 +6,13 @@ Girdi formatları: STL (3D), DXF (2D)
 Kur riski önlemleri:
   A) %4 kur tamponu (pricing_rate = TCMB * 1.04)
   B) Teklif geçerlilik süresi (valid_until)
+  C) DB'den canlı malzeme fiyatı (material_price_usd_per_kg parametresi)
   D) İç hesap USD, müşteriye TRY gösterim
 """
 
-from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi import FastAPI, UploadFile, File, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from typing import Optional
 import tempfile
 import os
 from analyzers.stl_analyzer import analyze_stl
@@ -20,8 +22,8 @@ from pricing.exchange_rate import get_rate_info, get_pricing_rate, usd_to_try, g
 
 app = FastAPI(
     title="Shapelid Geometry Kernel",
-    version="1.2.0",
-    description="Faz-1: STL/DXF bazlı fiyatlandırma — TCMB kuru, %4 tampon, geçerlilik süresi"
+    version="1.3.0",
+    description="Faz-1: STL/DXF bazlı fiyatlandırma — TCMB kuru, %4 tampon, DB malzeme fiyatı"
 )
 
 app.add_middleware(
@@ -36,7 +38,7 @@ app.add_middleware(
 def health():
     return {
         "status": "ok",
-        "version": "1.2.0",
+        "version": "1.3.0",
         "phase": "faz-1",
         "exchange_rate": get_rate_info(),
     }
@@ -44,13 +46,6 @@ def health():
 
 @app.get("/exchange-rate")
 def exchange_rate(force_refresh: bool = False):
-    """
-    TCMB'den güncel kur bilgisi.
-    - usd_try: ham TCMB kuru
-    - usd_try_buffered: fiyatlamada kullanılan kur (%4 tamponlu)
-    - validity_hours_by_technology: teknoloji bazlı teklif geçerlilik süreleri
-    force_refresh=true ile 4h cache bypass edilebilir.
-    """
     if force_refresh:
         get_usd_try(force_refresh=True)
     return get_rate_info()
@@ -59,12 +54,14 @@ def exchange_rate(force_refresh: bool = False):
 @app.post("/analyze")
 async def analyze(
     file: UploadFile = File(...),
-    technology: str = "fdm",          # fdm | sla | sls | mjf | laser | bending
+    technology: str = "fdm",
     material: str = "pla",
     quantity: int = 1,
     layer_height: float = 0.2,
     infill: float = 0.2,
     material_thickness: float = 2.0,
+    # Canlı DB fiyatı — Base44 kernelAnalyze fonksiyonu bu parametreyi gönderir
+    material_price_usd_per_kg: Optional[float] = Query(default=None),
 ):
     ext = os.path.splitext(file.filename)[1].lower()
 
@@ -94,22 +91,22 @@ async def analyze(
             "layer_height": layer_height,
             "infill": infill,
             "material_thickness": material_thickness,
+            # DB'den gelen canlı fiyat (varsa)
+            "material_price_usd_per_kg": material_price_usd_per_kg,
         }
         pricing = calculate_price(geometry, params)
 
-        # Kur bilgisi — tamponu uygulanmış (A önlemi)
+        # Kur bilgisi
         rate = get_pricing_rate(technology)
-        pricing_rate = rate["pricing_rate"]   # TCMB * 1.04
+        pricing_rate = rate["pricing_rate"]
 
-        # TRY dönüşümü (D önlemi: müşteriye sadece TRY)
         unit_price_try  = round(pricing["unit_price"]  * pricing_rate, 2)
         total_price_try = round(pricing["total_price"] * pricing_rate, 2)
 
-        # B önlemi: geçerlilik süresi
         pricing_try = {
             "unit_price_try":  unit_price_try,
             "total_price_try": total_price_try,
-            "valid_until":     rate["valid_until"],   # ISO UTC
+            "valid_until":     rate["valid_until"],
             "valid_hours":     rate["valid_hours"],
             "exchange_rate": {
                 "tcmb_rate":    rate["tcmb_rate"],
@@ -127,8 +124,8 @@ async def analyze(
             "material":   material,
             "quantity":   quantity,
             "geometry":   geometry,
-            "pricing":    pricing,          # USD (iç hesap)
-            "pricing_try": pricing_try,     # TRY (müşteriye gösterim)
+            "pricing":    pricing,
+            "pricing_try": pricing_try,
         }
 
     finally:
@@ -137,7 +134,6 @@ async def analyze(
 
 @app.get("/technologies")
 def list_technologies():
-    """Desteklenen teknoloji ve materyal kombinasyonları"""
     return {
         "3d_printing": {
             "fdm":  {"description": "Fused Deposition Modeling",
