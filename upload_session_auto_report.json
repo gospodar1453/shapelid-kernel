@@ -1,0 +1,65 @@
+{
+  "session_date": "2026-07-11 05:31:47",
+  "batches": [
+    {
+      "batch": 1,
+      "file": "/app/batch_upload_session_auto_1.json",
+      "count": 400,
+      "status": "prepared"
+    },
+    {
+      "batch": 2,
+      "file": "/app/batch_upload_session_auto_2.json",
+      "count": 400,
+      "status": "prepared"
+    },
+    {
+      "batch": 3,
+      "file": "/app/batch_upload_session_auto_3.json",
+      "count": 400,
+      "status": "prepared"
+    },
+    {
+      "batch": 4,
+      "file": "/app/batch_upload_session_auto_4.json",
+      "count": 400,
+      "status": "prepared"
+    },
+    {
+      "batch": 5,
+      "file": "/app/batch_upload_session_auto_5.json",
+      "count": 400,
+      "status": "prepared"
+    },
+    {
+      "batch": 6,
+      "file": "/app/batch_upload_session_auto_6.json",
+      "count": 400,
+      "status": "prepared"
+    },
+    {
+      "batch": 7,
+      "file": "/app/batch_upload_session_auto_7.json",
+      "count": 400,
+      "status": "prepared"
+    },
+    {
+      "batch": 8,
+      "file": "/app/batch_upload_session_auto_8.json",
+      "count": 400,
+      "status": "prepared"
+    },
+    {
+      "batch": 9,
+      "file": "/app/batch_upload_session_auto_9.json",
+      "count": 400,
+      "status": "prepared"
+    },
+    {
+      "batch": 10,
+      "file": "/app/batch_upload_session_auto_10.json",
+      "count": 465,
+      "status": "prepared"
+    }
+  ]
+}
