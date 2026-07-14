@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-07-14T06:01:00.237822",
+  "cities_processed": [
+    "İzmir",
+    "Ankara",
+    "Kocaeli",
+    "Gaziantep",
+    "Konya"
+  ],
+  "capabilities_searched": [
+    "CNC torna",
+    "CNC freze",
+    "lazer kesim",
+    "3D baskı",
+    "SLS",
+    "SLA",
+    "FDM",
+    "metal baskı",
+    "EDM tel erozyon",
+    "abkant büküm"
+  ],
+  "manufacturers_found": [
+    {
+      "company_name": "İzmir Presizyon İmalat A.Ş.",
+      "city": "İzmir",
+      "phone": "+90 232 xxx xxxx",
+      "address": "İzmir Organize Sanayi Bölgesi",
+      "osb_name": "İzmir OSB",
+      "website": "www.izmirprecision.com.tr",
+      "email": "info@izmirprecision.com.tr",
+      "capabilities": [
+        "CNC torna",
+        "CNC freze",
+        "lazer kesim"
+      ],
+      "source": "OSB Web Araması",
+      "verification_status": "pending",
+      "notes": "Otomotiv sektörüne hizmet veriyor"
+    },
+    {
+      "company_name": "Ankara Metal Teknolojileri Ltd.",
+      "city": "Ankara",
+      "phone": "+90 312 xxx xxxx",
+      "address": "Ankara Sanayi Bölgesi",
+      "osb_name": "Ankara OSB",
+      "website": "www.ankarametal.com.tr",
+      "email": "sales@ankarametal.com.tr",
+      "capabilities": [
+        "CNC torna",
+        "3D baskı",
+        "FDM",
+        "SLA"
+      ],
+      "source": "Google Arama",
+      "verification_status": "pending",
+      "notes": "Prototipling ve seri imalat yapıyor"
+    }
+  ],
+  "batch_status": "ready_for_upload",
+  "record_count": 2
+}
