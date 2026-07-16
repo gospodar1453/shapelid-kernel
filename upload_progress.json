@@ -1,8 +1,11 @@
 {
-  "previous_count": 2971,
-  "uploaded_now": 500,
-  "new_total": 3471,
-  "target": 4065,
-  "remaining": 594,
-  "progress_percent": 85.38745387453875
+  "session": "Mega Results DB Upload - Session 4",
+  "timestamp": "2026-07-16T05:35:29.209991",
+  "previous_db_count": 3516,
+  "batch_uploaded": 400,
+  "new_expected_count": 3916,
+  "source_file": "mega_results.json",
+  "source_total_records": 4065,
+  "records_remaining": 149,
+  "progress_percent": 96.33456334563346
 }
