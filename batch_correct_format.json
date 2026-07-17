@@ -2,67 +2,97 @@
   {
     "company_name": "İzmir Presizyon Metal",
     "phone": "+90 232 XXX XXXX",
+    "city": "İzmir",
     "address": "Gaziemir, İzmir",
     "website": "www.izmirpresizyon.com.tr",
     "email": "info@izmirpresizyon.com.tr",
-    "capabilities": "CNC torna, CNC freze, lazer kesim",
-    "source": "web_search",
-    "verification_status": "pending",
+    "capabilities": [
+      "CNC Turning",
+      "CNC Milling",
+      "Laser Cutting"
+    ],
+    "source": "Web Sitesi",
+    "verification_status": "Taslak",
     "notes": "Batch search - 2026-07-17 06:01"
   },
   {
     "company_name": "Batı Anadolu 3D Teknolojileri",
     "phone": "+90 232 XXX XXXX",
+    "city": "İzmir",
     "address": "Bornova, İzmir",
     "website": "www.ba3d.com.tr",
     "email": "sales@ba3d.com.tr",
-    "capabilities": "3D baskı, FDM, SLA",
-    "source": "web_search",
-    "verification_status": "pending",
+    "capabilities": [
+      "Fused Deposition Modeling",
+      "Stereolithography"
+    ],
+    "source": "Web Sitesi",
+    "verification_status": "Taslak",
     "notes": "Batch search - 2026-07-17 06:01"
   },
   {
     "company_name": "Ankara Metal İmalat",
     "phone": "+90 312 XXX XXXX",
+    "city": "Ankara",
     "address": "Sincan OSB, Ankara",
     "website": "www.ankarametal.com.tr",
     "email": "info@ankarametal.com.tr",
-    "capabilities": "CNC torna, CNC freze, EDM tel erozyon",
-    "source": "OSB_directory",
-    "verification_status": "pending",
+    "capabilities": [
+      "CNC Turning",
+      "CNC Milling",
+      "EDM Services"
+    ],
+    "source": "OSB",
+    "verification_status": "Taslak",
     "notes": "Batch search - 2026-07-17 06:01"
   },
   {
     "company_name": "Marmara Presizyon Makine",
     "phone": "+90 262 XXX XXXX",
+    "city": "Kocaeli",
     "address": "Körfez, Kocaeli",
     "website": "www.marmarapresizyon.com.tr",
     "email": "info@marmarapresizyon.com.tr",
-    "capabilities": "CNC torna, CNC freze, lazer kesim, abkant büküm",
-    "source": "web_search",
-    "verification_status": "pending",
+    "capabilities": [
+      "CNC Turning",
+      "CNC Milling",
+      "Laser Cutting",
+      "Bending"
+    ],
+    "source": "Web Sitesi",
+    "verification_status": "Taslak",
     "notes": "Batch search - 2026-07-17 06:01"
   },
   {
     "company_name": "Gaziantep Metal Teknoloji",
     "phone": "+90 342 XXX XXXX",
+    "city": "Gaziantep",
     "address": "OİZ, Gaziantep",
     "website": "www.gaziantepmetaltek.com.tr",
     "email": "info@gaziantepmetaltek.com.tr",
-    "capabilities": "CNC torna, CNC freze, metal baskı",
-    "source": "OSB_directory",
-    "verification_status": "pending",
+    "capabilities": [
+      "CNC Turning",
+      "CNC Milling",
+      "Direct Metal Laser Sintering"
+    ],
+    "source": "OSB",
+    "verification_status": "Taslak",
     "notes": "Batch search - 2026-07-17 06:01"
   },
   {
     "company_name": "Konya Makine İmalat Ltd",
     "phone": "+90 332 XXX XXXX",
+    "city": "Konya",
     "address": "Selçuk OSB, Konya",
     "website": "www.konyamakine.com.tr",
     "email": "info@konyamakine.com.tr",
-    "capabilities": "CNC torna, lazer kesim, 3D baskı",
-    "source": "OSB_directory",
-    "verification_status": "pending",
+    "capabilities": [
+      "CNC Turning",
+      "Laser Cutting",
+      "Fused Deposition Modeling"
+    ],
+    "source": "OSB",
+    "verification_status": "Taslak",
     "notes": "Batch search - 2026-07-17 06:01"
   }
 ]

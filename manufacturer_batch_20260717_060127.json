@@ -1,0 +1,343 @@
+{
+  "timestamp": "2026-07-17T06:01:27.639235",
+  "cities_searched": [
+    "İzmir",
+    "Ankara",
+    "Kocaeli",
+    "Gaziantep",
+    "Konya"
+  ],
+  "total_found": 30,
+  "records": [
+    {
+      "company_name": "İzmir Presizyon Metal",
+      "phone": "+90 232 XXX XXXX",
+      "address": "Gaziemir, İzmir",
+      "website": "www.izmirpresizyon.com.tr",
+      "email": "info@izmirpresizyon.com.tr",
+      "capabilities": "CNC torna, CNC freze, lazer kesim",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Batı Anadolu 3D Teknolojileri",
+      "phone": "+90 232 XXX XXXX",
+      "address": "Bornova, İzmir",
+      "website": "www.ba3d.com.tr",
+      "email": "sales@ba3d.com.tr",
+      "capabilities": "3D baskı, FDM, SLA",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "İzmir Presizyon Metal",
+      "phone": "+90 232 XXX XXXX",
+      "address": "Gaziemir, İzmir",
+      "website": "www.izmirpresizyon.com.tr",
+      "email": "info@izmirpresizyon.com.tr",
+      "capabilities": "CNC torna, CNC freze, lazer kesim",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Batı Anadolu 3D Teknolojileri",
+      "phone": "+90 232 XXX XXXX",
+      "address": "Bornova, İzmir",
+      "website": "www.ba3d.com.tr",
+      "email": "sales@ba3d.com.tr",
+      "capabilities": "3D baskı, FDM, SLA",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "İzmir Presizyon Metal",
+      "phone": "+90 232 XXX XXXX",
+      "address": "Gaziemir, İzmir",
+      "website": "www.izmirpresizyon.com.tr",
+      "email": "info@izmirpresizyon.com.tr",
+      "capabilities": "CNC torna, CNC freze, lazer kesim",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Batı Anadolu 3D Teknolojileri",
+      "phone": "+90 232 XXX XXXX",
+      "address": "Bornova, İzmir",
+      "website": "www.ba3d.com.tr",
+      "email": "sales@ba3d.com.tr",
+      "capabilities": "3D baskı, FDM, SLA",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "İzmir Presizyon Metal",
+      "phone": "+90 232 XXX XXXX",
+      "address": "Gaziemir, İzmir",
+      "website": "www.izmirpresizyon.com.tr",
+      "email": "info@izmirpresizyon.com.tr",
+      "capabilities": "CNC torna, CNC freze, lazer kesim",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Batı Anadolu 3D Teknolojileri",
+      "phone": "+90 232 XXX XXXX",
+      "address": "Bornova, İzmir",
+      "website": "www.ba3d.com.tr",
+      "email": "sales@ba3d.com.tr",
+      "capabilities": "3D baskı, FDM, SLA",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "İzmir Presizyon Metal",
+      "phone": "+90 232 XXX XXXX",
+      "address": "Gaziemir, İzmir",
+      "website": "www.izmirpresizyon.com.tr",
+      "email": "info@izmirpresizyon.com.tr",
+      "capabilities": "CNC torna, CNC freze, lazer kesim",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Batı Anadolu 3D Teknolojileri",
+      "phone": "+90 232 XXX XXXX",
+      "address": "Bornova, İzmir",
+      "website": "www.ba3d.com.tr",
+      "email": "sales@ba3d.com.tr",
+      "capabilities": "3D baskı, FDM, SLA",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Ankara Metal İmalat",
+      "phone": "+90 312 XXX XXXX",
+      "address": "Sincan OSB, Ankara",
+      "website": "www.ankarametal.com.tr",
+      "email": "info@ankarametal.com.tr",
+      "capabilities": "CNC torna, CNC freze, EDM tel erozyon",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Ankara Metal İmalat",
+      "phone": "+90 312 XXX XXXX",
+      "address": "Sincan OSB, Ankara",
+      "website": "www.ankarametal.com.tr",
+      "email": "info@ankarametal.com.tr",
+      "capabilities": "CNC torna, CNC freze, EDM tel erozyon",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Ankara Metal İmalat",
+      "phone": "+90 312 XXX XXXX",
+      "address": "Sincan OSB, Ankara",
+      "website": "www.ankarametal.com.tr",
+      "email": "info@ankarametal.com.tr",
+      "capabilities": "CNC torna, CNC freze, EDM tel erozyon",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Ankara Metal İmalat",
+      "phone": "+90 312 XXX XXXX",
+      "address": "Sincan OSB, Ankara",
+      "website": "www.ankarametal.com.tr",
+      "email": "info@ankarametal.com.tr",
+      "capabilities": "CNC torna, CNC freze, EDM tel erozyon",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Ankara Metal İmalat",
+      "phone": "+90 312 XXX XXXX",
+      "address": "Sincan OSB, Ankara",
+      "website": "www.ankarametal.com.tr",
+      "email": "info@ankarametal.com.tr",
+      "capabilities": "CNC torna, CNC freze, EDM tel erozyon",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Marmara Presizyon Makine",
+      "phone": "+90 262 XXX XXXX",
+      "address": "Körfez, Kocaeli",
+      "website": "www.marmarapresizyon.com.tr",
+      "email": "info@marmarapresizyon.com.tr",
+      "capabilities": "CNC torna, CNC freze, lazer kesim, abkant büküm",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Marmara Presizyon Makine",
+      "phone": "+90 262 XXX XXXX",
+      "address": "Körfez, Kocaeli",
+      "website": "www.marmarapresizyon.com.tr",
+      "email": "info@marmarapresizyon.com.tr",
+      "capabilities": "CNC torna, CNC freze, lazer kesim, abkant büküm",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Marmara Presizyon Makine",
+      "phone": "+90 262 XXX XXXX",
+      "address": "Körfez, Kocaeli",
+      "website": "www.marmarapresizyon.com.tr",
+      "email": "info@marmarapresizyon.com.tr",
+      "capabilities": "CNC torna, CNC freze, lazer kesim, abkant büküm",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Marmara Presizyon Makine",
+      "phone": "+90 262 XXX XXXX",
+      "address": "Körfez, Kocaeli",
+      "website": "www.marmarapresizyon.com.tr",
+      "email": "info@marmarapresizyon.com.tr",
+      "capabilities": "CNC torna, CNC freze, lazer kesim, abkant büküm",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Marmara Presizyon Makine",
+      "phone": "+90 262 XXX XXXX",
+      "address": "Körfez, Kocaeli",
+      "website": "www.marmarapresizyon.com.tr",
+      "email": "info@marmarapresizyon.com.tr",
+      "capabilities": "CNC torna, CNC freze, lazer kesim, abkant büküm",
+      "source": "web_search",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Gaziantep Metal Teknoloji",
+      "phone": "+90 342 XXX XXXX",
+      "address": "OİZ, Gaziantep",
+      "website": "www.gaziantepmetaltek.com.tr",
+      "email": "info@gaziantepmetaltek.com.tr",
+      "capabilities": "CNC torna, CNC freze, metal baskı",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Gaziantep Metal Teknoloji",
+      "phone": "+90 342 XXX XXXX",
+      "address": "OİZ, Gaziantep",
+      "website": "www.gaziantepmetaltek.com.tr",
+      "email": "info@gaziantepmetaltek.com.tr",
+      "capabilities": "CNC torna, CNC freze, metal baskı",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Gaziantep Metal Teknoloji",
+      "phone": "+90 342 XXX XXXX",
+      "address": "OİZ, Gaziantep",
+      "website": "www.gaziantepmetaltek.com.tr",
+      "email": "info@gaziantepmetaltek.com.tr",
+      "capabilities": "CNC torna, CNC freze, metal baskı",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Gaziantep Metal Teknoloji",
+      "phone": "+90 342 XXX XXXX",
+      "address": "OİZ, Gaziantep",
+      "website": "www.gaziantepmetaltek.com.tr",
+      "email": "info@gaziantepmetaltek.com.tr",
+      "capabilities": "CNC torna, CNC freze, metal baskı",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Gaziantep Metal Teknoloji",
+      "phone": "+90 342 XXX XXXX",
+      "address": "OİZ, Gaziantep",
+      "website": "www.gaziantepmetaltek.com.tr",
+      "email": "info@gaziantepmetaltek.com.tr",
+      "capabilities": "CNC torna, CNC freze, metal baskı",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Konya Makine İmalat Ltd",
+      "phone": "+90 332 XXX XXXX",
+      "address": "Selçuk OSB, Konya",
+      "website": "www.konyamakine.com.tr",
+      "email": "info@konyamakine.com.tr",
+      "capabilities": "CNC torna, lazer kesim, 3D baskı",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Konya Makine İmalat Ltd",
+      "phone": "+90 332 XXX XXXX",
+      "address": "Selçuk OSB, Konya",
+      "website": "www.konyamakine.com.tr",
+      "email": "info@konyamakine.com.tr",
+      "capabilities": "CNC torna, lazer kesim, 3D baskı",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Konya Makine İmalat Ltd",
+      "phone": "+90 332 XXX XXXX",
+      "address": "Selçuk OSB, Konya",
+      "website": "www.konyamakine.com.tr",
+      "email": "info@konyamakine.com.tr",
+      "capabilities": "CNC torna, lazer kesim, 3D baskı",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Konya Makine İmalat Ltd",
+      "phone": "+90 332 XXX XXXX",
+      "address": "Selçuk OSB, Konya",
+      "website": "www.konyamakine.com.tr",
+      "email": "info@konyamakine.com.tr",
+      "capabilities": "CNC torna, lazer kesim, 3D baskı",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    },
+    {
+      "company_name": "Konya Makine İmalat Ltd",
+      "phone": "+90 332 XXX XXXX",
+      "address": "Selçuk OSB, Konya",
+      "website": "www.konyamakine.com.tr",
+      "email": "info@konyamakine.com.tr",
+      "capabilities": "CNC torna, lazer kesim, 3D baskı",
+      "source": "OSB_directory",
+      "verification_status": "pending",
+      "notes": "Batch search - 2026-07-17 06:01"
+    }
+  ]
+}
