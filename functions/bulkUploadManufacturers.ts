@@ -1,109 +1,61 @@
-import { createClientFromRequest } from "npm:@base44/sdk@0.8.31";
+import { base44 } from "@base44/functions";
+import * as fs from "fs";
+import * as path from "path";
 
-Deno.serve(async (req) => {
-  const base44 = createClientFromRequest(req);
-  const body = await req.json();
-  const { items } = body; // array of manufacturer objects
-
-  if (!items || !Array.isArray(items) || items.length === 0) {
-    return new Response(JSON.stringify({ error: "items array gerekli" }), { status: 400 });
-  }
-
-  const { accessToken } = await base44.asServiceRole.connectors.getConnection("wix");
-
-  // Her kaydı Wix formatına dönüştür
-  const dataItems = items.map((r: any) => {
-    const hasPhone = !!(r.phone || "").trim();
-    const hasEmail = !!(r.email || "").trim();
-    const hasAddress = !!(r.address || "").trim();
-    const contactDataFull = hasPhone && hasEmail && hasAddress;
-
-    // Slug: company_name'den türet
-    const slug = (r.company_name || "")
-      .toLowerCase()
-      .replace(/[çÇ]/g, "c")
-      .replace(/[şŞ]/g, "s")
-      .replace(/[ğĞ]/g, "g")
-      .replace(/[üÜ]/g, "u")
-      .replace(/[öÖ]/g, "o")
-      .replace(/[ıİ]/g, "i")
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-+|-+$/g, "")
-      .substring(0, 80);
-
-    // Location: "Şehir/Turkey"
-    const location = r.city ? [`${r.city}/Turkey`] : [];
-
-    // Website: Instagram linkleri de dahil
-    const website = (r.website || "").trim() || undefined;
-
-    // Address objesi
-    const addressObj = r.address ? {
-      formatted: r.address,
-      city: r.city || "",
-      country: "TR",
-    } : undefined;
-
-    // Description: capabilities + şehir + notlar
-    const caps = (r.capabilities || []).join(", ");
-    const description = [
-      caps ? `Üretim Teknolojileri: ${caps}` : "",
-      r.city ? `Konum: ${r.city}` : "",
-      r.notes ? r.notes : "",
-    ].filter(Boolean).join(" | ");
-
-    const data: any = {
-      title: r.company_name || "",
-      slug: slug,
-      email: r.email || "",
-      website: website,
-      manufacturing: r.capabilities || [],
-      capabilities: r.capabilities || [],
-      location: location,
-      address: addressObj,
-      description: description,
-      contactDataFull: contactDataFull,
-      verified: false,
-      certified: false,
-    };
-
-    // Media varsa img olarak ilk URL'yi ekle
-    if (r.media_urls && r.media_urls.length > 0) {
-      data.img = { url: r.media_urls[0] };
+export default async function bulkUploadManufacturers(request: {
+  batch_number?: number;
+}) {
+  try {
+    // Tüm kayıtları /tmp/final_upload_all_433.json'dan oku
+    const filePath = "/tmp/final_upload_all_433.json";
+    
+    if (!fs.existsSync(filePath)) {
+      return {
+        success: false,
+        error: "File not found",
+        file: filePath
+      };
     }
 
-    return { data };
-  });
+    const fileContent = fs.readFileSync(filePath, "utf-8");
+    const allRecords = JSON.parse(fileContent);
 
-  // Wix bulk insert
-  const resp = await fetch("https://www.wixapis.com/wix-data/v2/items/bulk", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${accessToken}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      dataCollectionId: "manufacturers",
-      dataItems: dataItems,
-      returnEntity: false,
-    }),
-  });
+    // Batch 100 kayıt halinde yükle
+    const batchSize = 100;
+    let uploadedCount = 0;
+    let failedCount = 0;
 
-  const result = await resp.json();
+    for (let i = 0; i < allRecords.length; i += batchSize) {
+      const batch = allRecords.slice(i, i + batchSize);
+      
+      try {
+        // ManufacturerLead entity'sine bulk create
+        // SDK tarafından otomatik olarak yapılacak
+        for (const record of batch) {
+          try {
+            await base44.entities.ManufacturerLead.create(record);
+            uploadedCount++;
+          } catch (err) {
+            failedCount++;
+            console.error(`Record creation failed: ${record.company_name}`, err);
+          }
+        }
+      } catch (err) {
+        console.error(`Batch ${i / batchSize} failed`, err);
+      }
+    }
 
-  if (!resp.ok) {
-    return new Response(JSON.stringify({ error: result, status: resp.status }), { status: 200 });
+    return {
+      success: true,
+      totalRecords: allRecords.length,
+      uploadedCount,
+      failedCount,
+      message: `Bulk upload complete: ${uploadedCount} created, ${failedCount} failed`
+    };
+  } catch (error) {
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : "Unknown error"
+    };
   }
-
-  const inserted = result.results?.filter((r: any) => r.dataItem)?.length || 0;
-  const errors = result.bulkActionMetadata?.totalFailures || 0;
-
-  return new Response(JSON.stringify({
-    status: "ok",
-    inserted,
-    errors,
-    totalSent: items.length,
-  }), {
-    headers: { "Content-Type": "application/json" },
-  });
-});
+}
