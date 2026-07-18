@@ -1,0 +1,9 @@
+{
+  "total_records": 400,
+  "chunk_count": 2,
+  "chunk_size": 200,
+  "chunks": [
+    200,
+    200
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "session": "mega_results_upload_session_3648_to_4048",
+  "previous_count": 3648,
+  "new_records": 400,
+  "final_count": 4048,
+  "target": 4065,
+  "remaining": 17,
+  "batch_files": [
+    {
+      "file": "batch_chunk1_part_1.json",
+      "records": 100
+    },
+    {
+      "file": "batch_chunk1_part_2.json",
+      "records": 100
+    },
+    {
+      "file": "chunk_2_upload.json",
+      "records": 200
+    }
+  ]
+}

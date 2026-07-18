@@ -1,0 +1,9 @@
+{
+  "total_records": 400,
+  "batches": {
+    "batch1": 100,
+    "batch2": 100,
+    "batch3": 200
+  },
+  "status": "ready_for_upload"
+}
