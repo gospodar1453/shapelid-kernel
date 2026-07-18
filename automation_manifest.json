@@ -1,0 +1,63 @@
+{
+  "automation": "Mega Results DB Yükleme - Otomatik Devam",
+  "timestamp": "2026-07-18T05:33:16.778771",
+  "session": "automated_upload_session_20260718",
+  "progress": {
+    "previous_db_count": 3648,
+    "records_prepared": 400,
+    "target_total": 4065,
+    "remaining_after_upload": 17
+  },
+  "batches_ready": [
+    {
+      "file": "sub_batch_1_1.json",
+      "records": 25
+    },
+    {
+      "file": "sub_batch_1_2.json",
+      "records": 25
+    },
+    {
+      "file": "sub_batch_1_3.json",
+      "records": 25
+    },
+    {
+      "file": "sub_batch_1_4.json",
+      "records": 25
+    },
+    {
+      "file": "sub_batch_2_1.json",
+      "records": 25
+    },
+    {
+      "file": "sub_batch_2_2.json",
+      "records": 25
+    },
+    {
+      "file": "sub_batch_2_3.json",
+      "records": 25
+    },
+    {
+      "file": "sub_batch_2_4.json",
+      "records": 25
+    },
+    {
+      "file": "sub_batch_3_1.json",
+      "records": 50
+    },
+    {
+      "file": "sub_batch_3_2.json",
+      "records": 50
+    },
+    {
+      "file": "sub_batch_3_3.json",
+      "records": 50
+    },
+    {
+      "file": "sub_batch_3_4.json",
+      "records": 50
+    }
+  ],
+  "total_batches": 12,
+  "status": "READY FOR UPLOAD"
+}
