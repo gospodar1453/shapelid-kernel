@@ -1,0 +1,164 @@
+[
+  {
+    "company_name": "İzmir Precision CNC Ltd.",
+    "phone": "+90 232 456 7890",
+    "address": "Alsancak, İzmir",
+    "city": "İzmir",
+    "district": "Alsancak",
+    "osb_name": "İzmir OSB",
+    "website": "https://izmircnc.com.tr",
+    "email": "info@izmircnc.com.tr",
+    "capabilities": [
+      "CNC freze",
+      "CNC torna",
+      "3D baskı"
+    ],
+    "source": "Google Search",
+    "source_url": "https://google.com",
+    "verification_status": "pending",
+    "notes": "Specializes in aerospace parts",
+    "google_maps_url": "https://maps.google.com/?q=izmircnc",
+    "google_rating": 4.8,
+    "invited_to_partner": false,
+    "media_urls": [
+      "https://example.com/izmir1.jpg"
+    ],
+    "media_description": "CNC milling center in operation"
+  },
+  {
+    "company_name": "Aegean Laser Solutions",
+    "phone": "+90 232 321 4567",
+    "address": "Bornova, İzmir",
+    "city": "İzmir",
+    "district": "Bornova",
+    "osb_name": "Bornova OSB",
+    "website": "https://aegeanlaser.com.tr",
+    "email": "sales@aegeanlaser.com.tr",
+    "capabilities": [
+      "lazer kesim",
+      "3D baskı",
+      "abkant büküm"
+    ],
+    "source": "OSB Directory",
+    "source_url": "https://bornovaosb.org",
+    "verification_status": "verified",
+    "notes": "Full-service sheet metal provider",
+    "google_maps_url": "https://maps.google.com/?q=aegeanlaser",
+    "google_rating": 4.6,
+    "invited_to_partner": false,
+    "media_urls": [
+      "https://example.com/izmir2.jpg",
+      "https://example.com/izmir3.jpg"
+    ],
+    "media_description": "Laser cutting machine, sheet metal samples"
+  },
+  {
+    "company_name": "Ankara Metal Works",
+    "phone": "+90 312 445 6789",
+    "address": "Çankırı Cad., Ankara",
+    "city": "Ankara",
+    "district": "Çankırı",
+    "osb_name": "Ankara OSB",
+    "website": "https://ankarametal.com.tr",
+    "email": "info@ankarametal.com.tr",
+    "capabilities": [
+      "CNC torna",
+      "EDM tel erozyon",
+      "lazer kesim"
+    ],
+    "source": "Google Search",
+    "source_url": "https://google.com",
+    "verification_status": "pending",
+    "notes": "Precision machining specialist",
+    "google_maps_url": "https://maps.google.com/?q=ankarametal",
+    "google_rating": 4.5,
+    "invited_to_partner": false,
+    "media_urls": [
+      "https://example.com/ankara1.jpg"
+    ],
+    "media_description": "EDM equipment setup"
+  },
+  {
+    "company_name": "Kocaeli 3D Solutions",
+    "phone": "+90 262 654 3210",
+    "address": "İzmit, Kocaeli",
+    "city": "Kocaeli",
+    "district": "İzmit",
+    "osb_name": "Izmit OSB",
+    "website": "https://kocaeli3d.com.tr",
+    "email": "contact@kocaeli3d.com.tr",
+    "capabilities": [
+      "3D baskı",
+      "SLS",
+      "SLA",
+      "FDM",
+      "metal baskı"
+    ],
+    "source": "OSB Directory",
+    "source_url": "https://izmitosb.org",
+    "verification_status": "verified",
+    "notes": "Full range of additive manufacturing",
+    "google_maps_url": "https://maps.google.com/?q=kocaeli3d",
+    "google_rating": 4.9,
+    "invited_to_partner": true,
+    "invited_at": "2026-07-18T06:01:27.294286",
+    "media_urls": [
+      "https://example.com/kocaeli1.jpg",
+      "https://example.com/kocaeli2.jpg"
+    ],
+    "media_description": "SLS and SLA 3D printers, finished parts"
+  },
+  {
+    "company_name": "Gaziantep Precision Engineering",
+    "phone": "+90 342 234 5678",
+    "address": "Sahinbey, Gaziantep",
+    "city": "Gaziantep",
+    "district": "Şahinbey",
+    "osb_name": "Gaziantep OSB",
+    "website": "https://gaziantepprecision.com.tr",
+    "email": "projects@gaziantepprecision.com.tr",
+    "capabilities": [
+      "CNC freze",
+      "CNC torna",
+      "lazer kesim"
+    ],
+    "source": "Google Search",
+    "source_url": "https://google.com",
+    "verification_status": "pending",
+    "notes": "Textile machinery component specialist",
+    "google_maps_url": "https://maps.google.com/?q=gaziantepprecision",
+    "google_rating": 4.3,
+    "invited_to_partner": false,
+    "media_urls": [
+      "https://example.com/gaziantep1.jpg"
+    ],
+    "media_description": "CNC workshop"
+  },
+  {
+    "company_name": "Konya Advanced Manufacturing",
+    "phone": "+90 332 345 6789",
+    "address": "Selçuklu, Konya",
+    "city": "Konya",
+    "district": "Selçuklu",
+    "osb_name": "Konya OSB",
+    "website": "https://konyaadv.com.tr",
+    "email": "sales@konyaadv.com.tr",
+    "capabilities": [
+      "CNC freze",
+      "abkant büküm",
+      "3D baskı"
+    ],
+    "source": "OSB Directory",
+    "source_url": "https://konyaosb.org",
+    "verification_status": "verified",
+    "notes": "Agricultural equipment manufacturer",
+    "google_maps_url": "https://maps.google.com/?q=konyaadv",
+    "google_rating": 4.4,
+    "invited_to_partner": false,
+    "media_urls": [
+      "https://example.com/konya1.jpg",
+      "https://example.com/konya2.jpg"
+    ],
+    "media_description": "CNC machines and bending press"
+  }
+]
