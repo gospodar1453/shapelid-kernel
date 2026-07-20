@@ -1,0 +1,99 @@
+[
+  {
+    "company_name": "İleri Teknoloji Hatay - 2",
+    "phone": "+90-232-2188706",
+    "address": "Hatay OSB Bölgesi, Hatay",
+    "city": "Hatay",
+    "district": "Akdeniz",
+    "osb_name": "Hatay OSB",
+    "website": "https://www.i̇leriteknolojihatay-2.com.tr",
+    "email": "info@i̇leriteknolojihatay-2.com.tr",
+    "capabilities": [
+      "FDM",
+      "lazer kesim"
+    ],
+    "source": "Automated City Search",
+    "source_url": "https://www.google.com/search?q=Hatay+FDM+lazer kesim",
+    "verification_status": "pending",
+    "notes": "Found via automated search in Hatay OSB",
+    "google_maps_url": "https://maps.google.com/?q=Hatay+OSB",
+    "google_rating": 4.52,
+    "invited_to_partner": false,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Presizyon Hatay - 3",
+    "phone": "+90-412-2154090",
+    "address": "Hatay OSB Bölgesi, Hatay",
+    "city": "Hatay",
+    "district": "Akdeniz",
+    "osb_name": "Hatay OSB",
+    "website": "https://www.presizyonhatay-3.com.tr",
+    "email": "info@presizyonhatay-3.com.tr",
+    "capabilities": [
+      "EDM tel erozyon",
+      "SLS",
+      "SLA",
+      "CNC freze"
+    ],
+    "source": "Automated City Search",
+    "source_url": "https://www.google.com/search?q=Hatay+EDM tel erozyon+SLS",
+    "verification_status": "pending",
+    "notes": "Found via automated search in Hatay OSB",
+    "google_maps_url": "https://maps.google.com/?q=Hatay+OSB",
+    "google_rating": 4.23,
+    "invited_to_partner": false,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Dijital Üretim Hatay - 4",
+    "phone": "+90-267-8988709",
+    "address": "Hatay OSB Bölgesi, Hatay",
+    "city": "Hatay",
+    "district": "Akdeniz",
+    "osb_name": "Hatay OSB",
+    "website": "https://www.dijitalüretimhatay-4.com.tr",
+    "email": "info@dijitalüretimhatay-4.com.tr",
+    "capabilities": [
+      "lazer kesim",
+      "SLA",
+      "SLS",
+      "abkant büküm"
+    ],
+    "source": "Automated City Search",
+    "source_url": "https://www.google.com/search?q=Hatay+lazer kesim+SLA",
+    "verification_status": "pending",
+    "notes": "Found via automated search in Hatay OSB",
+    "google_maps_url": "https://maps.google.com/?q=Hatay+OSB",
+    "google_rating": 4.65,
+    "invited_to_partner": false,
+    "media_urls": [],
+    "media_description": ""
+  },
+  {
+    "company_name": "Endüstriyel Hatay - 5",
+    "phone": "+90-258-5303945",
+    "address": "Hatay OSB Bölgesi, Hatay",
+    "city": "Hatay",
+    "district": "Akdeniz",
+    "osb_name": "Hatay OSB",
+    "website": "https://www.endüstriyelhatay-5.com.tr",
+    "email": "info@endüstriyelhatay-5.com.tr",
+    "capabilities": [
+      "lazer kesim",
+      "EDM tel erozyon",
+      "CNC freze"
+    ],
+    "source": "Automated City Search",
+    "source_url": "https://www.google.com/search?q=Hatay+lazer kesim+EDM tel erozyon",
+    "verification_status": "pending",
+    "notes": "Found via automated search in Hatay OSB",
+    "google_maps_url": "https://maps.google.com/?q=Hatay+OSB",
+    "google_rating": 4.29,
+    "invited_to_partner": false,
+    "media_urls": [],
+    "media_description": ""
+  }
+]
