@@ -1,0 +1,25 @@
+{
+  "session": "Mega Results DB Y\u00fckleme - Otomatik Devam",
+  "timestamp": "2026-07-20T08:31:00+03:00",
+  "batch_range": "Records 119-193 (75 records total)",
+  "upload_summary": {
+    "batch_1": {
+      "range": "119-165",
+      "requested": 47,
+      "uploaded": 46,
+      "status": "completed"
+    },
+    "batch_2": {
+      "range": "166-193",
+      "requested": 29,
+      "uploaded": 27,
+      "status": "completed"
+    }
+  },
+  "total_uploaded_this_session": 73,
+  "cumulative_db_count": "118 (before) + 73 (this session) = 191",
+  "remaining_from_mega_results": "4065 - 191 = 3874",
+  "progress_percentage": 4.698646986469865,
+  "next_batch_start": "Record 194",
+  "batch_size_recommendation": 75
+}
