@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-07-21T08:35:00+03:00",
+  "batch": 3,
+  "batch_start": 192,
+  "batch_end": 266,
+  "batch_records": 75,
+  "total_uploaded": 266,
+  "total_target": 4065,
+  "remaining": 3799,
+  "completion_pct": 6.5,
+  "next_batch_start": 267,
+  "next_batch_size": 75,
+  "status": "completed"
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "company_name": "3DLOGY | Tersine Mühendislik, 3D Baskı ve Yedek Parça Üretimi",
+    "phone": "+90 554 894 87 52",
+    "address": "İstasyon, Muhtar Sk. Hayat Sitesi ZİRVEKENT A BLOK NO:12/5A, 34940 Tuzla/İstanbul, Türkiye",
+    "city": "İstanbul",
+    "website": "https://3dlogy.com/",
+    "google_maps_url": "https://maps.google.com/?cid=17704989721483946507",
+    "google_rating": 5,
+    "capabilities": [
+      "Fused Deposition Modeling"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "12 yorum | endüstriyel 3D baskı",
+    "media_urls": []
+  },
+  {
+    "company_name": "Baser TECH 3D, cad , 3D print , product design , IOT",
+    "phone": "+90 539 774 05 89",
+    "address": "Kurtköy, Müsahede Sokağı No:16, 34912 Pendik/İstanbul, Türkiye",
+    "city": "İstanbul",
+    "website": "https://www.ismailbaser.com/",
+    "google_maps_url": "https://maps.google.com/?cid=4066794651312969461",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "2 yorum | endüstriyel 3D baskı",
+    "media_urls": []
+  },
+  {
+    "company_name": "KEMIQ TASARIM UYGULAMA TEKNOLOJİLERİ San. Ltd. Şti.",
+    "phone": "+90 212 225 58 51",
+    "address": "Atatürk Sanayi Sitesi, 2. Kısım No:1014 26. Sokak, Maslak, 34485 Sarıyer/İstanbul, Türkiye",
+    "city": "İstanbul",
+    "website": "http://www.kemiq.com/",
+    "google_maps_url": "https://maps.google.com/?cid=4615829236673122183",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "6 yorum | endüstriyel 3D baskı",
+    "media_urls": []
+  },
+  {
+    "company_name": "3D Farm Works - 3D Baskı, Endüstriyel Prototip ve Seri Üretim",
+    "phone": "+90 506 029 33 87",
+    "address": "Teskoop çarşı, Deliklikaya, Teskoop Özel Sanayi Bölgesi, 34555 Arnavutköy/İstanbul, Türkiye",
+    "city": "İstanbul",
+    "website": "https://www.3dfarmworks.com.tr/",
+    "google_maps_url": "https://maps.google.com/?cid=14965294156836615037",
+    "google_rating": null,
+    "capabilities": [
+      "Fused Deposition Modeling"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "0 yorum | endüstriyel 3D baskı",
+    "media_urls": []
+  },
+  {
+    "company_name": "3DBaskıla - Profesyonel 3D Baskı Hizmeti",
+    "phone": "+90 507 320 05 78",
+    "address": "Çamlık, Başak Sk. No: 38, 34780 Çekmeköy/İstanbul, Türkiye",
+    "city": "İstanbul",
+    "website": "https://www.3dbaskila.com.tr/",
+    "google_maps_url": "https://maps.google.com/?cid=11045474654471347577",
+    "google_rating": 5,
+    "capabilities": [
+      "Fused Deposition Modeling"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "9 yorum | endüstriyel 3D baskı",
+    "media_urls": []
+  },
+  {
+    "company_name": "TridiEvi - Endüstriyel 3D Baskı Hizmeti - Filament - Yedek Parça",
+    "phone": "+90 216 519 46 43",
+    "address": "İçerenköy, Huzur Hoca Cd No: 53/4, 34752 Ataşehir/İstanbul, Türkiye",
+    "city": "İstanbul",
+    "website": "",
+    "google_maps_url": "https://maps.google.com/?cid=269159688603267787",
+    "google_rating": 3,
+    "capabilities": [
+      "Fused Deposition Modeling"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "2 yorum | endüstriyel 3D baskı",
+    "media_urls": []
+  },
+  {
+    "company_name": "Öyka Metal Fason Pres Baskı",
+    "phone": "+90 530 354 76 58",
+    "address": "Akşemsettin, 4/1 Sokak SİM Sanayi Sitesi No: 3, 34920 Sultanbeyli/İstanbul, Türkiye",
+    "city": "İstanbul",
+    "website": "http://www.fasonpres.com/",
+    "google_maps_url": "https://maps.google.com/?cid=17474702628191039638",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "7 yorum | metal fason imalat",
+    "media_urls": []
+  },
+  {
+    "company_name": "ZİRVE VİBRASYON FASON ÇAPAK ALMA YAĞ ALMA METAL PARLATMA",
+    "phone": "+90 551 340 65 68",
+    "address": "İkitelli OSB, İSDÖK Sanayi Sitesi 2. Blok numara 6, 34000 Başakşehir/İstanbul, Türkiye",
+    "city": "İstanbul",
+    "website": "",
+    "google_maps_url": "https://maps.google.com/?cid=318706040006370426",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "4 yorum | metal fason imalat",
+    "media_urls": []
+  },
+  {
+    "company_name": "Ramazan Pres / Sarı & Prinç Fason Baskı Merkezi",
+    "phone": "+90 537 527 00 58",
+    "address": "Murat Mahallesi Dökümcüler Cad. İş Kent San Sitesi Bodrum Kat, Muratpaşa, 34040 Bayrampaşa/İstanbul, Türkiye",
+    "city": "İstanbul",
+    "website": "",
+    "google_maps_url": "https://maps.google.com/?cid=9816145803371481221",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "2 yorum | metal fason imalat",
+    "media_urls": []
+  },
+  {
+    "company_name": "ARC Lazer Markalama , Lazer Yazı, Pantograf, Metal Etiket ve Fason Üretim",
+    "phone": "+90 216 466 12 22",
+    "address": "Dudullu OSB Mah., 3. Cd. Saraçoğlu İş Merkezi No:3 D:5, Dudullu OSB, D:3a, 34775 Ümraniye/İstanbul, Türkiye",
+    "city": "İstanbul",
+    "website": "http://www.arcmarkalama.com/",
+    "google_maps_url": "https://maps.google.com/?cid=2608945160791738686",
+    "google_rating": 4.9,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "45 yorum | metal fason imalat",
+    "media_urls": []
+  }
+]
