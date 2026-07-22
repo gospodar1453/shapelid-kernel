@@ -1,0 +1,35 @@
+{
+  "batch_size": 50,
+  "first_record": {
+    "company_name": "Kromtaş Makina",
+    "phone": "+90 539 655 71 25",
+    "address": "Sultan Orhan, Hasköy Sanayi Sitesi Küme Evler No :13 / A 4, 41400 Gebze/Kocaeli, Türkiye",
+    "city": "Kocaeli",
+    "website": "http://www.kromtasmakina.com/",
+    "google_maps_url": "https://maps.google.com/?cid=16870677645082726723",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "1 yorum | CNC tornacı",
+    "media_urls": []
+  },
+  "last_record": {
+    "company_name": "Layerlabs 3D Tarama ve Baskı Hizmeti",
+    "phone": "+90 540 410 54 61",
+    "address": "Yenikent, Issıkgöl Cd, 41400 Gebze/Kocaeli, Türkiye",
+    "city": "Kocaeli",
+    "website": "",
+    "google_maps_url": "https://maps.google.com/?cid=10795811717935303769",
+    "google_rating": 5,
+    "capabilities": [
+      "Laser Cutting"
+    ],
+    "source": "Google Maps API",
+    "verification_status": "Taslak",
+    "notes": "5 yorum | 3D baskı hizmet",
+    "media_urls": []
+  }
+}
