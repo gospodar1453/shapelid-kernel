@@ -1,0 +1,29 @@
+{
+  "automation_start_time": "2026-07-23T08:31:00",
+  "task": "mega_results_upload_final_batch",
+  "progress": {
+    "current_db_count": 3907,
+    "total_to_upload": 158,
+    "chunks_prepared": 7,
+    "chunk_sizes": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      19
+    ],
+    "already_uploaded_this_session": 19,
+    "remaining_to_upload": 139,
+    "batches_ready": [
+      "api_batch_2.json",
+      "api_batch_3.json",
+      "api_batch_4.json",
+      "api_batch_5.json",
+      "api_batch_6.json",
+      "api_batch_7.json"
+    ]
+  },
+  "target": 4065
+}

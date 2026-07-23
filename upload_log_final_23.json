@@ -1,0 +1,30 @@
+[
+  {
+    "batch": 1,
+    "records": 50,
+    "first_company": "Gebze CNC Kesim",
+    "last_company": "EFECOPY D\u0130J\u0130TAL BASKI KOPYALAMA MATBAA REKLAM",
+    "status": "prepared"
+  },
+  {
+    "batch": 2,
+    "records": 50,
+    "first_company": "Pantone Bask\u0131",
+    "last_company": "Teknik Makina",
+    "status": "prepared"
+  },
+  {
+    "batch": 3,
+    "records": 50,
+    "first_company": "\u00d6ZARTAR MAK\u0130NE CNC TORNA",
+    "last_company": "\u0130mra \u00c7elik Konst\u00fcrksiyon \u00c7orlu",
+    "status": "prepared"
+  },
+  {
+    "batch": 4,
+    "records": 8,
+    "first_company": "Lider Metal Kaplama",
+    "last_company": "Tun\u00e7 Metal Geri D\u00f6n\u00fc\u015f\u00fcm",
+    "status": "prepared"
+  }
+]
