@@ -1,0 +1,41 @@
+{
+  "total_batches": 7,
+  "total_records": 139,
+  "batch_details": [
+    {
+      "batch": 1,
+      "file": "api_batch_1.json",
+      "record_count": 20
+    },
+    {
+      "batch": 2,
+      "file": "api_batch_2.json",
+      "record_count": 20
+    },
+    {
+      "batch": 3,
+      "file": "api_batch_3.json",
+      "record_count": 20
+    },
+    {
+      "batch": 4,
+      "file": "api_batch_4.json",
+      "record_count": 20
+    },
+    {
+      "batch": 5,
+      "file": "api_batch_5.json",
+      "record_count": 20
+    },
+    {
+      "batch": 6,
+      "file": "api_batch_6.json",
+      "record_count": 20
+    },
+    {
+      "batch": 7,
+      "file": "api_batch_7.json",
+      "record_count": 19
+    }
+  ]
+}

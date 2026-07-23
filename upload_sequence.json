@@ -1,0 +1,37 @@
+[
+  {
+    "batch": 1,
+    "file": "api_batch_1.json",
+    "count": 20
+  },
+  {
+    "batch": 2,
+    "file": "api_batch_2.json",
+    "count": 20
+  },
+  {
+    "batch": 3,
+    "file": "api_batch_3.json",
+    "count": 20
+  },
+  {
+    "batch": 4,
+    "file": "api_batch_4.json",
+    "count": 20
+  },
+  {
+    "batch": 5,
+    "file": "api_batch_5.json",
+    "count": 20
+  },
+  {
+    "batch": 6,
+    "file": "api_batch_6.json",
+    "count": 20
+  },
+  {
+    "batch": 7,
+    "file": "api_batch_7.json",
+    "count": 19
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "total_records": 158,
+  "batch_count": 4,
+  "batch_size": 50,
+  "batches": [
+    {
+      "batch_num": 1,
+      "start_idx": 0,
+      "end_idx": 50,
+      "record_count": 50
+    },
+    {
+      "batch_num": 2,
+      "start_idx": 50,
+      "end_idx": 100,
+      "record_count": 50
+    },
+    {
+      "batch_num": 3,
+      "start_idx": 100,
+      "end_idx": 150,
+      "record_count": 50
+    },
+    {
+      "batch_num": 4,
+      "start_idx": 150,
+      "end_idx": 158,
+      "record_count": 8
+    }
+  ]
+}
