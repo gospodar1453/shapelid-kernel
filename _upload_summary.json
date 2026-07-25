@@ -1,0 +1,64 @@
+{
+  "total_records": 400,
+  "batches": 8,
+  "batch_size": 50,
+  "timestamp": "2026-07-25T08:31:00Z",
+  "batches_to_upload": [
+    {
+      "batch_number": 0,
+      "filename": "_api_batch_00.json",
+      "record_count": 50,
+      "first_company": "CNC Torna",
+      "last_company": "\u00dcNL\u00dc TORNA CNC OTOMAT"
+    },
+    {
+      "batch_number": 1,
+      "filename": "_api_batch_01.json",
+      "record_count": 50,
+      "first_company": "Yavuz Metal Torna Otomat San.Tic.Ltd.\u015eti \u0130stanbul-\u015fube",
+      "last_company": "KNC Lazer Kesim CNC Router Kesim Ah\u015fap Fason \u00dcretim"
+    },
+    {
+      "batch_number": 2,
+      "filename": "_api_batch_02.json",
+      "record_count": 50,
+      "first_company": "Asya Otomat CNC Fason \u0130malat",
+      "last_company": "Cnc Lazer Kesim B\u00fck\u00fcm ve \u0130malat"
+    },
+    {
+      "batch_number": 3,
+      "filename": "_api_batch_03.json",
+      "record_count": 50,
+      "first_company": "\u0130stanbul Teknik Lazer",
+      "last_company": "RF Teknoloji ve Makine"
+    },
+    {
+      "batch_number": 4,
+      "filename": "_api_batch_04.json",
+      "record_count": 50,
+      "first_company": "Karfiber | Paslanmaz Metal Sac Kesim | Fason Kutu Harf | Reklam&Tabela",
+      "last_company": "G7T6 3D Bask\u0131, \u00dcr\u00fcn Tasar\u0131m, Prototipleme ve Grafik Tasar\u0131m Hizmetleri"
+    },
+    {
+      "batch_number": 5,
+      "filename": "_api_batch_05.json",
+      "record_count": 50,
+      "first_company": "3d probask\u0131",
+      "last_company": "G\u00fcng\u00f6r Makina CNC TORNA"
+    },
+    {
+      "batch_number": 6,
+      "filename": "_api_batch_06.json",
+      "record_count": 50,
+      "first_company": "TEKN\u0130K MAK\u0130NA CNC \u0130\u015eLEME MERKEZ\u0130",
+      "last_company": "\u00d6ZGANLAR Ta\u015flama CNC Torna"
+    },
+    {
+      "batch_number": 7,
+      "filename": "_api_batch_07.json",
+      "record_count": 50,
+      "first_company": "Gesmak Cnc Torna Makina \u0130malat San.",
+      "last_company": "\u00dc\u00c7EL LAZER KES\u0130M B\u00dcK\u00dcM \u0130MAL. SAN. VE T\u0130C. A.\u015e"
+    }
+  ]
+}

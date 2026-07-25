@@ -1,0 +1,87 @@
+{
+  "total_remaining": 367,
+  "api_calls": 10,
+  "records_per_call": 40,
+  "calls": [
+    {
+      "call_number": 1,
+      "file": "_api_safe_call_00.json",
+      "record_count": 40,
+      "first_company": "Torna CNC Freze | Fason Talaşlı İmalat",
+      "last_company": "Cnc Dik İşleme Merkezi",
+      "status": "ready"
+    },
+    {
+      "call_number": 2,
+      "file": "_api_safe_call_01.json",
+      "record_count": 40,
+      "first_company": "PTT - Avrupa Yakası Posta İşleme Merkezi",
+      "last_company": "Alpe Fiber Lazer Kesim Makineleri",
+      "status": "ready"
+    },
+    {
+      "call_number": 3,
+      "file": "_api_safe_call_02.json",
+      "record_count": 40,
+      "first_company": "İsim Lazer Kesim- UV Baskı- Fiber Markalama",
+      "last_company": "DES LAZER MAKİNA SANAYİ TİCARET LİMİTED ŞİRKETİ",
+      "status": "ready"
+    },
+    {
+      "call_number": 4,
+      "file": "_api_safe_call_03.json",
+      "record_count": 40,
+      "first_company": "DM Metal Lazer Sac İşleme Merkezi",
+      "last_company": "Lider Sac İşleme",
+      "status": "ready"
+    },
+    {
+      "call_number": 5,
+      "file": "_api_safe_call_04.json",
+      "record_count": 40,
+      "first_company": "beta sac işleme merkezi sanayi ticaret limited şirketi",
+      "last_company": "Marm Mühendislik (3D Baskı & Tasarım)",
+      "status": "ready"
+    },
+    {
+      "call_number": 6,
+      "file": "_api_safe_call_05.json",
+      "record_count": 40,
+      "first_company": "3D YÖN TASARIM ve PROTOTİP (YOONEY PLASTİK KALIP)",
+      "last_company": "Dizayn Vida Kovan Makina İmalat San Ve Tic Ltd Şti",
+      "status": "ready"
+    },
+    {
+      "call_number": 7,
+      "file": "_api_safe_call_06.json",
+      "record_count": 40,
+      "first_company": "Teknik Makine",
+      "last_company": "İvedik CNC",
+      "status": "ready"
+    },
+    {
+      "call_number": 8,
+      "file": "_api_safe_call_07.json",
+      "record_count": 40,
+      "first_company": "Tun-Kay Makina",
+      "last_company": "Kaleözü Cnc",
+      "status": "ready"
+    },
+    {
+      "call_number": 9,
+      "file": "_api_safe_call_08.json",
+      "record_count": 40,
+      "first_company": "HSN makina metal torna cnc imalat",
+      "last_company": "Mustafa Beşler CNC Kesim | Kaynak | Büküm | İmalat",
+      "status": "ready"
+    },
+    {
+      "call_number": 10,
+      "file": "_api_safe_call_09.json",
+      "record_count": 7,
+      "first_company": "Xline Metal Kompozit Kesim",
+      "last_company": "ÜÇEL LAZER KESİM BÜKÜM İMAL. SAN. VE TİC. A.Ş",
+      "status": "ready"
+    }
+  ]
+}
