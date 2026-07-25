@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-07-25T08:31:00Z",
+  "task": "mega_results_upload_continue",
+  "previous_upload": 33,
+  "this_session_records": 367,
+  "target_total": 4065,
+  "batch_plan": [
+    {
+      "api_call": 1,
+      "file": "_api_safe_call_00.json",
+      "record_count": 40,
+      "cumulative": 73
+    },
+    {
+      "api_call": 2,
+      "file": "_api_safe_call_01.json",
+      "record_count": 40,
+      "cumulative": 113
+    },
+    {
+      "api_call": 3,
+      "file": "_api_safe_call_02.json",
+      "record_count": 40,
+      "cumulative": 153
+    },
+    {
+      "api_call": 4,
+      "file": "_api_safe_call_03.json",
+      "record_count": 40,
+      "cumulative": 193
+    },
+    {
+      "api_call": 5,
+      "file": "_api_safe_call_04.json",
+      "record_count": 40,
+      "cumulative": 233
+    },
+    {
+      "api_call": 6,
+      "file": "_api_safe_call_05.json",
+      "record_count": 40,
+      "cumulative": 273
+    },
+    {
+      "api_call": 7,
+      "file": "_api_safe_call_06.json",
+      "record_count": 40,
+      "cumulative": 313
+    },
+    {
+      "api_call": 8,
+      "file": "_api_safe_call_07.json",
+      "record_count": 40,
+      "cumulative": 353
+    },
+    {
+      "api_call": 9,
+      "file": "_api_safe_call_08.json",
+      "record_count": 40,
+      "cumulative": 393
+    },
+    {
+      "api_call": 10,
+      "file": "_api_safe_call_09.json",
+      "record_count": 7,
+      "cumulative": 400
+    }
+  ]
+}
