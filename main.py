@@ -1,11 +1,7 @@
 """
-Shapelid Kernel Faz-2 Mikroservisi
-Desteklenen teknolojiler: FDM, SLA, SLS, MJF, DMLS, Laser Cutting, Bending
-
-Faz-2 eklentileri:
-  - finish, color, resolution, hardness, tolerance, certification parametreleri
-  - apply_options() ile çarpan + sabit maliyet entegrasyonu
-  - /options endpoint — teknoloji bazlı geçerli seçim listesi
+Shapelid Kernel Faz-1 Mikroservisi
+Desteklenen teknolojiler: Laser Cutting, Bending, FDM, SLA, SLS, MJF
+Girdi formatları: STL (3D), DXF (2D)
 
 Kur riski önlemleri:
   A) %4 kur tamponu (pricing_rate = TCMB * 1.04)
@@ -19,20 +15,15 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
 import tempfile
 import os
-
 from analyzers.stl_analyzer import analyze_stl
 from analyzers.dxf_analyzer import analyze_dxf
 from pricing.engine import calculate_price
-from pricing.exchange_rate import get_rate_info, get_pricing_rate, get_usd_try
-from pricing.finish_rates import (
-    FINISH_RATES, COLOR_RATES, RESOLUTION_RATES,
-    INFILL_PRESETS, HARDNESS_RATES, TOLERANCE_RATES, CERT_RATES
-)
+from pricing.exchange_rate import get_rate_info, get_pricing_rate, usd_to_try, get_usd_try
 
 app = FastAPI(
     title="Shapelid Geometry Kernel",
-    version="2.0.0",
-    description="Faz-2: finish/color/resolution/hardness/tolerance/cert parametreleri eklendi"
+    version="1.3.0",
+    description="Faz-1: STL/DXF bazlı fiyatlandırma — TCMB kuru, %4 tampon, DB malzeme fiyatı"
 )
 
 app.add_middleware(
@@ -46,10 +37,10 @@ app.add_middleware(
 @app.get("/health")
 def health():
     return {
-        "status"        : "ok",
-        "version"       : "2.0.0",
-        "phase"         : "faz-2",
-        "exchange_rate" : get_rate_info(),
+        "status": "ok",
+        "version": "1.3.0",
+        "phase": "faz-1",
+        "exchange_rate": get_rate_info(),
     }
 
 
@@ -63,21 +54,13 @@ def exchange_rate(force_refresh: bool = False):
 @app.post("/analyze")
 async def analyze(
     file: UploadFile = File(...),
-    # ── Temel parametreler ──
-    technology              : str            = "fdm",
-    material                : str            = "pla",
-    quantity                : int            = 1,
-    layer_height            : float          = 0.2,
-    infill                  : float          = 0.2,
-    material_thickness      : float          = 2.0,
-    # ── Faz-2 seçim parametreleri ──
-    finish                  : str            = "standard",
-    color                   : str            = "none",
-    resolution              : str            = "standard",
-    hardness                : str            = "standard",
-    tolerance               : str            = "standard",
-    certification           : str            = "none",
-    # ── Canlı DB fiyatı ──
+    technology: str = "fdm",
+    material: str = "pla",
+    quantity: int = 1,
+    layer_height: float = 0.2,
+    infill: float = 0.2,
+    material_thickness: float = 2.0,
+    # Canlı DB fiyatı — Base44 kernelAnalyze fonksiyonu bu parametreyi gönderir
     material_price_usd_per_kg: Optional[float] = Query(default=None),
 ):
     ext = os.path.splitext(file.filename)[1].lower()
@@ -85,7 +68,7 @@ async def analyze(
     if ext not in [".stl", ".dxf"]:
         raise HTTPException(
             status_code=400,
-            detail=f"Desteklenmeyen format: {ext}. Faz-2 yalnızca STL ve DXF kabul eder."
+            detail=f"Desteklenmeyen format: {ext}. Faz-1 yalnızca STL ve DXF kabul eder."
         )
 
     with tempfile.NamedTemporaryFile(suffix=ext, delete=False) as tmp:
@@ -95,63 +78,54 @@ async def analyze(
 
     try:
         # Geometrik analiz
-        geometry = analyze_stl(tmp_path) if ext == ".stl" else analyze_dxf(tmp_path)
+        if ext == ".stl":
+            geometry = analyze_stl(tmp_path)
+        else:
+            geometry = analyze_dxf(tmp_path)
 
-        # Fiyat hesaplama
+        # Fiyat hesaplama (USD)
         params = {
-            "technology"               : technology,
-            "material"                 : material,
-            "quantity"                 : quantity,
-            "layer_height"             : layer_height,
-            "infill"                   : infill,
-            "material_thickness"       : material_thickness,
-            # Faz-2 options
-            "finish"                   : finish,
-            "color"                    : color,
-            "resolution"               : resolution,
-            "hardness"                 : hardness,
-            "tolerance"                : tolerance,
-            "certification"            : certification,
-            # Canlı DB fiyatı
+            "technology": technology,
+            "material": material,
+            "quantity": quantity,
+            "layer_height": layer_height,
+            "infill": infill,
+            "material_thickness": material_thickness,
+            # DB'den gelen canlı fiyat (varsa)
             "material_price_usd_per_kg": material_price_usd_per_kg,
         }
         pricing = calculate_price(geometry, params)
 
-        # Kur
-        rate         = get_pricing_rate(technology)
+        # Kur bilgisi
+        rate = get_pricing_rate(technology)
         pricing_rate = rate["pricing_rate"]
 
+        unit_price_try  = round(pricing["unit_price"]  * pricing_rate, 2)
+        total_price_try = round(pricing["total_price"] * pricing_rate, 2)
+
         pricing_try = {
-            "unit_price_try"  : round(pricing["unit_price"]  * pricing_rate, 2),
-            "total_price_try" : round(pricing["total_price"] * pricing_rate, 2),
-            "valid_until"     : rate["valid_until"],
-            "valid_hours"     : rate["valid_hours"],
-            "exchange_rate"   : {
-                "tcmb_rate"   : rate["tcmb_rate"],
+            "unit_price_try":  unit_price_try,
+            "total_price_try": total_price_try,
+            "valid_until":     rate["valid_until"],
+            "valid_hours":     rate["valid_hours"],
+            "exchange_rate": {
+                "tcmb_rate":    rate["tcmb_rate"],
                 "pricing_rate": pricing_rate,
-                "buffer_pct"  : rate["buffer_pct"],
-                "source"      : rate["source"],
-                "fetched_at"  : rate["fetched_at"],
+                "buffer_pct":   rate["buffer_pct"],
+                "source":       rate["source"],
+                "fetched_at":   rate["fetched_at"],
             },
         }
 
         return {
-            "file"        : file.filename,
-            "format"      : ext,
-            "technology"  : technology,
-            "material"    : material,
-            "quantity"    : quantity,
-            "options"     : {
-                "finish"       : finish,
-                "color"        : color,
-                "resolution"   : resolution,
-                "hardness"     : hardness,
-                "tolerance"    : tolerance,
-                "certification": certification,
-            },
-            "geometry"    : geometry,
-            "pricing"     : pricing,
-            "pricing_try" : pricing_try,
+            "file":       file.filename,
+            "format":     ext,
+            "technology": technology,
+            "material":   material,
+            "quantity":   quantity,
+            "geometry":   geometry,
+            "pricing":    pricing,
+            "pricing_try": pricing_try,
         }
 
     finally:
@@ -162,61 +136,25 @@ async def analyze(
 def list_technologies():
     return {
         "3d_printing": {
-            "fdm" : {"description": "Fused Deposition Modeling",
-                     "materials"  : ["pla","abs","petg","tpu","asa"],
+            "fdm":  {"description": "Fused Deposition Modeling",
+                     "materials": ["pla", "abs", "petg", "tpu", "asa"],
                      "input_formats": ["stl"]},
-            "sla" : {"description": "Stereolithography",
-                     "materials"  : ["standard_resin","tough_resin","flexible_resin","castable_resin"],
+            "sla":  {"description": "Stereolithography",
+                     "materials": ["standard_resin", "tough_resin", "flexible_resin", "castable_resin"],
                      "input_formats": ["stl"]},
-            "sls" : {"description": "Selective Laser Sintering",
-                     "materials"  : ["pa12","pa11","tpu"],
+            "sls":  {"description": "Selective Laser Sintering",
+                     "materials": ["pa12", "pa11", "tpu"],
                      "input_formats": ["stl"]},
-            "mjf" : {"description": "HP Multi Jet Fusion",
-                     "materials"  : ["pa12","pa12gb"],
-                     "input_formats": ["stl"]},
-            "dmls": {"description": "Direct Metal Laser Sintering",
-                     "materials"  : ["316l","ti64"],
+            "mjf":  {"description": "HP Multi Jet Fusion",
+                     "materials": ["pa12", "pa12gb"],
                      "input_formats": ["stl"]},
         },
         "sheet_metal": {
-            "laser"  : {"description": "Laser Cutting",
-                        "materials"  : ["mild_steel","stainless_steel","aluminum","copper","brass","galvanized_steel"],
+            "laser":   {"description": "Laser Cutting",
+                        "materials": ["mild_steel", "stainless_steel", "aluminum", "copper", "brass", "galvanized_steel"],
                         "input_formats": ["dxf"]},
             "bending": {"description": "Sheet Metal Bending",
-                        "materials"  : ["mild_steel","stainless_steel","aluminum"],
+                        "materials": ["mild_steel", "stainless_steel", "aluminum"],
                         "input_formats": ["dxf"]},
         }
-    }
-
-
-@app.get("/options")
-def list_options(technology: str = "fdm"):
-    """
-    Belirli bir teknoloji için geçerli seçim seçeneklerini döndürür.
-    Frontend bu endpoint'i kullanarak dinamik dropdown listesi oluşturur.
-    """
-    def _filter(rate_dict: dict, tech: str) -> list:
-        result = []
-        for key, val in rate_dict.items():
-            allowed = val.get("technologies", [])
-            if not allowed or tech in allowed:
-                result.append({
-                    "key"        : key,
-                    "label"      : val.get("label", key),
-                    "multiplier" : val.get("multiplier", 1.0),
-                    "flat_cost"  : val.get("flat_cost", 0.0),
-                })
-        return result
-
-    return {
-        "technology"   : technology,
-        "finish"       : _filter(FINISH_RATES, technology),
-        "color"        : _filter(COLOR_RATES, technology),
-        "resolution"   : _filter(RESOLUTION_RATES, technology),
-        "hardness"     : _filter(HARDNESS_RATES, technology),
-        "tolerance"    : _filter(TOLERANCE_RATES, technology),
-        "certification": [{"key": k, "label": v["label"], "flat_cost": v["flat_cost"]}
-                          for k, v in CERT_RATES.items()],
-        "infill_presets": [{"key": k, "label": v["label"], "ratio": v["ratio"]}
-                           for k, v in INFILL_PRESETS.items()],
     }

@@ -1,0 +1,6 @@
+2026-07-26T19:54:49.015167545Z [inf]  Starting Container
+2026-07-26T19:54:49.808493036Z [err]  INFO:     Started server process [1]
+2026-07-26T19:54:49.808496436Z [err]  INFO:     Waiting for application startup.
+2026-07-26T19:54:49.808500236Z [err]  INFO:     Application startup complete.
+2026-07-26T19:54:49.808503226Z [err]  INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-07-26T19:57:40.602949296Z [inf]  INFO:     100.64.0.2:62612 - "GET /health HTTP/1.1" 200 OK
