@@ -1,0 +1,3988 @@
+[
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Metal 3D Printing",
+    "technology_type": null,
+    "technology": "Metal Binder Jetting",
+    "material_type": "Stainless Steel",
+    "material": "316L SS",
+    "finishes": [
+      "Other",
+      "Zirblast"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Metal 3D Printing",
+    "technology_type": null,
+    "technology": "Metal Binder Jetting",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 17-4PH",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Metal 3D Printing",
+    "technology_type": null,
+    "technology": "Metal Binder Jetting",
+    "material_type": "Other",
+    "material": "Other",
+    "finishes": [
+      "Antique Bronze",
+      "Medieval Pewter",
+      "Other",
+      "Tumble Polished",
+      "Wheat Penny",
+      "Zirblast"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Metal 3D Printing",
+    "technology_type": null,
+    "technology": "Direct Metal Laser Sintering (DMLS)",
+    "material_type": "Aluminum",
+    "material": "Aluminum AlSiMg",
+    "finishes": [
+      "Standard and Other"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Metal 3D Printing",
+    "technology_type": null,
+    "technology": "Direct Metal Laser Sintering (DMLS)",
+    "material_type": "Nickel Alloy",
+    "material": "Inconel 625",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Metal 3D Printing",
+    "technology_type": null,
+    "technology": "Direct Metal Laser Sintering (DMLS)",
+    "material_type": "Nickel Alloy",
+    "material": "Inconel 718",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Metal 3D Printing",
+    "technology_type": null,
+    "technology": "Direct Metal Laser Sintering (DMLS)",
+    "material_type": "Stainless Steel",
+    "material": "Stainless 17-4",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Metal 3D Printing",
+    "technology_type": null,
+    "technology": "Direct Metal Laser Sintering (DMLS)",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 316L",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Metal 3D Printing",
+    "technology_type": null,
+    "technology": "Direct Metal Laser Sintering (DMLS)",
+    "material_type": "Titanium",
+    "material": "Titanium Ti6Al4v (Grade 5)",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Metal 3D Printing",
+    "technology_type": null,
+    "technology": "Direct Metal Laser Sintering (DMLS)",
+    "material_type": "Tool Steel",
+    "material": "Maraging Steel",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Metal 3D Printing",
+    "technology_type": null,
+    "technology": "Direct Metal Laser Sintering (DMLS)",
+    "material_type": "Other",
+    "material": "Other",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Selective Laser Sintering (SLS)",
+    "material_type": "General Purpose",
+    "material": "Nylon 12, Gray (Formlabs)",
+    "finishes": [
+      "Media Tumbling",
+      "Nickel Plating",
+      "Other",
+      "Standard",
+      "Vapor Smoothing"
+    ],
+    "colors": [
+      "Beige (Natural), Black-Dyed, Blue-Dyed, Green-Dyed, Red-Dyed, Yellow-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Selective Laser Sintering (SLS)",
+    "material_type": "General Purpose",
+    "material": "Nylon 12, Smooth (PA950 HD)",
+    "finishes": [
+      "Media Blast Polish",
+      "Other",
+      "Standard",
+      "Vapor Smoothing"
+    ],
+    "colors": [
+      "As Printed Dark Gray (Natural), Black-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Selective Laser Sintering (SLS)",
+    "material_type": "General Purpose",
+    "material": "Nylon 12, White",
+    "finishes": [
+      "Nickel Plating",
+      "Other",
+      "Standard",
+      "Vapor Smoothing"
+    ],
+    "colors": [
+      "Ad Printed Off White (Natural), Black-Dyed, Blue-Dyed, Green-Dyed, Red-Dyed, Yellow-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Selective Laser Sintering (SLS)",
+    "material_type": "Durable",
+    "material": "Nylon 11, Gray (Formlabs)",
+    "finishes": [
+      "Media Blast Polish",
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "As Printed, Dark Gray (Natural)"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Selective Laser Sintering (SLS)",
+    "material_type": "Durable",
+    "material": "Nylon 11, White (EX)",
+    "finishes": [
+      "Other",
+      "PolyShot Ceramic Polishing",
+      "Standard"
+    ],
+    "colors": [
+      "Ad Printed Off White (Natural), Black-Dyed, Blue-Dyed, Green-Dyed, Red-Dyed, Yellow-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Selective Laser Sintering (SLS)",
+    "material_type": "Durable",
+    "material": "Nylon 12, GB",
+    "finishes": [
+      "Media Tumbling",
+      "Nickel Plating",
+      "Other",
+      "Standard",
+      "Vapor Smoothing"
+    ],
+    "colors": [
+      "Beige (Natural), Black-Dyed, Blue-Dyed, Green-Dyed, Red-Dyed, Yellow-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Selective Laser Sintering (SLS)",
+    "material_type": "Durable",
+    "material": "Nylon 12, GF (Formlabs)",
+    "finishes": [
+      "Media Blast Polish",
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "As Printed, Dark Gray (Natural)"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Selective Laser Sintering (SLS)",
+    "material_type": "Durable",
+    "material": "Nylon 12, HST",
+    "finishes": [
+      "Other",
+      "PolyShot Ceramic Polishing",
+      "Standard"
+    ],
+    "colors": [
+      "Ad Printed Beige (Natural), Black-Dyed, Blue-Dyed, Green-Dyed, Red-Dyed, Yellow-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Selective Laser Sintering (SLS)",
+    "material_type": "High Performance",
+    "material": "PK 5000",
+    "finishes": [
+      "Standard"
+    ],
+    "colors": [
+      "As Printed, Dark Gray (Natural) / Black-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Selective Laser Sintering (SLS)",
+    "material_type": "Highly Stiff",
+    "material": "Nylon 12, CF (PA 602-CF)",
+    "finishes": [
+      "Other",
+      "PolyShot Ceramic Polishing",
+      "Standard"
+    ],
+    "colors": [
+      "As Printed, Dark Gray (Natural) / Black-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Selective Laser Sintering (SLS)",
+    "material_type": "Elastomer",
+    "material": "TPU 88A(TPU1301)",
+    "finishes": [
+      "Other",
+      "Standard",
+      "Vapor Smoothing"
+    ],
+    "colors": [
+      "Ad Printed White (Natural), Black-Dyed, Blue-Dyed, Green-Dyed, Red-Dyed, Yellow-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Selective Laser Sintering (SLS)",
+    "material_type": "Speciality",
+    "material": "Nylon 12, FR(PA 606-FR)",
+    "finishes": [
+      "Other",
+      "PolyShot Ceramic Polishing",
+      "Standard"
+    ],
+    "colors": [
+      "Ad Printed Off White (Natural), Black-Dyed, Blue-Dyed, Green-Dyed, Red-Dyed, Yellow-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Selective Laser Sintering (SLS)",
+    "material_type": "Other",
+    "material": "Other",
+    "finishes": [
+      "Media Tumbling",
+      "Nickel Plating",
+      "Other",
+      "Standard",
+      "Vapor Smoothing"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "HP Multi Jet Fusion (MJF)",
+    "material_type": "General Purpose",
+    "material": "Nylon 12, Gray",
+    "finishes": [
+      "Other",
+      "Standard",
+      "Vapor Smoothing"
+    ],
+    "colors": [
+      "As Printed, Gray (Natural)"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "HP Multi Jet Fusion (MJF)",
+    "material_type": "General Purpose",
+    "material": "Nylon 12, Multi-Color (CB)",
+    "finishes": [
+      "Media Blast Polish",
+      "Other",
+      "Standard",
+      "Vapor Smoothing"
+    ],
+    "colors": [
+      "Multi-Color, CAD-Defined / Other"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "HP Multi Jet Fusion (MJF)",
+    "material_type": "General Purpose",
+    "material": "Nylon 12, Smooth",
+    "finishes": [
+      "Media Blast Polish",
+      "Other",
+      "Standard",
+      "Vapor Smoothing"
+    ],
+    "colors": [
+      "As Printed, Dark Gray (Natural) / Black-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "HP Multi Jet Fusion (MJF)",
+    "material_type": "General Purpose",
+    "material": "Nylon 12, White",
+    "finishes": [
+      "Nickel Plating",
+      "Other",
+      "Standard",
+      "Vapor Smoothing"
+    ],
+    "colors": [
+      "Ad Printed White (Natural), Black-Dyed, Blue-Dyed, Green-Dyed, Red-Dyed, Yellow-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "HP Multi Jet Fusion (MJF)",
+    "material_type": "Durable",
+    "material": "Nylon 11, Gray (Formlabs)",
+    "finishes": [
+      "Other",
+      "Standard",
+      "Vapor Smoothing"
+    ],
+    "colors": [
+      "As Printed, Dark Gray (Natural) / Black-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "HP Multi Jet Fusion (MJF)",
+    "material_type": "Durable",
+    "material": "Nylon 12, GB",
+    "finishes": [
+      "Other",
+      "Standard",
+      "Vapor Smoothing"
+    ],
+    "colors": [
+      "As Printed, Dark Gray (Natural) / Black-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "HP Multi Jet Fusion (MJF)",
+    "material_type": "Elastomer",
+    "material": "TPU 88A(TPU01)",
+    "finishes": [
+      "Other",
+      "Standard",
+      "Vapor Smoothing"
+    ],
+    "colors": [
+      "As Printed, Dark Gray (Natural) / Black-Dyed"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "HP Multi Jet Fusion (MJF)",
+    "material_type": "Speciality",
+    "material": "Nylon 12, FR(PA 606-FR)",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "As Printed, Gray (Natural)"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "HP Multi Jet Fusion (MJF)",
+    "material_type": "Other",
+    "material": "Other",
+    "finishes": [
+      "Other",
+      "Standard",
+      "Vapor Smoothing"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "General Purpose",
+    "material": "ABS",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Black, Blue, Dark Gray, Ivory, Red, White"
+    ],
+    "infills": [
+      "UltraLight, Light, Solid"
+    ],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "General Purpose",
+    "material": "ASA",
+    "finishes": [],
+    "colors": [
+      "Black, Dark Blue, Dark Gray, Green, Ivory, Light Gray, Orange, Red, White, Yellow"
+    ],
+    "infills": [
+      "UltraLight, Light, Solid"
+    ],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "General Purpose",
+    "material": "PETG",
+    "finishes": [],
+    "colors": [
+      "Black, Blue, Dark Gray, Ivory, Red, White"
+    ],
+    "infills": [
+      "UltraLight"
+    ],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "General Purpose",
+    "material": "PLA",
+    "finishes": [],
+    "colors": [
+      "Black, Blue, Red, White"
+    ],
+    "infills": [
+      "Ultralight"
+    ],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "General Purpose",
+    "material": "Stratasys ABS-M30",
+    "finishes": [],
+    "colors": [
+      "Black, Blue, Dark Gray, Ivory, Red, White"
+    ],
+    "infills": [
+      "UltraLight, Light, Solid"
+    ],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "General Purpose",
+    "material": "Stratasys ASA",
+    "finishes": [],
+    "colors": [
+      "Black, Dark Blue, Dark Gray, Green, Ivory, Light Gray, Orange, Red, White, Yellow"
+    ],
+    "infills": [
+      "UltraLight, Light, Solid"
+    ],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "Durable",
+    "material": "Nylon 6 CF",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "infills": [
+      "UltraLight, Light, Solid"
+    ],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "High Performance",
+    "material": "Stratasys Antero 840CN03",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "infills": [
+      "UltraLight, Light, Solid"
+    ],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "High Performance",
+    "material": "Stratasys Antero 800NA",
+    "finishes": [],
+    "colors": [
+      "Amber"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "High Performance",
+    "material": "Stratasys Nylon 12",
+    "finishes": [],
+    "colors": [
+      "Black"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "High Performance",
+    "material": "Stratasys PC",
+    "finishes": [],
+    "colors": [
+      "White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "High Performance",
+    "material": "Stratasys PC-ABS",
+    "finishes": [],
+    "colors": [
+      "Black"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "High Performance",
+    "material": "Stratasys ULTEM 1010",
+    "finishes": [],
+    "colors": [
+      "Amber"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "High Performance",
+    "material": "Stratasys ULTEM 1010 CG",
+    "finishes": [],
+    "colors": [
+      "Amber"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "High Performance",
+    "material": "Stratasys ULTEM 9085",
+    "finishes": [],
+    "colors": [
+      "Black, Tan"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "High Performance",
+    "material": "Stratasys PAEK VICTREX AM 200",
+    "finishes": [],
+    "colors": [
+      "Amber"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "Highly Stiff",
+    "material": "Stratasys ABS-CF10",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "infills": [
+      "UltraLight, Light, Solid"
+    ],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "Speciality",
+    "material": "Stratasys ABS-ESD7",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "infills": [
+      "UltraLight, Light, Solid"
+    ],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "Speciality",
+    "material": "Stratasys ABS-M30i",
+    "finishes": [],
+    "colors": [
+      "Ivory"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "Speciality",
+    "material": "Stratasys PC-ISO",
+    "finishes": [],
+    "colors": [
+      "Translucent Natural, White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Thermoplastic",
+    "technology": "Fused Deposition Modeling (FDM)",
+    "material_type": "Other",
+    "material": "Other",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Not available"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "General Purpose",
+    "material": "Accura 25",
+    "finishes": [
+      "Matte",
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "White"
+    ],
+    "infills": [],
+    "resolutions": [
+      "High, Standard"
+    ],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "General Purpose",
+    "material": "Accura ABS Black (SL87820)",
+    "finishes": [
+      "Matte",
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "General Purpose",
+    "material": "Formlabs Color Resin V5",
+    "finishes": [
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "Berry Pink, Cobalt Bue, Formlabs Orange, Kelly Green, Royal Purple, Signal Red, Cadmium Yellow, Other"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "General Purpose",
+    "material": "Formlabs Grey Resin V5 (Cost Effective)",
+    "finishes": [
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "General Purpose",
+    "material": "Formlabs White V5 (Cost Effective)",
+    "finishes": [
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Durable",
+    "material": "Accura Xtreme Grey",
+    "finishes": [
+      "Matte",
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "Light Grey"
+    ],
+    "infills": [],
+    "resolutions": [
+      "High, Standard"
+    ],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Durable",
+    "material": "Accura Xtreme White 200",
+    "finishes": [
+      "Matte",
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "White"
+    ],
+    "infills": [],
+    "resolutions": [
+      "High, Standard"
+    ],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Durable",
+    "material": "Formlabs Tough 1000",
+    "finishes": [
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "Dark Gray"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Durable",
+    "material": "Formlabs Tough 1500 V2 (Cost Effective)",
+    "finishes": [
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Durable",
+    "material": "Formlabs Tough 2000 (Cost Effective)",
+    "finishes": [
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Durable",
+    "material": "Somos Evolve 128",
+    "finishes": [
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "White"
+    ],
+    "infills": [],
+    "resolutions": [
+      "Standard, Standard"
+    ],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Durable",
+    "material": "Somos Taurus",
+    "finishes": [
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "Dark Grey"
+    ],
+    "infills": [],
+    "resolutions": [
+      "Standard"
+    ],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Clear",
+    "material": "Accura 60",
+    "finishes": [
+      "Matte",
+      "Natural",
+      "Quick Clear",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "Clear"
+    ],
+    "infills": [],
+    "resolutions": [
+      "High, Standard"
+    ],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Clear",
+    "material": "Accura ClearVue",
+    "finishes": [
+      "Matte",
+      "Natural",
+      "Quick Clear",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "Clear"
+    ],
+    "infills": [],
+    "resolutions": [
+      "High, Standard"
+    ],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Clear",
+    "material": "Formlabs Clear V5 (Cost Effective)",
+    "finishes": [
+      "Matte",
+      "Natural",
+      "Quick Clear",
+      "Strip and Ship"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Clear",
+    "material": "Somos WaterClear Ultra 10122",
+    "finishes": [
+      "Matte",
+      "Natural",
+      "Quick Clear",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "Clear"
+    ],
+    "infills": [],
+    "resolutions": [
+      "Standard"
+    ],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Clear",
+    "material": "Somos Watershed XC 11122",
+    "finishes": [
+      "Matte",
+      "Natural",
+      "Quick Clear",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "Clear"
+    ],
+    "infills": [],
+    "resolutions": [
+      "Standard"
+    ],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Highly Stiff",
+    "material": "Accura Bluestone",
+    "finishes": [
+      "Matte",
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "Blue"
+    ],
+    "infills": [],
+    "resolutions": [
+      "Standard"
+    ],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Highly Stiff",
+    "material": "Formlabs Rigid 10K (Cost Effective)",
+    "finishes": [
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Highly Stiff",
+    "material": "Somos PerFORM",
+    "finishes": [
+      "Matte",
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "White"
+    ],
+    "infills": [],
+    "resolutions": [
+      "High, Standard"
+    ],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Speciality",
+    "material": "Accura SL 5530",
+    "finishes": [
+      "Matte",
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [
+      "Translucent Natural"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Speciality",
+    "material": "Formlabs High Temp (Cost Effective)",
+    "finishes": [
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Speciality",
+    "material": "Formlabs ESD (Cost Effective)",
+    "finishes": [
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Stereolithography (SLA)",
+    "material_type": "Other",
+    "material": "Other",
+    "finishes": [
+      "Matte",
+      "Natural",
+      "Strip and Ship"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Carbon Digital Light Synthesis",
+    "material_type": "General Purpose",
+    "material": "RPU 70",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Carbon Digital Light Synthesis",
+    "material_type": "General Purpose",
+    "material": "UMA 90",
+    "finishes": [],
+    "colors": [
+      "Black, White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Carbon Digital Light Synthesis",
+    "material_type": "Durable",
+    "material": "RPU 130",
+    "finishes": [],
+    "colors": [
+      "Black"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Carbon Digital Light Synthesis",
+    "material_type": "Clear",
+    "material": "LOCTITE 3D",
+    "finishes": [],
+    "colors": [
+      "Clear"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Carbon Digital Light Synthesis",
+    "material_type": "Elastomer",
+    "material": "SIL 30",
+    "finishes": [],
+    "colors": [
+      "Light Grey"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Carbon Digital Light Synthesis",
+    "material_type": "Elastomer",
+    "material": "EPU 40",
+    "finishes": [],
+    "colors": [
+      "Black"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Carbon Digital Light Synthesis",
+    "material_type": "Elastomer",
+    "material": "EPU 41",
+    "finishes": [],
+    "colors": [
+      "Black"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Carbon Digital Light Synthesis",
+    "material_type": "Elastomer",
+    "material": "EPU 46",
+    "finishes": [],
+    "colors": [
+      "Black, Other"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Carbon Digital Light Synthesis",
+    "material_type": "Speciality",
+    "material": "MPU 100",
+    "finishes": [],
+    "colors": [
+      "White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Carbon Digital Light Synthesis",
+    "material_type": "Performance Materials",
+    "material": "EPX 82",
+    "finishes": [],
+    "colors": [
+      "Black"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Carbon Digital Light Synthesis",
+    "material_type": "Other",
+    "material": "Other",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Polyjet",
+    "material_type": "General Purpose",
+    "material": "Rigid (Vero Ultra)",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Black, Cyan, Grey, Magenta, White, Yellow, Other"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Polyjet",
+    "material_type": "General Purpose",
+    "material": "Multi-Color, CAD-Defined",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Polyjet",
+    "material_type": "Clear",
+    "material": "Clear (Vero Ultra)",
+    "finishes": [],
+    "colors": [
+      "Clear"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Polyjet",
+    "material_type": "Elastomer",
+    "material": "Photopolymer, Rubber-like",
+    "finishes": [],
+    "colors": [
+      "Black, Other"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Polyjet",
+    "material_type": "Other",
+    "material": "Multi Material, Digital Overmold",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": [
+      "Shore 30, Shore40, Shore50, Shore60, Shore 70, Shore 85, Shore 95"
+    ]
+  },
+  {
+    "process_type": "Additive Manufacturing",
+    "process": "Plastic 3D Printing",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "Polyjet",
+    "material_type": "Other",
+    "material": "Other",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Aluminum",
+    "material": "Aluminum 2024",
+    "finishes": [
+      "Bead Blast",
+      "Black Anodize",
+      "Black Hardcoat Anodize",
+      "Blue Anodize",
+      "Case Harden",
+      "Chem Film Clear",
+      "Chem Film Gold",
+      "Clear Anodize",
+      "Clear Hardcoat Anodize",
+      "Electroless Nickel Plating",
+      "Electropolish",
+      "Gold Anodize",
+      "Gold Plating",
+      "Gray Hardcoat Anodize",
+      "Green Anodize",
+      "Nickel Plating",
+      "Orange Anodize",
+      "Other",
+      "PTFE Impregnated Hard Anodize",
+      "Powder Coating",
+      "Purple Anodize",
+      "Red Anodize",
+      "Standard",
+      "Temper",
+      "Through Harden",
+      "Tumbled",
+      "Yellow Anodize",
+      "Zinc Plating"
+    ],
+    "colors": [
+      "APC Raven Black Very Light Texture (HBT2-30015)",
+      "Black Jack Texture (HBT2-30008)",
+      "Black Semi-Gloss Fine Texture (C241-BK01)",
+      "Black Semi-Gloss Texture (T241-BK59)",
+      "Capri Blue (RAL 5019)",
+      "Carbide Black Texture (EBT2-C0000)",
+      "Clean Room White (RAL 9012)",
+      "Dark Blue (RAL 5013)",
+      "Glossy White Smooth (RAL 9016, RWS8-00004)",
+      "Graphite Black (RAL9011)",
+      "Gray (ANSI 49)",
+      "Gray Semi-Gloss Fine Texture (C241-GR483, PMS 431C)",
+      "Iron Gray (RAL 7001)",
+      "Jet Black (RAL 9005)",
+      "Light Blue (RAL 5012)",
+      "Light Gray (RAL 7035)",
+      "MIL Black 383 (FS595-37030)",
+      "MIL Desert Tan 686A (FS595-33446)",
+      "MIL Fat Black (FS595-37038)",
+      "MIL Gray (FS595-26250)",
+      "MIL Green 383 (FS595-34094)",
+      "MIL White (FS595-27875)",
+      "Olive Green (RAL 6003)",
+      "Other",
+      "Other - Blue",
+      "Other - Orange",
+      "Other - Tan",
+      "Other - White",
+      "Other - Yellow",
+      "Other Black",
+      "Other Gray",
+      "Other Green",
+      "Other Red",
+      "Oyster White (RAL 1013)",
+      "Pastel Blue (RAL 5024)",
+      "Pure Green (RAL 6037)",
+      "Pure Orange (RAL 2004)",
+      "Pure Red UD (RAL 3028)",
+      "Raven Black Texture II (PBT6-C0001)",
+      "Signal Black (RAL 9004)",
+      "Signal Blue (RAL 5005)",
+      "Signal Gray (RAL 7004)",
+      "Signal Red (RAL 3001)",
+      "Signal White (RAL 9003)",
+      "Signal White Rough Texture (RAL 9003, 89/10960)",
+      "Signal Yellow (RAL 1003)",
+      "Sky White Smooth Glossy (PFW510S9)",
+      "Traffic Blue (RAL 5017)",
+      "Traffic Red (RAL 3020)",
+      "White Aluminum (RAL 9006)",
+      "White Texture (T032-WH15)",
+      "Window Gray (RAL 7040)",
+      "Yellow (RAL 1023)",
+      "Yellow Green (RAL 6018)",
+      "Zinc Yellow (RAL 1018)"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Aluminum",
+    "material": "Aluminum 6063",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Aluminum",
+    "material": "Aluminum 7050",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Aluminum",
+    "material": "Aluminum 7075-T6",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Aluminum",
+    "material": "Aluminum 7075-T7351",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Aluminum",
+    "material": "Aluminum MIC-6",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Brass-Bronze Copper",
+    "material": "Copper 101",
+    "finishes": [
+      "Bead Blast",
+      "Electroless Nickel Plating",
+      "Electropolish",
+      "Gold Plating",
+      "Nickel Plating",
+      "Other",
+      "Passivate",
+      "Powder Coating",
+      "Standard",
+      "Temper",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Brass-Bronze Copper",
+    "material": "Copper 260 (Bronze)",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Brass-Bronze Copper",
+    "material": "Copper C110",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Brass-Bronze Copper",
+    "material": "Copper C932 (Bronze)",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Brass-Bronze Copper",
+    "material": "Copper C360 (Brass)",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Composite",
+    "material": "Garolite G10 (FR4)",
+    "finishes": [],
+    "colors": [
+      "Yellow Green,Black, Other Color"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Composite",
+    "material": "Garolite G10",
+    "finishes": [],
+    "colors": [
+      "Yellow Green, Black"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Composite",
+    "material": "Garolite G11 (FR5)",
+    "finishes": [],
+    "colors": [
+      "Green"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "ABS",
+    "finishes": [],
+    "colors": [
+      "Black, White, Beige"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "Acrylic",
+    "finishes": [],
+    "colors": [
+      "Clear, Other Color"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "Acetal (POM)",
+    "finishes": [],
+    "colors": [
+      "Black, White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "Delrin 100 (AF)",
+    "finishes": [],
+    "colors": [
+      "Brown"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "Delrin 150",
+    "finishes": [],
+    "colors": [
+      "Black, White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "HDPE",
+    "finishes": [],
+    "colors": [
+      "White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "Nylon 6/6",
+    "finishes": [],
+    "colors": [
+      "Black, White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "PC (Polycarbonate)",
+    "finishes": [],
+    "colors": [
+      "Clear, Black, White, Other Color"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "PEEK",
+    "finishes": [],
+    "colors": [
+      "Beige, Black"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "PEEK (USP Class VI TECAPEK)",
+    "finishes": [],
+    "colors": [
+      "Beige"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "PEEK GF30",
+    "finishes": [],
+    "colors": [
+      "Beige"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "Polyproplylene",
+    "finishes": [],
+    "colors": [
+      "White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "PTFE (Teflon)",
+    "finishes": [],
+    "colors": [
+      "Black, White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "PVC",
+    "finishes": [],
+    "colors": [
+      "Gray"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "UHMW PE",
+    "finishes": [],
+    "colors": [
+      "Black, White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "ULTEM 1000",
+    "finishes": [],
+    "colors": [
+      "Amber, Black"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "ULTEM 2300",
+    "finishes": [],
+    "colors": [
+      "Amber"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Nitronic 60",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 15-5",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 15-5PH H1150",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 15-5PH H900",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 17-4",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 17-4PH H1150",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 17-4PH H900",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 303",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 304-304L",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 316-316L",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Next Available Stainless Steel 303, 304, or 316",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 410",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 416",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 420",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 440C",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless Steel",
+    "material": "Stainless Steel 15-5PH H1163",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel 1018",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel 1215",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel 4130",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel 4140",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel 4140PH",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel 4340",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel A36",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Tool Steel A2",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Tool Steel O1",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Titanium",
+    "material": "Titanium Grade 2",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Titanium",
+    "material": "Titanium Grade 5",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Other",
+    "material": "Other (Metal)",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Machining",
+    "process": "CNC",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Other",
+    "material": "Other (Plastic)",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Aluminum",
+    "material": "Aluminum 5052-H32",
+    "finishes": [
+      "Bead Blast",
+      "Black Anodize",
+      "Black Hardcoat Anodize",
+      "Black Oxide",
+      "Blue Anodize",
+      "Clear (Type II) Chem Film",
+      "Clear Anodize",
+      "Clear Hardcoat Anodize",
+      "Electroless Nickel Plating",
+      "Gold (Type I) Chem Film",
+      "Gold Anodize",
+      "Gold Plating",
+      "Gray Hardcoat Anodize",
+      "Green Anodize",
+      "Orange Anodize",
+      "Other",
+      "PTFE Impregnated Hard Anodize",
+      "Powder Coating",
+      "Purple Anodize",
+      "Red Anodize",
+      "Silver Plating",
+      "Standard",
+      "Titanium Anodize",
+      "Tumbled",
+      "Yellow Anodize",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Aluminum",
+    "material": "Aluminum 6061-T6/T651",
+    "finishes": [
+      "Bead Blast",
+      "Black Anodize",
+      "Black Hardcoat Anodize",
+      "Black Oxide",
+      "Blue Anodize",
+      "Clear (Type II) Chem Film",
+      "Clear Anodize",
+      "Clear Hardcoat Anodize",
+      "Electroless Nickel Plating",
+      "Electropolish",
+      "Gold (Type I) Chem Film",
+      "Gold Anodize",
+      "Gold Plating",
+      "Gray Hardcoat Anodize",
+      "Green Anodize",
+      "Orange Anodize",
+      "Other",
+      "PTFE Impregnated Hard Anodize",
+      "Powder Coating",
+      "Purple Anodize",
+      "Red Anodize",
+      "Silver Plating",
+      "Standard",
+      "Titanium Anodize",
+      "Tumbled",
+      "Yellow Anodize",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Aluminum",
+    "material": "Aluminum 7075-T6",
+    "finishes": [
+      "Bead Blast",
+      "Black Anodize",
+      "Black Hardcoat Anodize",
+      "Black Oxide",
+      "Blue Anodize",
+      "Clear (Type II) Chem Film",
+      "Clear Anodize",
+      "Clear Hardcoat Anodize",
+      "Electroless Nickel Plating",
+      "Gold (Type I) Chem Film",
+      "Gold Anodize",
+      "Gold Plating",
+      "Gray Hardcoat Anodize",
+      "Green Anodize",
+      "Orange Anodize",
+      "Other",
+      "PTFE Impregnated Hard Anodize",
+      "Powder Coating",
+      "Purple Anodize",
+      "Red Anodize",
+      "Silver Plating",
+      "Standard",
+      "Titanium Anodize",
+      "Tumbled",
+      "Yellow Anodize",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Aluminum",
+    "material": "Aluminum MIC6",
+    "finishes": [
+      "Bead Blast",
+      "Black Anodize",
+      "Black Hardcoat Anodize",
+      "Black Oxide",
+      "Blue Anodize",
+      "Clear (Type II) Chem Film",
+      "Clear Anodize",
+      "Clear Hardcoat Anodize",
+      "Electroless Nickel Plating",
+      "Gold (Type I) Chem Film",
+      "Gold Anodize",
+      "Gold Plating",
+      "Gray Hardcoat Anodize",
+      "Green Anodize",
+      "Orange Anodize",
+      "Other",
+      "PTFE Impregnated Hard Anodize",
+      "Powder Coating",
+      "Purple Anodize",
+      "Red Anodize",
+      "Silver Plating",
+      "Standard",
+      "Titanium Anodize",
+      "Tumbled",
+      "Yellow Anodize",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Aluminum",
+    "material": "Aluminum 2024-T3",
+    "finishes": [
+      "Bead Blast",
+      "Black Anodize",
+      "Black Hardcoat Anodize",
+      "Black Oxide",
+      "Blue Anodize",
+      "Clear (Type II) Chem Film",
+      "Clear Anodize",
+      "Clear Hardcoat Anodize",
+      "Electroless Nickel Plating",
+      "Gold (Type I) Chem Film",
+      "Gold Anodize",
+      "Gold Plating",
+      "Gray Hardcoat Anodize",
+      "Green Anodize",
+      "Orange Anodize",
+      "Other",
+      "PTFE Impregnated Hard Anodize",
+      "Powder Coating",
+      "Purple Anodize",
+      "Red Anodize",
+      "Silver Plating",
+      "Standard",
+      "Titanium Anodize",
+      "Tumbled",
+      "Yellow Anodize",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Brass",
+    "material": "Brass 260",
+    "finishes": [
+      "Bead Blast",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Composite",
+    "material": "Carbon Fiber",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Composite",
+    "material": "Garolite G10/FR4",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Yellow"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Copper",
+    "material": "Copper 101, H00 to H01",
+    "finishes": [
+      "Bead Blast",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Copper",
+    "material": "Copper 110, Annealed",
+    "finishes": [
+      "Bead Blast",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Copper",
+    "material": "Copper 110, H02",
+    "finishes": [
+      "Bead Blast",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Custom",
+    "material": "Other",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Foam",
+    "material": "EVA Foam",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Black, Blue"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "ABS",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Black, White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "Acetal",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Black, White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "Acrylic",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Clear, Opaque Black, Opaque White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "HDPE",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Black, White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "PETG Plastic",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Clear"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "Polycarbonate",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Clear"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "Polypropylene",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "White"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Plastic",
+    "material": "UHMW-PE",
+    "finishes": [
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Rubber and Gaskets",
+    "material": "Buna-N Rubber, Adhesive Backed",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": [
+      "Shore A50"
+    ]
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Rubber and Gaskets",
+    "material": "Buna-N Rubber",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": [
+      "Shore A40, Shore A50"
+    ]
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Rubber and Gaskets",
+    "material": "Cork and Buna-N Blend",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Brown"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Rubber and Gaskets",
+    "material": "High Temp Silicone Rubber, Adhesive-Backed",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Red"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": [
+      "Shore A40, Shore A50, Share A60, Share A70"
+    ]
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Rubber and Gaskets",
+    "material": "High Temp Silicone Rubber",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Red"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": [
+      "Shore A40, Shore A50, Share A60, Share A70"
+    ]
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Rubber and Gaskets",
+    "material": "Paper Fiber and Buna-N Blend",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [
+      "Gray"
+    ],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Rubber and Gaskets",
+    "material": "Neoprene Smooth Black",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": [
+      "30A, 40A, 50A, 60A, 70A"
+    ]
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless and Alloy Steel",
+    "material": "Stainless Steel 301, Quarter Hard",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Passivate",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless and Alloy Steel",
+    "material": "Stainless Steel 301, Full Hard",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Passivate",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless and Alloy Steel",
+    "material": "Stainless Steel 304, 2B/HRAP Finish",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Passivate",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless and Alloy Steel",
+    "material": "Stainless Steel 316, 2B/HRAP Finish",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Passivate",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless and Alloy Steel",
+    "material": "Stainless Steel 316, #4 Brushed",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Passivate",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless and Alloy Steel",
+    "material": "Stainless Steel 304, #8 Mirror Polish",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Passivate",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Stainless and Alloy Steel",
+    "material": "Stainless Steel 304, #4 Brushed",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Passivate",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel 4130 Chrome-Moly, Annealed",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel A653, Galvanized",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Case Harden",
+      "Other",
+      "Powder Coating",
+      "Standard",
+      "Tumbled"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel A653, Galvanneal",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Case Harden",
+      "Other",
+      "Powder Coating",
+      "Standard",
+      "Tumbled"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel AR400, Hardened",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Case Harden",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel AR500, Hardened",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Case Harden",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel 1045, Hot Rolled",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel A569/ASTM A 1011, Hot Rolled",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel 1008-1010 Low Carbon",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Case Harden",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel 4140, Annealed",
+    "finishes": [
+      "Bead Blast",
+      "Black Oxide",
+      "Case Harden",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel A36",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Case Harden",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel A36, Pickled and Oiled",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Case Harden",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Steel A366/1008",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Case Harden",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Tool Steel D2, Annealed",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Case Harden",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Steel",
+    "material": "Tool Steel O1, Annealed",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Case Harden",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Titanium",
+    "material": "Titanium (Grade 2)",
+    "finishes": [
+      "Bead Blast",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Titanium",
+    "material": "Titanium 6Al-4V (Grade-5)",
+    "finishes": [
+      "Bead Blast",
+      "Electroless Nickel Plating",
+      "Gold Plating",
+      "Other",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Wood",
+    "material": "Cherry Wood",
+    "finishes": [
+      "Annealing",
+      "Bead Blast",
+      "Black Oxide",
+      "Case Harden",
+      "Electroless Nickel Plating",
+      "Electropolish",
+      "Gold Plating",
+      "Other",
+      "Passivate",
+      "Powder Coating",
+      "Silver Plating",
+      "Standard",
+      "Tumbled",
+      "Zinc Plating"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Wood",
+    "material": "Hardboard",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Wood",
+    "material": "Poplar Hardwood",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Wood",
+    "material": "Red Oak Hardwood",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Cutting (Waterjet/Laser)",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Wood",
+    "material": "Uncoated Wood Laminate (Plywood), Birch",
+    "finishes": [
+      "Other",
+      "Standard"
+    ],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Sheet Metal",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Wood",
+    "material": "Uncoated Wood Laminate (Plywood), Birch",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Tube Bending",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Wood",
+    "material": "Uncoated Wood Laminate (Plywood), Birch",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Sheet and Tube Fabrication",
+    "process": "Tube Cutting",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Wood",
+    "material": "Uncoated Wood Laminate (Plywood), Birch",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Metal Part Production",
+    "process": "Die Casting",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Wood",
+    "material": "Uncoated Wood Laminate (Plywood), Birch",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Metal Part Production",
+    "process": "Metal Extrusion",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Wood",
+    "material": "Uncoated Wood Laminate (Plywood), Birch",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Metal Part Production",
+    "process": "Metal Stamping",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Wood",
+    "material": "Uncoated Wood Laminate (Plywood), Birch",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Plastic Part Production",
+    "process": "Injection Molding",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Wood",
+    "material": "Uncoated Wood Laminate (Plywood), Birch",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Plastic Part Production",
+    "process": "Plastic Extrusion",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Wood",
+    "material": "Uncoated Wood Laminate (Plywood), Birch",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  },
+  {
+    "process_type": "Plastic Part Production",
+    "process": "Urethane and Silicone Casting",
+    "technology_type": "Resin (Photopolymer)",
+    "technology": "CNC Milling, CNC Turning (Lathe), Swiss-Type Turning, CNC Mill and Turning Combo, Micro Macahining, CNC Router, Other",
+    "material_type": "Wood",
+    "material": "Uncoated Wood Laminate (Plywood), Birch",
+    "finishes": [],
+    "colors": [],
+    "infills": [],
+    "resolutions": [],
+    "hardnesses": []
+  }
+]
