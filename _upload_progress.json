@@ -1,0 +1,20 @@
+{
+  "batch_0_status": "partial_48_sent",
+  "remaining_chunks": [
+    {
+      "chunk_id": 1,
+      "file": "/app/_upload_chunk_batch_1.json",
+      "count": 100
+    },
+    {
+      "chunk_id": 2,
+      "file": "/app/_upload_chunk_batch_2.json",
+      "count": 100
+    },
+    {
+      "chunk_id": 3,
+      "file": "/app/_upload_chunk_batch_3.json",
+      "count": 100
+    }
+  ]
+}

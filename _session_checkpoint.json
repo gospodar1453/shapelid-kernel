@@ -1,0 +1,9 @@
+{
+  "last_successful_upload": "chunk_0_48_records",
+  "total_records_in_db_after_upload": 4111,
+  "next_batch_to_process": {
+    "start_index": 400,
+    "end_index": 4065
+  },
+  "timestamp": "2026-07-26T05:34:15.623065"
+}
