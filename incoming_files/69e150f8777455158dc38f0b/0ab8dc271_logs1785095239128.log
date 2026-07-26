@@ -1,0 +1,41 @@
+2026-07-26T19:43:04.809441170Z [inf]  fetched snapshot sha256:31aec51d2e79453dbb80cfd932f7908b5eaa42b26bb77648dabfd3d5a040f4d6 (30 MB bytes)
+2026-07-26T19:43:04.809547680Z [inf]  fetching snapshot
+2026-07-26T19:43:05.306181798Z [inf]  unpacking archive
+2026-07-26T19:43:05.493431837Z [inf]  [internal] load build definition from Dockerfile
+2026-07-26T19:43:05.493563594Z [inf]  [internal] load build definition from Dockerfile
+2026-07-26T19:43:05.493578797Z [inf]  [internal] load build definition from Dockerfile
+2026-07-26T19:43:05.530366303Z [inf]  [internal] load build definition from Dockerfile
+2026-07-26T19:43:05.541068833Z [inf]  [internal] load metadata for docker.io/library/python:3.11-slim
+2026-07-26T19:43:05.936027810Z [inf]  [internal] load metadata for docker.io/library/python:3.11-slim
+2026-07-26T19:43:05.936624615Z [inf]  [internal] load .dockerignore
+2026-07-26T19:43:05.936729943Z [inf]  [internal] load .dockerignore
+2026-07-26T19:43:05.936761680Z [inf]  [internal] load .dockerignore
+2026-07-26T19:43:05.986358335Z [inf]  [internal] load .dockerignore
+2026-07-26T19:43:06.044112462Z [inf]  [8/8] COPY pricing/ pricing/
+2026-07-26T19:43:06.044122257Z [inf]  [7/8] COPY analyzers/ analyzers/
+2026-07-26T19:43:06.044123859Z [inf]  [6/8] COPY main.py .
+2026-07-26T19:43:06.044124280Z [inf]  [5/8] RUN pip install --no-cache-dir -r requirements.txt
+2026-07-26T19:43:06.044124831Z [inf]  [4/8] COPY requirements.txt .
+2026-07-26T19:43:06.044125873Z [inf]  [internal] load build context
+2026-07-26T19:43:06.044126604Z [inf]  [3/8] WORKDIR /app
+2026-07-26T19:43:06.044127095Z [inf]  [2/8] RUN apt-get update && apt-get install -y     libgl1     libglib2.0-0     && rm -rf /var/lib/apt/lists/*
+2026-07-26T19:43:06.044127555Z [inf]  [1/8] FROM docker.io/library/python:3.11-slim@sha256:db3ff2e1800a8581e2c48a27c3995339d47bdf046da21c7627accd3d51053a93
+2026-07-26T19:43:06.044717560Z [inf]  [1/8] FROM docker.io/library/python:3.11-slim@sha256:db3ff2e1800a8581e2c48a27c3995339d47bdf046da21c7627accd3d51053a93
+2026-07-26T19:43:06.044720124Z [inf]  [internal] load build context
+2026-07-26T19:43:06.044764741Z [inf]  [internal] load build context
+2026-07-26T19:43:06.097031069Z [inf]  [internal] load build context
+2026-07-26T19:43:06.415823417Z [inf]  [1/8] FROM docker.io/library/python:3.11-slim@sha256:db3ff2e1800a8581e2c48a27c3995339d47bdf046da21c7627accd3d51053a93
+2026-07-26T19:43:06.454473446Z [inf]  [2/8] RUN apt-get update && apt-get install -y     libgl1     libglib2.0-0     && rm -rf /var/lib/apt/lists/*
+2026-07-26T19:43:06.454478043Z [inf]  [3/8] WORKDIR /app
+2026-07-26T19:43:06.454479395Z [inf]  [4/8] COPY requirements.txt .
+2026-07-26T19:43:06.454480056Z [inf]  [5/8] RUN pip install --no-cache-dir -r requirements.txt
+2026-07-26T19:43:06.454480677Z [inf]  [6/8] COPY main.py .
+2026-07-26T19:43:06.454481288Z [inf]  [7/8] COPY analyzers/ analyzers/
+2026-07-26T19:43:06.454481909Z [inf]  [8/8] COPY pricing/ pricing/
+2026-07-26T19:43:06.457232324Z [inf]  exporting to docker image format
+2026-07-26T19:43:07.247282833Z [inf]  scheduling build on Metal builder "builder-jsbpmf"
+2026-07-26T19:43:07.718177015Z [inf]  exporting to docker image format
+2026-07-26T19:43:07.749953116Z [inf]  containerimage.config.digest: sha256:6232c054567b405a2d2127414b76fdc2431cfd95ffcf6d7022e206cac599405b
+2026-07-26T19:43:07.749961398Z [inf]  containerimage.digest: sha256:ec37099856fde4ce0da7af112dcfabc6e1acb1a05692b32395ee1d71510364ec
+2026-07-26T19:43:07.749966787Z [inf]  containerimage.descriptor: eyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQub2NpLmltYWdlLm1hbmlmZXN0LnYxK2pzb24iLCJkaWdlc3QiOiJzaGEyNTY6ZWMzNzA5OTg1NmZkZTRjZTBkYTdhZjExMmRjZmFiYzZlMWFjYjFhMDU2OTJiMzIzOTVlZTFkNzE1MTAzNjRlYyIsInNpemUiOjIzODMsImFubm90YXRpb25zIjp7Im9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5jcmVhdGVkIjoiMjAyNi0wNy0yNlQxOTo0MzowNloifSwicGxhdGZvcm0iOnsiYXJjaGl0ZWN0dXJlIjoiYW1kNjQiLCJvcyI6ImxpbnV4In19
+2026-07-26T19:43:10.296888468Z [inf]  image push
