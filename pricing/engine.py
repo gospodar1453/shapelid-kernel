@@ -1,76 +1,109 @@
 """
-Fiyat Hesaplama Motoru — Faz-1
-Desteklenen teknolojiler: FDM, SLA, SLS, MJF, Laser Cutting, Bending
+Fiyat Hesaplama Motoru — Faz-2
+Desteklenen teknolojiler: FDM, SLA, SLS, MJF, DMLS, Laser Cutting, Bending
 
-Fiyat = Malzeme maliyeti + Makine maliyeti + Setup + Destek maliyeti + Miktar iskontosu
-Tüm fiyatlar USD cinsinden. TRY dönüşümü API katmanında yapılır.
+Yeni Faz-2 parametreleri:
+  - finish      : yüzey işlemi (standard / vapor_smoothing / anodize_color / ...)
+  - color       : renk seçimi (natural_grey / black_dyed / ...)
+  - resolution  : çözünürlük/katman kalitesi (draft / standard / fine / ultra / ...)
+  - hardness    : TPU shore değeri (shore_45a / shore_85a / ...)
+  - tolerance   : boyut toleransı (standard / medium / fine / ultra)
+  - certification: sertifika talebi (none / material_cert / first_article / ...)
 
 Fiyat kaynağı önceliği:
-  1. params["material_price_usd_per_kg"] — çağıran taraf (Base44) DB'den gönderir
+  1. params["material_price_usd_per_kg"] — Base44 DB'den gelen canlı fiyat
   2. material_rates.py sabit fallback
 """
 
 from .material_rates import MATERIAL_RATES
 from .machine_rates import MACHINE_RATES
+from .finish_rates import (
+    apply_options,
+    resolve_resolution,
+    INFILL_PRESETS,
+)
 
-# Şirket kâr marjı (Xometry benzeri take-rate modeli)
-PLATFORM_MARGIN = 0.28  # %28
+# Platform kâr marjı (MoR modeli)
+PLATFORM_MARGIN = 0.28
 
 
 def _resolve_material_rate(mat_key: str, technology: str, override_price_kg: float = None) -> dict:
-    """
-    Verilen material_key için fiyat dict'i döndürür.
-    override_price_kg varsa (Base44'ten gelen DB fiyatı), onu kullanır.
-    Yoksa material_rates.py sabit fallback.
-    """
     base_rate = MATERIAL_RATES.get(mat_key) or MATERIAL_RATES.get(f"default_{technology}", {})
-
     if override_price_kg is not None and override_price_kg > 0:
         density = base_rate.get("density_g_cm3", 1.24)
         price_per_cm3 = (override_price_kg / 1000) * density
-        return {
-            **base_rate,
-            "price_per_kg": override_price_kg,
-            "price_per_cm3": price_per_cm3,
-            "source": "db_live",
-        }
-
+        return {**base_rate, "price_per_kg": override_price_kg, "price_per_cm3": price_per_cm3, "source": "db_live"}
     return {**base_rate, "source": "static_fallback"}
 
 
 def calculate_price(geometry: dict, params: dict) -> dict:
-    technology = params.get("technology", "fdm")
-    material = params.get("material", "pla")
-    quantity = max(1, int(params.get("quantity", 1)))
-    # Base44 client bu değeri DB'den çekip gönderir
+    technology       = params.get("technology", "fdm")
+    material         = params.get("material", "pla")
+    quantity         = max(1, int(params.get("quantity", 1)))
     material_price_kg = params.get("material_price_usd_per_kg")
 
+    # ── Faz-2 seçim parametreleri ──
+    options = {
+        "finish"        : params.get("finish", "standard"),
+        "color"         : params.get("color", "none"),
+        "resolution"    : params.get("resolution", "standard"),
+        "hardness"      : params.get("hardness", "standard"),
+        "tolerance"     : params.get("tolerance", "standard"),
+        "certification" : params.get("certification", "none"),
+    }
+
+    # Resolution seçimi layer_height'ı override edebilir
+    res_rate = resolve_resolution(options["resolution"], technology)
+    if res_rate.get("layer_height_mm") and not params.get("layer_height_override_disabled"):
+        params = {**params, "layer_height": res_rate["layer_height_mm"]}
+
+    # Infill preset çözümle (sparse/standard/solid/full string ise)
+    infill_raw = params.get("infill", 0.2)
+    if isinstance(infill_raw, str) and infill_raw in INFILL_PRESETS:
+        params = {**params, "infill": INFILL_PRESETS[infill_raw]["ratio"]}
+
     if geometry["type"] == "3d":
-        return _price_3d(geometry, params, technology, material, quantity, material_price_kg)
+        base_result = _price_3d(geometry, params, technology, material, quantity, material_price_kg)
     elif geometry["type"] == "2d":
-        return _price_2d(geometry, params, technology, material, quantity, material_price_kg)
+        base_result = _price_2d(geometry, params, technology, material, quantity, material_price_kg)
     else:
         raise ValueError("Bilinmeyen geometri tipi")
 
+    # ── Faz-2: seçim parametrelerini birim fiyata uygula ──
+    options_result = apply_options(base_result["unit_price"], technology, options)
+
+    final_unit_price  = options_result["final_unit_price"]
+    final_total_price = round(final_unit_price * quantity, 2)
+
+    return {
+        **base_result,
+        "unit_price"               : final_unit_price,
+        "total_price"              : final_total_price,
+        "base_unit_price_no_options": base_result["unit_price"],
+        "options"                  : options,
+        "options_result"           : options_result,
+        "phase"                    : "faz-2",
+    }
+
 
 # ─────────────────────────────────────────────
-# 3D BASKI FİYATLANDIRMASI (FDM / SLA / SLS / MJF)
+# 3D BASKI FİYATLANDIRMASI
 # ─────────────────────────────────────────────
 
 def _price_3d(geometry, params, technology, material, quantity, material_price_kg) -> dict:
-    volume_cm3 = geometry["volume_cm3"]
+    volume_cm3       = geometry["volume_cm3"]
     surface_area_cm2 = geometry["surface_area_cm2"]
     support_area_cm2 = geometry.get("support_area_cm2", 0)
-    support_ratio = geometry.get("support_ratio", 0)
+    support_ratio    = geometry.get("support_ratio", 0)
     complexity_score = geometry.get("complexity_score", 0)
-    dims = geometry["dimensions_mm"]
-    is_watertight = geometry.get("is_watertight", True)
+    dims             = geometry["dimensions_mm"]
+    is_watertight    = geometry.get("is_watertight", True)
 
     layer_height = float(params.get("layer_height", 0.2))
-    infill = float(params.get("infill", 0.2))
+    infill       = float(params.get("infill", 0.2))
 
     mat_key = f"{technology}_{material}"
-    mat = _resolve_material_rate(mat_key, technology, material_price_kg)
+    mat     = _resolve_material_rate(mat_key, technology, material_price_kg)
     if not mat:
         raise ValueError(f"Bilinmeyen materyal kombinasyonu: {mat_key}")
 
@@ -78,11 +111,10 @@ def _price_3d(geometry, params, technology, material, quantity, material_price_k
     if not machine:
         raise ValueError(f"Bilinmeyen teknoloji: {technology}")
 
-    # ── Malzeme hacmi ──
+    # ── Hacim hesabı ──
     if technology == "fdm":
-        shell_thickness_cm = 0.12
-        shell_volume = surface_area_cm2 * shell_thickness_cm
-        infill_volume = max(volume_cm3 - shell_volume, 0) * infill
+        shell_volume    = surface_area_cm2 * 0.12
+        infill_volume   = max(volume_cm3 - shell_volume, 0) * infill
         effective_volume = shell_volume + infill_volume
     else:
         effective_volume = volume_cm3
@@ -96,57 +128,69 @@ def _price_3d(geometry, params, technology, material, quantity, material_price_k
 
     # ── Baskı süresi ──
     layer_count = dims["z_mm"] / layer_height
+
     if technology == "fdm":
         time_per_layer_min = 0.5 + (effective_volume / layer_count) * 0.1
         time_per_layer_min *= (1 + complexity_score / 200)
     elif technology == "sla":
         time_per_layer_min = 0.08
     elif technology in ("sls", "mjf"):
-        bbox_area_cm2 = (dims["x_mm"] * dims["y_mm"]) / 100
+        bbox_area_cm2      = (dims["x_mm"] * dims["y_mm"]) / 100
         time_per_layer_min = bbox_area_cm2 * 0.002 + 0.1
+    elif technology == "dmls":
+        # DMLS: çok yavaş — 30µm katman, metal sinterleme
+        bbox_area_cm2      = (dims["x_mm"] * dims["y_mm"]) / 100
+        time_per_layer_min = bbox_area_cm2 * 0.008 + 0.5
     else:
         time_per_layer_min = 0.3
 
     print_time_min = layer_count * time_per_layer_min
-    machine_cost = (print_time_min / 60) * machine["hourly_rate"]
-    setup_cost = machine["setup_cost"]
+    machine_cost   = (print_time_min / 60) * machine["hourly_rate"]
+    setup_cost     = machine["setup_cost"]
 
+    # ── Post-process ──
     post_process_cost = 0
     if technology == "fdm" and support_ratio > 0.1:
         post_process_cost = support_area_cm2 * 0.05
     elif technology == "sla":
         post_process_cost = surface_area_cm2 * 0.02
+    elif technology == "dmls":
+        # DMLS: stres giderme + platten removal standart
+        post_process_cost = 15.0
 
+    # ── Risk primi ──
     risk_premium = 0
     if not is_watertight:
         risk_premium = 2.0
 
-    unit_cost_raw = material_cost + machine_cost + setup_cost + post_process_cost + risk_premium
-    discount = _quantity_discount(quantity)
+    unit_cost_raw        = material_cost + machine_cost + setup_cost + post_process_cost + risk_premium
+    discount             = _quantity_discount(quantity)
     unit_cost_discounted = unit_cost_raw * (1 - discount)
-    unit_price = unit_cost_discounted / (1 - PLATFORM_MARGIN)
-    total_price = unit_price * quantity
+    unit_price           = unit_cost_discounted / (1 - PLATFORM_MARGIN)
+    total_price          = unit_price * quantity
 
     return {
-        "currency": "USD",
-        "unit_price": round(unit_price, 2),
-        "total_price": round(total_price, 2),
-        "quantity": quantity,
-        "quantity_discount_pct": round(discount * 100, 1),
-        "price_source": mat.get("source", "static_fallback"),
+        "currency"              : "USD",
+        "unit_price"            : round(unit_price, 2),
+        "total_price"           : round(total_price, 2),
+        "quantity"              : quantity,
+        "quantity_discount_pct" : round(discount * 100, 1),
+        "price_source"          : mat.get("source", "static_fallback"),
         "breakdown": {
-            "material_cost": round(material_cost, 4),
-            "machine_cost": round(machine_cost, 4),
-            "setup_cost": round(setup_cost, 4),
-            "post_process_cost": round(post_process_cost, 4),
-            "risk_premium": round(risk_premium, 4),
+            "material_cost"     : round(material_cost, 4),
+            "machine_cost"      : round(machine_cost, 4),
+            "setup_cost"        : round(setup_cost, 4),
+            "post_process_cost" : round(post_process_cost, 4),
+            "risk_premium"      : round(risk_premium, 4),
             "effective_volume_cm3": round(effective_volume, 4),
             "support_volume_cm3": round(support_volume, 4),
-            "print_time_min": round(print_time_min, 2),
+            "print_time_min"    : round(print_time_min, 2),
+            "layer_height_used" : layer_height,
+            "infill_used"       : infill,
             "platform_margin_pct": round(PLATFORM_MARGIN * 100, 1),
         },
         "confidence": _confidence_3d(geometry),
-        "routing": _routing_recommendation_3d(geometry, technology),
+        "routing"   : _routing_recommendation_3d(geometry, technology),
     }
 
 
@@ -155,64 +199,65 @@ def _price_3d(geometry, params, technology, material, quantity, material_price_k
 # ─────────────────────────────────────────────
 
 def _price_2d(geometry, params, technology, material, quantity, material_price_kg) -> dict:
-    cut_length_m = geometry["total_cut_length_m"]
+    cut_length_m  = geometry["total_cut_length_m"]
     outer_area_cm2 = geometry["outer_area_cm2"]
-    hole_count = geometry.get("hole_count", 0)
-    bend_count = geometry.get("bend_count", 0)
-    nesting_eff = geometry.get("nesting_efficiency", 0.7)
-    thickness_mm = float(params.get("material_thickness", 2.0))
+    hole_count    = geometry.get("hole_count", 0)
+    bend_count    = geometry.get("bend_count", 0)
+    nesting_eff   = geometry.get("nesting_efficiency", 0.7)
+    thickness_mm  = float(params.get("material_thickness", 2.0))
 
     mat_key = f"laser_{material}"
-    mat = _resolve_material_rate(mat_key, "laser", material_price_kg)
+    mat     = _resolve_material_rate(mat_key, "laser", material_price_kg)
     machine = MACHINE_RATES.get("laser")
 
-    density = mat.get("density_g_cm3", 7.85)
+    density    = mat.get("density_g_cm3", 7.85)
     volume_cm3 = (outer_area_cm2 * thickness_mm) / 10
-    weight_kg = (volume_cm3 * density) / 1000
+    weight_kg  = (volume_cm3 * density) / 1000
     material_cost = weight_kg * mat["price_per_kg"]
 
     machine_time_min = 0
     if technology == "laser":
-        cut_speed_m_min = max(0.5, 5.0 - (thickness_mm - 1) * 0.6)
-        cut_time_min = cut_length_m / cut_speed_m_min
-        pierce_time_min = hole_count * (0.05 + thickness_mm * 0.01)
+        cut_speed_m_min  = max(0.5, 5.0 - (thickness_mm - 1) * 0.6)
+        cut_time_min     = cut_length_m / cut_speed_m_min
+        pierce_time_min  = hole_count * (0.05 + thickness_mm * 0.01)
         machine_time_min = cut_time_min + pierce_time_min
-        machine_cost = (machine_time_min / 60) * machine["hourly_rate"]
+        machine_cost     = (machine_time_min / 60) * machine["hourly_rate"]
     elif technology == "bending":
-        bend_time_min = max(bend_count * (1.5 + thickness_mm * 0.3), 5)
+        bend_time_min    = max(bend_count * (1.5 + thickness_mm * 0.3), 5)
         machine_time_min = bend_time_min
-        machine_cost = (bend_time_min / 60) * MACHINE_RATES["bending"]["hourly_rate"]
+        machine_cost     = (bend_time_min / 60) * MACHINE_RATES["bending"]["hourly_rate"]
     else:
         machine_cost = 0
 
-    setup_cost = machine["setup_cost"] if technology == "laser" else MACHINE_RATES["bending"]["setup_cost"]
+    setup_cost  = machine["setup_cost"] if technology == "laser" else MACHINE_RATES["bending"]["setup_cost"]
     waste_factor = max(0, 0.3 - nesting_eff) * 0.5
-    waste_cost = material_cost * waste_factor
+    waste_cost  = material_cost * waste_factor
 
-    unit_cost_raw = material_cost + machine_cost + setup_cost + waste_cost
-    discount = _quantity_discount(quantity)
+    unit_cost_raw        = material_cost + machine_cost + setup_cost + waste_cost
+    discount             = _quantity_discount(quantity)
     unit_cost_discounted = unit_cost_raw * (1 - discount)
-    unit_price = unit_cost_discounted / (1 - PLATFORM_MARGIN)
-    total_price = unit_price * quantity
+    unit_price           = unit_cost_discounted / (1 - PLATFORM_MARGIN)
+    total_price          = unit_price * quantity
 
     return {
-        "currency": "USD",
-        "unit_price": round(unit_price, 2),
-        "total_price": round(total_price, 2),
-        "quantity": quantity,
-        "quantity_discount_pct": round(discount * 100, 1),
-        "price_source": mat.get("source", "static_fallback"),
+        "currency"              : "USD",
+        "unit_price"            : round(unit_price, 2),
+        "total_price"           : round(total_price, 2),
+        "quantity"              : quantity,
+        "quantity_discount_pct" : round(discount * 100, 1),
+        "price_source"          : mat.get("source", "static_fallback"),
         "breakdown": {
-            "material_cost": round(material_cost, 4),
-            "machine_cost": round(machine_cost, 4),
-            "setup_cost": round(setup_cost, 4),
-            "waste_cost": round(waste_cost, 4),
-            "weight_kg": round(weight_kg, 4),
-            "cut_time_min": round(machine_time_min, 2),
+            "material_cost"     : round(material_cost, 4),
+            "machine_cost"      : round(machine_cost, 4),
+            "setup_cost"        : round(setup_cost, 4),
+            "waste_cost"        : round(waste_cost, 4),
+            "weight_kg"         : round(weight_kg, 4),
+            "cut_time_min"      : round(machine_time_min, 2),
+            "thickness_mm"      : thickness_mm,
             "platform_margin_pct": round(PLATFORM_MARGIN * 100, 1),
         },
         "confidence": _confidence_2d(geometry, thickness_mm),
-        "routing": _routing_recommendation_2d(geometry, technology, bend_count),
+        "routing"   : _routing_recommendation_2d(geometry, technology, bend_count),
     }
 
 
@@ -231,7 +276,7 @@ def _quantity_discount(quantity: int) -> float:
 
 
 def _confidence_3d(geometry: dict) -> dict:
-    score = 100
+    score   = 100
     reasons = []
     if not geometry.get("is_watertight", True):
         score -= 30
@@ -247,7 +292,7 @@ def _confidence_3d(geometry: dict) -> dict:
 
 
 def _confidence_2d(geometry: dict, thickness_mm: float) -> dict:
-    score = 100
+    score   = 100
     reasons = []
     if geometry.get("total_cut_length_mm", 0) == 0:
         score -= 50
@@ -260,19 +305,19 @@ def _confidence_2d(geometry: dict, thickness_mm: float) -> dict:
 
 
 def _routing_recommendation_3d(geometry: dict, technology: str) -> dict:
-    volume = geometry.get("volume_cm3", 0)
+    volume     = geometry.get("volume_cm3", 0)
     complexity = geometry.get("complexity_score", 0)
     return {
         "preferred_technology": technology,
-        "alternative": "sls" if technology == "fdm" and complexity > 60 else None,
-        "batch_recommended": volume < 5,
-        "notes": "Küçük parça — toplu sipariş iskonto sağlar" if volume < 5 else None,
+        "alternative"         : "sls" if technology == "fdm" and complexity > 60 else None,
+        "batch_recommended"   : volume < 5,
+        "notes"               : "Küçük parça — toplu sipariş iskonto sağlar" if volume < 5 else None,
     }
 
 
 def _routing_recommendation_2d(geometry: dict, technology: str, bend_count: int) -> dict:
     return {
         "preferred_technology": technology,
-        "combined_process": bend_count > 0 and technology == "laser",
-        "notes": "Lazer + bükme kombine sipariş önerilir" if bend_count > 0 else None,
+        "combined_process"    : bend_count > 0 and technology == "laser",
+        "notes"               : "Lazer + bükme kombine sipariş önerilir" if bend_count > 0 else None,
     }
