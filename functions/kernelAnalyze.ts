@@ -1,10 +1,12 @@
 /**
- * kernelAnalyze — STL/DXF dosyasını analiz eder ve fiyat hesaplar.
+ * kernelAnalyze v2 — Faz-2
+ *
+ * Yeni parametreler: finish, color, resolution, hardness, tolerance, certification
  *
  * Fiyat akışı:
  *   1. MaterialPrice entity'sinden güncel malzeme fiyatını çeker (DB)
  *   2. Override veya current_price_usd'yi kernel'a material_price_usd_per_kg olarak gönderir
- *   3. Kernel geometrik analiz yapar + fiyat hesaplar
+ *   3. Kernel geometrik analiz + finish/color/resolution/tolerance vb. çarpanları uygular
  *   4. TCMB kurunu çeker, TRY karşılığını ekler
  */
 
@@ -21,19 +23,19 @@ const KUR_TTL = 4 * 60 * 60 * 1000;
 async function getTcmbKur(): Promise<number> {
   if (_kurCache && Date.now() - _kurCacheTs < KUR_TTL) return _kurCache;
   try {
-    // TCMB EVDS API — TP.DK.USD.A = USD/TRY Döviz Alış
-    const res = await fetch(TCMB_URL, { headers: { "key": Deno.env.get("TCMB_API_KEY") || "" } });
+    const res = await fetch(TCMB_URL, {
+      headers: { "key": Deno.env.get("TCMB_API_KEY") || "" }
+    });
     const data = await res.json();
     const items = data?.items ?? [];
     const latest = items[items.length - 1];
     const kur = parseFloat(latest?.["TP_DK_USD_A"] || "0");
     if (kur > 10) {
-      _kurCache = kur * 1.04; // %4 buffer
+      _kurCache = kur * 1.04;
       _kurCacheTs = Date.now();
       return _kurCache;
     }
   } catch (_) {}
-  // Fallback: sabit kur
   return 47.0 * 1.04;
 }
 
@@ -71,12 +73,20 @@ Deno.serve(async (req) => {
   const {
     fileBase64,
     fileName,
-    technology = "fdm",
-    material = "pla",
-    quantity = 1,
-    layer_height = 0.2,
-    infill = 0.2,
-    material_thickness = 2.0,
+    // Temel parametreler
+    technology          = "fdm",
+    material            = "pla",
+    quantity            = 1,
+    layer_height        = 0.2,
+    infill              = 0.2,
+    material_thickness  = 2.0,
+    // ── Faz-2: seçim parametreleri ──
+    finish              = "standard",
+    color               = "none",
+    resolution          = "standard",
+    hardness            = "standard",
+    tolerance           = "standard",
+    certification       = "none",
   } = body;
 
   if (!fileBase64 || !fileName) {
@@ -97,13 +107,21 @@ Deno.serve(async (req) => {
   form.append("file", blob, fileName);
 
   const url = new URL(`${KERNEL_URL}/analyze`);
-  url.searchParams.set("technology", technology);
-  url.searchParams.set("material", material);
-  url.searchParams.set("quantity", String(quantity));
-  url.searchParams.set("layer_height", String(layer_height));
-  url.searchParams.set("infill", String(infill));
+  // Temel
+  url.searchParams.set("technology",         technology);
+  url.searchParams.set("material",           material);
+  url.searchParams.set("quantity",           String(quantity));
+  url.searchParams.set("layer_height",       String(layer_height));
+  url.searchParams.set("infill",             String(infill));
   url.searchParams.set("material_thickness", String(material_thickness));
-  // DB fiyatını kernel'a gönder
+  // Faz-2 options
+  url.searchParams.set("finish",             finish);
+  url.searchParams.set("color",              color);
+  url.searchParams.set("resolution",         resolution);
+  url.searchParams.set("hardness",           hardness);
+  url.searchParams.set("tolerance",          tolerance);
+  url.searchParams.set("certification",      certification);
+  // DB fiyatı
   if (dbPrice !== null) {
     url.searchParams.set("material_price_usd_per_kg", String(dbPrice));
   }
@@ -115,9 +133,7 @@ Deno.serve(async (req) => {
     return Response.json(data, { status: res.status });
   }
 
-  // TCMB kurunu çek ve TRY fiyatlarını ekle
-  const kurTRY = await getTcmbKur();
-
+  const kurTRY       = await getTcmbKur();
   const unitPriceUSD  = data.pricing?.unit_price  ?? 0;
   const totalPriceUSD = data.pricing?.total_price ?? 0;
 
@@ -125,11 +141,10 @@ Deno.serve(async (req) => {
     ...data,
     pricing: {
       ...data.pricing,
-      // TRY karşılıkları (buffer dahil kur)
-      unit_price_try:  parseFloat((unitPriceUSD  * kurTRY).toFixed(2)),
-      total_price_try: parseFloat((totalPriceUSD * kurTRY).toFixed(2)),
-      exchange_rate:   parseFloat(kurTRY.toFixed(4)),
-      price_source:    data.pricing?.price_source ?? (dbPrice ? "db_live" : "static_fallback"),
+      unit_price_try  : parseFloat((unitPriceUSD  * kurTRY).toFixed(2)),
+      total_price_try : parseFloat((totalPriceUSD * kurTRY).toFixed(2)),
+      exchange_rate   : parseFloat(kurTRY.toFixed(4)),
+      price_source    : data.pricing?.price_source ?? (dbPrice ? "db_live" : "static_fallback"),
       material_price_usd_per_kg_used: dbPrice,
     },
   });
