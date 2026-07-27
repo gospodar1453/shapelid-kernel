@@ -264,6 +264,49 @@ FINISH_RATES = {
         "technologies": ["sls", "mjf"],
         "label": "Media Blast / Polish",
     },
+    # ── FDM / SLS / MJF özel finish'leri ──────────────────────────────────
+    "vapor_smoothing": {
+        "label": "Vapor Smoothing",
+        "multiplier": 1.35,
+        "flat_cost": 3.5,
+        "technologies": ["fdm", "sls", "mjf"],
+        "description": "Solvent buharı ile yüzey pürüzsüzleştirme"
+    },
+    "dyeing": {
+        "label": "Dyeing",
+        "multiplier": 1.15,
+        "flat_cost": 2.0,
+        "technologies": ["sls", "mjf"],
+        "description": "SLS/MJF parçaları için boyama"
+    },
+    "tumble_polishing": {
+        "label": "Tumble Polishing",
+        "multiplier": 1.12,
+        "flat_cost": 1.5,
+        "technologies": ["fdm", "sls", "mjf", "sla"],
+        "description": "Döner tambur ile yüzey perdahlama"
+    },
+    "sanding": {
+        "label": "Sanding",
+        "multiplier": 1.18,
+        "flat_cost": 2.0,
+        "technologies": ["fdm", "sla", "sls"],
+        "description": "Manuel zımpara ile yüzey düzeltme"
+    },
+    "priming": {
+        "label": "Priming",
+        "multiplier": 1.10,
+        "flat_cost": 1.5,
+        "technologies": ["fdm", "sla", "sls", "mjf"],
+        "description": "Astar boya uygulama"
+    },
+    "clear_coating": {
+        "label": "Clear Coating",
+        "multiplier": 1.12,
+        "flat_cost": 1.5,
+        "technologies": ["fdm", "sla", "sls"],
+        "description": "Şeffaf koruyucu kaplama"
+    },
 }
 
 # Alias normalize tablosu — platform'dan gelen title → key eşleştirmesi
@@ -434,17 +477,17 @@ TOLERANCE_RATES = {
     },
     "medium": {
         "multiplier": 1.10, "tolerance_mm": 0.2,
-        "technologies": ["laser", "bending", "cnc_machining", "cnc_milling", "cnc_turning"],
+        "technologies": ["laser", "bending", "cnc_machining", "cnc_milling", "cnc_turning", "sls", "mjf", "fdm"],
         "label": "Medium (±0.2 mm)",
     },
     "fine": {
         "multiplier": 1.25, "tolerance_mm": 0.1,
-        "technologies": ["cnc_machining", "cnc_milling", "cnc_turning"],
+        "technologies": ["cnc_machining", "cnc_milling", "cnc_turning", "sls", "mjf", "dmls"],
         "label": "Fine (±0.1 mm)",
     },
     "ultra": {
         "multiplier": 1.45, "tolerance_mm": 0.05,
-        "technologies": ["cnc_machining", "cnc_milling", "cnc_turning"],
+        "technologies": ["cnc_machining", "cnc_milling", "cnc_turning", "dmls"],
         "label": "Ultra (±0.05 mm)",
     },
 }
