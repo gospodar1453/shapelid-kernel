@@ -1,0 +1,2 @@
+Kalan request: 7391
+Batch 10/74 | 1000/7391 req | ~2725 satır silindi
