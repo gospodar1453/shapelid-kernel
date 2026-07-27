@@ -2,3 +2,10 @@ Kalan request: 7391
 Batch 10/74 | 1000/7391 req | ~2725 satır silindi
 Batch 20/74 | 2000/7391 req | ~5739 satır silindi
 Batch 30/74 | 3000/7391 req | ~8356 satır silindi
+Batch 40/74 | 4000/7391 req | ~10775 satır silindi
+Batch 50/74 | 5000/7391 req | ~13155 satır silindi
+Batch 60/74 | 6000/7391 req | ~16404 satır silindi
+Batch 70/74 | 7000/7391 req | ~18525 satır silindi
+Batch 74/74 | 7391/7391 req | ~19246 satır silindi
+
+TAMAM: 7391/7391 request | ~19246 satır silindi
