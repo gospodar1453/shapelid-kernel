@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-07-27T05:31:31.783700",
+  "task": "mega_results_upload",
+  "status": "ANALYSIS_ONLY",
+  "db_total": 4111,
+  "mega_results_file": 4065,
+  "target": 4065,
+  "excess_in_db": 46,
+  "message": "Veritabanında 4111 kayıt var, hedef 4065 idi. Fark: +46 (muhtemelen duplicate veya validation'dan geçmeyen kayıtlar)"
+}
