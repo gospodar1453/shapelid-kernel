@@ -1,2 +1,4 @@
 Kalan request: 7391
 Batch 10/74 | 1000/7391 req | ~2725 satır silindi
+Batch 20/74 | 2000/7391 req | ~5739 satır silindi
+Batch 30/74 | 3000/7391 req | ~8356 satır silindi
