@@ -70,9 +70,19 @@ def calculate_price(geometry: dict, params: dict) -> dict:
         raise ValueError("Bilinmeyen geometri tipi")
 
     # ── Faz-2: seçim parametrelerini birim fiyata uygula ──
-    options_result = apply_options(base_result["unit_price"], technology, options)
+    options_result = apply_options(
+        base_result["unit_price"],
+        technology,
+        finish        = options.get("finish", "standard"),
+        color         = options.get("color", "none"),
+        resolution    = options.get("resolution", "standard"),
+        infill        = params.get("infill"),
+        hardness      = options.get("hardness", "standard"),
+        tolerance     = options.get("tolerance", "standard"),
+        certification = options.get("certification", "none"),
+    )
 
-    final_unit_price  = options_result["final_unit_price"]
+    final_unit_price  = options_result["unit_price_final"]
     final_total_price = round(final_unit_price * quantity, 2)
 
     return {
