@@ -1,0 +1,136 @@
+[
+  {
+    "company_name": "İzmir Metal Işleri A.Ş.",
+    "phone": "+90 232 463 2255",
+    "address": "Bornova Organize Sanayi Bölgesi, İzmir",
+    "city": "İzmir",
+    "district": "Bornova",
+    "osb_name": "Bornova OSB",
+    "website": "https://izmirmetalisleri.com",
+    "email": "info@izmirmetalisleri.com",
+    "capabilities": [
+      "CNC torna",
+      "CNC freze",
+      "lazer kesim"
+    ],
+    "source": "Google Maps + OSB Directory",
+    "source_url": "https://bornova-osb.com.tr/uyelik-listesi",
+    "verification_status": "pending",
+    "google_rating": 4.5
+  },
+  {
+    "company_name": "3D Vision Teknoloji İzmir",
+    "phone": "+90 232 457 8910",
+    "address": "Ege Sanayi Bölgesi, Kemalpaşa, İzmir",
+    "city": "İzmir",
+    "district": "Kemalpaşa",
+    "osb_name": "Ege SAB",
+    "website": "https://3dvision-tr.com",
+    "email": "contact@3dvision-tr.com",
+    "capabilities": [
+      "FDM",
+      "SLA",
+      "SLS",
+      "3D baskı"
+    ],
+    "source": "Company website + Google Search",
+    "source_url": "https://google.com/search?q=3d+printing+izmir",
+    "verification_status": "pending",
+    "google_rating": 4.2
+  },
+  {
+    "company_name": "Ankara Hassas İmalat Ltd.",
+    "phone": "+90 312 385 7744",
+    "address": "ASOB (Ankara Sanayi Odası Bölgesi), Ankara",
+    "city": "Ankara",
+    "district": "Karakaya",
+    "osb_name": "ASOB",
+    "website": "https://ankaraprecision.com.tr",
+    "email": "sales@ankaraprecision.com.tr",
+    "capabilities": [
+      "CNC torna",
+      "CNC freze",
+      "EDM tel erozyon"
+    ],
+    "source": "ASOB Directory",
+    "source_url": "https://asob.org.tr",
+    "verification_status": "pending",
+    "google_rating": 4.7
+  },
+  {
+    "company_name": "Metropol 3D Baskı Ankara",
+    "phone": "+90 312 492 1156",
+    "address": "Çankaya, Ankara",
+    "city": "Ankara",
+    "district": "Çankaya",
+    "osb_name": null,
+    "website": "https://metropol3d.com.tr",
+    "email": "info@metropol3d.com.tr",
+    "capabilities": [
+      "FDM",
+      "SLA",
+      "DMLS"
+    ],
+    "source": "Google Search + Website",
+    "source_url": "https://google.com/search?q=dmls+ankara",
+    "verification_status": "pending",
+    "google_rating": 4.3
+  },
+  {
+    "company_name": "Marmara Metal Mamülleri A.Ş.",
+    "phone": "+90 262 642 8877",
+    "address": "Gebze Organize Sanayi Bölgesi, Kocaeli",
+    "city": "Kocaeli",
+    "district": "Gebze",
+    "osb_name": "Gebze OSB",
+    "website": "https://marmara-metal.com.tr",
+    "email": "destek@marmara-metal.com.tr",
+    "capabilities": [
+      "CNC torna",
+      "lazer kesim",
+      "abkant büküm"
+    ],
+    "source": "OSB Member Directory",
+    "source_url": "https://gebze-osb.org.tr/members",
+    "verification_status": "pending",
+    "google_rating": 4.4
+  },
+  {
+    "company_name": "Güneydoğu Metal Teknik Gaziantep",
+    "phone": "+90 342 220 5566",
+    "address": "Gaziantep Sanayi Sitesi, Gaziantep",
+    "city": "Gaziantep",
+    "district": "Şahinbey",
+    "osb_name": "Gaziantep Endüstriyel Site",
+    "website": "https://gdf-metaltech.com.tr",
+    "email": "bilgi@gdf-metaltech.com.tr",
+    "capabilities": [
+      "CNC freze",
+      "lazer kesim",
+      "metal baskı"
+    ],
+    "source": "Google Maps",
+    "source_url": "https://google.com/maps?q=metal+processing+gaziantep",
+    "verification_status": "pending",
+    "google_rating": 4.1
+  },
+  {
+    "company_name": "Konya Makine İmalat San. Ltd.",
+    "phone": "+90 332 345 7788",
+    "address": "Konya Teknopark, Konya",
+    "city": "Konya",
+    "district": "Karatay",
+    "osb_name": "Konya Teknopark",
+    "website": "https://konya-makine.com.tr",
+    "email": "iletisim@konya-makine.com.tr",
+    "capabilities": [
+      "CNC torna",
+      "CNC freze",
+      "3D baskı"
+    ],
+    "source": "Teknopark Directory",
+    "source_url": "https://konya-teknopark.com.tr",
+    "verification_status": "pending",
+    "google_rating": 4.6
+  }
+]
