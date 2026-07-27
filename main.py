@@ -31,8 +31,8 @@ from pricing.finish_rates import (
 
 app = FastAPI(
     title="Shapelid Geometry Kernel",
-    version="2.0.0",
-    description="Faz-2: finish/color/resolution/hardness/tolerance/cert parametreleri eklendi"
+    version="2.1.0",
+    description="Faz-2.1: Finish/Color platform gercek degerleriyle guncellendi (MaterialFinish+MaterialColor entity)"
 )
 
 app.add_middleware(
