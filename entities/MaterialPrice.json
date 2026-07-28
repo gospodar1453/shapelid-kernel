@@ -57,9 +57,6 @@
     },
     "notes": {
       "type": "string"
-    },
-    "simple_mode": {
-      "type": "boolean"
     }
   },
   "required": [],
