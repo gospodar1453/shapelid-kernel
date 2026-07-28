@@ -57,6 +57,14 @@
     },
     "notes": {
       "type": "string"
+    },
+    "display_mode": {
+      "type": "string",
+      "enum": [
+        "simple",
+        "advanced",
+        "both"
+      ]
     }
   },
   "required": [],
