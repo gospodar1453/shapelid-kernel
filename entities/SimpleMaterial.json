@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "material_key": {
+      "type": "string"
+    },
+    "material_name": {
+      "type": "string"
+    },
+    "technology": {
+      "type": "string",
+      "enum": [
+        "fdm",
+        "sla",
+        "sls",
+        "mjf",
+        "dmls",
+        "polyjet"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "display_order": {
+      "type": "number"
+    },
+    "base_price_usd": {
+      "type": "number"
+    },
+    "price_unit": {
+      "type": "string"
+    },
+    "material_price_ref": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "SimpleMaterial"
+}
