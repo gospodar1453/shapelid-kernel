@@ -1,0 +1,849 @@
+import json
+
+materials = [
+    # 1. Bambu Lab (9 materials)
+    {
+        "material_name": "Bambu PLA Basic",
+        "brand": "Bambu Lab",
+        "category": "PLA",
+        "subcategory": "Basic",
+        "key_properties": ["High Speed Printing", "Easy to Print", "Good Surface Finish", "Low Warping"],
+        "approx_price_usd_kg": 24.99,
+        "colors_available": True,
+        "notes": "Excellent general-purpose filament. Integrated RFID tag for automatic settings recognition in Bambu Lab AMS. High-speed printing up to 250-300 mm/s. Compatible with all FDM printers."
+    },
+    {
+        "material_name": "Bambu PLA Matte",
+        "brand": "Bambu Lab",
+        "category": "PLA",
+        "subcategory": "Matte",
+        "key_properties": ["Matte Finish", "Low Gloss", "Hide Layer Lines", "Easy Support Removal"],
+        "approx_price_usd_kg": 24.99,
+        "colors_available": True,
+        "notes": "Ideal for artistic, aesthetic, or architectural models where reflections are undesired. Includes AMS RFID chip. Compatible with standard FDM printers."
+    },
+    {
+        "material_name": "Bambu PLA-CF",
+        "brand": "Bambu Lab",
+        "category": "PLA",
+        "subcategory": "Carbon Fiber",
+        "key_properties": ["High Stiffness", "Carbon Fiber Reinforced", "Improved Tensile Strength", "Matte Texture"],
+        "approx_price_usd_kg": 34.99,
+        "colors_available": True,
+        "notes": "Infused with carbon fibers for enhanced mechanical properties and stiffness. Abrasive material; requires hardened steel nozzle (0.4mm or larger). Compatible with AMS."
+    },
+    {
+        "material_name": "Bambu PETG Basic",
+        "brand": "Bambu Lab",
+        "category": "PETG",
+        "subcategory": "Basic",
+        "key_properties": ["Water Resistant", "Impact Resistant", "High Toughness", "Chemical Resistant"],
+        "approx_price_usd_kg": 24.99,
+        "colors_available": True,
+        "notes": "Great for outdoor, structural, or mechanical parts requiring more heat and impact resistance than PLA. AMS compatible with RFID."
+    },
+    {
+        "material_name": "Bambu PETG-CF",
+        "brand": "Bambu Lab",
+        "category": "PETG",
+        "subcategory": "Carbon Fiber",
+        "key_properties": ["High Stiffness", "Chemical Resistant", "Heat Resistant", "Improved Dimensional Stability"],
+        "approx_price_usd_kg": 34.99,
+        "colors_available": True,
+        "notes": "Carbon fiber reinforced PETG. Stronger and stiffer than regular PETG with less warping. Requires hardened steel nozzle. AMS compatible."
+    },
+    {
+        "material_name": "Bambu ABS",
+        "brand": "Bambu Lab",
+        "category": "ABS",
+        "subcategory": "Basic",
+        "key_properties": ["Heat Resistant", "High Mechanical Strength", "Impact Resistant", "Acetone Vapor Smoothable"],
+        "approx_price_usd_kg": 24.99,
+        "colors_available": True,
+        "notes": "Requires enclosed printer and heated bed. Ideal for functional parts used in higher temperature environments (up to 85C)."
+    },
+    {
+        "material_name": "Bambu ASA",
+        "brand": "Bambu Lab",
+        "category": "ASA",
+        "subcategory": "UV Resistant",
+        "key_properties": ["UV Resistant", "Weather Resistant", "High Heat Resistance", "High Strength"],
+        "approx_price_usd_kg": 29.99,
+        "colors_available": True,
+        "notes": "The best choice for outdoor applications, garden tools, and automotive exterior parts. Very high UV stability. Enclosed printer required."
+    },
+    {
+        "material_name": "Bambu TPU 95A",
+        "brand": "Bambu Lab",
+        "category": "TPU",
+        "subcategory": "Flexible",
+        "key_properties": ["High Elasticity", "Tear Resistant", "Excellent Layer Adhesion", "95A Durometer"],
+        "approx_price_usd_kg": 39.99,
+        "colors_available": True,
+        "notes": "Highly flexible elastomer. NOT recommended for AMS due to feeding issues; must be printed from spool holder. Ideal for dampening pads, seals, phone cases."
+    },
+    {
+        "material_name": "Bambu PA-CF",
+        "brand": "Bambu Lab",
+        "category": "Nylon",
+        "subcategory": "Carbon Fiber",
+        "key_properties": ["Extreme Stiffness", "High Heat Resistance", "Exceptional Tensile Strength", "Wear Resistance"],
+        "approx_price_usd_kg": 79.99,
+        "colors_available": True,
+        "notes": "High performance carbon-fiber reinforced polyamide (Nylon). Extremely rigid and heat-resistant (up to 150C). High moisture absorption; must be dried before use. Hardened steel nozzle required."
+    },
+
+    # 2. Prusament (Prusa) (8 materials)
+    {
+        "material_name": "Prusament PLA",
+        "brand": "Prusament (Prusa)",
+        "category": "PLA",
+        "subcategory": "Premium",
+        "key_properties": ["Strict Diameter Tolerance (+/- 0.02mm)", "Easy to Print", "Low Warping", "Vibrant Colors"],
+        "approx_price_usd_kg": 29.99,
+        "colors_available": True,
+        "notes": "Josef Prusa's premium in-house manufactured PLA. Winding and tolerance details checkable online via spool QR code. Perfect for general high-precision models."
+    },
+    {
+        "material_name": "Prusament PETG",
+        "brand": "Prusament (Prusa)",
+        "category": "PETG",
+        "subcategory": "Premium",
+        "key_properties": ["High Toughness", "Temperature Resistance (up to 80C)", "Durable", "Low Warping"],
+        "approx_price_usd_kg": 29.99,
+        "colors_available": True,
+        "notes": "Excellent for functional brackets and structural elements. Prints easily with minimal stringing. Extremely consistent manufacturing quality."
+    },
+    {
+        "material_name": "Prusament ASA",
+        "brand": "Prusament (Prusa)",
+        "category": "ASA",
+        "subcategory": "Premium",
+        "key_properties": ["UV Resistant", "Heat Resistant (up to 90C)", "High Impact Resistance", "Enclosure Recommended"],
+        "approx_price_usd_kg": 34.99,
+        "colors_available": True,
+        "notes": "Great for outdoor, weather-exposed functional parts. Smoothable using acetone vapor. Enclosed chamber is highly recommended for printing large parts to avoid warping."
+    },
+    {
+        "material_name": "Prusament PC Blend",
+        "brand": "Prusament (Prusa)",
+        "category": "Polycarbonate",
+        "subcategory": "Premium",
+        "key_properties": ["Extreme Temperature Resistance (113C)", "Exceptional Impact Strength", "Low Warping for PC"],
+        "approx_price_usd_kg": 44.99,
+        "colors_available": True,
+        "notes": "Modified polycarbonate that is easier to print than standard PC. High toughness makes it perfect for heavy-duty mechanical parts. Requires enclosure and high bed temp (110C)."
+    },
+    {
+        "material_name": "Prusament PC Blend Carbon Fiber",
+        "brand": "Prusament (Prusa)",
+        "category": "Polycarbonate",
+        "subcategory": "Carbon Fiber",
+        "key_properties": ["Carbon Fiber Reinforced", "High Stiffness", "Excellent Heat Deflection (130C)", "Matte Black Finish"],
+        "approx_price_usd_kg": 59.99,
+        "colors_available": True,
+        "notes": "Standard PC Blend reinforced with carbon fibers, eliminating warping and increasing stiffness. Requires hardened steel nozzle and enclosure."
+    },
+    {
+        "material_name": "Prusament PVB",
+        "brand": "Prusament (Prusa)",
+        "category": "PVB",
+        "subcategory": "Easy Smoothing",
+        "key_properties": ["Isopropyl Alcohol (IPA) Smoothable", "High Transparency", "Easy to Print", "Aesthetic Gloss"],
+        "approx_price_usd_kg": 39.99,
+        "colors_available": True,
+        "notes": "Printable like PLA, but can be chemically polished to a glass-like finish using Isopropyl Alcohol. Ideal for vases, lampshades, and decorative parts."
+    },
+    {
+        "material_name": "Prusament PA11 Carbon Fiber",
+        "brand": "Prusament (Prusa)",
+        "category": "Nylon",
+        "subcategory": "Bio-based Carbon Fiber",
+        "key_properties": ["Extreme Tensile Strength", "Chemical Resistance", "High Heat Resistance (190C)", "Low Moisture Absorption"],
+        "approx_price_usd_kg": 89.99,
+        "colors_available": True,
+        "notes": "Industrial-grade polyamide made from castor oil and reinforced with carbon fibers. Highly resistant to solvents and acids. Requires hardened steel nozzle and dry environment."
+    },
+    {
+        "material_name": "Prusament TPU 97A",
+        "brand": "Prusament (Prusa)",
+        "category": "TPU",
+        "subcategory": "Flexible",
+        "key_properties": ["97A Hardness (Semi-Flexible)", "High Chemical Resistance", "Excellent Elasticity", "Abrasion Resistant"],
+        "approx_price_usd_kg": 37.99,
+        "colors_available": True,
+        "notes": "Slightly harder flexible filament. Much easier to feed in Bowden setups than softer TPUs. Excellent oil and chemical resistance."
+    },
+
+    # 3. eSUN (8 materials)
+    {
+        "material_name": "eSUN PLA+",
+        "brand": "eSUN",
+        "category": "PLA",
+        "subcategory": "Enhanced",
+        "key_properties": ["High Toughness", "Superb Layer Bonding", "High Rigidity", "Wide Temperature Tolerance"],
+        "approx_price_usd_kg": 22.99,
+        "colors_available": True,
+        "notes": "One of the most famous and widely-used budget PLA+ filaments. Considerably tougher and less brittle than standard PLA. Works on all FDM printers."
+    },
+    {
+        "material_name": "eSUN PLA Matte",
+        "brand": "eSUN",
+        "category": "PLA",
+        "subcategory": "Matte",
+        "key_properties": ["Matte Finish", "Low Odor", "Hide Layer Lines", "Eco-friendly Cardboard Spool"],
+        "approx_price_usd_kg": 19.99,
+        "colors_available": True,
+        "notes": "Affordable matte PLA. Yields an aesthetic non-glossy surface. Supplied on eco-friendly cardboard spools."
+    },
+    {
+        "material_name": "eSUN PETG",
+        "brand": "eSUN",
+        "category": "PETG",
+        "subcategory": "Basic",
+        "key_properties": ["Water Resistant", "Glossy Finish", "Chemical Resistance", "Low Shrinkage"],
+        "approx_price_usd_kg": 20.99,
+        "colors_available": True,
+        "notes": "Budget-friendly PETG for robust daily functional prints. Suitable for outdoor exposure."
+    },
+    {
+        "material_name": "eSUN ABS+",
+        "brand": "eSUN",
+        "category": "ABS",
+        "subcategory": "Enhanced",
+        "key_properties": ["Reduced Warping", "Low Odor", "High Impact Strength", "High Heat Resistance"],
+        "approx_price_usd_kg": 21.99,
+        "colors_available": True,
+        "notes": "Modified ABS formula that warps significantly less than standard ABS. Easier to print, but heated bed and enclosure are still recommended."
+    },
+    {
+        "material_name": "eSUN ASA",
+        "brand": "eSUN",
+        "category": "ASA",
+        "subcategory": "Weather Resistant",
+        "key_properties": ["Excellent Weatherability", "UV Resistant", "High Heat Deflection (100C)", "Anti-aging"],
+        "approx_price_usd_kg": 24.99,
+        "colors_available": True,
+        "notes": "Best budget option for outdoor parts. High resistance to UV rays and rain. Enclosure recommended."
+    },
+    {
+        "material_name": "eSUN TPU 95A",
+        "brand": "eSUN",
+        "category": "TPU",
+        "subcategory": "Flexible",
+        "key_properties": ["95A Shore Hardness", "Highly Flexible", "High Wear Resistance", "Good Chemical Resistance"],
+        "approx_price_usd_kg": 29.99,
+        "colors_available": True,
+        "notes": "Extremely popular for printing phone covers, RC model wheels, dampers, and industrial gaskets."
+    },
+    {
+        "material_name": "eSUN ePA-CF",
+        "brand": "eSUN",
+        "category": "Nylon",
+        "subcategory": "Carbon Fiber",
+        "key_properties": ["Carbon Fiber Reinforced Nylon", "Extreme Tensile Strength", "High Heat Deflection (120C)", "Flame Retardant UL94-HB"],
+        "approx_price_usd_kg": 45.99,
+        "colors_available": True,
+        "notes": "Carbon fiber reinforced Nylon (PA6). Highly strong and rigid structural material. Very abrasive; requires hardened steel nozzle."
+    },
+    {
+        "material_name": "eSUN Silk PLA",
+        "brand": "eSUN",
+        "category": "PLA",
+        "subcategory": "Aesthetic Silk",
+        "key_properties": ["High Gloss Silk Finish", "Smooth Surface", "Vibrant Pearl Shine", "Easy to Print"],
+        "approx_price_usd_kg": 23.99,
+        "colors_available": True,
+        "notes": "Excellent for ornamental, decorative, and artistic models. Displays a beautiful pearl-like reflection. Layer bonding is slightly lower than PLA+."
+    },
+
+    # 4. Polymaker (9 materials)
+    {
+        "material_name": "PolyLite PLA",
+        "brand": "Polymaker",
+        "category": "PLA",
+        "subcategory": "Basic",
+        "key_properties": ["Jam-Free Technology", "High Tensile Strength", "Easy to Print", "Consistent Diameter"],
+        "approx_price_usd_kg": 22.99,
+        "colors_available": True,
+        "notes": "Polymaker's flagship standard PLA. Features patented Jam-Free technology, keeping heat creep and nozzle jams to a minimum."
+    },
+    {
+        "material_name": "PolyMax PLA",
+        "brand": "Polymaker",
+        "category": "PLA",
+        "subcategory": "Tough",
+        "key_properties": ["Extreme Impact Resistance", "Tougher than ABS", "High Mechanical Strength", "Excellent Reliability"],
+        "approx_price_usd_kg": 34.99,
+        "colors_available": True,
+        "notes": "Engineered PLA designed for demanding mechanical parts. Provides impact toughness several times higher than regular PLA and even ABS, while remaining easy to print."
+    },
+    {
+        "material_name": "PolyTerra PLA",
+        "brand": "Polymaker",
+        "category": "PLA",
+        "subcategory": "Eco-Friendly Matte",
+        "key_properties": ["Bioplastic Eco-Formula", "Matte Finish", "Easy Support Breakaway", "Cardboard Spool"],
+        "approx_price_usd_kg": 19.99,
+        "colors_available": True,
+        "notes": "An eco-friendly biopolymer blend that prints with an attractive matte finish. Supplied on a fully recycled cardboard spool, and a tree is planted for every roll bought."
+    },
+    {
+        "material_name": "PolyLite PETG",
+        "brand": "Polymaker",
+        "category": "PETG",
+        "subcategory": "Basic",
+        "key_properties": ["High Clarity", "Good Mechanical Strength", "Weather Resistant", "Balanced Properties"],
+        "approx_price_usd_kg": 22.99,
+        "colors_available": True,
+        "notes": "A well-balanced PETG offering high quality, ease of print, and solid chemical/weather resistance at a very competitive price."
+    },
+    {
+        "material_name": "PolyMax PETG",
+        "brand": "Polymaker",
+        "category": "PETG",
+        "subcategory": "Tough",
+        "key_properties": ["Advanced Impact Toughness", "Excellent Layer Adhesion", "High Mechanical Strength", "Chemical Resistant"],
+        "approx_price_usd_kg": 34.99,
+        "colors_available": True,
+        "notes": "Advanced formulation of PETG, significantly tougher than typical PETG. Offers industrial durability and superior fatigue resistance."
+    },
+    {
+        "material_name": "PolyLite ABS",
+        "brand": "Polymaker",
+        "category": "ABS",
+        "subcategory": "Basic",
+        "key_properties": ["Heat Resistant", "High Impact Resistance", "Low Odor", "Highly Rigid"],
+        "approx_price_usd_kg": 22.99,
+        "colors_available": True,
+        "notes": "A highly rigid, traditional heat-resistant ABS. Low odor compared to standard ABS. Requires a heated bed and enclosure."
+    },
+    {
+        "material_name": "PolyLite ASA",
+        "brand": "Polymaker",
+        "category": "ASA",
+        "subcategory": "Weather Resistant",
+        "key_properties": ["Excellent UV Stability", "High Weatherability", "Excellent Mechanical Properties", "Heat Resistant"],
+        "approx_price_usd_kg": 24.99,
+        "colors_available": True,
+        "notes": "A great outdoor alternative to ABS. Features exceptional weather, UV, and heat resistance. Great for functional exterior assemblies."
+    },
+    {
+        "material_name": "PolyFlex TPU95",
+        "brand": "Polymaker",
+        "category": "TPU",
+        "subcategory": "Flexible",
+        "key_properties": ["95A Shore Hardness", "High Flexibility", "Excellent Elasticity", "Chemical Resistant"],
+        "approx_price_usd_kg": 46.65,
+        "colors_available": True,
+        "notes": "Highly flexible, easy-to-print elastomer. Works well with both direct-drive and standard Bowden extruders. Price is scaled from 750g spool ($34.99)."
+    },
+    {
+        "material_name": "PolyMax PC",
+        "brand": "Polymaker",
+        "category": "Polycarbonate",
+        "subcategory": "Industrial",
+        "key_properties": ["Extreme Impact Toughness", "High Heat Resistance (113C)", "Exceptional Stiffness", "Enclosure Required"],
+        "approx_price_usd_kg": 39.99,
+        "colors_available": True,
+        "notes": "Formerly known as PC-Max. Premium industrial polycarbonate with superior impact resistance and mechanical strength. Must print in an enclosed heated chamber."
+    },
+
+    # 5. ColorFabb (8 materials)
+    {
+        "material_name": "ColorFabb Economy PLA",
+        "brand": "ColorFabb",
+        "category": "PLA",
+        "subcategory": "Value",
+        "key_properties": ["High Output", "Easy to Print", "Low Cost", "Consistent Quality"],
+        "approx_price_usd_kg": 22.00,
+        "colors_available": True,
+        "notes": "Dutch-engineered PLA designed for bulk production, print farms, and heavy prototyping. Often sold in 2.2kg and 4.5kg spools. Extremely reliable."
+    },
+    {
+        "material_name": "ColorFabb PLA/PHA",
+        "brand": "ColorFabb",
+        "category": "PLA",
+        "subcategory": "Tough Blend",
+        "key_properties": ["Tougher than standard PLA", "Slightly Flexible", "Matte-Satin Finish", "100% Biodegradable"],
+        "approx_price_usd_kg": 38.00,
+        "colors_available": True,
+        "notes": "A unique proprietary formulation of PLA with Polyhydroxyalkanoate (PHA). PHA makes the PLA tougher, more ductile, and less brittle. Satin texture surface."
+    },
+    {
+        "material_name": "ColorFabb nGen",
+        "brand": "ColorFabb",
+        "category": "Co-polyester",
+        "subcategory": "Functional",
+        "key_properties": ["Eastman Amphora AM3300", "Low Odor", "High Heat Deflection (85C)", "Stunning Gloss"],
+        "approx_price_usd_kg": 56.00,
+        "colors_available": True,
+        "notes": "Advanced co-polyester polymer developed with Eastman Chemical. Combines high thermal stability, toughness, and extremely low printing odor. Excellent printability. Scaled from 750g."
+    },
+    {
+        "material_name": "ColorFabb XT",
+        "brand": "ColorFabb",
+        "category": "Co-polyester",
+        "subcategory": "Heavy Duty",
+        "key_properties": ["Extreme Toughness", "Eastman Amphora AM1800", "Food Contact Compliant", "High Chemical Resistance"],
+        "approx_price_usd_kg": 60.00,
+        "colors_available": True,
+        "notes": "Heavy-duty functional co-polyester. Exceptionally tough and durable. Fully compliant with food-contact regulations. Great for dishwashers and chemical containers. Scaled from 750g."
+    },
+    {
+        "material_name": "ColorFabb LW-PLA",
+        "brand": "ColorFabb",
+        "category": "PLA",
+        "subcategory": "Active Foaming",
+        "key_properties": ["Active Foaming Technology", "Extremely Lightweight", "Variable Density", "Matte Texture"],
+        "approx_price_usd_kg": 59.00,
+        "colors_available": True,
+        "notes": "Uses active foaming technology to expand up to 3x at high temps (230C+), reducing part weight by up to 60%. Highly popular for RC plane builders. Scaled from 750g."
+    },
+    {
+        "material_name": "ColorFabb WoodFill",
+        "brand": "ColorFabb",
+        "category": "PLA",
+        "subcategory": "Wood Composite",
+        "key_properties": ["Real Wood Fibers (70% PLA/30% Wood)", "Smells like Real Wood", "Sanding and Post-processing", "Natural Look"],
+        "approx_price_usd_kg": 56.00,
+        "colors_available": True,
+        "notes": "Contains 30% recycled wood fibers. Gives a realistic wood finish that can be sanded and stained. Use 0.5mm+ nozzle to prevent clogging. Scaled from 750g."
+    },
+    {
+        "material_name": "ColorFabb Varioshore TPU",
+        "brand": "ColorFabb",
+        "category": "TPU",
+        "subcategory": "Active Foaming Flexible",
+        "key_properties": ["Active Foaming TPU", "Variable Hardness (70A to 92A)", "Lightweight", "Matte Texture"],
+        "approx_price_usd_kg": 73.00,
+        "colors_available": True,
+        "notes": "Foaming flexible filament. You can alter the density, softness, and hardness of the print by raising or lowering the print temperature (200C-250C). Scaled from 750g."
+    },
+    {
+        "material_name": "ColorFabb BronzeFill",
+        "brand": "ColorFabb",
+        "category": "PLA",
+        "subcategory": "Metal Composite",
+        "key_properties": ["80% Bronze Powder", "Heavy Authentic Feel", "Polishable to High Metallic Shine", "Non-conductive"],
+        "approx_price_usd_kg": 86.60,
+        "colors_available": False,
+        "notes": "Extremely heavy composite filament containing actual bronze particles. Abrasive; requires hardened nozzle. Needs extensive post-processing (sanding, steel wool, polishing) to achieve bronze luster. Scaled from 750g."
+    },
+
+    # 6. Hatchbox (8 materials)
+    {
+        "material_name": "Hatchbox PLA",
+        "brand": "Hatchbox",
+        "category": "PLA",
+        "subcategory": "Basic",
+        "key_properties": ["Low Odor", "High Detail Retention", "Low Warping", "Wide Temperature Tolerance"],
+        "approx_price_usd_kg": 21.99,
+        "colors_available": True,
+        "notes": "A legendary budget PLA. Extremely reliable and easy to print. Works outstandingly on virtually any open-source FDM printer."
+    },
+    {
+        "material_name": "Hatchbox PETG",
+        "brand": "Hatchbox",
+        "category": "PETG",
+        "subcategory": "Basic",
+        "key_properties": ["Heat Resistant", "Strong Layer Adhesion", "High Toughness", "Slightly Flexible"],
+        "approx_price_usd_kg": 23.99,
+        "colors_available": True,
+        "notes": "Very reliable, budget-friendly PETG. Great for everyday outdoor or mechanical components requiring temperature resistance up to 75C."
+    },
+    {
+        "material_name": "Hatchbox ABS",
+        "brand": "Hatchbox",
+        "category": "ABS",
+        "subcategory": "Basic",
+        "key_properties": ["High Structural Strength", "Heat Resistance (95C)", "Acetone Vapor Soluble", "Impact Resistance"],
+        "approx_price_usd_kg": 22.99,
+        "colors_available": True,
+        "notes": "Classic tough ABS filament. High heat and impact resistance. Requires heated bed (90-110C) and enclosure to mitigate warping."
+    },
+    {
+        "material_name": "Hatchbox TPU",
+        "brand": "Hatchbox",
+        "category": "TPU",
+        "subcategory": "Flexible",
+        "key_properties": ["95A Shore Hardness", "High Elasticity", "Tear Resistant", "Abrasion Resistant"],
+        "approx_price_usd_kg": 29.99,
+        "colors_available": True,
+        "notes": "Durable flexible elastomer. Best printed with direct-drive extruders, but works with some Bowden setups at slower speeds."
+    },
+    {
+        "material_name": "Hatchbox Wood PLA",
+        "brand": "Hatchbox",
+        "category": "PLA",
+        "subcategory": "Wood Composite",
+        "key_properties": ["Wood Dust Infused", "Wood-like Smell", "Post-process Sanding", "Matte Natural Look"],
+        "approx_price_usd_kg": 29.99,
+        "colors_available": True,
+        "notes": "PLA infused with actual wood fibers. Scent of freshly cut wood while printing. Can be stained, painted, and sanded."
+    },
+    {
+        "material_name": "Hatchbox Matte PLA",
+        "brand": "Hatchbox",
+        "category": "PLA",
+        "subcategory": "Matte",
+        "key_properties": ["Flat Matte Finish", "Hides Layer Lines", "Excellent Aesthetic", "Easy Support Removal"],
+        "approx_price_usd_kg": 24.99,
+        "colors_available": True,
+        "notes": "Eliminates glossy surface reflections, accentuating the geometric details of the model. Excellent print quality."
+    },
+    {
+        "material_name": "Hatchbox Nylon",
+        "brand": "Hatchbox",
+        "category": "Nylon",
+        "subcategory": "Basic",
+        "key_properties": ["Exceptional Toughness", "Low Friction Coefficient", "High Fatigue Resistance", "Flexible in Thin Sections"],
+        "approx_price_usd_kg": 39.99,
+        "colors_available": True,
+        "notes": "Highly tough, low-wear industrial nylon (PA6). Strongly hygroscopic; must be dried before use. Enclosure recommended."
+    },
+    {
+        "material_name": "Hatchbox PLA MAX",
+        "brand": "Hatchbox",
+        "category": "PLA",
+        "subcategory": "Tough",
+        "key_properties": ["High Impact Resistance", "Shatterproof", "Better Tensile Strength", "Low Warping"],
+        "approx_price_usd_kg": 27.99,
+        "colors_available": True,
+        "notes": "Engineered tough PLA formulation designed to offer ABS-level impact properties and strength while keeping PLA's ease of print."
+    },
+
+    # 7. Overture (8 materials)
+    {
+        "material_name": "Overture PLA",
+        "brand": "Overture",
+        "category": "PLA",
+        "subcategory": "Basic",
+        "key_properties": ["Clog-Free", "Bubble-Free", "Consistent Diameter (+/- 0.03mm)", "Eco-friendly Cardboard Spool"],
+        "approx_price_usd_kg": 20.99,
+        "colors_available": True,
+        "notes": "Highly popular budget PLA, includes a handy grid layout build surface sticker inside the packaging. Consistent and easy to print."
+    },
+    {
+        "material_name": "Overture Matte PLA",
+        "brand": "Overture",
+        "category": "PLA",
+        "subcategory": "Matte",
+        "key_properties": ["Matte Texture", "Low Layer Line Visibility", "Easy Support Removal", "Smooth Finish"],
+        "approx_price_usd_kg": 20.99,
+        "colors_available": True,
+        "notes": "Matte-finish PLA that hides layer lines effectively. Perfect for figurines, cosplay parts, and architectural concepts."
+    },
+    {
+        "material_name": "Overture PLA Professional",
+        "brand": "Overture",
+        "category": "PLA",
+        "subcategory": "Tough",
+        "key_properties": ["High Impact Toughness", "Increased Ductility", "Superb Flow Rate", "No Brittle Breaks"],
+        "approx_price_usd_kg": 23.99,
+        "colors_available": True,
+        "notes": "Often called Overture PLA Pro. Possesses significantly better impact resistance and ductility than standard PLA, great for mechanical parts."
+    },
+    {
+        "material_name": "Overture PETG",
+        "brand": "Overture",
+        "category": "PETG",
+        "subcategory": "Basic",
+        "key_properties": ["Excellent Toughness", "Glossy Finish", "Water Resistant", "Low Shrinkage"],
+        "approx_price_usd_kg": 21.99,
+        "colors_available": True,
+        "notes": "One of the best-selling budget PETG filaments on Amazon. Good heat stability (up to 75C). Must use a glue stick or textured bed on PEI plates to avoid glass damage."
+    },
+    {
+        "material_name": "Overture ABS",
+        "brand": "Overture",
+        "category": "ABS",
+        "subcategory": "Basic",
+        "key_properties": ["High Strength", "High Heat Deflection (90C)", "Impact Resistant", "Acetone Smoothable"],
+        "approx_price_usd_kg": 19.99,
+        "colors_available": True,
+        "notes": "Traditional ABS designed for engineering prototypes. Prone to warping on larger objects without an enclosure."
+    },
+    {
+        "material_name": "Overture TPU",
+        "brand": "Overture",
+        "category": "TPU",
+        "subcategory": "Flexible",
+        "key_properties": ["95A Shore Hardness", "High Elasticity (800% elongation)", "Oil and Grease Resistant", "Abrasion Resistant"],
+        "approx_price_usd_kg": 23.99,
+        "colors_available": True,
+        "notes": "Remarkably easy to print TPU. Works successfully on many Bowden-drive extruders if printed slowly."
+    },
+    {
+        "material_name": "Overture Easy Nylon",
+        "brand": "Overture",
+        "category": "Nylon",
+        "subcategory": "Easy Print",
+        "key_properties": ["Reduced Warping Nylon", "Excellent Durability", "High Wear Resistance", "Self-Lubricating"],
+        "approx_price_usd_kg": 32.99,
+        "colors_available": True,
+        "notes": "Modified Nylon (PA) formulated to print at lower temps with much less warp. Extremely durable and friction resistant. Still requires pre-drying."
+    },
+    {
+        "material_name": "Overture Carbon Fiber PLA",
+        "brand": "Overture",
+        "category": "PLA",
+        "subcategory": "Carbon Fiber",
+        "key_properties": ["Carbon Fiber Infused", "High Rigidity", "High Dimensional Stability", "Beautiful Matte Finish"],
+        "approx_price_usd_kg": 29.99,
+        "colors_available": True,
+        "notes": "PLA filled with chopped carbon fibers. Stronger and stiffer than regular PLA. Highly abrasive; requires hardened steel nozzle."
+    },
+
+    # 8. FormFutura (8 materials)
+    {
+        "material_name": "EasyFil PLA",
+        "brand": "FormFutura",
+        "category": "PLA",
+        "subcategory": "Enhanced",
+        "key_properties": ["Impact Modified", "Extremely Easy to Print", "Low Warping", "Slightly Softer PLA"],
+        "approx_price_usd_kg": 28.00,
+        "colors_available": True,
+        "notes": "A high-end, impact-modified PLA optimized for warp-free extrusion. Highly reliable, premium print quality."
+    },
+    {
+        "material_name": "ReForm rPLA",
+        "brand": "FormFutura",
+        "category": "PLA",
+        "subcategory": "Recycled",
+        "key_properties": ["100% Recycled PLA", "Eco-friendly Cardboard Spool", "High Quality", "Low Carbon Footprint"],
+        "approx_price_usd_kg": 20.00,
+        "colors_available": True,
+        "notes": "Eco-friendly choice. Made completely from the post-industrial extrusion waste of standard FormFutura PLA."
+    },
+    {
+        "material_name": "Premium PLA",
+        "brand": "FormFutura",
+        "category": "PLA",
+        "subcategory": "Premium",
+        "key_properties": ["Excellent Flow Rate", "Perfect Roundness", "High Gloss", "Vibrant Solid Colors"],
+        "approx_price_usd_kg": 25.00,
+        "colors_available": True,
+        "notes": "Standard premium PLA with exceptional dimensional accuracy and strong, bright pigments."
+    },
+    {
+        "material_name": "HDglass",
+        "brand": "FormFutura",
+        "category": "PETG",
+        "subcategory": "Transparent Co-polyester",
+        "key_properties": ["Ultra-Transparent", "High Toughness", "Food Contact Approved", "Heavy-Duty"],
+        "approx_price_usd_kg": 42.67,
+        "colors_available": True,
+        "notes": "PETG-based co-polyester optimized for high optical clarity and light transmission. Allows printing of semi-glass-like parts. Scaled from 750g spool ($32.00)."
+    },
+    {
+        "material_name": "ApolloX",
+        "brand": "FormFutura",
+        "category": "ASA",
+        "subcategory": "Industrial Modified",
+        "key_properties": ["High UV and Weather Resistance", "Extremely Low Warping", "Excellent Layer Adhesion", "High Heat Deflection (99C)"],
+        "approx_price_usd_kg": 50.67,
+        "colors_available": True,
+        "notes": "Modified, industrial-grade ASA. Developed to eliminate standard ASA warping. Perfect for outdoor functional equipment. Scaled from 750g spool ($38.00)."
+    },
+    {
+        "material_name": "Python Flex",
+        "brand": "FormFutura",
+        "category": "TPU",
+        "subcategory": "Highly Flexible",
+        "key_properties": ["98A Shore Hardness", "High Elasticity (450%)", "Excellent Chemical Resistance", "Heat Resistant"],
+        "approx_price_usd_kg": 64.00,
+        "colors_available": True,
+        "notes": "High performance flexible TPU. Can be printed directly onto unheated glass without glue. High-speed flexible filament. Scaled from 750g spool ($48.00)."
+    },
+    {
+        "material_name": "CarbonFil",
+        "brand": "FormFutura",
+        "category": "PETG",
+        "subcategory": "Carbon Fiber",
+        "key_properties": ["15% Carbon Fiber Reinforced", "Twice as Rigid as PETG", "Lightweight", "High Heat Resistance"],
+        "approx_price_usd_kg": 69.33,
+        "colors_available": True,
+        "notes": "Carbon fiber reinforced PETG composite. Highly stiff, impact resistant, and prints virtually warp-free. Requires hardened nozzle. Scaled from 750g spool ($52.00)."
+    },
+    {
+        "material_name": "Volcano PLA",
+        "brand": "FormFutura",
+        "category": "PLA",
+        "subcategory": "Industrial Heat Resistant",
+        "key_properties": ["Heat Resistant up to 95C after Annealing", "High Heat Deflection", "Biodegradable", "Highly Rigid"],
+        "approx_price_usd_kg": 45.33,
+        "colors_available": True,
+        "notes": "Industrial PLA with elevated heat resistance. Requires post-print thermal oven annealing (baking) to crystallize and achieve high temp resistance. Scaled from 750g ($34.00)."
+    },
+
+    # 9. Fiberlogy (8 materials)
+    {
+        "material_name": "Fiberlogy Easy PLA",
+        "brand": "Fiberlogy",
+        "category": "PLA",
+        "subcategory": "Easy Print",
+        "key_properties": ["Very Easy to Print", "Excellent Tolerances (+/- 0.02mm)", "Rich Color Palette", "High Precision"],
+        "approx_price_usd_kg": 26.00,
+        "colors_available": True,
+        "notes": "Premium Polish-manufactured PLA. Outstanding dimensional accuracy. High quality, excellent finish."
+    },
+    {
+        "material_name": "Fiberlogy Impact PLA",
+        "brand": "Fiberlogy",
+        "category": "PLA",
+        "subcategory": "Tough",
+        "key_properties": ["High Impact Strength", "Superb Layer Adhesion", "Excellent Precision", "Heavy Duty"],
+        "approx_price_usd_kg": 32.00,
+        "colors_available": True,
+        "notes": "High-durability PLA that surpasses standard ABS in impact strength while maintaining standard PLA print temperatures. Great for industrial testing."
+    },
+    {
+        "material_name": "Fiberlogy Fibersilk",
+        "brand": "Fiberlogy",
+        "category": "PLA",
+        "subcategory": "Aesthetic Silk",
+        "key_properties": ["Silky Metallic Sheen", "High Layer Line Masking", "Vivid Depth Effect", "Easy Printing"],
+        "approx_price_usd_kg": 30.00,
+        "colors_available": True,
+        "notes": "Luxury silk PLA. Beautiful sheen that reflects light to obscure layer lines. Perfect for models, awards, and artistic design."
+    },
+    {
+        "material_name": "Fiberlogy Easy PETG",
+        "brand": "Fiberlogy",
+        "category": "PETG",
+        "subcategory": "Easy Print",
+        "key_properties": ["Reduced Stringing", "High Impact Resistance", "Chemical Resistant", "Low Warping"],
+        "approx_price_usd_kg": 27.00,
+        "colors_available": True,
+        "notes": "Specially formulated PETG designed to print more easily with minimal stringing or oozing, a common PETG problem."
+    },
+    {
+        "material_name": "Fiberlogy ABS",
+        "brand": "Fiberlogy",
+        "category": "ABS",
+        "subcategory": "Basic",
+        "key_properties": ["High Hardness", "Heat Resistant (94C)", "Durable and Shockproof", "Acetone Soluble"],
+        "approx_price_usd_kg": 25.00,
+        "colors_available": True,
+        "notes": "Standard industrial ABS with high rigid properties. Must print on high heated bed (90-110C) inside an enclosure."
+    },
+    {
+        "material_name": "Fiberlogy ASA",
+        "brand": "Fiberlogy",
+        "category": "ASA",
+        "subcategory": "Weather Resistant",
+        "key_properties": ["UV Stable", "High Weatherability", "Excellent Heat Resistance (94C)", "High Impact Strength"],
+        "approx_price_usd_kg": 32.00,
+        "colors_available": True,
+        "notes": "Highly weather-resistant ASA. Ideal for components placed outside, directly exposed to sunlight and harsh temperatures."
+    },
+    {
+        "material_name": "Fiberlogy Fiberflex 40D",
+        "brand": "Fiberlogy",
+        "category": "TPU",
+        "subcategory": "Flexible",
+        "key_properties": ["40D Shore Hardness (~90A)", "High Elasticity", "Tear Resistant", "Excellent Low Temp Behavior"],
+        "approx_price_usd_kg": 62.35,
+        "colors_available": True,
+        "notes": "Extremely robust elastomer with high impact resistance. Excellent low-temperature thermal stability. Scaled from 850g spool ($53.00)."
+    },
+    {
+        "material_name": "Fiberlogy Nylon PA12",
+        "brand": "Fiberlogy",
+        "category": "Nylon",
+        "subcategory": "Industrial",
+        "key_properties": ["Extreme Mechanical Strength", "High Chemical Resistance", "Excellent Wear Resistance", "Temperature Stable"],
+        "approx_price_usd_kg": 80.00,
+        "colors_available": True,
+        "notes": "Engineering-grade Polyamide 12. Extremely chemical-resistant, particularly to fuel and oils. Highly durable. Must dry thoroughly."
+    },
+
+    # 10. Fillamentum (8 materials)
+    {
+        "material_name": "PLA Extrafill",
+        "brand": "Fillamentum",
+        "category": "PLA",
+        "subcategory": "Aesthetic Premium",
+        "key_properties": ["Stunning Color Accuracy", "Extremely Low Warping", "Perfect Surface Quality", "No Shrinkage"],
+        "approx_price_usd_kg": 41.33,
+        "colors_available": True,
+        "notes": "Renowned globally for its beautiful, unique colorways (like 'Vertigo Grey' or 'Wizard's Voodoo'). Standard premium PLA with immaculate finish. Scaled from 750g spool ($31.00)."
+    },
+    {
+        "material_name": "Timberfill",
+        "brand": "Fillamentum",
+        "category": "PLA",
+        "subcategory": "Wood Composite",
+        "key_properties": ["Real Wood Fibers", "Smells like Spruce Wood", "Biodegradable", "Slightly Elastic"],
+        "approx_price_usd_kg": 68.00,
+        "colors_available": True,
+        "notes": "Authentic wood-filled composite. Recommended nozzle size is 0.5mm or larger. Offers gorgeous organic texture. Scaled from 750g spool ($51.00)."
+    },
+    {
+        "material_name": "Flexfill TPU 98A",
+        "brand": "Fillamentum",
+        "category": "TPU",
+        "subcategory": "Flexible",
+        "key_properties": ["98A Shore Hardness", "High Tensile Strength", "Oil and Grease Resistant", "Abrasion Resistant"],
+        "approx_price_usd_kg": 68.00,
+        "colors_available": True,
+        "notes": "Harder flexible filament. Much easier to print on standard extruders than softer variants. Excellent wear properties. Scaled from 500g spool ($34.00)."
+    },
+    {
+        "material_name": "Flexfill TPU 92A",
+        "brand": "Fillamentum",
+        "category": "TPU",
+        "subcategory": "Flexible",
+        "key_properties": ["92A Shore Hardness", "Excellent Elasticity", "High Tear Resistance", "Low Temperature Flexibility"],
+        "approx_price_usd_kg": 68.00,
+        "colors_available": True,
+        "notes": "Softer, more rubbery formulation. Highly elastic. Requires direct-drive extruders and slow print speeds. Scaled from 500g spool ($34.00)."
+    },
+    {
+        "material_name": "ABS Extrafill",
+        "brand": "Fillamentum",
+        "category": "ABS",
+        "subcategory": "Basic",
+        "key_properties": ["High Impact Resistance", "Excellent Thermal Stability", "Acetone Vapor Smoothable", "Good Electric Insulation"],
+        "approx_price_usd_kg": 34.66,
+        "colors_available": True,
+        "notes": "Industrial ABS formulation with very reliable mechanics. Heated bed (100C) and enclosure required to limit shrink. Scaled from 750g."
+    },
+    {
+        "material_name": "ASA Extrafill",
+        "brand": "Fillamentum",
+        "category": "ASA",
+        "subcategory": "Weather Resistant",
+        "key_properties": ["Exceptional UV Stability", "Low Moisture Absorption", "High Impact Toughness", "Weather Resistant"],
+        "approx_price_usd_kg": 40.00,
+        "colors_available": True,
+        "notes": "Premium weather-proof ASA filament. Outstanding outdoor resilience, will not discolor. Enclosure highly recommended."
+    },
+    {
+        "material_name": "CPE HG740",
+        "brand": "Fillamentum",
+        "category": "Co-polyester",
+        "subcategory": "Technical",
+        "key_properties": ["Copolymer of PET", "Extreme Impact Toughness", "High Chemical Resistance", "High Tensile Strength"],
+        "approx_price_usd_kg": 48.00,
+        "colors_available": True,
+        "notes": "Engineering co-polyester polymer. Exhibits better impact toughness and tensile strength than standard PETG. Highly durable. Scaled from 750g spool ($36.00)."
+    },
+    {
+        "material_name": "NonOilen",
+        "brand": "Fillamentum",
+        "category": "PLA Blend",
+        "subcategory": "Eco-Industrial",
+        "key_properties": ["100% Biodegradable", "High Heat Resistance (115C)", "Exceptional Strength", "Food Contact Safe"],
+        "approx_price_usd_kg": 52.00,
+        "colors_available": True,
+        "notes": "Cutting-edge biodegradable blend of PLA and PHB. Resists up to 115C without warping, and biodegrades inside industrial composters. High functional strength. Scaled from 750g ($39.00)."
+    }
+]
+
+# Write out to materials.json
+with open('materials.json', 'w', encoding='utf-8') as f:
+    json.dump(materials, f, ensure_ascii=False, indent=2)
+
+print(f"Successfully generated materials.json with {len(materials)} records.")
