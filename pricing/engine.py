@@ -17,6 +17,7 @@ Fiyat kaynağı önceliği:
 
 from .material_rates import MATERIAL_RATES
 from .machine_rates import MACHINE_RATES
+from .manual_quote import evaluate_manual_quote
 from .finish_rates import (
     apply_options,
     resolve_resolution,
@@ -85,6 +86,13 @@ def calculate_price(geometry: dict, params: dict) -> dict:
     final_unit_price  = options_result["unit_price_final"]
     final_total_price = round(final_unit_price * quantity, 2)
 
+    # ── Faz-4: Manual Quote Trigger Değerlendirmesi ──
+    mq_result = evaluate_manual_quote(
+        geometry   = geometry,
+        params     = params,
+        unit_price = final_unit_price,
+    )
+
     return {
         **base_result,
         "unit_price"               : final_unit_price,
@@ -92,7 +100,11 @@ def calculate_price(geometry: dict, params: dict) -> dict:
         "base_unit_price_no_options": base_result["unit_price"],
         "options"                  : options,
         "options_result"           : options_result,
-        "phase"                    : "faz-2",
+        "phase"                    : "faz-4",
+        "manual_quote"             : mq_result["manual_quote"],
+        "auto_price_allowed"       : mq_result["auto_price_allowed"],
+        "quote_triggers"           : mq_result["triggers"],
+        "quote_warnings"           : mq_result["warnings"],
     }
 
 
