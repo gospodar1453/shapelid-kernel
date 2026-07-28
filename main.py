@@ -47,8 +47,8 @@ app.add_middleware(
 def health():
     return {
         "status"        : "ok",
-        "version"       : "2.0.0",
-        "phase"         : "faz-2",
+        "version"       : "2.1.0",
+        "phase"         : "faz-4",
         "exchange_rate" : get_rate_info(),
     }
 
