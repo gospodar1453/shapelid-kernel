@@ -573,8 +573,11 @@ def resolve_resolution(res_input: str, technology: str) -> dict:
     return rate
 
 
-def resolve_infill(infill_input: str) -> dict:
+def resolve_infill(infill_input) -> dict:
     # SpecOption'dan virgüllü string gelebilir → son değeri al (en yüksek olan)
+    if isinstance(infill_input, (int, float)):
+        # 0.2 gibi float gelirse → standard preset
+        infill_input = "standard"
     last = (infill_input or "standard").split(",")[-1].strip()
     key = INFILL_ALIAS.get(last) or INFILL_ALIAS.get(infill_input) or _normalize(last)
     return INFILL_PRESETS.get(key, INFILL_PRESETS["standard"])
