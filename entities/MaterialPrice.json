@@ -2,87 +2,64 @@
   "type": "object",
   "properties": {
     "material_key": {
-      "type": "string",
-      "description": "Unique key: fdm_pla, laser_aluminum, vb."
+      "type": "string"
     },
     "material_name": {
       "type": "string"
     },
     "category": {
-      "type": "string",
-      "enum": [
-        "plastic_3d",
-        "metal_sheet",
-        "resin",
-        "powder"
-      ]
+      "type": "string"
     },
     "technology": {
       "type": "string"
     },
     "base_price_usd": {
-      "type": "number",
-      "description": "Temel referans fiyat (USD/kg veya USD/cm3)"
+      "type": "number"
     },
     "price_unit": {
-      "type": "string",
-      "enum": [
-        "usd_per_kg",
-        "usd_per_cm3"
-      ]
+      "type": "string"
     },
     "current_price_usd": {
-      "type": "number",
-      "description": "\u015eu an aktif fiyat (override varsa override, yoksa base * delta)"
+      "type": "number"
     },
     "override_price_usd": {
-      "type": "number",
-      "description": "Elle girilen fiyat \u2014 set edilirse otomatik sistemi ezer"
+      "type": "number"
     },
     "override_note": {
-      "type": "string",
-      "description": "Override sebebi"
+      "type": "string"
     },
     "override_active": {
-      "type": "boolean",
-      "default": false
+      "type": "boolean"
     },
     "lme_symbol": {
-      "type": "string",
-      "description": "metals.dev sembol\u00fc: ALU, XCU, STEEL-RE vb. Yoksa bo\u015f."
+      "type": "string"
     },
     "lme_reference_price": {
-      "type": "number",
-      "description": "LME baz fiyat\u0131 (delta hesab\u0131 i\u00e7in ba\u015flang\u0131\u00e7 noktas\u0131)"
+      "type": "number"
     },
     "lme_current_price": {
-      "type": "number",
-      "description": "Son \u00e7ekilen LME fiyat\u0131"
+      "type": "number"
     },
     "lme_delta_pct": {
-      "type": "number",
-      "description": "LME de\u011fi\u015fim y\u00fczdesi (son g\u00fcncellemeye g\u00f6re)"
+      "type": "number"
     },
     "material_buffer_pct": {
-      "type": "number",
-      "default": 6,
-      "description": "Malzeme tamponu % (metal: 8, plastik: 5)"
+      "type": "number"
     },
     "last_auto_update": {
-      "type": "string",
-      "description": "Son otomatik g\u00fcncelleme zaman\u0131 (ISO)"
+      "type": "string"
     },
     "last_lme_fetch": {
-      "type": "string",
-      "description": "Son LME \u00e7ekim zaman\u0131 (ISO)"
+      "type": "string"
     },
     "alert_threshold_pct": {
-      "type": "number",
-      "default": 5,
-      "description": "Bu % de\u011fi\u015fimde uyar\u0131 g\u00f6nder"
+      "type": "number"
     },
     "notes": {
       "type": "string"
+    },
+    "simple_mode": {
+      "type": "boolean"
     }
   },
   "required": [],
