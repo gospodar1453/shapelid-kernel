@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 
-# cache-bust: 2026-07-29-faz6
+# cache-bust: 2026-07-29-faz6-fix2
 RUN apt-get update && apt-get install -y \
     libgl1 \
     libglib2.0-0 \
@@ -17,4 +17,4 @@ COPY pricing/ pricing/
 
 EXPOSE 8000
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
