@@ -1,0 +1,58 @@
+{
+  "properties": {
+    "tech_material_key": {
+      "type": "string"
+    },
+    "technology": {
+      "type": "string"
+    },
+    "material": {
+      "type": "string"
+    },
+    "material_cost_adjust": {
+      "type": "number",
+      "default": 1.0
+    },
+    "machine_cost_adjust": {
+      "type": "number",
+      "default": 1.0
+    },
+    "setup_cost_adjust": {
+      "type": "number",
+      "default": 1.0
+    },
+    "margin_adjust": {
+      "type": "number",
+      "default": 1.0
+    },
+    "sample_count": {
+      "type": "integer",
+      "default": 0
+    },
+    "mean_deviation_pct": {
+      "type": "number",
+      "default": 0
+    },
+    "std_deviation_pct": {
+      "type": "number",
+      "default": 0
+    },
+    "confidence_score": {
+      "type": "number",
+      "default": 0
+    },
+    "last_calibrated": {
+      "type": "string"
+    },
+    "calibration_history": {
+      "type": "string"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "CalibrationFactor"
+}

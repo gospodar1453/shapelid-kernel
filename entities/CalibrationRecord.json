@@ -1,0 +1,84 @@
+{
+  "properties": {
+    "technology": {
+      "type": "string",
+      "enum": [
+        "fdm",
+        "sla",
+        "sls",
+        "mjf",
+        "dmls",
+        "cnc_milling",
+        "cnc_turning",
+        "edm",
+        "laser",
+        "bending"
+      ]
+    },
+    "material": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "predicted_unit_price_usd": {
+      "type": "number"
+    },
+    "predicted_total_price_usd": {
+      "type": "number"
+    },
+    "actual_unit_price_usd": {
+      "type": "number"
+    },
+    "actual_total_price_usd": {
+      "type": "number"
+    },
+    "deviation_pct": {
+      "type": "number"
+    },
+    "deviation_direction": {
+      "type": "string",
+      "enum": [
+        "under",
+        "over",
+        "exact"
+      ]
+    },
+    "geometry_fingerprint": {
+      "type": "string"
+    },
+    "volume_cm3": {
+      "type": "number"
+    },
+    "print_time_min": {
+      "type": "number"
+    },
+    "breakdown_snapshot": {
+      "type": "string"
+    },
+    "calibration_factors": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "predicted",
+        "produced",
+        "calibrated"
+      ],
+      "default": "predicted"
+    },
+    "production_notes": {
+      "type": "string"
+    },
+    "supplier_name": {
+      "type": "string"
+    },
+    "order_date": {
+      "type": "string"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "CalibrationRecord"
+}
