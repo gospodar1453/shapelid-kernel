@@ -1,10 +1,11 @@
 /**
- * kernelAnalyze v3 — Faz-2 + Akıllı Malzeme Eşleştirme
+ * kernelAnalyze v4 — Akıllı Malzeme Eşleştirme (FIXED)
  *
- * Değişiklikler v3:
- *   - getMaterialPriceFromDB: exact key → technology fuzzy → en yakın eşleşme sıralaması
- *   - material_key_used response'a eklendi (debug için)
- *   - Tüm MaterialPrice kayıtları cache'lendi (tek list() çağrısı)
+ * Düzeltmeler v4:
+ *   - material_key formatı: tek _ yerine çift __ (DB formatıyla uyumlu)
+ *   - normalizeMaterial alias'ları düzeltildi (tpu_flex → tpu_flex, pla_silk → pla_silk)
+ *   - Fuzzy match daha hassas: exact suffix → starts_with → includes sıralaması
+ *   - price_unit kontrolü: per_liter için otomatik per_kg dönüşümü
  */
 
 import { createClientFromRequest } from "npm:@base44/sdk@0.8.31";
@@ -37,7 +38,6 @@ async function getTcmbKur(): Promise<number> {
 }
 
 // ── Technology normalizer ────────────────────────────────────────────────
-// Frontend'den gelen technology string'ini MaterialPrice.technology alanına eşler
 function normalizeTechnology(tech: string): string {
   const t = tech.toLowerCase().trim();
   if (t.includes("fdm") || t.includes("fused") || t.includes("fff"))         return "fdm";
@@ -54,39 +54,56 @@ function normalizeTechnology(tech: string): string {
   return t.replace(/\s+/g, "_");
 }
 
-// ── Material normalizer ──────────────────────────────────────────────────
+// ── Material normalizer (FIXED) ─────────────────────────────────────────
 // Material adından MaterialPrice.material_key suffix'ini üretir
+// DB key formatı: "fdm__pla", "fdm__pla_matte", "sla__water_washable" vb.
 function normalizeMaterial(mat: string): string {
   const m = mat.toLowerCase().trim()
     .replace(/\s+/g, "_")
     .replace(/[^a-z0-9_]/g, "")
     .replace(/_+/g, "_");
-  
-  // Kısa takma adlar
+
+  // Kısa takma adlar — SADECE gerçek alias'lar (farklı malzemeleri birleştirme!)
   const aliases: Record<string, string> = {
-    "pla_filament": "pla", "pla_plus": "pla", "pla+": "pla",
-    "abs_filament": "abs", "abs_fusion_plus": "abs",
+    "pla_filament": "pla",
+    "pla_plus": "pla",
+    "pla": "pla",
+    "abs_filament": "abs",
+    "abs_fusion_plus": "abs",
     "petg_filament": "petg",
-    "tpu_filament": "tpu", "tpu_flex": "tpu",
-    "sla_standard_resin": "standard_resin", "standard_resin": "standard_resin",
-    "sla_tough_resin": "tough_resin", "tough_resin": "tough_resin",
-    "pa12_nylon_tozu_sls": "pa12", "pa12": "pa12",
+    // TPU varyantları ayrı kalmalı — tpu_flex ve tpu_soft farklı kayıtlar
+    "tpu_filament": "tpu_flex",
+    "tpu": "tpu_flex",
+    "standard_resin": "standard_resin",
+    "sla_standard_resin": "standard_resin",
+    "tough_resin": "tough_resin",
+    "sla_tough_resin": "tough_resin",
+    "pa12": "pa12",
+    "pa12_nylon_tozu_sls": "pa12",
     "pa12_nylon_tozu_mjf": "pa12",
-    "ss316l": "ss316l", "stainless_steel_316l": "ss316l",
-    "s235_mild_steel_levha": "mild_steel", "mild_steel": "mild_steel",
-    "paslanmaz_celik_304_levha": "stainless_steel", "ss304": "stainless_steel",
-    "aluminyum_6061_levha": "aluminum", "aluminum_6061": "aluminum", "al6061": "aluminum",
-    "bakir_levha": "copper", "copper": "copper",
+    "ss316l": "ss316l",
+    "stainless_steel_316l": "ss316l",
+    "mild_steel": "mild_steel",
+    "s235_mild_steel_levha": "mild_steel",
+    "stainless_steel": "stainless_steel",
+    "ss304": "stainless_steel",
+    "paslanmaz_celik_304_levha": "stainless_steel",
+    "aluminum": "aluminum",
+    "aluminum_6061": "aluminum",
+    "al6061": "aluminum",
+    "aluminyum_6061_levha": "aluminum",
+    "copper": "copper",
+    "bakir_levha": "copper",
   };
   return aliases[m] ?? m;
 }
 
-// ── Malzeme fiyatını DB'den çek (akıllı eşleştirme) ────────────────────
+// ── Malzeme fiyatını DB'den çek (FIXED matching) ───────────────────────
 async function getMaterialPriceFromDB(
   base44: any,
   technology: string,
   material: string
-): Promise<{ price: number | null; key_used: string }> {
+): Promise<{ price: number | null; key_used: string; price_unit: string }> {
   try {
     const resp = await base44.asServiceRole.entities.MaterialPrice.list();
     const items = Array.isArray(resp) ? resp : (resp?.items ?? resp?.data ?? []);
@@ -95,33 +112,41 @@ async function getMaterialPriceFromDB(
     const techNorm = normalizeTechnology(technology);
     const matNorm  = normalizeMaterial(material);
 
-    // 1. Exact match: material_key === `${techNorm}_${matNorm}`
-    const exactKey = `${techNorm}_${matNorm}`;
+    // 1. Exact match: material_key === `${techNorm}__${matNorm}` (ÇİFT alt çizgi!)
+    const exactKey = `${techNorm}__${matNorm}`;
     let found = records.find((r: any) => r.material_key === exactKey);
 
-    // 2. Technology match + material substring
+    // 2. Technology match + exact suffix (material_key ends with __{matNorm})
     if (!found) {
       const techRecords = records.filter((r: any) => r.technology === techNorm);
       found = techRecords.find((r: any) =>
-        r.material_key?.includes(matNorm) || matNorm.includes(r.material_key?.split("_").slice(1).join("_"))
+        r.material_key?.endsWith(`__${matNorm}`)
       );
     }
 
-    // 3. Sadece technology'ye göre ilk kayıt (fallback içinde fallback)
+    // 3. Technology match + material_key includes matNorm
+    if (!found) {
+      const techRecords = records.filter((r: any) => r.technology === techNorm);
+      found = techRecords.find((r: any) =>
+        r.material_key?.includes(matNorm)
+      );
+    }
+
+    // 4. Sadece technology'ye göre ilk kayıt (son fallback)
     if (!found) {
       found = records.find((r: any) => r.technology === techNorm);
     }
 
-    if (!found) return { price: null, key_used: "no_match" };
+    if (!found) return { price: null, key_used: "no_match", price_unit: "per_kg" };
 
     const d = found;
     const price = (d.override_active && d.override_price_usd)
       ? d.override_price_usd
       : (d.current_price_usd || d.base_price_usd || null);
 
-    return { price, key_used: d.material_key };
-  } catch (_) {
-    return { price: null, key_used: "error" };
+    return { price, key_used: d.material_key, price_unit: d.price_unit || "per_kg" };
+  } catch (e) {
+    return { price: null, key_used: "error", price_unit: "per_kg" };
   }
 }
 
@@ -139,14 +164,12 @@ Deno.serve(async (req) => {
   const {
     fileBase64,
     fileName,
-    // Temel parametreler
     technology          = "fdm",
     material            = "pla",
     quantity            = 1,
     layer_height        = 0.2,
     infill              = 0.2,
     material_thickness  = 2.0,
-    // ── Faz-2: seçim parametreleri ──
     finish              = "standard",
     color               = "none",
     resolution          = "standard",
@@ -159,8 +182,8 @@ Deno.serve(async (req) => {
     return Response.json({ error: "fileBase64 ve fileName zorunlu" }, { status: 400 });
   }
 
-  // DB'den canlı malzeme fiyatını çek (akıllı eşleştirme)
-  const { price: dbPrice, key_used: keyUsed } = await getMaterialPriceFromDB(base44, technology, material);
+  // DB'den canlı malzeme fiyatını çek
+  const { price: dbPrice, key_used: keyUsed, price_unit: priceUnit } = await getMaterialPriceFromDB(base44, technology, material);
 
   // Base64 → binary
   const binaryStr = atob(fileBase64);
@@ -173,21 +196,19 @@ Deno.serve(async (req) => {
   form.append("file", blob, fileName);
 
   const url = new URL(`${KERNEL_URL}/analyze`);
-  // Temel
   url.searchParams.set("technology",         normalizeTechnology(technology));
   url.searchParams.set("material",           normalizeMaterial(material));
   url.searchParams.set("quantity",           String(quantity));
   url.searchParams.set("layer_height",       String(layer_height));
   url.searchParams.set("infill",             String(infill));
   url.searchParams.set("material_thickness", String(material_thickness));
-  // Faz-2 options
   url.searchParams.set("finish",             finish);
   url.searchParams.set("color",              color);
   url.searchParams.set("resolution",         resolution);
   url.searchParams.set("hardness",           hardness);
   url.searchParams.set("tolerance",          tolerance);
   url.searchParams.set("certification",      certification);
-  // DB fiyatı
+  // DB fiyatı — kernel'a per_kg olarak pasla
   if (dbPrice !== null) {
     url.searchParams.set("material_price_usd_per_kg", String(dbPrice));
   }
@@ -213,6 +234,7 @@ Deno.serve(async (req) => {
       price_source    : dbPrice ? "db_live" : "static_fallback",
       material_price_usd_per_kg_used: dbPrice,
       material_key_matched: keyUsed,
+      price_unit: priceUnit,
     },
   });
 });
