@@ -1,3 +1,4 @@
 numpy>=1.20.0
 trimesh>=4.0.0
 scipy>=1.7.0
+# faz6 build trigger
