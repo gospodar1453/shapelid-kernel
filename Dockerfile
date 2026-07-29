@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 
-# cache-bust: 2026-07-26-faz2
+# cache-bust: 2026-07-29-faz6
 RUN apt-get update && apt-get install -y \
     libgl1 \
     libglib2.0-0 \
