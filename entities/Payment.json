@@ -1,0 +1,64 @@
+{
+  "properties": {
+    "order_id": {
+      "type": "string",
+      "description": "Reference to Order entity ID"
+    },
+    "merchant_oid": {
+      "type": "string"
+    },
+    "paytr_status": {
+      "type": "string",
+      "enum": [
+        "success",
+        "failed",
+        "pending"
+      ]
+    },
+    "total_amount": {
+      "type": "number"
+    },
+    "payment_amount": {
+      "type": "number"
+    },
+    "payment_type": {
+      "type": "string",
+      "enum": [
+        "card",
+        "eft"
+      ]
+    },
+    "utoken": {
+      "type": "string",
+      "description": "PayTR user token for card storage"
+    },
+    "ctoken": {
+      "type": "string",
+      "description": "PayTR card token for saved card"
+    },
+    "installment_count": {
+      "type": "integer",
+      "default": 0
+    },
+    "currency": {
+      "type": "string",
+      "default": "TL"
+    },
+    "test_mode": {
+      "type": "boolean",
+      "default": false
+    },
+    "failed_reason_code": {
+      "type": "string"
+    },
+    "failed_reason_msg": {
+      "type": "string"
+    },
+    "callback_raw": {
+      "type": "object"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "Payment"
+}
