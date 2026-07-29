@@ -1,21 +1,19 @@
 """
-Fiyat Hesaplama Motoru — Faz-2
+Fiyat Hesaplama Motoru — Faz-2 + Material Multipliers
 Desteklenen teknolojiler: FDM, SLA, SLS, MJF, DMLS, Laser Cutting, Bending
-
-Yeni Faz-2 parametreleri:
-  - finish      : yüzey işlemi (standard / vapor_smoothing / anodize_color / ...)
-  - color       : renk seçimi (natural_grey / black_dyed / ...)
-  - resolution  : çözünürlük/katman kalitesi (draft / standard / fine / ultra / ...)
-  - hardness    : TPU shore değeri (shore_45a / shore_85a / ...)
-  - tolerance   : boyut toleransı (standard / medium / fine / ultra)
-  - certification: sertifika talebi (none / material_cert / first_article / ...)
 
 Fiyat kaynağı önceliği:
   1. params["material_price_usd_per_kg"] — Base44 DB'den gelen canlı fiyat
   2. material_rates.py sabit fallback
+
+Material multipliers (Faz-2.1):
+  - speed_mult: malzeme bazlı baskı süresi çarpanı
+  - material_setup_cost: purge/nozzle wear kurulum maliyeti
+  - waste_pct: fire oranı
 """
 
 from .material_rates import MATERIAL_RATES
+from .material_multipliers import get_material_multiplier
 from .machine_rates import MACHINE_RATES
 from .manual_quote import evaluate_manual_quote
 from .finish_rates import (
@@ -127,13 +125,19 @@ def _price_3d(geometry, params, technology, material, quantity, material_price_k
     mat_key = f"{technology}_{material}"
     mat     = _resolve_material_rate(mat_key, technology, material_price_kg)
     if not mat:
-        raise ValueError(f"Bilinmeyen materyal kombinasyonu: {mat_key}")
+        raise ValueError(f"Bilineyen materyal kombinasyonu: {mat_key}")
 
     machine = MACHINE_RATES.get(technology)
     if not machine:
         raise ValueError(f"Bilinmeyen teknoloji: {technology}")
 
-    # ── Hacim hesabı ──
+    # ── Material multipliers (Faz-2.1) ──
+    mat_mult = get_material_multiplier(mat_key)
+    speed_mult       = mat_mult["speed_mult"]
+    mat_setup_cost   = mat_mult["setup_cost"]
+    waste_pct        = mat_mult["waste_pct"]
+
+    # ── Hacim hesabı (fire dahil) ──
     if technology == "fdm":
         shell_volume    = surface_area_cm2 * 0.12
         infill_volume   = max(volume_cm3 - shell_volume, 0) * infill
@@ -141,14 +145,17 @@ def _price_3d(geometry, params, technology, material, quantity, material_price_k
     else:
         effective_volume = volume_cm3
 
+    # Fire oranını uygula
+    effective_volume_with_waste = effective_volume * (1 + waste_pct)
+
     support_volume = 0
     if technology in ("fdm", "sla"):
         support_volume = support_area_cm2 * 0.1 * 0.5
 
-    # ── Malzeme maliyeti ──
-    material_cost = (effective_volume + support_volume) * mat["price_per_cm3"]
+    # ── Malzeme maliyeti (fire dahil) ──
+    material_cost = (effective_volume_with_waste + support_volume) * mat["price_per_cm3"]
 
-    # ── Baskı süresi ──
+    # ── Baskı süresi (malzeme çarpanı ile) ──
     layer_count = dims["z_mm"] / layer_height
 
     if technology == "fdm":
@@ -160,15 +167,14 @@ def _price_3d(geometry, params, technology, material, quantity, material_price_k
         bbox_area_cm2      = (dims["x_mm"] * dims["y_mm"]) / 100
         time_per_layer_min = bbox_area_cm2 * 0.002 + 0.1
     elif technology == "dmls":
-        # DMLS: çok yavaş — 30µm katman, metal sinterleme
         bbox_area_cm2      = (dims["x_mm"] * dims["y_mm"]) / 100
         time_per_layer_min = bbox_area_cm2 * 0.008 + 0.5
     else:
         time_per_layer_min = 0.3
 
-    print_time_min = layer_count * time_per_layer_min
+    print_time_min = layer_count * time_per_layer_min * speed_mult  # ← malzeme çarpanı
     machine_cost   = (print_time_min / 60) * machine["hourly_rate"]
-    setup_cost     = machine["setup_cost"]
+    setup_cost     = machine["setup_cost"] + mat_setup_cost       # ← malzeme setup
 
     # ── Post-process ──
     post_process_cost = 0
@@ -177,7 +183,6 @@ def _price_3d(geometry, params, technology, material, quantity, material_price_k
     elif technology == "sla":
         post_process_cost = surface_area_cm2 * 0.02
     elif technology == "dmls":
-        # DMLS: stres giderme + platten removal standart
         post_process_cost = 15.0
 
     # ── Risk primi ──
@@ -204,12 +209,15 @@ def _price_3d(geometry, params, technology, material, quantity, material_price_k
             "setup_cost"        : round(setup_cost, 4),
             "post_process_cost" : round(post_process_cost, 4),
             "risk_premium"      : round(risk_premium, 4),
-            "effective_volume_cm3": round(effective_volume, 4),
+            "effective_volume_cm3": round(effective_volume_with_waste, 4),
             "support_volume_cm3": round(support_volume, 4),
             "print_time_min"    : round(print_time_min, 2),
             "layer_height_used" : layer_height,
             "infill_used"       : infill,
             "platform_margin_pct": round(PLATFORM_MARGIN * 100, 1),
+            "material_speed_mult": speed_mult,
+            "material_setup_cost": mat_setup_cost,
+            "material_waste_pct": waste_pct,
         },
         "confidence": _confidence_3d(geometry),
         "routing"   : _routing_recommendation_3d(geometry, technology),
@@ -239,27 +247,19 @@ def _price_2d(geometry, params, technology, material, quantity, material_price_k
 
     machine_time_min = 0
     if technology == "laser":
-        cut_speed_m_min  = max(0.5, 5.0 - (thickness_mm - 1) * 0.6)
-        cut_time_min     = cut_length_m / cut_speed_m_min
-        pierce_time_min  = hole_count * (0.05 + thickness_mm * 0.01)
-        machine_time_min = cut_time_min + pierce_time_min
-        machine_cost     = (machine_time_min / 60) * machine["hourly_rate"]
+        machine_time_min = (cut_length_m * 1.2 + hole_count * 0.15) * (1 / nesting_eff)
     elif technology == "bending":
-        bend_time_min    = max(bend_count * (1.5 + thickness_mm * 0.3), 5)
-        machine_time_min = bend_time_min
-        machine_cost     = (bend_time_min / 60) * MACHINE_RATES["bending"]["hourly_rate"]
-    else:
-        machine_cost = 0
+        machine_time_min = bend_count * 0.8 + 2.0
 
-    setup_cost  = machine["setup_cost"] if technology == "laser" else MACHINE_RATES["bending"]["setup_cost"]
-    waste_factor = max(0, 0.3 - nesting_eff) * 0.5
-    waste_cost  = material_cost * waste_factor
+    machine_cost   = (machine_time_min / 60) * machine["hourly_rate"]
+    setup_cost     = machine["setup_cost"]
+    post_process   = max(outer_area_cm2 * 0.002, 0.5)
 
-    unit_cost_raw        = material_cost + machine_cost + setup_cost + waste_cost
-    discount             = _quantity_discount(quantity)
-    unit_cost_discounted = unit_cost_raw * (1 - discount)
-    unit_price           = unit_cost_discounted / (1 - PLATFORM_MARGIN)
-    total_price          = unit_price * quantity
+    unit_cost_raw  = material_cost + machine_cost + setup_cost + post_process
+    discount       = _quantity_discount(quantity)
+    unit_cost_disc = unit_cost_raw * (1 - discount)
+    unit_price     = unit_cost_disc / (1 - PLATFORM_MARGIN)
+    total_price    = unit_price * quantity
 
     return {
         "currency"              : "USD",
@@ -272,14 +272,14 @@ def _price_2d(geometry, params, technology, material, quantity, material_price_k
             "material_cost"     : round(material_cost, 4),
             "machine_cost"      : round(machine_cost, 4),
             "setup_cost"        : round(setup_cost, 4),
-            "waste_cost"        : round(waste_cost, 4),
+            "post_process_cost" : round(post_process, 4),
+            "risk_premium"      : 0,
             "weight_kg"         : round(weight_kg, 4),
-            "cut_time_min"      : round(machine_time_min, 2),
-            "thickness_mm"      : thickness_mm,
+            "machine_time_min"  : round(machine_time_min, 2),
             "platform_margin_pct": round(PLATFORM_MARGIN * 100, 1),
         },
-        "confidence": _confidence_2d(geometry, thickness_mm),
-        "routing"   : _routing_recommendation_2d(geometry, technology, bend_count),
+        "confidence": _confidence_2d(geometry),
+        "routing"   : {"preferred_technology": technology, "alternative": None},
     }
 
 
@@ -287,59 +287,67 @@ def _price_2d(geometry, params, technology, material, quantity, material_price_k
 # YARDIMCI FONKSİYONLAR
 # ─────────────────────────────────────────────
 
-def _quantity_discount(quantity: int) -> float:
-    if quantity >= 1000: return 0.30
-    if quantity >= 500:  return 0.25
-    if quantity >= 100:  return 0.20
-    if quantity >= 50:   return 0.15
-    if quantity >= 10:   return 0.10
-    if quantity >= 5:    return 0.05
+def _quantity_discount(qty: int) -> float:
+    if qty >= 500: return 0.25
+    if qty >= 200: return 0.20
+    if qty >= 100: return 0.15
+    if qty >= 50:  return 0.10
+    if qty >= 20:  return 0.07
+    if qty >= 10:  return 0.05
+    if qty >= 5:   return 0.03
     return 0.0
 
-
 def _confidence_3d(geometry: dict) -> dict:
-    score   = 100
+    score = 100
     reasons = []
     if not geometry.get("is_watertight", True):
-        score -= 30
-        reasons.append("Mesh manifold değil")
+        score -= 30; reasons.append("Mesh watertight değil")
     if geometry.get("complexity_score", 0) > 70:
-        score -= 20
-        reasons.append("Yüksek geometrik kompleksite")
-    if geometry.get("support_ratio", 0) > 0.4:
-        score -= 15
-        reasons.append("Yoğun destek yapısı gerekiyor")
-    level = "high" if score >= 75 else "medium" if score >= 50 else "low"
+        score -= 15; reasons.append("Yüksek karmaşıklık")
+    if geometry.get("support_ratio", 0) > 0.3:
+        score -= 10; reasons.append("Yüksek destek oranı")
+    if geometry.get("volume_cm3", 0) < 0.5:
+        score -= 10; reasons.append("Çok küçük hacim")
+    level = "high" if score >= 80 else ("medium" if score >= 50 else "low")
     return {"score": max(score, 0), "level": level, "recommend_manual_quote": score < 50, "reasons": reasons}
 
-
-def _confidence_2d(geometry: dict, thickness_mm: float) -> dict:
-    score   = 100
+def _confidence_2d(geometry: dict) -> dict:
+    score = 100
     reasons = []
-    if geometry.get("total_cut_length_mm", 0) == 0:
-        score -= 50
-        reasons.append("Geçerli geometri bulunamadı")
-    if thickness_mm > 20:
-        score -= 25
-        reasons.append(f"Kalın malzeme ({thickness_mm}mm)")
-    level = "high" if score >= 75 else "medium" if score >= 50 else "low"
+    if geometry.get("nesting_efficiency", 1) < 0.5:
+        score -= 20; reasons.append("Düşük nesting verimi")
+    if geometry.get("hole_count", 0) > 50:
+        score -= 15; reasons.append("Çok sayıda delik")
+    level = "high" if score >= 80 else ("medium" if score >= 50 else "low")
     return {"score": max(score, 0), "level": level, "recommend_manual_quote": score < 50, "reasons": reasons}
-
 
 def _routing_recommendation_3d(geometry: dict, technology: str) -> dict:
-    volume     = geometry.get("volume_cm3", 0)
+    volume = geometry.get("volume_cm3", 0)
+    dims = geometry.get("dimensions_mm", {})
+    max_dim = max(dims.get("x_mm", 0), dims.get("y_mm", 0), dims.get("z_mm", 0))
     complexity = geometry.get("complexity_score", 0)
+
+    alternative = None
+    if technology == "fdm" and complexity > 60:
+        alternative = "sla"
+    elif technology == "sla" and volume > 100:
+        alternative = "sls"
+
+    batch = volume < 10 or (volume < 50 and geometry.get("support_ratio", 0) < 0.1)
+
+    notes = ""
+    if volume < 5:
+        notes = "Küçük parça — toplu sipariş iskonto sağlar"
+    elif volume > 500:
+        notes = "Büyük parça — baskı süresi uzun"
+    elif complexity > 70:
+        notes = "Karmaşık geometri — SLA önerilir"
+    else:
+        notes = "Standart parça"
+
     return {
         "preferred_technology": technology,
-        "alternative"         : "sls" if technology == "fdm" and complexity > 60 else None,
-        "batch_recommended"   : volume < 5,
-        "notes"               : "Küçük parça — toplu sipariş iskonto sağlar" if volume < 5 else None,
-    }
-
-
-def _routing_recommendation_2d(geometry: dict, technology: str, bend_count: int) -> dict:
-    return {
-        "preferred_technology": technology,
-        "combined_process"    : bend_count > 0 and technology == "laser",
-        "notes"               : "Lazer + bükme kombine sipariş önerilir" if bend_count > 0 else None,
+        "alternative": alternative,
+        "batch_recommended": batch,
+        "notes": notes,
     }
