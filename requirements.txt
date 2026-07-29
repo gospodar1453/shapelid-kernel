@@ -1,4 +1,6 @@
 numpy>=1.20.0
 trimesh>=4.0.0
 scipy>=1.7.0
-# faz6 build trigger
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+pydantic>=2.0.0
