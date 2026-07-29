@@ -16,6 +16,7 @@ from .material_rates import MATERIAL_RATES
 from .material_multipliers import get_material_multiplier
 from .machine_rates import MACHINE_RATES
 from .manual_quote import evaluate_manual_quote
+from .calibration import apply_calibration
 from .finish_rates import (
     apply_options,
     resolve_resolution,
@@ -91,7 +92,7 @@ def calculate_price(geometry: dict, params: dict) -> dict:
         unit_price = final_unit_price,
     )
 
-    return {
+    result = {
         **base_result,
         "unit_price"               : final_unit_price,
         "total_price"              : final_total_price,
@@ -104,6 +105,13 @@ def calculate_price(geometry: dict, params: dict) -> dict:
         "quote_triggers"           : mq_result["triggers"],
         "quote_warnings"           : mq_result["warnings"],
     }
+
+    # ── Faz-7: ML Kalibrasyon uygula ──
+    calibration_factors = params.get("calibration_factors")
+    if calibration_factors:
+        result = apply_calibration(result, calibration_factors)
+
+    return result
 
 
 # ─────────────────────────────────────────────
