@@ -15,6 +15,7 @@ Faz-6 eklentileri:
 
 from fastapi import FastAPI, UploadFile, File, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from datetime import datetime
 from pydantic import BaseModel
 from typing import Optional, List
 import tempfile
@@ -26,7 +27,7 @@ from analyzers.dxf_analyzer import analyze_dxf
 from analyzers.cnc_analyzer  import analyze_cnc
 from analyzers.nesting_analyzer import analyze_nesting, BUILD_VOLUMES
 from pricing.engine import calculate_price
-from pricing.calibration import compute_calibration_factors, compute_deviation, geometry_fingerprint
+from pricing.calibration import compute_calibration_factors, compute_deviation, geometry_fingerprint, apply_calibration
 from pricing.cnc_engine import calculate_cnc_price
 from pricing.nesting_engine import calculate_nesting_price
 from pricing.exchange_rate import get_rate_info, get_pricing_rate, get_usd_try
@@ -545,6 +546,3 @@ def calibration_demo():
         "improvement": round(abs(actual_avg - calibrated["unit_price"]) / abs(actual_avg - predicted) * 100, 1),
     }
 
-
-# datetime import
-from datetime import datetime
