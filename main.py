@@ -26,6 +26,7 @@ from analyzers.dxf_analyzer import analyze_dxf
 from analyzers.cnc_analyzer  import analyze_cnc
 from analyzers.nesting_analyzer import analyze_nesting, BUILD_VOLUMES
 from pricing.engine import calculate_price
+from pricing.calibration import compute_calibration_factors, compute_deviation, geometry_fingerprint
 from pricing.cnc_engine import calculate_cnc_price
 from pricing.nesting_engine import calculate_nesting_price
 from pricing.exchange_rate import get_rate_info, get_pricing_rate, get_usd_try
@@ -94,6 +95,7 @@ async def analyze(
     tolerance               : str            = "standard",
     certification           : str            = "none",
     material_price_usd_per_kg: Optional[float] = Query(default=None),
+    calibration_factors_json: Optional[str] = Query(default=None),
 ):
     ext = os.path.splitext(file.filename)[1].lower()
 
@@ -127,6 +129,13 @@ async def analyze(
             "certification"            : certification,
             "material_price_usd_per_kg": material_price_usd_per_kg,
         }
+
+        # Faz-7: Kalibrasyon katsayıları (JSON string → dict)
+        if calibration_factors_json:
+            try:
+                params["calibration_factors"] = json.loads(calibration_factors_json)
+            except json.JSONDecodeError:
+                pass
 
         if technology in CNC_TECHNOLOGIES:
             geometry = analyze_stl(tmp_path)
@@ -463,3 +472,79 @@ def _cnc_options(technology: str) -> dict:
         ],
         "note": "STL üzerinden CNC feature tespiti yaklaşıksal. Kesin fiyat için STEP/IGES dosyası önerilir."
     }
+
+
+# ── /calibrate — ML Kalibrasyon (Faz-7 YENİ) ──────────────────────────────
+
+class CalibrateRequest(BaseModel):
+    """Kalibrasyon için gerçek üretim verileri."""
+    records: List[dict]  # CalibrationRecord listesi (produced status)
+    technology: str
+    material: str
+    previous_factors: Optional[dict] = None
+
+@app.post("/calibrate")
+def calibrate(req: CalibrateRequest):
+    """
+    Gerçek üretim verileriyle fiyat modelini kalibre eder.
+    
+    Input: produced status'lu CalibrationRecord listesi
+    Output: düzeltme katsayıları + istatistiksel analiz
+    """
+    factors = compute_calibration_factors(
+        records=req.records,
+        previous_factors=req.previous_factors,
+    )
+    
+    return {
+        "technology": req.technology,
+        "material": req.material,
+        "factors": factors,
+        "calibration_applied": factors["sample_count"] >= 3,
+        "timestamp": str(datetime.utcnow()),
+    }
+
+
+@app.get("/calibration-demo")
+def calibration_demo():
+    """Kalibrasyon sistemini demo verisiyle test eder."""
+    # Sentetik veri: PLA için tahmin hep %15 düşük
+    demo_records = [
+        {"predicted_unit_price_usd": 5.50, "actual_unit_price_usd": 6.30,
+         "breakdown_snapshot": json.dumps({"material_cost": 0.03, "machine_cost": 2.44, "setup_cost": 1.50})},
+        {"predicted_unit_price_usd": 4.80, "actual_unit_price_usd": 5.55,
+         "breakdown_snapshot": json.dumps({"material_cost": 0.03, "machine_cost": 2.10, "setup_cost": 1.50})},
+        {"predicted_unit_price_usd": 6.20, "actual_unit_price_usd": 7.10,
+         "breakdown_snapshot": json.dumps({"material_cost": 0.03, "machine_cost": 2.80, "setup_cost": 1.50})},
+        {"predicted_unit_price_usd": 5.00, "actual_unit_price_usd": 5.80,
+         "breakdown_snapshot": json.dumps({"material_cost": 0.03, "machine_cost": 2.20, "setup_cost": 1.50})},
+        {"predicted_unit_price_usd": 5.80, "actual_unit_price_usd": 6.65,
+         "breakdown_snapshot": json.dumps({"material_cost": 0.03, "machine_cost": 2.60, "setup_cost": 1.50})},
+    ]
+    
+    factors = compute_calibration_factors(demo_records)
+    
+    # Simülasyon: kalibrasyon öncesi vs sonrası
+    predicted = 5.50
+    actual_avg = sum(r["actual_unit_price_usd"] for r in demo_records) / len(demo_records)
+    
+    # Kalibrasyon sonrası fiyat
+    bd = {"material_cost": 0.03, "machine_cost": 2.44, "setup_cost": 1.50,
+          "post_process_cost": 0, "risk_premium": 0, "platform_margin_pct": 28.0}
+    pricing_demo = {"unit_price": predicted, "total_price": predicted, "breakdown": bd}
+    calibrated = apply_calibration(pricing_demo.copy(), factors)
+    
+    return {
+        "demo_records": len(demo_records),
+        "predicted_avg": round(sum(r["predicted_unit_price_usd"] for r in demo_records) / len(demo_records), 2),
+        "actual_avg": round(actual_avg, 2),
+        "raw_deviation_pct": round((actual_avg - predicted) / predicted * 100, 2),
+        "calibration_factors": factors,
+        "before_calibration": {"unit_price": predicted},
+        "after_calibration": {"unit_price": calibrated["unit_price"]},
+        "improvement": round(abs(actual_avg - calibrated["unit_price"]) / abs(actual_avg - predicted) * 100, 1),
+    }
+
+
+# datetime import
+from datetime import datetime
