@@ -1,0 +1,108 @@
+{
+  "properties": {
+    "order_number": {
+      "type": "string",
+      "description": "PayTR merchant_oid - unique order ID"
+    },
+    "customer_email": {
+      "type": "string"
+    },
+    "customer_name": {
+      "type": "string"
+    },
+    "customer_phone": {
+      "type": "string"
+    },
+    "customer_address": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending_payment",
+        "paid",
+        "in_production",
+        "shipped",
+        "delivered",
+        "cancelled",
+        "refunded",
+        "manual_quote"
+      ]
+    },
+    "total_amount": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "string",
+      "default": "TL"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "technology": {
+            "type": "string"
+          },
+          "material": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "integer"
+          },
+          "unit_price": {
+            "type": "number"
+          },
+          "total_price": {
+            "type": "number"
+          },
+          "file_name": {
+            "type": "string"
+          },
+          "finish": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string"
+          },
+          "resolution": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "payment_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "success",
+        "failed",
+        "refunded"
+      ]
+    },
+    "paytr_oid": {
+      "type": "string",
+      "description": "PayTR order ID returned in callback"
+    },
+    "installment_count": {
+      "type": "integer",
+      "default": 0
+    },
+    "manual_quote": {
+      "type": "boolean",
+      "default": false
+    },
+    "quote_triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "Order"
+}
