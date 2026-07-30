@@ -6,6 +6,7 @@ Faz-2 eklentileri:
   - finish, color, resolution, hardness, tolerance, certification parametreleri
   - apply_options() ile çarpan + sabit maliyet entegrasyonu
   - /options endpoint — teknoloji bazlı geçerli seçim listesi
+  - auto_repair parametresi — non-manifold mesh otomatik onarımı
 
 Kur riski önlemleri:
   A) %4 kur tamponu (pricing_rate = TCMB * 1.04)
@@ -31,8 +32,8 @@ from pricing.finish_rates import (
 
 app = FastAPI(
     title="Shapelid Geometry Kernel",
-    version="2.0.0",
-    description="Faz-2: finish/color/resolution/hardness/tolerance/cert parametreleri eklendi"
+    version="2.1.0",
+    description="Faz-2: finish/color/resolution/hardness/tolerance/cert + auto mesh repair"
 )
 
 app.add_middleware(
@@ -47,7 +48,7 @@ app.add_middleware(
 def health():
     return {
         "status"        : "ok",
-        "version"       : "2.0.0",
+        "version"       : "2.1.0",
         "phase"         : "faz-2",
         "exchange_rate" : get_rate_info(),
     }
@@ -79,6 +80,8 @@ async def analyze(
     certification           : str            = "none",
     # ── Canlı DB fiyatı ──
     material_price_usd_per_kg: Optional[float] = Query(default=None),
+    # ── Mesh onarımı ──
+    auto_repair             : bool           = False,
 ):
     ext = os.path.splitext(file.filename)[1].lower()
 
@@ -94,8 +97,11 @@ async def analyze(
         tmp_path = tmp.name
 
     try:
-        # Geometrik analiz
-        geometry = analyze_stl(tmp_path) if ext == ".stl" else analyze_dxf(tmp_path)
+        # Geometrik analiz (auto_repair parametresi STL için geçerli)
+        if ext == ".stl":
+            geometry = analyze_stl(tmp_path, auto_repair=auto_repair)
+        else:
+            geometry = analyze_dxf(tmp_path)
 
         # Fiyat hesaplama
         params = {
