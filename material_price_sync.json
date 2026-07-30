@@ -1,0 +1,1038 @@
+{
+  "materials": [
+    {
+      "material_key": "mjf__tpa",
+      "material_name": "TPA Elastomer (MJF)",
+      "technology": "mjf",
+      "current_price_usd": 130.0,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "dmls__maraging_ms1",
+      "material_name": "Maraging Steel MS1 (DMLS)",
+      "technology": "dmls",
+      "current_price_usd": 4.6451,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "dmls__inconel625",
+      "material_name": "Inconel 625 (DMLS)",
+      "technology": "dmls",
+      "current_price_usd": 235.0,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "sls__pp",
+      "material_name": "PP (Polypropylene) SLS",
+      "technology": "sls",
+      "current_price_usd": 2.4294,
+      "price_unit": "per_kg",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "sls__primecast",
+      "material_name": "PrimeCast / Investment Casting SLS",
+      "technology": "sls",
+      "current_price_usd": 110.0,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "dmls__17_4ph",
+      "material_name": "Stainless Steel 17-4PH (DMLS)",
+      "technology": "dmls",
+      "current_price_usd": 95.0,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "dmls__copper",
+      "material_name": "Copper (Pure) DMLS",
+      "technology": "dmls",
+      "current_price_usd": 2.4294,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "dmls__titanium_cp",
+      "material_name": "Titanium CP Grade 2 (DMLS)",
+      "technology": "dmls",
+      "current_price_usd": 280.0,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "mjf__pa12_gb",
+      "material_name": "PA12 Glass Beads (MJF)",
+      "technology": "mjf",
+      "current_price_usd": 61.9684,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "sla__powerresins_castable",
+      "material_name": "Castable Wax Resin (PowerResins TR)",
+      "technology": "sla",
+      "current_price_usd": 25.2024,
+      "price_unit": "per_liter",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "sls__tpe",
+      "material_name": "TPE Flexible (SLS)",
+      "technology": "sls",
+      "current_price_usd": 5.3516,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "sls__pa12_cf",
+      "material_name": "PA12 Carbon Fiber (SLS)",
+      "technology": "sls",
+      "current_price_usd": 61.9684,
+      "price_unit": "per_kg",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "sla__dental_model",
+      "material_name": "Dental Model Resin",
+      "technology": "sla",
+      "current_price_usd": 65.0,
+      "price_unit": "per_liter",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "sla__rigid_engineering",
+      "material_name": "Rigid / Glass-Filled Engineering Resin",
+      "technology": "sla",
+      "current_price_usd": 85.0,
+      "price_unit": "per_liter",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "sla__water_washable",
+      "material_name": "Water-Washable Resin",
+      "technology": "sla",
+      "current_price_usd": 28.0,
+      "price_unit": "per_liter",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "fdm__pa_gf",
+      "material_name": "PA12 Glass-Filled (FDM)",
+      "technology": "fdm",
+      "current_price_usd": 8.0275,
+      "price_unit": "per_kg",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "fdm__pc_cf",
+      "material_name": "PC-CF (Carbon Fiber Polycarbonate)",
+      "technology": "fdm",
+      "current_price_usd": 5.1168,
+      "price_unit": "per_kg",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "fdm__pvb",
+      "material_name": "PVB (Polyvinyl Butyral)",
+      "technology": "fdm",
+      "current_price_usd": 8.0275,
+      "price_unit": "per_kg",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "sla__plant_based",
+      "material_name": "Plant-Based / Eco Resin",
+      "technology": "sla",
+      "current_price_usd": 8.0275,
+      "price_unit": "per_liter",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "fdm__nylon_pa11",
+      "material_name": "PA11 Nylon (Bio-based)",
+      "technology": "fdm",
+      "current_price_usd": 68.1871,
+      "price_unit": "per_kg",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "fdm__tpu_soft",
+      "material_name": "TPU 87A Soft",
+      "technology": "fdm",
+      "current_price_usd": 5.9709,
+      "price_unit": "per_kg",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "fdm__pla_silk",
+      "material_name": "PLA Silk",
+      "technology": "fdm",
+      "current_price_usd": 8.0275,
+      "price_unit": "per_kg",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "fdm__pla_matte",
+      "material_name": "PLA Matte",
+      "technology": "fdm",
+      "current_price_usd": 8.0275,
+      "price_unit": "per_kg",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "injection__pom_delrin",
+      "material_name": "POM / Delrin Acetal",
+      "technology": "injection",
+      "current_price_usd": 4.8178,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__pp",
+      "material_name": "PP / Polypropylene",
+      "technology": "injection",
+      "current_price_usd": 2.4294,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__pps",
+      "material_name": "PPS",
+      "technology": "injection",
+      "current_price_usd": 8.8117,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__pvc",
+      "material_name": "PVC",
+      "technology": "injection",
+      "current_price_usd": 1.9936,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__tpv_rubber",
+      "material_name": "TPV (Rubber)",
+      "technology": "injection",
+      "current_price_usd": 4.7477,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__hdpe",
+      "material_name": "HDPE",
+      "technology": "injection",
+      "current_price_usd": 2.6059,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__hips",
+      "material_name": "HIPS (PS)",
+      "technology": "injection",
+      "current_price_usd": 3.077,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__pbt",
+      "material_name": "PBT",
+      "technology": "injection",
+      "current_price_usd": 4.1267,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__tpe",
+      "material_name": "TPE (Elastomer)",
+      "technology": "injection",
+      "current_price_usd": 5.3516,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__acrylic_pmma",
+      "material_name": "Acrylic (PMMA)",
+      "technology": "injection",
+      "current_price_usd": 4.5852,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__nylon_66",
+      "material_name": "Nylon 66 / Nylon 6/6",
+      "technology": "injection",
+      "current_price_usd": 4.8853,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__pei",
+      "material_name": "PEI",
+      "technology": "injection",
+      "current_price_usd": 28.444,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__pc_pbt",
+      "material_name": "PC-PBT",
+      "technology": "injection",
+      "current_price_usd": 4.7799,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "die_casting__al46100",
+      "material_name": "Aluminium 46100 / ADC12 / A383 / Al-Si11Cu3",
+      "technology": "die_casting",
+      "current_price_usd": 3.177,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__nylon_6",
+      "material_name": "Nylon 6",
+      "technology": "injection",
+      "current_price_usd": 4.2813,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__pa6_gf",
+      "material_name": "PA6-GF",
+      "technology": "injection",
+      "current_price_usd": 4.5084,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "die_casting__al46500",
+      "material_name": "Aluminium 46500 / A380 / Al-Si8Cu3",
+      "technology": "die_casting",
+      "current_price_usd": 3.177,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__abs",
+      "material_name": "ABS",
+      "technology": "injection",
+      "current_price_usd": 3.902,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__peek",
+      "material_name": "PEEK",
+      "technology": "injection",
+      "current_price_usd": 71.0122,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__pc",
+      "material_name": "PC (Polycarbonate)",
+      "technology": "injection",
+      "current_price_usd": 5.1168,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__pet",
+      "material_name": "PET",
+      "technology": "injection",
+      "current_price_usd": 2.1629,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "injection__ps",
+      "material_name": "PS / Polystyrene",
+      "technology": "injection",
+      "current_price_usd": 2.8936,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "bending__aluminium_5754",
+      "material_name": "Aluminium 5754 / 3.3535 / Al-Mg3",
+      "technology": "bending",
+      "current_price_usd": 3.177,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "vacuum_casting__hdpe_pp_15gf",
+      "material_name": "HDPE, PP +15% GF (PR777 + 15% Synfill)",
+      "technology": "vacuum_casting",
+      "current_price_usd": 2.6059,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "bending__galvanized_steel",
+      "material_name": "Galvanized Steel",
+      "technology": "bending",
+      "current_price_usd": 1.7041,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "bending__aluminium_7075",
+      "material_name": "Aluminium EN AW-7075 / 3.4365 / Al-Zn6MgCu",
+      "technology": "bending",
+      "current_price_usd": 3.177,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "vacuum_casting__hdpe_pp_pr777",
+      "material_name": "HDPE, PP (PR777)",
+      "technology": "vacuum_casting",
+      "current_price_usd": 2.6059,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "bending__custom",
+      "material_name": "Custom",
+      "technology": "bending",
+      "current_price_usd": 1.5,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "vacuum_casting__pc_pmma_cristal_hri35",
+      "material_name": "PC, PMMA (CRISTAL HRI 35)",
+      "technology": "vacuum_casting",
+      "current_price_usd": 4.7799,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "bending__aluminium_6082",
+      "material_name": "Aluminium 6082 / 3.2315 / Al-Si1Mg",
+      "technology": "bending",
+      "current_price_usd": 3.177,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "vacuum_casting__abs_pr700",
+      "material_name": "ABS (PR700)",
+      "technology": "vacuum_casting",
+      "current_price_usd": 3.902,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "vacuum_casting__abs_pr2000",
+      "material_name": "ABS (PR2000)",
+      "technology": "vacuum_casting",
+      "current_price_usd": 3.902,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "vacuum_casting__abs_pra794",
+      "material_name": "ABS (PRA794)",
+      "technology": "vacuum_casting",
+      "current_price_usd": 3.902,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "vacuum_casting__hdpe_pp_20gf",
+      "material_name": "HDPE, PP +20% GF (PR777 + 20% Synfill)",
+      "technology": "vacuum_casting",
+      "current_price_usd": 2.6059,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "vacuum_casting__pc_abs_prf100",
+      "material_name": "PC, ABS(PRF100)",
+      "technology": "vacuum_casting",
+      "current_price_usd": 4.5162,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "vacuum_casting__pc_pmma_prc1819",
+      "material_name": "PC, PMMA (PRC1819)",
+      "technology": "vacuum_casting",
+      "current_price_usd": 4.7799,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "bending__aluminium_5083",
+      "material_name": "Aluminium 5083 / 3.3547 / Al-Mg4.5Mn",
+      "technology": "bending",
+      "current_price_usd": 3.177,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__titan_grade5",
+      "material_name": "Titan Grade 5 / 3.7164 / 3.7165 / Ti-6AI-4V",
+      "technology": "cnc_machining",
+      "current_price_usd": 3.1605,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__acrylic",
+      "material_name": "Acrylic",
+      "technology": "cnc_machining",
+      "current_price_usd": 4.5852,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "bending__ss316l",
+      "material_name": "Stainless Steel 316L / 1.4404 / X2CrNiMo17-12-2",
+      "technology": "bending",
+      "current_price_usd": 4.7262,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__any_aluminium",
+      "material_name": "Any available aluminium grade",
+      "technology": "cnc_machining",
+      "current_price_usd": 2.1411,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "laser__aluminium_5754",
+      "material_name": "Aluminium EN AW-5754 / 3.3535 / AlMg3",
+      "technology": "laser",
+      "current_price_usd": 3.177,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "bending__dc01",
+      "material_name": "Steel 1.0330 / DC01",
+      "technology": "bending",
+      "current_price_usd": 3.1605,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__mold_steel_1_2738",
+      "material_name": "Mold Steels 1.2738",
+      "technology": "cnc_machining",
+      "current_price_usd": 4.6451,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__any_stainless",
+      "material_name": "Any available stainless steel grade",
+      "technology": "cnc_machining",
+      "current_price_usd": 2.55,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "bending__s355",
+      "material_name": "Steel 1.0570 / S355J2G3",
+      "technology": "bending",
+      "current_price_usd": 1.5926,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "bending__ss304",
+      "material_name": "Stainless Steel 304 / 1.4301 / X5CrNi18.10",
+      "technology": "bending",
+      "current_price_usd": 3.7887,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__ss303",
+      "material_name": "Stainless Steel 303 / 1.4305 / X10CrNiS18-9",
+      "technology": "cnc_machining",
+      "current_price_usd": 3.7887,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__ss304",
+      "material_name": "Stainless Steel 304 / 1.4301 / X5CrNi18.10",
+      "technology": "cnc_machining",
+      "current_price_usd": 3.7887,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "laser__s235jr",
+      "material_name": "Steel S235JR / 1.0038 / St37-K",
+      "technology": "laser",
+      "current_price_usd": 1.5926,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__ss304l",
+      "material_name": "Stainless Steel 304L / 1.4307 / X2CrNi18-9",
+      "technology": "cnc_machining",
+      "current_price_usd": 3.7887,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__peek",
+      "material_name": "PEEK",
+      "technology": "cnc_machining",
+      "current_price_usd": 71.0122,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__pom_delrin",
+      "material_name": "POM / Delrin Acetal",
+      "technology": "cnc_machining",
+      "current_price_usd": 4.8178,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__steel_c45",
+      "material_name": "Steel C45 / 1.0503 / C45E / Ck45 / 1.1191",
+      "technology": "cnc_machining",
+      "current_price_usd": 2.1235,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "laser__any_aluminium",
+      "material_name": "Any available aluminium grade",
+      "technology": "laser",
+      "current_price_usd": 2.1411,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__any_steel",
+      "material_name": "Any available steel grade",
+      "technology": "cnc_machining",
+      "current_price_usd": 0.85,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__ss316ti",
+      "material_name": "Stainless Steel 316Ti / 1.4571 / X6CrNiMoTi12-12-2",
+      "technology": "cnc_machining",
+      "current_price_usd": 4.7262,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__brass_ms58",
+      "material_name": "Brass Ms58 / 2.0401 / CuZn39Pb3",
+      "technology": "cnc_machining",
+      "current_price_usd": 13.608,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "bending__aluminium_1050",
+      "material_name": "Aluminium 1050",
+      "technology": "bending",
+      "current_price_usd": 3.177,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__ss316l",
+      "material_name": "Stainless Steel 316L / 1.4404 / X2CrNiMo17-12-2",
+      "technology": "cnc_machining",
+      "current_price_usd": 4.7262,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__titan_grade2",
+      "material_name": "Titan Grade 2 / 3.7035",
+      "technology": "cnc_machining",
+      "current_price_usd": 3.1605,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__nylon_6",
+      "material_name": "Nylon 6",
+      "technology": "cnc_machining",
+      "current_price_usd": 4.2813,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "laser__ss316l_v4a",
+      "material_name": "Stainless Steel 316L / 1.4404 / X2CrNiMo17-12-2 / V4A",
+      "technology": "laser",
+      "current_price_usd": 4.7262,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__steel_4130",
+      "material_name": "Steel 4130",
+      "technology": "cnc_machining",
+      "current_price_usd": 2.1235,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__ss316",
+      "material_name": "Stainless Steel 316 / 1.4401 / X5CrNiMo17-12-2",
+      "technology": "cnc_machining",
+      "current_price_usd": 4.7262,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "laser__aluminium_1050",
+      "material_name": "Aluminium 1050",
+      "technology": "laser",
+      "current_price_usd": 3.177,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "laser__galvanized_steel",
+      "material_name": "Galvanized Steel",
+      "technology": "laser",
+      "current_price_usd": 1.7041,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__pc",
+      "material_name": "PC (Polycarbonate)",
+      "technology": "cnc_machining",
+      "current_price_usd": 5.1168,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__uhmwpe",
+      "material_name": "UHMW PE / Ultra-high-molecular-weight-polyethylene",
+      "technology": "cnc_machining",
+      "current_price_usd": 6.3971,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "laser__custom",
+      "material_name": "Custom",
+      "technology": "laser",
+      "current_price_usd": 2.0,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "bending__s235jr",
+      "material_name": "Steel 1.0038 / S235JR",
+      "technology": "bending",
+      "current_price_usd": 1.5926,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "fdm__pla",
+      "material_name": "PLA+",
+      "technology": "fdm",
+      "current_price_usd": 8.0275,
+      "price_unit": "per_kg",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "fdm__abs",
+      "material_name": "ABS",
+      "technology": "fdm",
+      "current_price_usd": 3.902,
+      "price_unit": "per_kg",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "sls__nylon_12_pa_12",
+      "material_name": "Nylon 12 / PA 12",
+      "technology": "sls",
+      "current_price_usd": 61.9684,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "fdm__ultem_1010",
+      "material_name": "ULTEM 1010",
+      "technology": "fdm",
+      "current_price_usd": 28.444,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "fdm__peek_like",
+      "material_name": "Peek-like",
+      "technology": "fdm",
+      "current_price_usd": 67.966,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "sla__standard_transparent_abs_like",
+      "material_name": "Standard Transparent, ABS-like",
+      "technology": "sla",
+      "current_price_usd": 3.902,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__steel_s355",
+      "material_name": "Steel 1.0570 / S355J2G3",
+      "technology": "cnc_machining",
+      "current_price_usd": 1.5926,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "sls__nylon_11_pa_11",
+      "material_name": "Nylon 11 / PA 11",
+      "technology": "sls",
+      "current_price_usd": 68.1871,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__steel_1_0511",
+      "material_name": "Steel 1.0511",
+      "technology": "cnc_machining",
+      "current_price_usd": 3.1605,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "fdm__abs_fusion",
+      "material_name": "ABS Fusion +",
+      "technology": "fdm",
+      "current_price_usd": 10.2912,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "sla__standard_grey_abs_like",
+      "material_name": "Standard Grey, ABS-like",
+      "technology": "sla",
+      "current_price_usd": 3.902,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "dmls__maraging_steel",
+      "material_name": "Maraging Steel",
+      "technology": "dmls",
+      "current_price_usd": 4.6451,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__aluminum_6061",
+      "material_name": "Aluminum 6061 / 3.3211 / Al-Mg1SiCu",
+      "technology": "cnc_machining",
+      "current_price_usd": 3.177,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "fdm__tpu_flex",
+      "material_name": "TPU (Flex)",
+      "technology": "fdm",
+      "current_price_usd": 17.1185,
+      "price_unit": "per_kg",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "sls__custom",
+      "material_name": "Custom",
+      "technology": "sls",
+      "current_price_usd": 100.0,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "polyjet__photopolymer_rubber_like",
+      "material_name": "Photopolymer, Rubber-like",
+      "technology": "polyjet",
+      "current_price_usd": 25.2024,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__steel_42crmo4",
+      "material_name": "Steel 1.7225 / 42CrMo4",
+      "technology": "cnc_machining",
+      "current_price_usd": 2.1235,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "dmls__tool_steel_1_2709_ms1",
+      "material_name": "Tool steel 1.2709 / MS1",
+      "technology": "dmls",
+      "current_price_usd": 4.6451,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "polyjet__photopolymer_rigid",
+      "material_name": "Photopolymer, rigid",
+      "technology": "polyjet",
+      "current_price_usd": 25.2024,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__steel_s235jr",
+      "material_name": "Steel 1.0038 / S235JR",
+      "technology": "cnc_machining",
+      "current_price_usd": 1.5926,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "fdm__ple",
+      "material_name": "PLE+",
+      "technology": "fdm",
+      "current_price_usd": 8.0275,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "fdm__ultem_9085",
+      "material_name": "ULTEM 9085",
+      "technology": "fdm",
+      "current_price_usd": 28.444,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "sla__standard_black_abs_like",
+      "material_name": "Standard Black, ABS-like",
+      "technology": "sla",
+      "current_price_usd": 3.902,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "dmls__stainless_steel_316l",
+      "material_name": "Stainless Steel 316L / 1.4404 / X2CrNiMo17-12-2",
+      "technology": "dmls",
+      "current_price_usd": 4.7262,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "fdm__pc_polycarbonate",
+      "material_name": "PC (Polycarbonate)",
+      "technology": "fdm",
+      "current_price_usd": 5.1168,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "sla__standard_white_abs_like",
+      "material_name": "Standard White, ABS-like",
+      "technology": "sla",
+      "current_price_usd": 3.902,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "dmls__custom",
+      "material_name": "Custom",
+      "technology": "dmls",
+      "current_price_usd": 100.0,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "polyjet__custom",
+      "material_name": "Custom",
+      "technology": "polyjet",
+      "current_price_usd": 100.0,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__steel_25crmo4",
+      "material_name": "Steel 1.7218 / 25CrMo4",
+      "technology": "cnc_machining",
+      "current_price_usd": 2.1235,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "fdm__asa",
+      "material_name": "ASA",
+      "technology": "fdm",
+      "current_price_usd": 10.4662,
+      "price_unit": "per_kg",
+      "display_mode": "both"
+    },
+    {
+      "material_key": "cnc__aluminium_5083",
+      "material_name": "Aluminium 5083 / 3.3547 / Al-Mg4.5Mn",
+      "technology": "cnc_machining",
+      "current_price_usd": 3.177,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__aluminium_6082",
+      "material_name": "Aluminium 6082 / 3.2315 / Al-Si1Mg",
+      "technology": "cnc_machining",
+      "current_price_usd": 3.177,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "fdm__abs_esd",
+      "material_name": "ABS-ESD",
+      "technology": "fdm",
+      "current_price_usd": 11.9614,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "dmls__inconel_718",
+      "material_name": "Inconel 718",
+      "technology": "dmls",
+      "current_price_usd": 17.195,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    },
+    {
+      "material_key": "cnc__aluminium_2024",
+      "material_name": "Aluminium 2024",
+      "technology": "cnc_machining",
+      "current_price_usd": 3.177,
+      "price_unit": "per_kg",
+      "display_mode": "advanced"
+    }
+  ],
+  "source": "superagent_live_sync",
+  "sync_date": "2026-07-30T09:21:00Z"
+}
