@@ -1,50 +1,24 @@
 {
-  "type": "object",
   "properties": {
-    "material_key": {
-      "type": "string"
-    },
-    "material_name": {
-      "type": "string"
-    },
-    "category": {
-      "type": "string"
-    },
-    "technology": {
-      "type": "string"
+    "alert_threshold_pct": {
+      "type": "number"
     },
     "base_price_usd": {
       "type": "number"
     },
-    "price_unit": {
+    "category": {
       "type": "string"
     },
     "current_price_usd": {
       "type": "number"
     },
-    "override_price_usd": {
-      "type": "number"
-    },
-    "override_note": {
+    "display_mode": {
+      "enum": [
+        "simple",
+        "advanced",
+        "both"
+      ],
       "type": "string"
-    },
-    "override_active": {
-      "type": "boolean"
-    },
-    "lme_symbol": {
-      "type": "string"
-    },
-    "lme_reference_price": {
-      "type": "number"
-    },
-    "lme_current_price": {
-      "type": "number"
-    },
-    "lme_delta_pct": {
-      "type": "number"
-    },
-    "material_buffer_pct": {
-      "type": "number"
     },
     "last_auto_update": {
       "type": "string"
@@ -52,21 +26,53 @@
     "last_lme_fetch": {
       "type": "string"
     },
-    "alert_threshold_pct": {
+    "lme_current_price": {
       "type": "number"
+    },
+    "lme_delta_pct": {
+      "type": "number"
+    },
+    "lme_reference_price": {
+      "type": "number"
+    },
+    "lme_symbol": {
+      "type": "string"
+    },
+    "material_buffer_pct": {
+      "type": "number"
+    },
+    "material_key": {
+      "type": "string"
+    },
+    "material_name": {
+      "type": "string"
+    },
+    "natural_color_hex": {
+      "type": "string"
+    },
+    "natural_color_name": {
+      "type": "string"
     },
     "notes": {
       "type": "string"
     },
-    "display_mode": {
-      "type": "string",
-      "enum": [
-        "simple",
-        "advanced",
-        "both"
-      ]
+    "override_active": {
+      "type": "boolean"
+    },
+    "override_note": {
+      "type": "string"
+    },
+    "override_price_usd": {
+      "type": "number"
+    },
+    "price_unit": {
+      "type": "string"
+    },
+    "technology": {
+      "type": "string"
     }
   },
+  "type": "object",
   "required": [],
   "name": "MaterialPrice"
 }

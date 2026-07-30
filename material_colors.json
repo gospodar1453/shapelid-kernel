@@ -1,0 +1,526 @@
+{
+  "sls__nylon_12_pa_12": {
+    "hex": "#F4F0EA",
+    "name": "Off-White / Cream"
+  },
+  "sls__nylon_11_pa_11": {
+    "hex": "#EFE8D8",
+    "name": "Warm Off-White / Cream"
+  },
+  "sls__pa12_cf": {
+    "hex": "#2B2B2C",
+    "name": "Matte Charcoal / Black"
+  },
+  "sls__pa12_gb": {
+    "hex": "#E5E2DC",
+    "name": "Light Grayish Off-White"
+  },
+  "sls__pp": {
+    "hex": "#F0EFEA",
+    "name": "Translucent Milky White"
+  },
+  "sls__tpe": {
+    "hex": "#F6F5F2",
+    "name": "Off-White / Bright Cream"
+  },
+  "sls__primecast": {
+    "hex": "#7D8288",
+    "name": "Medium Gray"
+  },
+  "sls__custom": {
+    "hex": "#CCCCCC",
+    "name": "Custom"
+  },
+  "mjf__pa12_gb": {
+    "hex": "#5A5E61",
+    "name": "Dark Stone Gray"
+  },
+  "mjf__tpa": {
+    "hex": "#FAFAFA",
+    "name": "Natural White"
+  },
+  "dmls__titanium_cp": {
+    "hex": "#8D9194",
+    "name": "Dark Metallic Gray"
+  },
+  "dmls__titanium_grade5": {
+    "hex": "#82868A",
+    "name": "Dark Metallic Gray"
+  },
+  "dmls__stainless_steel_316l": {
+    "hex": "#C4C6C8",
+    "name": "Metallic Silver-Gray"
+  },
+  "dmls__17_4ph": {
+    "hex": "#B8BABC",
+    "name": "Metallic Silver-Gray"
+  },
+  "dmls__maraging_steel": {
+    "hex": "#787C80",
+    "name": "Dark Steel Gray"
+  },
+  "dmls__maraging_ms1": {
+    "hex": "#787C80",
+    "name": "Dark Steel Gray"
+  },
+  "dmls__tool_steel_1_2709_ms1": {
+    "hex": "#75797D",
+    "name": "Dark Steel Gray"
+  },
+  "dmls__inconel625": {
+    "hex": "#8C8F92",
+    "name": "Dark Nickel Silver-Gray"
+  },
+  "dmls__inconel_718": {
+    "hex": "#8A8D90",
+    "name": "Dark Nickel Silver-Gray"
+  },
+  "dmls__copper": {
+    "hex": "#C87D55",
+    "name": "Reddish Copper / Orange"
+  },
+  "dmls__custom": {
+    "hex": "#888888",
+    "name": "Custom"
+  },
+  "sla__standard_transparent_abs_like": {
+    "hex": "#E8ECEB",
+    "name": "Translucent Clear"
+  },
+  "sla__standard_grey_abs_like": {
+    "hex": "#8A8D8F",
+    "name": "Opaque Medium Gray"
+  },
+  "sla__standard_black_abs_like": {
+    "hex": "#22252A",
+    "name": "Opaque Matte Black"
+  },
+  "sla__standard_white_abs_like": {
+    "hex": "#F8F9FA",
+    "name": "Opaque Bright White"
+  },
+  "sla__dental_model": {
+    "hex": "#E3C5AA",
+    "name": "Matte Peach / Beige"
+  },
+  "sla__rigid_engineering": {
+    "hex": "#E3E5E7",
+    "name": "Opaque Light Gray"
+  },
+  "sla__water_washable": {
+    "hex": "#9FA2A6",
+    "name": "Neutral Gray"
+  },
+  "sla__plant_based": {
+    "hex": "#A8C69F",
+    "name": "Translucent Light Green"
+  },
+  "sla__powerresins_castable": {
+    "hex": "#2A4480",
+    "name": "Translucent Deep Royal Blue"
+  },
+  "polyjet__photopolymer_rubber_like": {
+    "hex": "#E6E9E8",
+    "name": "Translucent Clear / Off-White"
+  },
+  "polyjet__photopolymer_rigid": {
+    "hex": "#F8F9FA",
+    "name": "Opaque Bright White"
+  },
+  "polyjet__custom": {
+    "hex": "#CCCCCC",
+    "name": "Custom"
+  },
+  "fdm__pla": {
+    "hex": "#1A8F3D",
+    "name": "Natural Green (PLA default)"
+  },
+  "fdm__abs": {
+    "hex": "#F3EED9",
+    "name": "Natural Cream / Ivory"
+  },
+  "fdm__asa": {
+    "hex": "#5A5A5A",
+    "name": "Natural Dark Gray"
+  },
+  "fdm__tpu_soft": {
+    "hex": "#F5F4EF",
+    "name": "Translucent Off-White"
+  },
+  "fdm__tpu_flex": {
+    "hex": "#F5F4EF",
+    "name": "Translucent Off-White"
+  },
+  "fdm__pla_silk": {
+    "hex": "#1A8F3D",
+    "name": "Natural Green (PLA default)"
+  },
+  "fdm__pla_matte": {
+    "hex": "#1A8F3D",
+    "name": "Natural Green (PLA default)"
+  },
+  "fdm__pa_gf": {
+    "hex": "#DDD8D0",
+    "name": "Off-White / Light Stone Gray"
+  },
+  "fdm__pc_cf": {
+    "hex": "#2B2B2C",
+    "name": "Matte Charcoal / Black"
+  },
+  "fdm__pvb": {
+    "hex": "#F3EED9",
+    "name": "Natural Cream / Ivory"
+  },
+  "fdm__nylon_pa11": {
+    "hex": "#EFE8D8",
+    "name": "Warm Off-White / Cream"
+  },
+  "fdm__pc_polycarbonate": {
+    "hex": "#EAF2F5",
+    "name": "Optically Clear"
+  },
+  "fdm__abs_fusion": {
+    "hex": "#F3EED9",
+    "name": "Natural Cream / Ivory"
+  },
+  "fdm__abs_esd": {
+    "hex": "#22252A",
+    "name": "Matte Black (ESD)"
+  },
+  "fdm__ple": {
+    "hex": "#F3EED9",
+    "name": "Natural Cream / Ivory"
+  },
+  "fdm__ultem_1010": {
+    "hex": "#C88A36",
+    "name": "Natural Amber"
+  },
+  "fdm__ultem_9085": {
+    "hex": "#C88A36",
+    "name": "Natural Amber"
+  },
+  "fdm__peek_like": {
+    "hex": "#C8B195",
+    "name": "Natural Tan / Beige"
+  },
+  "cnc__aluminum_6061": {
+    "hex": "#D4D7D9",
+    "name": "Bright Metallic Silver"
+  },
+  "cnc__aluminium_5083": {
+    "hex": "#D2D5D8",
+    "name": "Bright Metallic Silver"
+  },
+  "cnc__aluminium_6082": {
+    "hex": "#D2D5D8",
+    "name": "Bright Metallic Silver"
+  },
+  "cnc__aluminium_2024": {
+    "hex": "#D4D7D9",
+    "name": "Bright Metallic Silver"
+  },
+  "cnc__any_aluminium": {
+    "hex": "#D4D7D9",
+    "name": "Bright Metallic Silver"
+  },
+  "cnc__ss303": {
+    "hex": "#C8CBCE",
+    "name": "Lustrous Silver-Gray"
+  },
+  "cnc__ss304": {
+    "hex": "#C8CBCE",
+    "name": "Lustrous Silver-Gray"
+  },
+  "cnc__ss304l": {
+    "hex": "#C8CBCE",
+    "name": "Lustrous Silver-Gray"
+  },
+  "cnc__ss316": {
+    "hex": "#C8CBCE",
+    "name": "Lustrous Silver-Gray"
+  },
+  "cnc__ss316l": {
+    "hex": "#C8CBCE",
+    "name": "Lustrous Silver-Gray"
+  },
+  "cnc__ss316ti": {
+    "hex": "#C8CBCE",
+    "name": "Lustrous Silver-Gray"
+  },
+  "cnc__any_stainless": {
+    "hex": "#C8CBCE",
+    "name": "Lustrous Silver-Gray"
+  },
+  "cnc__steel_c45": {
+    "hex": "#8E9296",
+    "name": "Metallic Medium Gray"
+  },
+  "cnc__steel_s235jr": {
+    "hex": "#8E9296",
+    "name": "Metallic Medium Gray"
+  },
+  "cnc__steel_s355": {
+    "hex": "#8E9296",
+    "name": "Metallic Medium Gray"
+  },
+  "cnc__steel_4130": {
+    "hex": "#8E9296",
+    "name": "Metallic Medium Gray"
+  },
+  "cnc__steel_42crmo4": {
+    "hex": "#8E9296",
+    "name": "Metallic Medium Gray"
+  },
+  "cnc__steel_25crmo4": {
+    "hex": "#8E9296",
+    "name": "Metallic Medium Gray"
+  },
+  "cnc__steel_1_0511": {
+    "hex": "#8E9296",
+    "name": "Metallic Medium Gray"
+  },
+  "cnc__any_steel": {
+    "hex": "#8E9296",
+    "name": "Metallic Medium Gray"
+  },
+  "cnc__titan_grade2": {
+    "hex": "#92969A",
+    "name": "Metallic Dark Silver-Gray"
+  },
+  "cnc__titan_grade5": {
+    "hex": "#92969A",
+    "name": "Metallic Dark Silver-Gray"
+  },
+  "cnc__brass_ms58": {
+    "hex": "#D1A751",
+    "name": "Warm Metallic Gold / Yellow Brass"
+  },
+  "cnc__mold_steel_1_2738": {
+    "hex": "#787C80",
+    "name": "Dark Steel Gray"
+  },
+  "cnc__acrylic": {
+    "hex": "#F0F8FF",
+    "name": "Optically Clear / Transparent"
+  },
+  "cnc__pc": {
+    "hex": "#EBF3F5",
+    "name": "Water Clear / Transparent"
+  },
+  "cnc__peek": {
+    "hex": "#C8B195",
+    "name": "Natural Tan / Beige"
+  },
+  "cnc__pom_delrin": {
+    "hex": "#FAF9F5",
+    "name": "Natural Opaque White"
+  },
+  "cnc__nylon_6": {
+    "hex": "#EFECE6",
+    "name": "Natural Off-White / Cream"
+  },
+  "cnc__uhmwpe": {
+    "hex": "#F3F2EE",
+    "name": "Natural Milky Off-White"
+  },
+  "injection__abs": {
+    "hex": "#F3EED9",
+    "name": "Natural Cream / Light Ivory"
+  },
+  "injection__pp": {
+    "hex": "#F4F3ED",
+    "name": "Translucent Milky White"
+  },
+  "injection__pc": {
+    "hex": "#EAF2F5",
+    "name": "Optically Clear / Transparent"
+  },
+  "injection__nylon_6": {
+    "hex": "#EFECE6",
+    "name": "Natural Off-White / Cream"
+  },
+  "injection__nylon_66": {
+    "hex": "#EFEBE4",
+    "name": "Natural Off-White / Cream"
+  },
+  "injection__pom_delrin": {
+    "hex": "#FBF9F3",
+    "name": "Natural Opaque White"
+  },
+  "injection__hdpe": {
+    "hex": "#F2F1EA",
+    "name": "Natural Milky White"
+  },
+  "injection__pvc": {
+    "hex": "#EDEDE6",
+    "name": "Translucent Off-White"
+  },
+  "injection__pet": {
+    "hex": "#EAF3F6",
+    "name": "Crystal Clear / Transparent"
+  },
+  "injection__ps": {
+    "hex": "#F2F7FA",
+    "name": "Glass Clear / Transparent"
+  },
+  "injection__pbt": {
+    "hex": "#F6F4EE",
+    "name": "Natural Opaque White"
+  },
+  "injection__pps": {
+    "hex": "#78624C",
+    "name": "Natural Dark Brownish Tan"
+  },
+  "injection__pei": {
+    "hex": "#C88A36",
+    "name": "Natural Amber / Honey"
+  },
+  "injection__peek": {
+    "hex": "#C8B195",
+    "name": "Natural Tan / Beige"
+  },
+  "injection__tpe": {
+    "hex": "#F5F4EF",
+    "name": "Translucent Off-White"
+  },
+  "injection__tpv_rubber": {
+    "hex": "#333638",
+    "name": "Natural Dark Charcoal / Black"
+  },
+  "injection__acrylic_pmma": {
+    "hex": "#F0F7FA",
+    "name": "Optically Clear / Transparent"
+  },
+  "injection__pa6_gf": {
+    "hex": "#DDD8D0",
+    "name": "Off-White / Light Stone Gray"
+  },
+  "injection__pc_pbt": {
+    "hex": "#E5E5E5",
+    "name": "Natural Off-White"
+  },
+  "injection__hips": {
+    "hex": "#F0F0F0",
+    "name": "Natural White / Off-White"
+  },
+  "die_casting__al46100": {
+    "hex": "#ADB0B3",
+    "name": "Metallic Silver-Gray"
+  },
+  "die_casting__al46500": {
+    "hex": "#ABAEB1",
+    "name": "Metallic Silver-Gray"
+  },
+  "bending__galvanized_steel": {
+    "hex": "#B2B8BC",
+    "name": "Spangled Zinc Metallic Gray"
+  },
+  "bending__s235jr": {
+    "hex": "#6C7074",
+    "name": "Dark Steel Gray"
+  },
+  "bending__s355": {
+    "hex": "#6C7074",
+    "name": "Dark Steel Gray"
+  },
+  "bending__dc01": {
+    "hex": "#6C7074",
+    "name": "Dark Steel Gray"
+  },
+  "bending__ss304": {
+    "hex": "#C5C8CB",
+    "name": "Satin Metallic Silver"
+  },
+  "bending__ss316l": {
+    "hex": "#C5C8CB",
+    "name": "Satin Metallic Silver"
+  },
+  "bending__aluminium_5754": {
+    "hex": "#D2D5D8",
+    "name": "Bright Metallic Silver"
+  },
+  "bending__aluminium_5083": {
+    "hex": "#D2D5D8",
+    "name": "Bright Metallic Silver"
+  },
+  "bending__aluminium_6082": {
+    "hex": "#D2D5D8",
+    "name": "Bright Metallic Silver"
+  },
+  "bending__aluminium_1050": {
+    "hex": "#D2D5D8",
+    "name": "Bright Metallic Silver"
+  },
+  "bending__aluminium_7075": {
+    "hex": "#D2D5D8",
+    "name": "Bright Metallic Silver"
+  },
+  "bending__custom": {
+    "hex": "#888888",
+    "name": "Custom"
+  },
+  "laser__s235jr": {
+    "hex": "#6C7074",
+    "name": "Dark Steel Gray"
+  },
+  "laser__galvanized_steel": {
+    "hex": "#B2B8BC",
+    "name": "Spangled Zinc Metallic Gray"
+  },
+  "laser__any_aluminium": {
+    "hex": "#D4D7D9",
+    "name": "Bright Metallic Silver"
+  },
+  "laser__aluminium_5754": {
+    "hex": "#D2D5D8",
+    "name": "Bright Metallic Silver"
+  },
+  "laser__aluminium_1050": {
+    "hex": "#D2D5D8",
+    "name": "Bright Metallic Silver"
+  },
+  "laser__ss316l_v4a": {
+    "hex": "#C5C8CB",
+    "name": "Satin Metallic Silver"
+  },
+  "laser__custom": {
+    "hex": "#888888",
+    "name": "Custom"
+  },
+  "vacuum_casting__abs_pr700": {
+    "hex": "#F2EFE9",
+    "name": "Opaque Off-White / Cream"
+  },
+  "vacuum_casting__abs_pr2000": {
+    "hex": "#F2EFE9",
+    "name": "Opaque Off-White / Cream"
+  },
+  "vacuum_casting__abs_pra794": {
+    "hex": "#5A4A3A",
+    "name": "Dark Brown (Flame Retardant)"
+  },
+  "vacuum_casting__hdpe_pp_pr777": {
+    "hex": "#EDE8DE",
+    "name": "Translucent Off-White / Cream"
+  },
+  "vacuum_casting__hdpe_pp_15gf": {
+    "hex": "#EDE8DE",
+    "name": "Translucent Off-White / Cream"
+  },
+  "vacuum_casting__hdpe_pp_20gf": {
+    "hex": "#EDE8DE",
+    "name": "Translucent Off-White / Cream"
+  },
+  "vacuum_casting__pc_abs_prf100": {
+    "hex": "#E8F0F2",
+    "name": "Water Clear / Transparent"
+  },
+  "vacuum_casting__pc_pmma_cristal_hri35": {
+    "hex": "#ECF5F8",
+    "name": "Optically Clear / Water Clear"
+  },
+  "vacuum_casting__pc_pmma_prc1819": {
+    "hex": "#ECF5F8",
+    "name": "Optically Clear / Water Clear"
+  }
+}
