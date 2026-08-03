@@ -14,15 +14,17 @@ Geriye dönük uyumlu: /analyze endpoint'i hala STL + DXF kabul eder (3D printin
 
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
-from typing import Optional
+from typing import Optional, List
 import tempfile
 import os
 
 from analyzers.stl_analyzer import analyze_stl
 from analyzers.dxf_analyzer import analyze_dxf
 from analyzers.cnc_analyzer import analyze_cnc
+from analyzers.nesting import analyze_nesting, get_build_volumes
 from pricing.engine import calculate_price
 from pricing.cnc_pricing import price_cnc
+from pricing.calibration import compute_calibration_factors, apply_calibration, calibration_demo
 from pricing.exchange_rate import get_rate_info, get_pricing_rate, get_usd_try
 from pricing.finish_rates import (
     FINISH_RATES, COLOR_RATES, RESOLUTION_RATES,
@@ -371,3 +373,148 @@ def list_options(technology: str = "fdm"):
         "infill_presets": [{"key": k, "label": v["label"], "ratio": v["ratio"]}
                            for k, v in INFILL_PRESETS.items()],
     }
+
+
+# ── Build Volumes (Faz-6) ─────────────────────────────────────────────
+
+@app.get("/build-volumes")
+async def build_volumes(technology: Optional[str] = Query(default=None)):
+    """Build volume listesi (3D printing teknolojileri için)."""
+    return get_build_volumes(technology)
+
+
+# ── Nesting (Faz-6) ──────────────────────────────────────────────────
+
+@app.post("/nest")
+async def nest_analysis(
+    files: List[UploadFile] = File(...),
+    technology: str = Form("sls"),
+    machine: Optional[str] = Form(None),
+    gap_mm: float = Form(2.0),
+    quantity_per_part: int = Form(1),
+    auto_repair: bool = Form(False),
+):
+    """
+    Nesting analizi — birden fazla parçayı build volume'a yerleştirir.
+    SLS/MJF için optimizasyon.
+    """
+    import trimesh
+    meshes = []
+    for f in files:
+        ext = os.path.splitext(f.filename)[1].lower()
+        if ext not in [".stl", ".obj"]:
+            raise HTTPException(400, f"Desteklenmeyen format: {ext}")
+        with tempfile.NamedTemporaryFile(suffix=ext, delete=False) as tmp:
+            content = f.file.read()
+            tmp.write(content)
+            tmp_path = tmp.name
+        try:
+            mesh = trimesh.load(tmp_path)
+            if auto_repair and not mesh.is_watertight:
+                mesh.fill_holes()
+                mesh.fix_normals()
+            meshes.append(mesh)
+        finally:
+            os.unlink(tmp_path)
+
+    result = analyze_nesting(meshes, technology, machine, gap_mm, quantity_per_part)
+    return {"status": "ok" if "error" not in result else "error", **result}
+
+
+@app.post("/nest-price")
+async def nest_with_pricing(
+    files: List[UploadFile] = File(...),
+    technology: str = Form("sls"),
+    material: str = Form("pa12"),
+    machine: Optional[str] = Form(None),
+    gap_mm: float = Form(2.0),
+    quantity_per_part: int = Form(1),
+    layer_height: float = Form(0.12),
+    finish: str = Form("standard"),
+    material_price_usd_per_kg: Optional[float] = Form(None),
+    auto_repair: bool = Form(False),
+):
+    """Nesting + fiyatlandırma."""
+    import trimesh
+    meshes = []
+    for f in files:
+        ext = os.path.splitext(f.filename)[1].lower()
+        if ext not in [".stl", ".obj"]:
+            raise HTTPException(400, f"Desteklenmeyen format: {ext}")
+        with tempfile.NamedTemporaryFile(suffix=ext, delete=False) as tmp:
+            content = f.file.read()
+            tmp.write(content)
+            tmp_path = tmp.name
+        try:
+            mesh = trimesh.load(tmp_path)
+            if auto_repair and not mesh.is_watertight:
+                mesh.fill_holes()
+                mesh.fix_normals()
+            meshes.append(mesh)
+        finally:
+            os.unlink(tmp_path)
+
+    nest_result = analyze_nesting(meshes, technology, machine, gap_mm, quantity_per_part)
+
+    if "error" in nest_result:
+        return {"status": "error", "error": nest_result["error"]}
+
+    # Her parça için fiyat hesapla
+    part_prices = []
+    for mesh in meshes:
+        geom = analyze_stl_from_mesh(mesh, technology, material, layer_height, 0.2)
+        params = {
+            "technology": technology,
+            "material": material,
+            "quantity": 1,
+            "layer_height": layer_height,
+            "infill": 0.2,
+            "finish": finish,
+            "material_price_usd_per_kg": material_price_usd_per_kg,
+        }
+        price = calculate_price(geom, params)
+        part_prices.append(price)
+
+    total_unit = sum(p.get("unit_price", 0) for p in part_prices) * quantity_per_part
+    total_all = total_unit * nest_result["parts_placed"] // quantity_per_part if quantity_per_part > 0 else total_unit
+
+    rate = get_pricing_rate(technology)
+
+    return {
+        "status": "ok",
+        "nesting": nest_result,
+        "part_prices": part_prices,
+        "total_unit_price": round(total_unit, 2),
+        "total_price": round(total_all, 2),
+        "total_price_try": round(total_all * rate["pricing_rate"], 2),
+        "exchange_rate": rate,
+    }
+
+
+# ── Calibration (Faz-7) ──────────────────────────────────────────────
+
+@app.post("/calibrate")
+async def calibrate(
+    records: str = Form(...),  # JSON string of calibration records
+    tech_material_key: Optional[str] = Form(None),
+):
+    """
+    Kalibrasyon hesapla — CalibrationRecord listesi alır,
+    düzeltme katsayıları döndürür.
+    """
+    import json
+    try:
+        recs = json.loads(records)
+    except json.JSONDecodeError:
+        raise HTTPException(400, "records alanı geçerli JSON olmalı")
+
+    result = compute_calibration_factors(recs)
+    if tech_material_key:
+        result["tech_material_key"] = tech_material_key
+    return result
+
+
+@app.get("/calibration-demo")
+async def calibration_demo_endpoint():
+    """Demo: synthetic veri ile kalibrasyon gösterimi."""
+    return calibration_demo()
