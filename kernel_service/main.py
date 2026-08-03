@@ -12,7 +12,7 @@ Faz-5 eklentileri:
 Geriye dönük uyumlu: /analyze endpoint'i hala STL + DXF kabul eder (3D printing / sheet metal)
 """
 
-from fastapi import FastAPI, UploadFile, File, HTTPException, Query
+from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
 import tempfile
@@ -162,13 +162,13 @@ async def analyze(
 @app.post("/analyze-cnc")
 async def analyze_cnc_endpoint(
     file: UploadFile = File(...),
-    technology              : str            = "cnc_milling",
-    material                : str            = "aluminum",
-    quantity                : int            = 1,
-    tolerance               : str            = "standard",
-    finish                  : str            = "standard",
-    material_price_usd_per_kg: Optional[float] = Query(default=None),
-    auto_repair             : bool           = False,
+    technology              : str            = Form("cnc_milling"),
+    material                : str            = Form("aluminum"),
+    quantity                : int            = Form(1),
+    tolerance               : str            = Form("standard"),
+    finish                  : str            = Form("standard"),
+    material_price_usd_per_kg: Optional[float] = Form(default=None),
+    auto_repair             : bool           = Form(False),
 ):
     """
     CNC Feature Recognition + Pricing endpoint.
@@ -188,8 +188,8 @@ async def analyze_cnc_endpoint(
 @app.post("/features")
 async def features_only(
     file: UploadFile = File(...),
-    technology              : str            = "cnc_milling",
-    auto_repair             : bool           = False,
+    technology              : str            = Form("cnc_milling"),
+    auto_repair             : bool           = Form(False),
 ):
     """
     Sadece feature tespiti — fiyat hesabı olmadan.
