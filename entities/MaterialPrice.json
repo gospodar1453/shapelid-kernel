@@ -1,30 +1,41 @@
 {
+  "type": "object",
   "properties": {
-    "alert_threshold_pct": {
-      "type": "number"
+    "material_key": {
+      "type": "string"
+    },
+    "material_name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "technology": {
+      "type": "string"
     },
     "base_price_usd": {
       "type": "number"
     },
-    "category": {
+    "price_unit": {
       "type": "string"
     },
     "current_price_usd": {
       "type": "number"
     },
-    "display_mode": {
-      "enum": [
-        "simple",
-        "advanced",
-        "both"
-      ],
+    "override_price_usd": {
+      "type": "number"
+    },
+    "override_note": {
       "type": "string"
     },
-    "last_auto_update": {
+    "override_active": {
+      "type": "boolean"
+    },
+    "lme_symbol": {
       "type": "string"
     },
-    "last_lme_fetch": {
-      "type": "string"
+    "lme_reference_price": {
+      "type": "number"
     },
     "lme_current_price": {
       "type": "number"
@@ -32,47 +43,30 @@
     "lme_delta_pct": {
       "type": "number"
     },
-    "lme_reference_price": {
-      "type": "number"
-    },
-    "lme_symbol": {
-      "type": "string"
-    },
     "material_buffer_pct": {
       "type": "number"
     },
-    "material_key": {
+    "last_auto_update": {
       "type": "string"
     },
-    "material_name": {
+    "last_lme_fetch": {
       "type": "string"
     },
-    "natural_color_hex": {
-      "type": "string"
-    },
-    "natural_color_name": {
-      "type": "string"
+    "alert_threshold_pct": {
+      "type": "number"
     },
     "notes": {
       "type": "string"
     },
-    "override_active": {
-      "type": "boolean"
-    },
-    "override_note": {
-      "type": "string"
-    },
-    "override_price_usd": {
-      "type": "number"
-    },
-    "price_unit": {
-      "type": "string"
-    },
-    "technology": {
-      "type": "string"
+    "display_mode": {
+      "type": "string",
+      "enum": [
+        "simple",
+        "advanced",
+        "both"
+      ]
     }
   },
-  "type": "object",
   "required": [],
   "name": "MaterialPrice"
 }
